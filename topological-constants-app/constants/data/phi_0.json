@@ -1,0 +1,18 @@
+{
+  "id": "phi_0",
+  "symbol": "φ₀",
+  "name": "Golden Angle",
+  "description": "The fundamental topological angle derived from the golden ratio",
+  "unit": "radians",
+  "formula": "φ₀ = arccos(φ / 2)",
+  "dependencies": ["phi"],
+  "category": "fundamental",
+  "sources": [
+    {
+      "name": "Mathematical Constant",
+      "year": 2025,
+      "value": 0.9045568943023813
+    }
+  ],
+  "accuracyTarget": 1e-15
+} 

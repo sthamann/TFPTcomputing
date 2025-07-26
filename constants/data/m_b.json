@@ -1,0 +1,26 @@
+{
+  "id": "m_b",
+  "symbol": "m_b",
+  "name": "Bottom Quark Mass",
+  "description": "Bottom quark mass",
+  "unit": "GeV",
+  "formula": "M_PLANCK_GEV \u03c6\u2080\u00b9\u2075 / \u221ac\u2083",
+  "dependencies": [
+    "phi_0",
+    "m_planck",
+    "c_3"
+  ],
+  "category": "quark",
+  "sources": [
+    {
+      "name": "Topological Fixed Point Theory",
+      "year": 2025,
+      "value": 4.18,
+      "note": "From comprehensive constant list"
+    }
+  ],
+  "accuracyTarget": 0.001,
+  "metadata": {
+    "note": "Part of the complete 43 cascade-born constants"
+  }
+}

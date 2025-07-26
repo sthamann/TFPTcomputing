@@ -1,0 +1,23 @@
+{
+  "id": "alpha_s",
+  "symbol": "α_s",
+  "name": "Strong Coupling Constant",
+  "description": "Strong coupling at M_Z from topology: α_s(M_Z) = √φ₀ / 2",
+  "unit": "dimensionless",
+  "formula": "α_s = sqrt(φ₀) / 2",
+  "dependencies": ["phi_0"],
+  "category": "derived",
+  "sources": [
+    {
+      "name": "PDG 2024 (at M_Z)",
+      "year": 2024,
+      "value": 0.1181,
+      "uncertainty": 0.0011,
+      "url": "https://pdg.lbl.gov/"
+    }
+  ],
+  "accuracyTarget": 0.01,
+  "metadata": {
+    "note": "QCD coupling at the Z-boson mass scale"
+  }
+} 

@@ -1,0 +1,25 @@
+{
+  "id": "e_knee",
+  "symbol": "E_knee",
+  "name": "Cosmic-ray knee energy",
+  "description": "Cosmic-ray spectrum feature from cascade",
+  "unit": "PeV",
+  "formula": "E_knee = M_Pl \u03c6\u2080\u00b2\u2070",
+  "dependencies": [
+    "m_planck",
+    "phi_0"
+  ],
+  "category": "cosmology",
+  "sources": [
+    {
+      "name": "Topological Fixed Point Theory",
+      "year": 2025,
+      "value": 2.9,
+      "note": "Cosmic-ray spectrum feature becomes topological"
+    }
+  ],
+  "accuracyTarget": 0.001,
+  "metadata": {
+    "note": "Cosmic-ray spectrum feature becomes topological"
+  }
+}

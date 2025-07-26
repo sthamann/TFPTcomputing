@@ -1,0 +1,10 @@
+{
+  "id": "m_mu",
+  "symbol": "m_\u03bc",
+  "calculated_value": 113.4906599494769,
+  "reference_value": 105.7,
+  "relative_error": 0.07370539214263863,
+  "unit": "MeV",
+  "formula": "(V_H / \u221a2) \u03c6\u2080^2.5 \u00d7 10\u00b3",
+  "accuracy_met": false
+}

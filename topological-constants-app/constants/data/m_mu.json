@@ -1,0 +1,24 @@
+{
+  "id": "m_mu",
+  "symbol": "m_μ",
+  "name": "Muon Mass",
+  "description": "Muon rest mass from cascade level n = 5/2: m_μ = (v_H/√2) × φ₀^{5/2}",
+  "unit": "MeV",
+  "formula": "m_μ = (v_H / sqrt(2)) * φ₀^(5/2) * 1000",
+  "dependencies": ["v_h", "phi_0"],
+  "category": "derived",
+  "sources": [
+    {
+      "name": "CODATA 2022",
+      "year": 2022,
+      "value": 105.6583755,
+      "uncertainty": 2.3e-6,
+      "url": "https://physics.nist.gov/cgi-bin/cuu/Value?mmu"
+    }
+  ],
+  "accuracyTarget": 0.07,
+  "metadata": {
+    "codataId": "mmu",
+    "note": "≈ 7% high; RG + pole-shift expected"
+  }
+} 

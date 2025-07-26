@@ -1,0 +1,25 @@
+{
+  "id": "lambda_d",
+  "symbol": "\u03bb_D",
+  "name": "Shadow-sector 4-fermion coupling",
+  "description": "Dark sector four-fermion coupling strength",
+  "unit": "dimensionless",
+  "formula": "\u03bb_D = c\u2084\u00b2 \u03c6\u2080\u2074",
+  "dependencies": [
+    "c_4",
+    "phi_0"
+  ],
+  "category": "dark_sector",
+  "sources": [
+    {
+      "name": "Topological Fixed Point Theory",
+      "year": 2025,
+      "value": 1.5e-05,
+      "note": "Explains muon g\u20132 deviation without spoiling collider data"
+    }
+  ],
+  "accuracyTarget": 0.001,
+  "metadata": {
+    "note": "Explains muon g\u20132 deviation without spoiling collider data"
+  }
+}

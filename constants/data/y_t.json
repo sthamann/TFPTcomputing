@@ -1,0 +1,25 @@
+{
+  "id": "y_t",
+  "symbol": "y_t",
+  "name": "Top Yukawa",
+  "description": "Top quark Yukawa coupling",
+  "unit": "dimensionless",
+  "formula": "y_t = \u221a2 c\u2083 \u03c6\u2080\u207b\u00b3",
+  "dependencies": [
+    "c_3",
+    "phi_0"
+  ],
+  "category": "yukawa",
+  "sources": [
+    {
+      "name": "Topological Fixed Point Theory",
+      "year": 2025,
+      "value": 0.935,
+      "note": "Coleman\u2013Weinberg flatness pins it"
+    }
+  ],
+  "accuracyTarget": 0.001,
+  "metadata": {
+    "note": "Coleman\u2013Weinberg flatness pins it"
+  }
+}

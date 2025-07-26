@@ -1,0 +1,25 @@
+{
+  "id": "m_fa",
+  "symbol": "m_FA",
+  "name": "Fuzzy-axion mass",
+  "description": "Fuzzy dark matter axion mass",
+  "unit": "eV",
+  "formula": "m_FA = M_Pl \u03c6\u2080\u00b3\u2079",
+  "dependencies": [
+    "m_planck",
+    "phi_0"
+  ],
+  "category": "dark_matter",
+  "sources": [
+    {
+      "name": "Topological Fixed Point Theory",
+      "year": 2025,
+      "value": 2.4e-22,
+      "note": "Solves small-scale structure by fuzzy DM"
+    }
+  ],
+  "accuracyTarget": 0.001,
+  "metadata": {
+    "note": "Solves small-scale structure by fuzzy DM"
+  }
+}

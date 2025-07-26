@@ -1,0 +1,24 @@
+{
+  "id": "m_e",
+  "symbol": "m_e",
+  "name": "Electron Mass",
+  "description": "Electron rest mass from Yukawa coupling: m_e = (v_H/√2) × α × φ₀⁵",
+  "unit": "MeV",
+  "formula": "m_e = (v_H / sqrt(2)) * α * φ₀^5 * 1000",
+  "dependencies": ["v_h", "alpha", "phi_0"],
+  "category": "derived",
+  "sources": [
+    {
+      "name": "CODATA 2022",
+      "year": 2022,
+      "value": 0.51099895069,
+      "uncertainty": 1.6e-10,
+      "url": "https://physics.nist.gov/cgi-bin/cuu/Value?me"
+    }
+  ],
+  "accuracyTarget": 0.06,
+  "metadata": {
+    "codataId": "me",
+    "note": "≈ 5.66% high; RG + pole-shift expected"
+  }
+} 

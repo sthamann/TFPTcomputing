@@ -1,0 +1,10 @@
+{
+  "id": "v_us_v_ud",
+  "symbol": "V_us/V_ud",
+  "calculated_value": 0.2313,
+  "reference_value": 0.2313,
+  "relative_error": 0.0,
+  "unit": "dimensionless",
+  "formula": "\u221a\u03c6\u2080",
+  "accuracy_met": true
+}

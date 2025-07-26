@@ -1,0 +1,25 @@
+{
+  "id": "tau_reio",
+  "symbol": "\u03c4_reio",
+  "name": "Optical depth to re-ionisation",
+  "description": "Thomson optical depth to reionization",
+  "unit": "dimensionless",
+  "formula": "\u03c4_reio = 2 c\u2083 \u03c6\u2080\u2075",
+  "dependencies": [
+    "c_3",
+    "phi_0"
+  ],
+  "category": "cosmology",
+  "sources": [
+    {
+      "name": "Topological Fixed Point Theory",
+      "year": 2025,
+      "value": 0.054,
+      "note": "Removes astrophysical tuning for first stars"
+    }
+  ],
+  "accuracyTarget": 0.001,
+  "metadata": {
+    "note": "Removes astrophysical tuning for first stars"
+  }
+}

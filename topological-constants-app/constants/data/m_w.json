@@ -1,0 +1,23 @@
+{
+  "id": "m_w",
+  "symbol": "M_W",
+  "name": "W Boson Mass",
+  "description": "W boson mass from electroweak theory: M_W = g₂ × v_H / 2",
+  "unit": "GeV",
+  "formula": "M_W = g₂ * v_H / 2",
+  "dependencies": ["g_2", "v_h"],
+  "category": "derived",
+  "sources": [
+    {
+      "name": "PDG 2024",
+      "year": 2024,
+      "value": 80.379,
+      "uncertainty": 0.012,
+      "url": "https://pdg.lbl.gov/"
+    }
+  ],
+  "accuracyTarget": 0.001,
+  "metadata": {
+    "note": "Charged weak gauge boson"
+  }
+} 

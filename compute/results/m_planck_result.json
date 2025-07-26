@@ -1,0 +1,10 @@
+{
+  "id": "m_planck",
+  "symbol": "M_Pl",
+  "calculated_value": 1.22091e+19,
+  "reference_value": 1.22091e+19,
+  "relative_error": 0.0,
+  "unit": "GeV",
+  "formula": "M_Pl = sqrt(\u0127c/G) = 1.22091e19 GeV",
+  "accuracy_met": true
+}

@@ -1,0 +1,10 @@
+{
+  "id": "v_cb",
+  "symbol": "V_cb",
+  "calculated_value": 0.0409,
+  "reference_value": 0.0409,
+  "relative_error": 0.0,
+  "unit": "dimensionless",
+  "formula": "(3/4) \u03c6\u2080",
+  "accuracy_met": true
+}

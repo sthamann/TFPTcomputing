@@ -1,0 +1,25 @@
+{
+  "id": "y_e",
+  "symbol": "y_e",
+  "name": "Electron Yukawa",
+  "description": "Electron Yukawa coupling",
+  "unit": "dimensionless",
+  "formula": "y_e = \u03b1 \u03c6\u2080\u2075",
+  "dependencies": [
+    "alpha",
+    "phi_0"
+  ],
+  "category": "yukawa",
+  "sources": [
+    {
+      "name": "Topological Fixed Point Theory",
+      "year": 2025,
+      "value": 2.94e-06,
+      "note": "Shows light lepton masses fall out naturally"
+    }
+  ],
+  "accuracyTarget": 0.001,
+  "metadata": {
+    "note": "Shows light lepton masses fall out naturally"
+  }
+}

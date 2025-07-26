@@ -1,0 +1,23 @@
+{
+  "id": "m_c",
+  "symbol": "m_c",
+  "name": "Charm Quark Mass",
+  "description": "Charm MS-bar mass from 16-step cascade: m_c = M_Pl × φ₀¹⁶ / c₃",
+  "unit": "GeV",
+  "formula": "m_c = M_Pl * φ₀^16 / c₃",
+  "dependencies": ["m_planck", "phi_0", "c_3"],
+  "category": "derived",
+  "sources": [
+    {
+      "name": "PDG 2024 (MS-bar, 2 GeV)",
+      "year": 2024,
+      "value": 1.27,
+      "uncertainty": 0.02,
+      "url": "https://pdg.lbl.gov/"
+    }
+  ],
+  "accuracyTarget": 0.02,
+  "metadata": {
+    "note": "MS-bar mass at 2 GeV scale"
+  }
+} 

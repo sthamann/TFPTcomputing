@@ -1,0 +1,25 @@
+{
+  "id": "z_0",
+  "symbol": "Z\u2080",
+  "name": "Vacuum impedance",
+  "description": "Impedance of free space",
+  "unit": "\u03a9",
+  "formula": "Z\u2080 = \u0127/(q_Pl\u00b2 \u03b1)",
+  "dependencies": [
+    "q_pl",
+    "alpha"
+  ],
+  "category": "electromagnetic",
+  "sources": [
+    {
+      "name": "Topological Fixed Point Theory",
+      "year": 2025,
+      "value": 376.73,
+      "note": "Completes electrodynamics constant set"
+    }
+  ],
+  "accuracyTarget": 0.001,
+  "metadata": {
+    "note": "Completes electrodynamics constant set"
+  }
+}

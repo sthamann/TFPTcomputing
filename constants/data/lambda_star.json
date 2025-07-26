@@ -1,0 +1,24 @@
+{
+  "id": "lambda_star",
+  "symbol": "\u03bb\u2605",
+  "name": "Cascade-horizon length",
+  "description": "Minimal causal distance after unwrapping 6-D fibre",
+  "unit": "m",
+  "formula": "\u03bb\u2605 = \u221a(\u0127 G)/\u03c6\u2080\u00b2",
+  "dependencies": [
+    "phi_0"
+  ],
+  "category": "quantum_gravity",
+  "sources": [
+    {
+      "name": "Topological Fixed Point Theory",
+      "year": 2025,
+      "value": 3e-20,
+      "note": "Minimal causal distance in quantum gravity"
+    }
+  ],
+  "accuracyTarget": 0.001,
+  "metadata": {
+    "note": "Minimal causal distance in quantum gravity"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "id": "tau_tau",
+  "symbol": "\u03c4_\u03c4",
+  "name": "Tau Lifetime",
+  "description": "Tau lifetime in femtoseconds",
+  "unit": "fs",
+  "formula": "\u0127_GeVs / ((G_F\u00b2 (m_\u03c4/10\u00b3)\u2075) / (192 \u03c0\u00b3) \u00d7 (LEPTONIC + HADRONIC)) \u00d7 10\u00b9\u2075",
+  "dependencies": [
+    "g_f"
+  ],
+  "category": "lepton",
+  "sources": [
+    {
+      "name": "Topological Fixed Point Theory",
+      "year": 2025,
+      "value": 290.3,
+      "note": "From comprehensive constant list"
+    }
+  ],
+  "accuracyTarget": 0.001,
+  "metadata": {
+    "note": "Part of the complete 43 cascade-born constants"
+  }
+}

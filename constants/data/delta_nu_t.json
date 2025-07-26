@@ -1,0 +1,25 @@
+{
+  "id": "delta_nu_t",
+  "symbol": "\u0394_\u03bdt",
+  "name": "Neutrino-top split",
+  "description": "Neutrino-top mass squared difference",
+  "unit": "eV\u00b2",
+  "formula": "\u0394_\u03bdt = \u03b2_X y_t\u00b2",
+  "dependencies": [
+    "beta_x",
+    "y_t"
+  ],
+  "category": "neutrino",
+  "sources": [
+    {
+      "name": "Topological Fixed Point Theory",
+      "year": 2025,
+      "value": 0.004,
+      "note": "Fixes normal mass hierarchy"
+    }
+  ],
+  "accuracyTarget": 0.001,
+  "metadata": {
+    "note": "Fixes normal mass hierarchy"
+  }
+}

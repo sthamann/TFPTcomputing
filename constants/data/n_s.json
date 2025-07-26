@@ -1,0 +1,25 @@
+{
+  "id": "n_s",
+  "symbol": "n_s",
+  "name": "Scalar spectral index",
+  "description": "Primordial scalar spectral index",
+  "unit": "dimensionless",
+  "formula": "n_s = 1 \u2013 6 \u03b5 + 2 \u03b7 with \u03b5 = \u03c6\u2080 c\u2083/4, \u03b7 = \u2013\u03c6\u2080/2",
+  "dependencies": [
+    "phi_0",
+    "c_3"
+  ],
+  "category": "cosmology",
+  "sources": [
+    {
+      "name": "Topological Fixed Point Theory",
+      "year": 2025,
+      "value": 0.967,
+      "note": "Inflation tilt from cascade, not potential sculpting"
+    }
+  ],
+  "accuracyTarget": 0.001,
+  "metadata": {
+    "note": "Inflation tilt from cascade, not potential sculpting"
+  }
+}

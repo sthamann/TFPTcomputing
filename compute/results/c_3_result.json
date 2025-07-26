@@ -1,0 +1,10 @@
+{
+  "id": "c_3",
+  "symbol": "c\u2083",
+  "calculated_value": 0.039788735772973836,
+  "reference_value": 0.039788735772973836,
+  "relative_error": 0.0,
+  "unit": "dimensionless",
+  "formula": "c\u2083 = 1 / (8 * \u03c0)",
+  "accuracy_met": true
+}

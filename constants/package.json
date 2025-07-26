@@ -1,0 +1,17 @@
+{
+  "name": "@topological/constants",
+  "version": "1.0.0",
+  "description": "Physics constants catalog",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "validate": "node scripts/validate.js",
+    "generate-notebooks": "python scripts/generate_notebooks.py"
+  },
+  "dependencies": {
+    "zod": "^3.22.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.0"
+  }
+} 

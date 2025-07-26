@@ -1,0 +1,25 @@
+{
+  "id": "m_w",
+  "symbol": "M_W",
+  "name": "W Boson Mass",
+  "description": "W boson mass",
+  "unit": "GeV",
+  "formula": "G2_COUPLING V_H / 2",
+  "dependencies": [
+    "v_h",
+    "g_2"
+  ],
+  "category": "gauge_boson",
+  "sources": [
+    {
+      "name": "Topological Fixed Point Theory",
+      "year": 2025,
+      "value": 80.38,
+      "note": "From comprehensive constant list"
+    }
+  ],
+  "accuracyTarget": 0.001,
+  "metadata": {
+    "note": "Part of the complete 43 cascade-born constants"
+  }
+}

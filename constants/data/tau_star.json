@@ -1,0 +1,26 @@
+{
+  "id": "tau_star",
+  "symbol": "\u03c4\u2605",
+  "name": "Planck-kink time",
+  "description": "Minimal coherent tick, drives early-BBN fixes",
+  "unit": "s",
+  "formula": "\u03c4\u2605 = \u03c6\u2080\u00b3 \u0127/(4\u03c0 c\u2083 M_Pl)",
+  "dependencies": [
+    "phi_0",
+    "c_3",
+    "m_planck"
+  ],
+  "category": "quantum_gravity",
+  "sources": [
+    {
+      "name": "Topological Fixed Point Theory",
+      "year": 2025,
+      "value": 1.6e-47,
+      "note": "Minimal coherent tick in quantum gravity"
+    }
+  ],
+  "accuracyTarget": 0.001,
+  "metadata": {
+    "note": "Minimal coherent tick in quantum gravity"
+  }
+}

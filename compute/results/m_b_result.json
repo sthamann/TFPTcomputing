@@ -1,0 +1,10 @@
+{
+  "id": "m_b",
+  "symbol": "m_b",
+  "calculated_value": 4.698140547872876,
+  "reference_value": 4.18,
+  "relative_error": 0.12395706886910926,
+  "unit": "GeV",
+  "formula": "M_PLANCK_GEV \u03c6\u2080\u00b9\u2075 / \u221ac\u2083",
+  "accuracy_met": false
+}

@@ -1,0 +1,25 @@
+{
+  "id": "m_p",
+  "symbol": "m_p",
+  "name": "Proton Mass",
+  "description": "Proton mass in MeV",
+  "unit": "MeV",
+  "formula": "M_PLANCK_GEV \u03c6\u2080\u00b9\u2075 \u00d7 10\u00b3",
+  "dependencies": [
+    "phi_0",
+    "m_planck"
+  ],
+  "category": "baryon",
+  "sources": [
+    {
+      "name": "Topological Fixed Point Theory",
+      "year": 2025,
+      "value": 938.3,
+      "note": "From comprehensive constant list"
+    }
+  ],
+  "accuracyTarget": 0.001,
+  "metadata": {
+    "note": "Part of the complete 43 cascade-born constants"
+  }
+}

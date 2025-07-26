@@ -1,0 +1,23 @@
+{
+  "id": "m_nu",
+  "symbol": "m_ν",
+  "name": "Light Neutrino Mass",
+  "description": "Lightest neutrino eigenstate mass from Type-I seesaw with Yukawa coupling",
+  "unit": "eV",
+  "formula": "m_ν = Y² × v_H² / (φ_5 × M_Pl), where Y = 0.8, φ_5 = φ_0 × exp(-Σ γ(k) for k=0 to 4)",
+  "dependencies": ["v_h", "phi_0", "m_planck", "gamma_function"],
+  "category": "derived",
+  "sources": [
+    {
+      "name": "Theoretical prediction",
+      "year": 2025,
+      "value": 0.00134,
+      "uncertainty": 0.0005,
+      "note": "With effective Yukawa Y=0.8, consistent with Planck bound Σm_ν < 0.12 eV"
+    }
+  ],
+  "accuracyTarget": 0.5,
+  "metadata": {
+    "note": "Default cascade level n=5, effective Yukawa Y=0.8"
+  }
+} 

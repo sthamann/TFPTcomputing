@@ -1,0 +1,23 @@
+{
+  "id": "alpha_g",
+  "symbol": "α_G",
+  "name": "Gravitational Coupling",
+  "description": "Gravitational fine structure constant: α_G = G m_p² / (ħc)",
+  "unit": "dimensionless",
+  "formula": "α_G = (m_p / M_Pl)^2",
+  "dependencies": ["m_p", "m_planck"],
+  "category": "derived",
+  "sources": [
+    {
+      "name": "CODATA 2022",
+      "year": 2022,
+      "value": 5.9e-39,
+      "uncertainty": 1e-40,
+      "url": "https://physics.nist.gov/"
+    }
+  ],
+  "accuracyTarget": 0.1,
+  "metadata": {
+    "note": "Extremely weak coupling; ratio of proton mass to Planck mass squared"
+  }
+} 

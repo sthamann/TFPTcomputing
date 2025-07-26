@@ -1,0 +1,21 @@
+{
+  "id": "g_2",
+  "symbol": "g₂",
+  "name": "SU(2) Gauge Coupling",
+  "description": "SU(2)_L gauge coupling at electroweak scale: g₂ = √(4πα) / sin(θ_W)",
+  "unit": "dimensionless",
+  "formula": "g₂ = sqrt(4 * pi * α) / sqrt(sin²θ_W)",
+  "dependencies": ["alpha", "sin2_theta_w"],
+  "category": "derived",
+  "sources": [
+    {
+      "name": "Electroweak Theory",
+      "year": 2025,
+      "value": 0.6536
+    }
+  ],
+  "accuracyTarget": 0.001,
+  "metadata": {
+    "note": "Weak isospin gauge coupling"
+  }
+} 

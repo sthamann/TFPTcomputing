@@ -1,0 +1,25 @@
+{
+  "id": "m_mu",
+  "symbol": "m_\u03bc",
+  "name": "Muon Mass",
+  "description": "Muon mass in MeV",
+  "unit": "MeV",
+  "formula": "(V_H / \u221a2) \u03c6\u2080^2.5 \u00d7 10\u00b3",
+  "dependencies": [
+    "v_h",
+    "phi_0"
+  ],
+  "category": "lepton",
+  "sources": [
+    {
+      "name": "Topological Fixed Point Theory",
+      "year": 2025,
+      "value": 105.7,
+      "note": "From comprehensive constant list"
+    }
+  ],
+  "accuracyTarget": 0.001,
+  "metadata": {
+    "note": "Part of the complete 43 cascade-born constants"
+  }
+}

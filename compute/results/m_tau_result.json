@@ -1,0 +1,10 @@
+{
+  "id": "m_tau",
+  "symbol": "m_\u03c4",
+  "calculated_value": 1778.705496565749,
+  "reference_value": 1.777,
+  "relative_error": 999.9597617139837,
+  "unit": "GeV",
+  "formula": "(V_H / \u221a2) E8_FACTOR \u03c6\u2080^1.5",
+  "accuracy_met": false
+}

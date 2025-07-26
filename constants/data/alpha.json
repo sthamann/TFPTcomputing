@@ -1,0 +1,25 @@
+{
+  "id": "alpha",
+  "symbol": "\u03b1",
+  "name": "Fine-Structure Constant",
+  "description": "Solve cubic equation with A = 1/(256\u03c0\u00b3), \u03ba = (41/20\u03c0)ln(1/\u03c6\u2080)",
+  "unit": "dimensionless",
+  "formula": "solveCubic(1, -A, 0, -A c\u2083\u00b2 \u03ba)",
+  "dependencies": [
+    "phi_0",
+    "c_3"
+  ],
+  "category": "fundamental",
+  "sources": [
+    {
+      "name": "Topological Fixed Point Theory",
+      "year": 2025,
+      "value": 0.007297,
+      "note": "From comprehensive constant list"
+    }
+  ],
+  "accuracyTarget": 0.001,
+  "metadata": {
+    "note": "Part of the complete 43 cascade-born constants"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "id": "c_tfp",
+  "symbol": "c_TFP",
+  "name": "Speed of light derived",
+  "description": "Speed of light as output, not axiom",
+  "unit": "m/s",
+  "formula": "c_TFP = \u03bb\u2605/\u03c4\u2605 = 4\u03c0M_Pl\u221a(\u0127/G)/\u03c6\u2080\u2075",
+  "dependencies": [
+    "lambda_star",
+    "tau_star",
+    "m_planck",
+    "phi_0"
+  ],
+  "category": "fundamental",
+  "sources": [
+    {
+      "name": "Topological Fixed Point Theory",
+      "year": 2025,
+      "value": 299790000.0,
+      "note": "Shows c is an output, not an axiom"
+    }
+  ],
+  "accuracyTarget": 0.001,
+  "metadata": {
+    "note": "Shows c is an output, not an axiom"
+  }
+}

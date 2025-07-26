@@ -1,0 +1,10 @@
+{
+  "id": "m_c",
+  "symbol": "m_c",
+  "calculated_value": 1.2523357054037214,
+  "reference_value": 1.27,
+  "relative_error": 0.013908893382896541,
+  "unit": "GeV",
+  "formula": "M_Pl \u03c6\u2080\u00b9\u2076 / c\u2083",
+  "accuracy_met": false
+}

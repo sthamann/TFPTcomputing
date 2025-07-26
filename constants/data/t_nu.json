@@ -1,0 +1,24 @@
+{
+  "id": "t_nu",
+  "symbol": "T_\u03bd",
+  "name": "CNB Temperature",
+  "description": "CNB temperature",
+  "unit": "K",
+  "formula": "T_PLANCK_K \u03c6\u2080\u00b2\u2075",
+  "dependencies": [
+    "phi_0"
+  ],
+  "category": "cosmology",
+  "sources": [
+    {
+      "name": "Topological Fixed Point Theory",
+      "year": 2025,
+      "value": 1.95,
+      "note": "From comprehensive constant list"
+    }
+  ],
+  "accuracyTarget": 0.001,
+  "metadata": {
+    "note": "Part of the complete 43 cascade-born constants"
+  }
+}

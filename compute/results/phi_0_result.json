@@ -1,0 +1,10 @@
+{
+  "id": "phi_0",
+  "symbol": "\u03c6\u2080",
+  "calculated_value": 0.053171,
+  "reference_value": 0.053171,
+  "relative_error": 0.0,
+  "unit": "dimensionless",
+  "formula": "\u03c6\u2080 = 0.053171 (from cubic equation self-consistency)",
+  "accuracy_met": true
+}

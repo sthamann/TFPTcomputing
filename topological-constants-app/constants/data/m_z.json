@@ -1,0 +1,23 @@
+{
+  "id": "m_z",
+  "symbol": "M_Z",
+  "name": "Z Boson Mass",
+  "description": "Z boson mass from electroweak theory: M_Z = v_H × √(g₁² + g₂²) / 2",
+  "unit": "GeV",
+  "formula": "M_Z = v_H * sqrt(g₁^2 + g₂^2) / 2",
+  "dependencies": ["g_1", "g_2", "v_h"],
+  "category": "derived",
+  "sources": [
+    {
+      "name": "PDG 2024",
+      "year": 2024,
+      "value": 91.1876,
+      "uncertainty": 0.0021,
+      "url": "https://pdg.lbl.gov/"
+    }
+  ],
+  "accuracyTarget": 0.001,
+  "metadata": {
+    "note": "Neutral weak gauge boson"
+  }
+} 

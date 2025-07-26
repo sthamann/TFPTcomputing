@@ -1,0 +1,25 @@
+{
+  "id": "gamma_i",
+  "symbol": "\u03b3_I",
+  "name": "Immirzi parameter (LQG)",
+  "description": "Loop quantum gravity Immirzi parameter",
+  "unit": "dimensionless",
+  "formula": "\u03b3_I = \u03c0 c\u2083/\u03c6\u2080",
+  "dependencies": [
+    "c_3",
+    "phi_0"
+  ],
+  "category": "quantum_gravity",
+  "sources": [
+    {
+      "name": "Topological Fixed Point Theory",
+      "year": 2025,
+      "value": 2.35,
+      "note": "Turns a free LQG constant into a prediction"
+    }
+  ],
+  "accuracyTarget": 0.001,
+  "metadata": {
+    "note": "Turns a free LQG constant into a prediction"
+  }
+}

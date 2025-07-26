@@ -1,0 +1,24 @@
+{
+  "id": "m_p",
+  "symbol": "m_p",
+  "name": "Proton Mass",
+  "description": "Proton rest mass from QCD confinement: m_p = M_Pl × φ₀¹⁵",
+  "unit": "MeV",
+  "formula": "m_p = M_Pl * φ₀^15 * 1000",
+  "dependencies": ["m_planck", "phi_0"],
+  "category": "derived",
+  "sources": [
+    {
+      "name": "CODATA 2022",
+      "year": 2022,
+      "value": 938.27208816,
+      "uncertainty": 0.00000029,
+      "url": "https://physics.nist.gov/cgi-bin/cuu/Value?mp"
+    }
+  ],
+  "accuracyTarget": 0.001,
+  "metadata": {
+    "codataId": "mp",
+    "note": "QCD confinement scale"
+  }
+} 

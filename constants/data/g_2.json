@@ -1,0 +1,21 @@
+{
+  "id": "g_2",
+  "symbol": "g₂",
+  "name": "SU(2) Gauge Coupling",
+  "description": "SU(2)_L gauge coupling at M_Z with 2-loop RG evolution",
+  "unit": "dimensionless",
+  "formula": "g₂(M_Z) = √(4πα)/√(sin²θ_W) × (1 + g₂²b₀ln(μ/M_Z)/(8π²) + g₂⁴b₁ln(μ/M_Z)/(128π⁴)), b₀=-19/6, b₁=-35/6, μ=2TeV",
+  "dependencies": ["alpha", "sin2_theta_w"],
+  "category": "derived",
+  "sources": [
+    {
+      "name": "Electroweak Theory",
+      "year": 2025,
+      "value": 0.6536
+    }
+  ],
+  "accuracyTarget": 0.001,
+  "metadata": {
+    "note": "Weak isospin gauge coupling with 2-loop RG evolution from 2 TeV to M_Z"
+  }
+} 

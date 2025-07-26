@@ -1,0 +1,25 @@
+{
+  "id": "rho_lambda",
+  "symbol": "\u03c1_\u039b",
+  "name": "Vacuum energy density",
+  "description": "Dark energy density solving cosmological constant problem",
+  "unit": "GeV\u2074",
+  "formula": "\u03c1_\u039b = M_Pl\u2074 \u03c6\u2080\u2079\u2077",
+  "dependencies": [
+    "m_planck",
+    "phi_0"
+  ],
+  "category": "cosmology",
+  "sources": [
+    {
+      "name": "Topological Fixed Point Theory",
+      "year": 2025,
+      "value": 5e-48,
+      "note": "Kills 120-orders cosmological constant problem"
+    }
+  ],
+  "accuracyTarget": 0.001,
+  "metadata": {
+    "note": "Kills 120-orders cosmological constant problem"
+  }
+}

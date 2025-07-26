@@ -1,0 +1,24 @@
+{
+  "id": "t_gamma_0",
+  "symbol": "T_\u03b30",
+  "name": "CMB Temperature",
+  "description": "CMB temperature",
+  "unit": "K",
+  "formula": "T_PLANCK \u03c6\u2080\u00b2\u2075 \u00d7 REHEAT_FACTOR",
+  "dependencies": [
+    "phi_0"
+  ],
+  "category": "cosmology",
+  "sources": [
+    {
+      "name": "Topological Fixed Point Theory",
+      "year": 2025,
+      "value": 2.725,
+      "note": "From comprehensive constant list"
+    }
+  ],
+  "accuracyTarget": 0.001,
+  "metadata": {
+    "note": "Part of the complete 43 cascade-born constants"
+  }
+}

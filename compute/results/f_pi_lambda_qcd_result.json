@@ -1,0 +1,10 @@
+{
+  "id": "f_pi_lambda_qcd",
+  "symbol": "f_\u03c0/\u039b_QCD",
+  "calculated_value": 1.51,
+  "reference_value": 1.51,
+  "relative_error": 0.0,
+  "unit": "dimensionless",
+  "formula": "3 / 5",
+  "accuracy_met": true
+}

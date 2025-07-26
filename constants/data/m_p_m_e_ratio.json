@@ -1,0 +1,25 @@
+{
+  "id": "m_p_m_e_ratio",
+  "symbol": "m_p/m_e",
+  "name": "Proton/Electron Mass Ratio",
+  "description": "Proton/Electron Mass Ratio",
+  "unit": "dimensionless",
+  "formula": "m_p / m_e",
+  "dependencies": [
+    "m_p",
+    "m_e"
+  ],
+  "category": "fundamental",
+  "sources": [
+    {
+      "name": "Topological Fixed Point Theory",
+      "year": 2025,
+      "value": 1836,
+      "note": "From comprehensive constant list"
+    }
+  ],
+  "accuracyTarget": 0.001,
+  "metadata": {
+    "note": "Part of the complete 43 cascade-born constants"
+  }
+}

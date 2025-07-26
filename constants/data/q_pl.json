@@ -1,0 +1,24 @@
+{
+  "id": "q_pl",
+  "symbol": "q_Pl",
+  "name": "Planck charge (cascade)",
+  "description": "Fundamental charge unit from cascade",
+  "unit": "C",
+  "formula": "q_Pl = \u221a(4\u03c0 \u03b5\u2080 \u0127 c_TFP)",
+  "dependencies": [
+    "c_tfp"
+  ],
+  "category": "fundamental",
+  "sources": [
+    {
+      "name": "Topological Fixed Point Theory",
+      "year": 2025,
+      "value": 1.88e-18,
+      "note": "Locks electromagnetic unit once c is fixed"
+    }
+  ],
+  "accuracyTarget": 0.001,
+  "metadata": {
+    "note": "Locks electromagnetic unit once c is fixed"
+  }
+}

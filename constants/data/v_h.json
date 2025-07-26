@@ -1,0 +1,26 @@
+{
+  "id": "v_h",
+  "symbol": "v_H",
+  "name": "Higgs Vacuum Expectation Value",
+  "description": "Higgs VEV",
+  "unit": "GeV",
+  "formula": "c\u2083 M_PLANCK_GEV \u03c6\u2080\u00b9\u00b2",
+  "dependencies": [
+    "phi_0",
+    "m_planck",
+    "c_3"
+  ],
+  "category": "higgs",
+  "sources": [
+    {
+      "name": "Topological Fixed Point Theory",
+      "year": 2025,
+      "value": 246.2,
+      "note": "From comprehensive constant list"
+    }
+  ],
+  "accuracyTarget": 0.001,
+  "metadata": {
+    "note": "Part of the complete 43 cascade-born constants"
+  }
+}

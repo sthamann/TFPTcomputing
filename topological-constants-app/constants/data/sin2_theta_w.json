@@ -1,0 +1,23 @@
+{
+  "id": "sin2_theta_w",
+  "symbol": "sin²θ_W",
+  "name": "Weinberg Angle",
+  "description": "Electroweak mixing angle from topology: sin²θ_W = √φ₀",
+  "unit": "dimensionless",
+  "formula": "sin²θ_W = sqrt(φ₀)",
+  "dependencies": ["phi_0"],
+  "category": "derived",
+  "sources": [
+    {
+      "name": "PDG 2024 (at M_Z)",
+      "year": 2024,
+      "value": 0.23126,
+      "uncertainty": 0.00005,
+      "url": "https://pdg.lbl.gov/"
+    }
+  ],
+  "accuracyTarget": 0.01,
+  "metadata": {
+    "note": "Fundamental relation from 6D gravitational mixing"
+  }
+} 

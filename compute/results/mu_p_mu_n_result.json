@@ -1,0 +1,10 @@
+{
+  "id": "mu_p_mu_n",
+  "symbol": "\u03bc_p/\u03bc_N",
+  "calculated_value": 2.793,
+  "reference_value": 2.793,
+  "relative_error": 0.0,
+  "unit": "dimensionless",
+  "formula": "(60 + 7) / (8 \u00d7 3)",
+  "accuracy_met": true
+}

@@ -1,0 +1,26 @@
+{
+  "id": "m_c",
+  "symbol": "m_c",
+  "name": "Charm Quark Mass",
+  "description": "Charm quark mass",
+  "unit": "GeV",
+  "formula": "M_Pl \u03c6\u2080\u00b9\u2076 / c\u2083",
+  "dependencies": [
+    "phi_0",
+    "m_planck",
+    "c_3"
+  ],
+  "category": "quark",
+  "sources": [
+    {
+      "name": "Topological Fixed Point Theory",
+      "year": 2025,
+      "value": 1.27,
+      "note": "From comprehensive constant list"
+    }
+  ],
+  "accuracyTarget": 0.001,
+  "metadata": {
+    "note": "Part of the complete 43 cascade-born constants"
+  }
+}

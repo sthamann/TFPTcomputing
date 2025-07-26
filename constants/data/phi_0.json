@@ -1,0 +1,22 @@
+{
+  "id": "phi_0",
+  "symbol": "φ₀",
+  "name": "Fundamental VEV",
+  "description": "The fundamental vacuum expectation value from the RG fixed point self-consistency condition",
+  "unit": "dimensionless",
+  "formula": "φ₀ = 0.053171 (from cubic equation self-consistency)",
+  "dependencies": [],
+  "category": "fundamental",
+  "sources": [
+    {
+      "name": "Topological Fixed Point Theory",
+      "year": 2025,
+      "value": 0.053171,
+      "note": "From self-consistency: φ₀ → κ → α → φ₀"
+    }
+  ],
+  "accuracyTarget": 1e-6,
+  "metadata": {
+    "note": "This is the key parameter from which all mass scales derive"
+  }
+} 

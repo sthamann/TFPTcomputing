@@ -1,0 +1,24 @@
+{
+  "id": "g_f",
+  "symbol": "G_F",
+  "name": "Fermi Constant",
+  "description": "Fermi constant",
+  "unit": "GeV\u207b\u00b2",
+  "formula": "1 / (\u221a2 V_H\u00b2)",
+  "dependencies": [
+    "v_h"
+  ],
+  "category": "weak",
+  "sources": [
+    {
+      "name": "Topological Fixed Point Theory",
+      "year": 2025,
+      "value": 1.166e-05,
+      "note": "From comprehensive constant list"
+    }
+  ],
+  "accuracyTarget": 0.001,
+  "metadata": {
+    "note": "Part of the complete 43 cascade-born constants"
+  }
+}

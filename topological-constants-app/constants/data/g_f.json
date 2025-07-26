@@ -1,0 +1,23 @@
+{
+  "id": "g_f",
+  "symbol": "G_F",
+  "name": "Fermi Constant",
+  "description": "Fermi constant from weak coupling: G_F = 1 / (√2 × v_H²)",
+  "unit": "GeV^-2",
+  "formula": "G_F = 1 / (sqrt(2) * v_H^2)",
+  "dependencies": ["v_h"],
+  "category": "derived",
+  "sources": [
+    {
+      "name": "PDG 2024",
+      "year": 2024,
+      "value": 1.1663787e-5,
+      "uncertainty": 6e-12,
+      "url": "https://pdg.lbl.gov/"
+    }
+  ],
+  "accuracyTarget": 0.001,
+  "metadata": {
+    "note": "Effective four-fermion weak coupling"
+  }
+} 

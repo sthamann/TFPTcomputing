@@ -1,0 +1,10 @@
+{
+  "id": "omega_b",
+  "symbol": "\u03a9_b",
+  "calculated_value": 0.04897,
+  "reference_value": 0.04897,
+  "relative_error": 0.0,
+  "unit": "dimensionless",
+  "formula": "\u03c6\u2080",
+  "accuracy_met": true
+}

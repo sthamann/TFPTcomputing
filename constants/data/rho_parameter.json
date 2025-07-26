@@ -1,0 +1,26 @@
+{
+  "id": "rho_parameter",
+  "symbol": "\u03c1",
+  "name": "\u03c1 Parameter",
+  "description": "\u03c1 parameter",
+  "unit": "dimensionless",
+  "formula": "M_W\u00b2 / (M_Z\u00b2 (1 - \u221a\u03c6\u2080))",
+  "dependencies": [
+    "m_w",
+    "phi_0",
+    "m_z"
+  ],
+  "category": "electroweak",
+  "sources": [
+    {
+      "name": "Topological Fixed Point Theory",
+      "year": 2025,
+      "value": 1.0,
+      "note": "From comprehensive constant list"
+    }
+  ],
+  "accuracyTarget": 0.001,
+  "metadata": {
+    "note": "Part of the complete 43 cascade-born constants"
+  }
+}

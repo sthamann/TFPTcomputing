@@ -1,0 +1,24 @@
+{
+  "id": "w_de",
+  "symbol": "w_DE",
+  "name": "Dark-energy EoS",
+  "description": "Dark energy equation of state parameter",
+  "unit": "dimensionless",
+  "formula": "w_DE = \u20131 + \u03c6\u2080\u00b2/6",
+  "dependencies": [
+    "phi_0"
+  ],
+  "category": "cosmology",
+  "sources": [
+    {
+      "name": "Topological Fixed Point Theory",
+      "year": 2025,
+      "value": -0.9953,
+      "note": "Predicts slight phantom-side drift testable by Euclid"
+    }
+  ],
+  "accuracyTarget": 0.001,
+  "metadata": {
+    "note": "Predicts slight phantom-side drift testable by Euclid"
+  }
+}

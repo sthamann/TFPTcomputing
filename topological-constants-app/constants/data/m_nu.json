@@ -1,0 +1,23 @@
+{
+  "id": "m_nu",
+  "symbol": "m_ν",
+  "name": "Light Neutrino Mass",
+  "description": "Lightest neutrino eigenstate mass from Type-I seesaw with n=5 cascade: m_ν = v_H² / (φ_5 × M_Pl)",
+  "unit": "eV",
+  "formula": "m_ν = v_H^2 / (φ_5 * M_Pl), where φ_5 = φ_0 * exp(-Σ γ(k) for k=0 to 4)",
+  "dependencies": ["v_h", "phi_0", "m_planck", "gamma_function"],
+  "category": "derived",
+  "sources": [
+    {
+      "name": "KATRIN/Project 8 upper bound",
+      "year": 2024,
+      "value": 0,
+      "uncertainty": 0.8,
+      "note": "Consistent with m_β < 0.8 eV @ 90% CL"
+    }
+  ],
+  "accuracyTarget": 0.1,
+  "metadata": {
+    "note": "Default cascade level n=5, effective Yukawa y_eff=1"
+  }
+} 

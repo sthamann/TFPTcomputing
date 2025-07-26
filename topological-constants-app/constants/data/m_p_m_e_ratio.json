@@ -1,0 +1,23 @@
+{
+  "id": "m_p_m_e_ratio",
+  "symbol": "m_p/m_e",
+  "name": "Proton/Electron Mass Ratio",
+  "description": "Direct mass ratio: m_p/m_e",
+  "unit": "dimensionless",
+  "formula": "m_p/m_e = m_p / m_e",
+  "dependencies": ["m_p", "m_e"],
+  "category": "derived",
+  "sources": [
+    {
+      "name": "CODATA 2022",
+      "year": 2022,
+      "value": 1836.15267343,
+      "uncertainty": 1.1e-7,
+      "url": "https://physics.nist.gov/cgi-bin/cuu/Value?mpsme"
+    }
+  ],
+  "accuracyTarget": 0.001,
+  "metadata": {
+    "codataId": "mpsme"
+  }
+} 

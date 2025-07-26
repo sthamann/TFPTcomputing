@@ -1,0 +1,22 @@
+{
+  "id": "beta_x",
+  "symbol": "β_X",
+  "name": "Dark-photon coupling",
+  "description": "Dark-photon coupling strength from next Möbius edge",
+  "unit": "dimensionless",
+  "formula": "β_X = φ₀²/(2c₃)",
+  "dependencies": ["phi_0", "c_3"],
+  "category": "dark_sector",
+  "sources": [
+    {
+      "name": "Topological Fixed Point Theory",
+      "year": 2025,
+      "value": 0.0355,
+      "note": "Sets milli-charged dark-sector strength"
+    }
+  ],
+  "accuracyTarget": 1e-4,
+  "metadata": {
+    "note": "Derived from next Möbius edge topology"
+  }
+} 

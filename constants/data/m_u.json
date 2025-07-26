@@ -1,0 +1,26 @@
+{
+  "id": "m_u",
+  "symbol": "m_u",
+  "name": "Up Quark Mass",
+  "description": "Up quark mass with RG running",
+  "unit": "MeV",
+  "formula": "M_PLANCK_GEV \u03c6\u2080\u00b9\u2077 \u00d7 RG_FACTOR \u00d7 10\u00b3",
+  "dependencies": [
+    "phi_0",
+    "g_f",
+    "m_planck"
+  ],
+  "category": "quark",
+  "sources": [
+    {
+      "name": "Topological Fixed Point Theory",
+      "year": 2025,
+      "value": 2.16,
+      "note": "From comprehensive constant list"
+    }
+  ],
+  "accuracyTarget": 0.001,
+  "metadata": {
+    "note": "Part of the complete 43 cascade-born constants"
+  }
+}

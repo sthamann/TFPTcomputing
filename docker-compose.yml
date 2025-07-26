@@ -1,0 +1,60 @@
+services:
+  # Python Compute Service
+  python:
+    build:
+      context: ./compute
+      dockerfile: Dockerfile
+    container_name: topological-compute
+    ports:
+      - "8001:8000"
+    volumes:
+      - ./compute:/app
+      - ./constants:/app/constants:ro
+      - ./compute/results:/app/constants/results
+    environment:
+      - PYTHONUNBUFFERED=1
+    networks:
+      - topological-net
+
+  # NodeJS API Gateway
+  api:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: topological-api
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./backend:/app
+      - ./constants:/app/constants:ro
+    environment:
+      - NODE_ENV=development
+      - PYTHON_SERVICE_URL=http://python:8000
+    depends_on:
+      - python
+    networks:
+      - topological-net
+
+  # React Frontend
+  web:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    container_name: topological-web
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./frontend:/app
+    environment:
+      - VITE_API_URL=http://localhost:8000
+    depends_on:
+      - api
+    networks:
+      - topological-net
+
+networks:
+  topological-net:
+    driver: bridge
+
+volumes:
+  compute-cache: 

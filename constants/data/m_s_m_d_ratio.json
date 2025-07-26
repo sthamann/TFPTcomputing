@@ -1,0 +1,24 @@
+{
+  "id": "m_s_m_d_ratio",
+  "symbol": "m_s/m_d",
+  "name": "Strange/Down Mass Ratio",
+  "description": "Strange to down quark mass ratio",
+  "unit": "dimensionless",
+  "formula": "1 / \u03c6\u2080",
+  "dependencies": [
+    "phi_0"
+  ],
+  "category": "quark",
+  "sources": [
+    {
+      "name": "Topological Fixed Point Theory",
+      "year": 2025,
+      "value": 20.2,
+      "note": "From comprehensive constant list"
+    }
+  ],
+  "accuracyTarget": 0.001,
+  "metadata": {
+    "note": "Part of the complete 43 cascade-born constants"
+  }
+}

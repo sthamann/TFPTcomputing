@@ -1,0 +1,23 @@
+{
+  "id": "eta_b",
+  "symbol": "η_B",
+  "name": "Baryon Asymmetry",
+  "description": "Baryon-to-photon ratio from topological seed: η_B = 4 × c₃⁷",
+  "unit": "dimensionless",
+  "formula": "η_B = 4 * c₃^7",
+  "dependencies": ["c_3"],
+  "category": "derived",
+  "sources": [
+    {
+      "name": "Planck 2018",
+      "year": 2018,
+      "value": 6.1e-10,
+      "uncertainty": 0.04e-10,
+      "url": "https://www.cosmos.esa.int/web/planck"
+    }
+  ],
+  "accuracyTarget": 0.04,
+  "metadata": {
+    "note": "Sphaleron conversion factor g_SW = 4 counts four SU(2)_L doublet families"
+  }
+} 

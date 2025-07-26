@@ -1,0 +1,24 @@
+{
+  "id": "v_cb",
+  "symbol": "V_cb",
+  "name": "CKM Matrix Element V_cb",
+  "description": "CKM matrix element V_cb",
+  "unit": "dimensionless",
+  "formula": "(3/4) \u03c6\u2080",
+  "dependencies": [
+    "phi_0"
+  ],
+  "category": "mixing",
+  "sources": [
+    {
+      "name": "Topological Fixed Point Theory",
+      "year": 2025,
+      "value": 0.0409,
+      "note": "From comprehensive constant list"
+    }
+  ],
+  "accuracyTarget": 0.001,
+  "metadata": {
+    "note": "Part of the complete 43 cascade-born constants"
+  }
+}

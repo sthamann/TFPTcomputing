@@ -1,0 +1,10 @@
+{
+  "id": "alpha_s",
+  "symbol": "\u03b1_s",
+  "calculated_value": 0.1152941889255482,
+  "reference_value": 0.1181,
+  "relative_error": 0.023757926117288716,
+  "unit": "dimensionless",
+  "formula": "\u221a\u03c6\u2080 / 2",
+  "accuracy_met": false
+}

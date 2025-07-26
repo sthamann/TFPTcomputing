@@ -1,0 +1,22 @@
+{
+  "id": "mu_p_mu_n",
+  "symbol": "\u03bc_p/\u03bc_N",
+  "name": "Proton g-factor",
+  "description": "Proton g-factor",
+  "unit": "dimensionless",
+  "formula": "(60 + 7) / (8 \u00d7 3)",
+  "dependencies": [],
+  "category": "nuclear",
+  "sources": [
+    {
+      "name": "Topological Fixed Point Theory",
+      "year": 2025,
+      "value": 2.793,
+      "note": "From comprehensive constant list"
+    }
+  ],
+  "accuracyTarget": 0.001,
+  "metadata": {
+    "note": "Part of the complete 43 cascade-born constants"
+  }
+}

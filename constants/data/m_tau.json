@@ -1,0 +1,25 @@
+{
+  "id": "m_tau",
+  "symbol": "m_\u03c4",
+  "name": "Tau Mass",
+  "description": "Tau mass with E8 factor = 5/6",
+  "unit": "GeV",
+  "formula": "(V_H / \u221a2) E8_FACTOR \u03c6\u2080^1.5",
+  "dependencies": [
+    "v_h",
+    "phi_0"
+  ],
+  "category": "lepton",
+  "sources": [
+    {
+      "name": "Topological Fixed Point Theory",
+      "year": 2025,
+      "value": 1.777,
+      "note": "From comprehensive constant list"
+    }
+  ],
+  "accuracyTarget": 0.001,
+  "metadata": {
+    "note": "Part of the complete 43 cascade-born constants"
+  }
+}

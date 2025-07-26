@@ -1,0 +1,26 @@
+{
+  "id": "m_e",
+  "symbol": "m_e",
+  "name": "Electron Mass",
+  "description": "Electron mass in MeV",
+  "unit": "MeV",
+  "formula": "(V_H / \u221a2) \u03b1 \u03c6\u2080\u2075 \u00d7 10\u2076",
+  "dependencies": [
+    "v_h",
+    "alpha",
+    "phi_0"
+  ],
+  "category": "lepton",
+  "sources": [
+    {
+      "name": "Topological Fixed Point Theory",
+      "year": 2025,
+      "value": 0.511,
+      "note": "From comprehensive constant list"
+    }
+  ],
+  "accuracyTarget": 0.001,
+  "metadata": {
+    "note": "Part of the complete 43 cascade-born constants"
+  }
+}

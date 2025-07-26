@@ -1,0 +1,22 @@
+{
+  "id": "c_4",
+  "symbol": "c₄",
+  "name": "Secondary fixed point",
+  "description": "Secondary topological fixed point from double half-twist",
+  "unit": "dimensionless",
+  "formula": "c₄ = c₃²/φ₀",
+  "dependencies": ["c_3", "phi_0"],
+  "category": "fundamental",
+  "sources": [
+    {
+      "name": "Topological Fixed Point Theory",
+      "year": 2025,
+      "value": 0.0298,
+      "note": "Feeds threshold splittings for unification"
+    }
+  ],
+  "accuracyTarget": 1e-4,
+  "metadata": {
+    "note": "Derived from double half-twist topology"
+  }
+} 

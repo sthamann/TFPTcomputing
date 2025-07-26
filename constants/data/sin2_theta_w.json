@@ -1,0 +1,24 @@
+{
+  "id": "sin2_theta_w",
+  "symbol": "sin\u00b2\u03b8_W",
+  "name": "Weinberg Angle",
+  "description": "Weinberg angle",
+  "unit": "dimensionless",
+  "formula": "\u221a\u03c6\u2080",
+  "dependencies": [
+    "phi_0"
+  ],
+  "category": "electroweak",
+  "sources": [
+    {
+      "name": "Topological Fixed Point Theory",
+      "year": 2025,
+      "value": 0.2313,
+      "note": "From comprehensive constant list"
+    }
+  ],
+  "accuracyTarget": 0.001,
+  "metadata": {
+    "note": "Part of the complete 43 cascade-born constants"
+  }
+}

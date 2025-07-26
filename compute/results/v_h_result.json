@@ -1,0 +1,10 @@
+{
+  "id": "v_h",
+  "symbol": "v_H",
+  "calculated_value": 248.05142738673288,
+  "reference_value": 246.2,
+  "relative_error": 0.007520013756023128,
+  "unit": "GeV",
+  "formula": "c\u2083 M_PLANCK_GEV \u03c6\u2080\u00b9\u00b2",
+  "accuracy_met": false
+}

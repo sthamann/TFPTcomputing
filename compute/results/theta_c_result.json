@@ -1,0 +1,10 @@
+{
+  "id": "theta_c",
+  "symbol": "\u03b8_c",
+  "calculated_value": 0.22662713258187,
+  "reference_value": 0.2274,
+  "relative_error": 0.003398713360290174,
+  "unit": "radians",
+  "formula": "arcsin(\u221a(\u03c6\u2080 / (1 + \u03c6\u2080)))",
+  "accuracy_met": false
+}

@@ -1,0 +1,10 @@
+{
+  "id": "eta_b",
+  "symbol": "\u03b7_B",
+  "calculated_value": 6.315110782195414e-10,
+  "reference_value": 6.12e-10,
+  "relative_error": 0.03188084676395657,
+  "unit": "dimensionless",
+  "formula": "4 c\u2083\u2077",
+  "accuracy_met": false
+}

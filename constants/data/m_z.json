@@ -1,0 +1,26 @@
+{
+  "id": "m_z",
+  "symbol": "M_Z",
+  "name": "Z Boson Mass",
+  "description": "Z boson mass",
+  "unit": "GeV",
+  "formula": "V_H \u221a(G1_COUPLING\u00b2 + G2_COUPLING\u00b2) / 2",
+  "dependencies": [
+    "g_1",
+    "v_h",
+    "g_2"
+  ],
+  "category": "gauge_boson",
+  "sources": [
+    {
+      "name": "Topological Fixed Point Theory",
+      "year": 2025,
+      "value": 91.19,
+      "note": "From comprehensive constant list"
+    }
+  ],
+  "accuracyTarget": 0.001,
+  "metadata": {
+    "note": "Part of the complete 43 cascade-born constants"
+  }
+}

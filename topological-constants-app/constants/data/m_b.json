@@ -1,0 +1,23 @@
+{
+  "id": "m_b",
+  "symbol": "m_b",
+  "name": "Bottom Quark Mass",
+  "description": "Bottom MS-bar mass from 15-step cascade with half gauge mixing: m_b = M_Pl × φ₀¹⁵ / √c₃",
+  "unit": "GeV",
+  "formula": "m_b = M_Pl * φ₀^15 / sqrt(c₃)",
+  "dependencies": ["m_planck", "phi_0", "c_3"],
+  "category": "derived",
+  "sources": [
+    {
+      "name": "PDG 2024 (MS-bar, 5 GeV)",
+      "year": 2024,
+      "value": 4.18,
+      "uncertainty": 0.03,
+      "url": "https://pdg.lbl.gov/"
+    }
+  ],
+  "accuracyTarget": 0.12,
+  "metadata": {
+    "note": "≈ 12% high; RG + pole-shift expected"
+  }
+} 
