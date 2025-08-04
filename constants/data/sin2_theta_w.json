@@ -1,15 +1,22 @@
 {
   "id": "sin2_theta_w",
-  "symbol": "sin\u00b2\u03b8_W",
+  "symbol": "sin²θ_W",
   "name": "Weinberg Angle",
   "description": "Weinberg angle",
   "unit": "dimensionless",
-  "formula": "\u221a\u03c6\u2080",
+  "formula": "√φ₀",
   "dependencies": [
     "phi_0"
   ],
   "category": "electroweak",
   "sources": [
+    {
+      "name": "CODATA 2022",
+      "year": 2022,
+      "value": 0.22305,
+      "uncertainty": 0.00023,
+      "note": "Imported from codata/2022.txt"
+    },
     {
       "name": "Topological Fixed Point Theory",
       "year": 2025,

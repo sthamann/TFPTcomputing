@@ -3,18 +3,19 @@
   "symbol": "G_F",
   "name": "Fermi Constant",
   "description": "Fermi constant",
-  "unit": "GeV\u207b\u00b2",
-  "formula": "1 / (\u221a2 V_H\u00b2)",
+  "unit": "GeV⁻²",
+  "formula": "1 / (√2 v_H²)",
   "dependencies": [
     "v_h"
   ],
   "category": "weak",
   "sources": [
     {
-      "name": "Topological Fixed Point Theory",
-      "year": 2025,
-      "value": 1.166e-05,
-      "note": "From comprehensive constant list"
+      "name": "CODATA 2022",
+      "year": 2022,
+      "value": 1.1663787e-05,
+      "uncertainty": 6e-10,
+      "note": "Imported from codata/2022.txt"
     }
   ],
   "accuracyTarget": 0.001,

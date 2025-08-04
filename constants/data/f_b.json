@@ -4,7 +4,7 @@
   "name": "Cosmic baryon fraction",
   "description": "Baryon fraction of cosmic matter",
   "unit": "dimensionless",
-  "formula": "f_b = \u03b7_B / (\u03b7_B + 5 c\u2083\u2077)",
+  "formula": "f_b = η_B / (η_B + 5 c₃⁷)",
   "dependencies": [
     "eta_b",
     "c_3"

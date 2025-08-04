@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import { Toaster } from 'react-hot-toast'
 import Layout from './components/Layout'
 import ConstantsPage from './pages/ConstantsPage'
@@ -29,7 +29,7 @@ function App() {
   }, [darkMode])
 
   return (
-    <Router>
+    <BrowserRouter future={{ v7_startTransition: true, v7_relativeSplatPath: true }}>
       <Layout darkMode={darkMode} setDarkMode={setDarkMode}>
         <Routes>
           <Route path="/" element={<ConstantsPage />} />
@@ -50,7 +50,7 @@ function App() {
           },
         }}
       />
-    </Router>
+    </BrowserRouter>
   )
 }
 

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>API Test</title>
+</head>
+<body>
+    <h1>API Test</h1>
+    <button onclick="testAPI()">Test API</button>
+    <pre id="result"></pre>
+    
+    <script>
+        async function testAPI() {
+            const resultEl = document.getElementById('result');
+            resultEl.textContent = 'Testing...';
+            
+            try {
+                const response = await fetch('/api/constants');
+                const data = await response.json();
+                resultEl.textContent = 'Success! Found ' + data.length + ' constants\n' + 
+                                     JSON.stringify(data[0], null, 2);
+            } catch (error) {
+                resultEl.textContent = 'Error: ' + error.message;
+            }
+        }
+        
+        // Auto-test on load
+        window.onload = testAPI;
+    </script>
+</body>
+</html>

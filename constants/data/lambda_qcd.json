@@ -1,10 +1,10 @@
 {
   "id": "lambda_qcd",
-  "symbol": "\u039b_QCD",
+  "symbol": "Λ_QCD",
   "name": "QCD Confinement Scale",
   "description": "QCD confinement scale",
   "unit": "MeV",
-  "formula": "M_Z exp(-2\u03c0 / (BETA_0 \u03b1_S)) \u00d7 10\u00b3",
+  "formula": "M_Z * exp(-2π / (b_Y α_S)) * 1e3",
   "dependencies": [
     "m_z"
   ],

@@ -1,11 +1,13 @@
 {
   "id": "sigma_m_nu",
-  "symbol": "\u03a3m_\u03bd",
+  "symbol": "Σm_ν",
   "name": "Sum of Neutrino Masses",
   "description": "Sum of neutrino masses",
   "unit": "eV",
-  "formula": "3 \u00d7 calculateNeutrinoMass()",
-  "dependencies": [],
+  "formula": "3 * m_nu",
+  "dependencies": [
+    "m_nu"
+  ],
   "category": "neutrino",
   "sources": [
     {

@@ -1,10 +1,10 @@
 {
   "id": "gamma_i",
-  "symbol": "\u03b3_I",
+  "symbol": "γ_I",
   "name": "Immirzi parameter (LQG)",
   "description": "Loop quantum gravity Immirzi parameter",
   "unit": "dimensionless",
-  "formula": "\u03b3_I = \u03c0 c\u2083/\u03c6\u2080",
+  "formula": "γ_I = π c₃/φ₀",
   "dependencies": [
     "c_3",
     "phi_0"

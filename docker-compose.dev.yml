@@ -1,0 +1,61 @@
+services:
+  # Python Compute Service
+  python:
+    build:
+      context: ./compute
+      dockerfile: Dockerfile
+    container_name: topological-compute
+    ports:
+      - "8001:8000"
+    volumes:
+      - ./compute:/app
+      - ./constants:/app/constants:ro
+      - ./compute/results:/app/constants/results
+    environment:
+      - PYTHONUNBUFFERED=1
+    networks:
+      - topological-net
+
+  # NodeJS API Gateway
+  api:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: topological-api
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./backend:/app
+      - ./constants:/app/constants:ro
+      - ./compute/results:/app/compute/results:ro
+      - /app/node_modules  # Prevent overwriting node_modules
+    environment:
+      - NODE_ENV=development
+      - PYTHON_SERVICE_URL=http://python:8000
+    depends_on:
+      - python
+    networks:
+      - topological-net
+    command: npm run dev  # Use nodemon or similar for hot reload
+
+  # React Frontend with Vite HMR
+  web:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile.dev
+    container_name: topological-web
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./frontend:/app
+      - /app/node_modules  # Prevent overwriting node_modules
+    environment:
+      - NODE_ENV=development
+    depends_on:
+      - api
+    networks:
+      - topological-net
+
+networks:
+  topological-net:
+    driver: bridge

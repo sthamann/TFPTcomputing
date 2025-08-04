@@ -27,6 +27,10 @@ def parse_formula(formula_str):
         # Return the left side of the equation for alpha
         return 'alpha**3 - A*alpha**2 - A*c_3**2*kappa'
     
+    if 'solveCubic' in formula_str:
+        # This is for alpha - it's a cubic equation, not a direct formula
+        return 'alpha**3 - A*alpha**2 - A*c_3**2*kappa'
+    
     if 'φ₀ = 0.053171 (from cubic equation self-consistency)' in formula_str:
         # phi_0 is a fundamental constant
         return '0.053171'
@@ -56,32 +60,97 @@ def formula_to_sympy(formula):
         'φ₀': 'phi_0',
         'φ': 'phi',
         'α': 'alpha',
+        'β': 'beta',
         'π': 'pi',
         'θ_c': 'theta_c',
         'θ_W': 'theta_W',
+        'θ': 'theta',
         'κ': 'kappa',
         'η_B': 'eta_B',
+        'η': 'eta',
         'τ': 'tau',
         'μ': 'mu',
         'ν': 'nu',
         'Σ': 'Sigma',
+        'ρ': 'rho',
+        'λ': 'lambda',
+        'Λ': 'Lambda',
+        'ε': 'epsilon',
+        'δ': 'delta',
+        'Δ': 'Delta',
+        'γ': 'gamma',
+        'Γ': 'Gamma',
+        'Ω': 'Omega',
+        'ω': 'omega',
+        'σ': 'sigma',
+        'χ': 'chi',
         
         # Subscripts and special symbols  
-        '²': '2',  # Superscript 2
-        '³': '3',  # Superscript 3
+        # Multi-digit superscripts (process before single digits)
+        '³⁰': '**30',  # Superscript 30
+        '²⁹': '**29',  # Superscript 29
+        '²⁸': '**28',  # Superscript 28
+        '²⁷': '**27',  # Superscript 27
+        '²⁶': '**26',  # Superscript 26
+        '²⁵': '**25',  # Superscript 25
+        '²⁴': '**24',  # Superscript 24
+        '²³': '**23',  # Superscript 23
+        '²²': '**22',  # Superscript 22
+        '²¹': '**21',  # Superscript 21
+        '²⁰': '**20',  # Superscript 20
+        '¹⁹': '**19',  # Superscript 19
+        '¹⁸': '**18',  # Superscript 18
+        '¹⁷': '**17',  # Superscript 17
+        '¹⁶': '**16',  # Superscript 16
+        '¹⁵': '**15',  # Superscript 15
+        '¹⁴': '**14',  # Superscript 14
+        '¹³': '**13',  # Superscript 13
+        '¹²': '**12',  # Superscript 12
+        '¹¹': '**11',  # Superscript 11
+        '¹⁰': '**10',  # Superscript 10
+        '²·⁵': '**2.5',  # Special case for 2.5
+        # Single digit superscripts
+        '⁰': '**0',  # Superscript 0
+        '¹': '**1',  # Superscript 1
+        '²': '**2',  # Superscript 2
+        '³': '**3',  # Superscript 3
+        '⁴': '**4',  # Superscript 4
+        '⁵': '**5',  # Superscript 5
+        '⁶': '**6',  # Superscript 6
+        '⁷': '**7',  # Superscript 7
+        '⁸': '**8',  # Superscript 8
+        '⁹': '**9',  # Superscript 9
+        '·': '.',  # Middle dot to decimal point
         '₀': '_0', # Subscript 0
         '₁': '_1', # Subscript 1
         '₂': '_2', # Subscript 2
         '₃': '_3', # Subscript 3
+        '₄': '_4', # Subscript 4
         '₅': '_5', # Subscript 5
+        '₆': '_6', # Subscript 6
+        '₇': '_7', # Subscript 7
+        '₈': '_8', # Subscript 8
+        '₉': '_9', # Subscript 9
+        
+        # Common symbols with subscripts
         'c₃': 'c_3',
+        'c₄': 'c_4',
         'g₁': 'g_1', 
         'g₂': 'g_2',
+        'H₀': 'H_0',
+        'T₀': 'T_0',
         'm_τ': 'm_tau',
         'm_μ': 'm_mu',
         'm_ν': 'm_nu',
         'sin²θ_W': 'sin2_theta_W',
+        'sin²θ': 'sin2_theta',
         'φ_5': 'phi_5',
+        'β_X': 'beta_X',
+        'α_G': 'alpha_G',
+        'α_S': 'alpha_S',
+        'α_s': 'alpha_s',
+        'Λ_D': 'Lambda_D',
+        'χ_D': 'chi_D',
         
         # Constants with special formatting
         'M_Pl': 'M_Pl',
@@ -93,6 +162,15 @@ def formula_to_sympy(formula):
         'm_e': 'm_e',
         'm_c': 'm_c',
         'm_b': 'm_b',
+        'm_s': 'm_s',
+        'm_d': 'm_d',
+        'm_u': 'm_u',
+        'f_π': 'f_pi',
+        'Λ_QCD': 'Lambda_QCD',
+        'DISPLAY_SCALE': 'DISPLAY_SCALE',
+        'RG_FACTOR': 'RG_FACTOR',
+        'm_e_MEV': 'm_e_MEV',
+        'A': 'A',  # For alpha cubic equation
         
         # Math functions
         '√': 'sqrt',
@@ -106,16 +184,39 @@ def formula_to_sympy(formula):
         
         # Special physics symbols
         'ħ': 'hbar',
-        '∞': 'oo'
+        '∞': 'oo',
+        '±': '+-',
+        '×': '*',  # Multiplication sign
+        '×': '*'   # Times symbol
     }
     
     result = formula
     for old, new in replacements.items():
         result = result.replace(old, new)
     
-    # Handle special cases for sqrt with parentheses
+    # Handle special cases for sqrt
     import re
+    # Handle sqrt directly followed by identifier: sqrtphi_0 -> sqrt(phi_0)
+    result = re.sub(r'sqrt([a-zA-Z_][a-zA-Z0-9_]*)', r'sqrt(\1)', result)
+    # Handle sqrt followed by identifier with space: sqrt phi_0 -> sqrt(phi_0)
+    result = re.sub(r'sqrt\s+([a-zA-Z_][a-zA-Z0-9_]*)', r'sqrt(\1)', result)
+    # Handle sqrt with numbers: sqrt2 -> sqrt(2)
     result = re.sub(r'sqrt(\d+)', r'sqrt(\1)', result)
+    
+    # Add multiplication operators where needed
+    # Between number and letter: 2a -> 2*a (but not scientific notation like 1e3)
+    # Negative lookbehind for 'e' or 'E' to avoid breaking scientific notation
+    result = re.sub(r'(\d)(?!e\d|E\d)([a-zA-Z_])', r'\1*\2', result)
+    # Between closing paren and letter: )a -> )*a
+    result = re.sub(r'\)([a-zA-Z_])', r')*\1', result)
+    # Between letter and opening paren: a( -> a*(
+    result = re.sub(r'([a-zA-Z_][a-zA-Z0-9_]*)\(', r'\1*(', result)
+    # But remove the * after known functions
+    known_functions = ['sqrt', 'sin', 'cos', 'tan', 'log', 'exp', 'asin', 'acos', 'atan', 'sinh', 'cosh', 'tanh', 'abs', 'sum']
+    for func in known_functions:
+        result = result.replace(f'{func}*(', f'{func}(')
+    # Between consecutive identifiers: phi_0 c_3 -> phi_0*c_3
+    result = re.sub(r'([a-zA-Z_][a-zA-Z0-9_]*)\s+([a-zA-Z_][a-zA-Z0-9_]*)', r'\1*\2', result)
     
     return result
 
@@ -168,15 +269,57 @@ from sympy import symbols, pi, sqrt, acos, asin, atan, exp, log, sin, cos
 import pint
 import json
 from pathlib import Path
+import os
+import warnings
+warnings.filterwarnings('ignore')  # Suppress numpy warnings for cleaner output
 
 # Initialize unit registry
 ureg = pint.UnitRegistry()
 Q_ = ureg.Quantity
 
+# Bootstrap commonly used constants that may not be in dependencies
+# These are fundamental constants that many calculations rely on
+BOOTSTRAP_CONSTANTS = {{
+    'DISPLAY_SCALE': 1e10,  # GeV display scale
+    'RG_FACTOR': 1.0,       # Renormalization group factor
+    'm_e_MEV': 0.51099895,  # Electron mass in MeV
+    'hbar': 1.0,            # Natural units (ħ=c=1)
+    'c': 1.0,               # Natural units (ħ=c=1)
+    'G': 6.67430e-11,       # Gravitational constant (SI)
+    'b_Y': 41.0/10.0,       # SM beta function coefficient
+    'g_1': 0.3583,          # U(1) coupling at M_Z
+    'g_2': 0.6536,          # SU(2) coupling at M_Z
+    'Y': 1.0,               # Yukawa coupling (placeholder)
+    'T_PLANCK': 1.416784e32, # Planck temperature in K
+    'REHEAT_FACTOR': 1e-16,  # Typical reheating factor
+    'BETA_0': 41.0/10.0,     # Same as b_Y
+    'H_0': 2.2e-18,          # Hubble constant in SI units (Hz)
+    'LEPTONIC': 0.17,        # Leptonic branching ratio for tau
+    'HADRONIC': 0.65,       # Hadronic branching ratio for tau
+    'E8_FACTOR': 5.0/6.0,    # E8 factor for tau mass
+    'hbar_GeVs': 6.582119e-25,  # Reduced Planck constant in GeV*s
+    'hbar': 1.0,             # Natural units (ħ=c=1)
+    'c': 299792458.0,        # Speed of light in m/s
+}}
+
 # Load constant metadata
-const_path = Path('../constants/data/{constant['id']}.json')
-with open(const_path, 'r') as f:
-    metadata = json.load(f)
+# Handle different working directories (local vs Docker)
+possible_paths = [
+    Path('../constants/data/{constant['id']}.json'),
+    Path('/app/constants/data/{constant['id']}.json'),
+    Path('constants/data/{constant['id']}.json'),
+    Path('./data/{constant['id']}.json')
+]
+
+metadata = None
+for const_path in possible_paths:
+    if const_path.exists():
+        with open(const_path, 'r') as f:
+            metadata = json.load(f)
+        break
+
+if metadata is None:
+    raise FileNotFoundError(f"Could not find {constant['id']}.json in any expected location")
 """
     
     nb.cells.append(new_code_cell(imports))
@@ -187,6 +330,10 @@ with open(const_path, 'r') as f:
     
     # Add main symbol (handle special cases)
     main_var = formula_to_sympy(constant['symbol'])
+    
+    # Clean up invalid Python identifiers
+    main_var = main_var.replace('-', '_')  # Replace hyphens with underscores
+    main_var = main_var.replace(' ', '_')  # Replace spaces with underscores
     
     # Special handling for expressions as symbols
     if '/' in main_var:
@@ -210,9 +357,10 @@ with open(const_path, 'r') as f:
     builtins = {'sqrt', 'log', 'exp', 'sin', 'cos', 'tan', 'asin', 'acos', 'atan', 
                 'pi', 'e', 'sum', 'abs', 'min', 'max', 'range', 'len', 'float', 'int', 
                 'str', 'list', 'dict', 'tuple', 'set', 'True', 'False', 'None',
-                'A', 'kappa'}  # A and kappa are defined separately for alpha
+                'A', 'kappa',  # A and kappa are defined separately for alpha
+                'sqrtphi_0', 'sqrtphi'}  # Exclude malformed sqrt symbols
     for var in formula_vars:
-        if var not in builtins and not var.isdigit():
+        if var not in builtins and not var.isdigit() and not var.startswith('sqrt'):
             symbols_set.add(var)
     
     # Add dependency symbols
@@ -306,8 +454,20 @@ def gamma(n):
                 dep_var = formula_to_sympy(dep_const['symbol'])
                 # Add the loading code without extra indentation
                 dep_code.append(f"\n# Load {dep_const['name']}")
-                dep_code.append(f"with open('../constants/data/{dep_id}.json', 'r') as f:")
-                dep_code.append(f"    {dep_id}_data = json.load(f)")
+                dep_code.append(f"# Try multiple possible paths for {dep_id}.json")
+                dep_code.append(f"dep_paths = [")
+                dep_code.append(f"    Path('../constants/data/{dep_id}.json'),")
+                dep_code.append(f"    Path('/app/constants/data/{dep_id}.json'),")
+                dep_code.append(f"    Path('constants/data/{dep_id}.json'),")
+                dep_code.append(f"    Path('./data/{dep_id}.json')")
+                dep_code.append(f"]")
+                dep_code.append(f"for dep_path in dep_paths:")
+                dep_code.append(f"    if dep_path.exists():")
+                dep_code.append(f"        with open(dep_path, 'r') as f:")
+                dep_code.append(f"            {dep_id}_data = json.load(f)")
+                dep_code.append(f"        break")
+                dep_code.append(f"else:")
+                dep_code.append(f"    raise FileNotFoundError(f'Could not find {dep_id}.json')")
                 dep_code.append(f"dependency_values['{dep_var}'] = {dep_id}_data['sources'][0]['value']")
                 dep_code.append(f"print(f\"{dep_var} = {{dependency_values['{dep_var}']}}\")")
         
@@ -337,55 +497,132 @@ print(f'κ = {float(kappa)}')
 c_3_value = dependency_values.get('c_3', None)
 if c_3_value is None:
     raise ValueError("c_3 dependency value not found")
-numeric_eq = cubic_eq.subs([(A, A), (kappa, kappa), (c_3, c_3_value)])
+
+# Create substitution dictionary with numeric values
+substitutions = {
+    'A': float(A),
+    'kappa': float(kappa),
+    'c_3': c_3_value
+}
+
+# Apply substitutions
+numeric_eq = cubic_eq
+for sym in cubic_eq.free_symbols:
+    if str(sym) in substitutions:
+        numeric_eq = numeric_eq.subs(sym, substitutions[str(sym)])
+
 print(f'Equation to solve: {numeric_eq} = 0')
 
-# Solve for alpha
-from sympy import solve
-solutions = solve(numeric_eq, alpha)
-print(f'\\nAll solutions: {[float(sol.evalf()) for sol in solutions if sol.is_real]}')
+# Solve cubic equation α³ - Aα² - Ac₃²κ = 0 using numpy polynomial solver
+import numpy as np
 
-# Select physical solution (0 < α < 1)
-physical_solutions = [sol for sol in solutions if sol.is_real and 0 < sol < 1]
-if physical_solutions:
-    calculated_value = float(physical_solutions[0].evalf())
-    print(f'\\nPhysical solution: α = {calculated_value}')
-else:
-    raise ValueError('No physical solution found for alpha')"""
+# Create polynomial coefficients [highest degree first]
+# α³ - Aα² - Ac₃²κ = 0 => coeffs = [1, -A, 0, -A*c₃²*κ]
+A_val = float(A)
+c3_val = c_3_value
+kappa_val = float(kappa)
+
+coeffs = [1.0, -A_val, 0.0, -A_val * c3_val**2 * kappa_val]
+print(f'\\nPolynomial coefficients: {coeffs}')
+
+# Find all roots
+all_roots = np.roots(coeffs)
+print(f'\\nAll roots from polynomial solver:')
+for i, root in enumerate(all_roots):
+    if np.isreal(root):
+        print(f'  Root {i+1}: {float(np.real(root))}')
     else:
-        calc_code = f"""# Step 4: Calculate numerical value
-# Substitute dependency values
-numeric_formula = formula"""
-        
-        if constant['dependencies']:
-            calc_code += "\n# Create a mapping of symbol objects to values\n"
-            calc_code += "substitutions = {}\n"
-            calc_code += "for symbol_name, value in dependency_values.items():\n"
-            calc_code += "    # Find the corresponding symbol object\n"
-            calc_code += "    for sym in formula.free_symbols:\n"
-            calc_code += "        if str(sym) == symbol_name:\n"
-            calc_code += "            substitutions[sym] = value\n"
-            calc_code += "            break\n"
-            calc_code += "\n# Perform substitution\n"
-            calc_code += "numeric_formula = formula.subs(substitutions)"
-        
-        calc_code += f"""
-    
-# Evaluate
-if isinstance(numeric_formula, (int, float)):
-    # Already a numeric value
-    calculated_value = float(numeric_formula)
-else:
-    # SymPy expression - evaluate it
-    calculated_value = float(numeric_formula.evalf())
-print(f'Calculated value: {{calculated_value}}')
+        print(f'  Root {i+1}: {root} (complex)')
 
-# Add unit if needed
-if metadata['unit'] != 'dimensionless':
-    result = Q_(calculated_value, metadata['unit'])
-    print(f'With unit: {{result}}')
+# Filter for positive real roots
+real_positive_roots = []
+for root in all_roots:
+    if np.isreal(root) and np.real(root) > 0:
+        real_positive_roots.append(float(np.real(root)))
+
+real_positive_roots.sort()
+print(f'\\nPositive real roots: {real_positive_roots}')
+
+# Selection criterion: largest perturbative root (α < 0.01)
+perturbative_roots = [r for r in real_positive_roots if r < 0.01]
+if perturbative_roots:
+    calculated_value = max(perturbative_roots)
+    print(f'\\nSelected root (largest perturbative): α = {calculated_value}')
 else:
-    result = calculated_value"""
+    # If no perturbative roots, take the smallest positive root
+    if real_positive_roots:
+        calculated_value = min(real_positive_roots)
+        print(f'\\nNo perturbative roots found, using smallest positive: α = {calculated_value}')
+    else:
+        raise ValueError('No positive real solutions found for alpha')
+
+# Verification: check that the root satisfies the equation
+residual = calculated_value**3 - A_val * calculated_value**2 - A_val * c3_val**2 * kappa_val
+print(f'\\nVerification - cubic residual: {residual}')
+print(f'Relative error: {abs(residual/calculated_value):.2e}')"""
+    else:
+        # Handle fundamentals with direct values (like phi_0)
+        if not constant['dependencies'] and constant['id'] in ['phi_0', 'A', 'kappa']:
+            # Extract numeric value from formula or sources
+            if 'sources' in constant and constant['sources']:
+                value = constant['sources'][0]['value']
+                calc_code = f"""# Step 4: Direct value for fundamental constant
+calculated_value = {value}
+print(f'Value: {constant["symbol"]} = {{calculated_value}}')"""
+            else:
+                calc_code = f"""# Step 4: Calculate numerical value
+# This is a fundamental constant - extract value from description
+# For now, using placeholder
+calculated_value = 0.0  # TODO: Extract from formula description
+print(f'Value: {constant["symbol"]} = {{calculated_value}}')"""
+        else:
+            calc_code = f"""# Step 4: Calculate numerical value"""
+            
+            # Initialize dependency_values even if empty
+            if not constant['dependencies']:
+                calc_code += "\n# No dependencies for this constant\n"
+                calc_code += "dependency_values = {}\n"
+            
+            calc_code += "\n# Substitute dependency values\n"
+            calc_code += "numeric_formula = formula\n"
+            calc_code += "substitutions = {}\n"
+                
+            calc_code += "\n# First check if formula is already numeric\n"
+            calc_code += "if isinstance(formula, (int, float)):\n"
+            calc_code += "    calculated_value = float(formula)\n"
+            calc_code += "else:\n"
+            calc_code += "    # Formula is a SymPy expression\n"
+            calc_code += "    # First check bootstrap constants\n"
+            calc_code += "    for sym in formula.free_symbols:\n"
+            calc_code += "        sym_name = str(sym)\n"
+            calc_code += "        if sym_name in BOOTSTRAP_CONSTANTS:\n"
+            calc_code += "            substitutions[sym] = BOOTSTRAP_CONSTANTS[sym_name]\n"
+            calc_code += "            print(f'{sym_name} = {BOOTSTRAP_CONSTANTS[sym_name]} (bootstrap)')\n"
+            calc_code += "    \n# Then use dependency values\n"
+            calc_code += "    for symbol_name, value in dependency_values.items():\n"
+            calc_code += "        # Find the corresponding symbol object\n"
+            calc_code += "        for sym in formula.free_symbols:\n"
+            calc_code += "            if str(sym) == symbol_name:\n"
+            calc_code += "                substitutions[sym] = value\n"
+            calc_code += "                break\n"
+            calc_code += "    \n# Perform substitution\n"
+            calc_code += "    numeric_formula = formula.subs(substitutions)\n"
+            calc_code += "    \n"
+            calc_code += "    # Evaluate\n"
+            calc_code += "    if isinstance(numeric_formula, (int, float)):\n"
+            calc_code += "        # Already a numeric value\n"
+            calc_code += "        calculated_value = float(numeric_formula)\n"
+            calc_code += "    else:\n"
+            calc_code += "        # SymPy expression - evaluate it\n"
+            calc_code += "        calculated_value = float(numeric_formula.evalf())\n"
+            calc_code += "    print(f'Calculated value: {calculated_value}')\n"
+            calc_code += "\n"
+            calc_code += "# Add unit if needed\n"
+            calc_code += "if metadata['unit'] != 'dimensionless':\n"
+            calc_code += "    result = Q_(calculated_value, metadata['unit'])\n"
+            calc_code += "    print(f'With unit: {result}')\n"
+            calc_code += "else:\n"
+            calc_code += "    result = calculated_value"
     
     nb.cells.append(new_code_cell(calc_code))
     
@@ -405,7 +642,7 @@ assert relative_error < metadata['accuracyTarget'], f"Error {{relative_error:.2e
 print('✓ Accuracy target met!')"""))
     
         # Step 6: Export result
-        nb.cells.append(new_code_cell(f"""# Step 6: Export result
+        export_code = f"""# Step 6: Export result
 result_data = {{
     'id': metadata['id'],
     'symbol': metadata['symbol'],
@@ -417,13 +654,29 @@ result_data = {{
     'accuracy_met': relative_error < metadata['accuracyTarget']
 }}
 
-# Save result
-output_path = Path('../constants/results/{constant['id']}_result.json')
-output_path.parent.mkdir(exist_ok=True)
-with open(output_path, 'w') as f:
-    json.dump(result_data, f, indent=2)
-    
-print(f'Result saved to {{output_path}}')"""))
+# Save result - try multiple possible paths
+output_paths = [
+    Path('../constants/results/{constant['id']}_result.json'),
+    Path('/app/constants/results/{constant['id']}_result.json'),
+    Path('constants/results/{constant['id']}_result.json'),
+    Path('./results/{constant['id']}_result.json')
+]
+
+saved = False
+for output_path in output_paths:
+    try:
+        output_path.parent.mkdir(parents=True, exist_ok=True)
+        with open(output_path, 'w') as f:
+            json.dump(result_data, f, indent=2)
+        print(f'Result saved to {{output_path}}')
+        saved = True
+        break
+    except Exception as e:
+        continue
+
+if not saved:
+    print(f'Warning: Could not save result file - tried all paths')"""
+        nb.cells.append(new_code_cell(export_code))
     else:
         # Special handling for gamma_function export
         nb.cells.append(new_code_cell(f"""# Export gamma function as a special result
@@ -436,15 +689,39 @@ result_data = {{
     'test_values': {{n: gamma(n) for n in range(8)}}
 }}
 
-# Save to JSON
-output_path = Path('../constants/results/{constant['id']}_result.json')
-output_path.parent.mkdir(exist_ok=True)
-with open(output_path, 'w') as f:
-    json.dump(result_data, f, indent=2)
-    
-print(f'Result saved to {{output_path}}')"""))
+# Save to JSON - try multiple possible paths
+output_paths = [
+    Path('../constants/results/{constant['id']}_result.json'),
+    Path('/app/constants/results/{constant['id']}_result.json'),
+    Path('constants/results/{constant['id']}_result.json'),
+    Path('./results/{constant['id']}_result.json')
+]
+
+saved = False
+for output_path in output_paths:
+    try:
+        output_path.parent.mkdir(parents=True, exist_ok=True)
+        with open(output_path, 'w') as f:
+            json.dump(result_data, f, indent=2)
+        print(f'Result saved to {{output_path}}')
+        saved = True
+        break
+    except Exception as e:
+        continue
+
+if not saved:
+    print(f'Warning: Could not save result file - tried all paths')"""))
     
     return nb
+
+def validate_notebook(nb, const_id):
+    """Validate a notebook before saving"""
+    try:
+        # Use nbformat's built-in validation
+        nbf.validate(nb)
+        return True, None
+    except nbf.ValidationError as e:
+        return False, str(e)
 
 def main():
     """Generate notebooks for all constants"""
@@ -468,15 +745,36 @@ def main():
     
     # Generate notebooks
     print(f"Generating notebooks for {len(all_constants)} constants...")
+    failed_notebooks = []
+    
     for const_id, constant in all_constants.items():
-        nb = create_notebook(constant, all_constants)
-        
-        # Save notebook
-        nb_path = notebooks_dir / f"{const_id}.ipynb"
-        with open(nb_path, 'w', encoding='utf-8') as f:
-            nbf.write(nb, f)
-        
-        print(f"Generated notebook: {nb_path}")
+        try:
+            nb = create_notebook(constant, all_constants)
+            
+            # Validate notebook before saving
+            is_valid, error_msg = validate_notebook(nb, const_id)
+            if not is_valid:
+                print(f"❌ Validation failed for {const_id}: {error_msg}")
+                failed_notebooks.append((const_id, error_msg))
+                continue
+            
+            # Save notebook
+            nb_path = notebooks_dir / f"{const_id}.ipynb"
+            with open(nb_path, 'w', encoding='utf-8') as f:
+                nbf.write(nb, f)
+            
+            print(f"✓ Generated notebook: {nb_path}")
+        except Exception as e:
+            print(f"❌ Failed to generate notebook for {const_id}: {str(e)}")
+            failed_notebooks.append((const_id, str(e)))
+    
+    # Summary
+    print(f"\n{'='*60}")
+    print(f"Summary: Generated {len(all_constants) - len(failed_notebooks)} of {len(all_constants)} notebooks")
+    if failed_notebooks:
+        print(f"\nFailed notebooks:")
+        for const_id, error in failed_notebooks:
+            print(f"  - {const_id}: {error}")
 
 if __name__ == '__main__':
     main() 

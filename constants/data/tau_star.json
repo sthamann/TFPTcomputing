@@ -1,10 +1,10 @@
 {
   "id": "tau_star",
-  "symbol": "\u03c4\u2605",
+  "symbol": "τ★",
   "name": "Planck-kink time",
   "description": "Minimal coherent tick, drives early-BBN fixes",
   "unit": "s",
-  "formula": "\u03c4\u2605 = \u03c6\u2080\u00b3 \u0127/(4\u03c0 c\u2083 M_Pl)",
+  "formula": "τ★ = φ₀³ ħ/(4π c₃ M_Pl)",
   "dependencies": [
     "phi_0",
     "c_3",

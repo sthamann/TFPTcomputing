@@ -1,6 +1,6 @@
 {
   "id": "f_pi_lambda_qcd",
-  "symbol": "f_\u03c0/\u039b_QCD",
+  "symbol": "f_π/Λ_QCD",
   "name": "Pion Decay Constant to QCD Scale Ratio",
   "description": "Pion decay constant to QCD scale ratio",
   "unit": "dimensionless",

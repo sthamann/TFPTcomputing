@@ -33,12 +33,14 @@ app.use(cors());
 app.use(express.json());
 app.use(morgan('combined'));
 
-// Rate limiting
-const limiter = rateLimit({
-  windowMs: 15 * 60 * 1000, // 15 minutes
-  max: 100 // limit each IP to 100 requests per windowMs
-});
-app.use('/api/', limiter);
+// Rate limiting - only in production
+if (process.env.NODE_ENV !== 'development') {
+  const limiter = rateLimit({
+    windowMs: 15 * 60 * 1000, // 15 minutes
+    max: 100 // limit each IP to 100 requests per windowMs
+  });
+  app.use('/api/', limiter);
+}
 
 // Swagger configuration
 const swaggerOptions = {
@@ -154,15 +156,31 @@ app.get('/api/constants/:id', async (req, res) => {
       const content = await fs.readFile(constantPath, 'utf-8');
       const constant = JSON.parse(content);
       
-      // Check if we have a cached calculation result
+      // First check for JSON result file
+      const resultsBase = process.env.NODE_ENV === 'development' 
+        ? '/app/constants/results/json'
+        : join(__dirname, '../../constants/results/json');
+      const resultPath = join(resultsBase, `${id}_result.json`);
+      
       try {
-        const response = await axios.get(`${PYTHON_SERVICE_URL}/calculate/${id}`, {
-          params: { from_cache: true }
-        });
-        constant.lastCalculation = response.data;
-      } catch (calcError) {
-        // No cached result, that's okay
-        constant.lastCalculation = null;
+        const resultContent = await fs.readFile(resultPath, 'utf-8');
+        const result = JSON.parse(resultContent);
+        constant.lastCalculation = {
+          ...result,
+          status: result.accuracy_met ? 'completed' : 'error',
+          timestamp: new Date().toISOString()
+        };
+      } catch (fileError) {
+        // No JSON result file, check Python service
+        try {
+          const response = await axios.get(`${PYTHON_SERVICE_URL}/calculate/${id}`, {
+            params: { from_cache: true }
+          });
+          constant.lastCalculation = response.data;
+        } catch (calcError) {
+          // No cached result either
+          constant.lastCalculation = null;
+        }
       }
       
       res.json(constant);
@@ -293,6 +311,11 @@ app.get('/api/dag', async (req, res) => {
     res.status(500).json({ error: 'Failed to load dependency graph' });
   }
 });
+
+// Serve static files for notebooks and JSON data
+app.use('/constants/notebooks', express.static(join(__dirname, '../constants/notebooks')));
+app.use('/constants/data', express.static(join(__dirname, '../constants/data')));
+app.use('/compute/results', express.static(join(__dirname, '../compute/results')));
 
 // Health check
 app.get('/health', (req, res) => {

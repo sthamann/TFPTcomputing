@@ -4,7 +4,7 @@
   "name": "Electron Yukawa",
   "description": "Electron Yukawa coupling",
   "unit": "dimensionless",
-  "formula": "y_e = \u03b1 \u03c6\u2080\u2075",
+  "formula": "y_e = α φ₀⁵",
   "dependencies": [
     "alpha",
     "phi_0"

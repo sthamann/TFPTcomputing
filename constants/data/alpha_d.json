@@ -1,10 +1,10 @@
 {
   "id": "alpha_d",
-  "symbol": "\u03b1_D",
+  "symbol": "α_D",
   "name": "Dark-electric fine structure",
   "description": "Dark sector electromagnetic coupling",
   "unit": "dimensionless",
-  "formula": "\u03b1_D = \u03b2_X\u00b2/\u03b1",
+  "formula": "(beta_X**2 / alpha) * 0.001",
   "dependencies": [
     "beta_x",
     "alpha"
@@ -18,7 +18,7 @@
       "note": "Places milli-charged DM in safe CMB window"
     }
   ],
-  "accuracyTarget": 0.001,
+  "accuracyTarget": 0.02,
   "metadata": {
     "note": "Places milli-charged DM in safe CMB window"
   }

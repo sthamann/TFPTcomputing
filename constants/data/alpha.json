@@ -1,10 +1,10 @@
 {
   "id": "alpha",
-  "symbol": "\u03b1",
+  "symbol": "α",
   "name": "Fine-Structure Constant",
-  "description": "Solve cubic equation with A = 1/(256\u03c0\u00b3), \u03ba = (41/20\u03c0)ln(1/\u03c6\u2080)",
+  "description": "Solve cubic equation with A = 1/(256π³), κ = (41/20π)ln(1/φ₀)",
   "unit": "dimensionless",
-  "formula": "solveCubic(1, -A, 0, -A c\u2083\u00b2 \u03ba)",
+  "formula": "solveCubic(1, -A, 0, -A * c₃² κ)",
   "dependencies": [
     "phi_0",
     "c_3"
@@ -12,10 +12,11 @@
   "category": "fundamental",
   "sources": [
     {
-      "name": "Topological Fixed Point Theory",
-      "year": 2025,
-      "value": 0.007297,
-      "note": "From comprehensive constant list"
+      "name": "CODATA 2022",
+      "year": 2022,
+      "value": 0.0072973525643,
+      "uncertainty": 1.1e-12,
+      "note": "Imported from codata/2022.txt"
     }
   ],
   "accuracyTarget": 0.001,

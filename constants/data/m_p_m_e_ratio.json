@@ -12,6 +12,13 @@
   "category": "fundamental",
   "sources": [
     {
+      "name": "CODATA 2022",
+      "year": 2022,
+      "value": 1836.152673426,
+      "uncertainty": 3.2e-08,
+      "note": "Imported from codata/2022.txt"
+    },
+    {
       "name": "Topological Fixed Point Theory",
       "year": 2025,
       "value": 1836,

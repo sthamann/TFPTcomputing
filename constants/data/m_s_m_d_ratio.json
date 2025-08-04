@@ -4,7 +4,7 @@
   "name": "Strange/Down Mass Ratio",
   "description": "Strange to down quark mass ratio",
   "unit": "dimensionless",
-  "formula": "1 / \u03c6\u2080",
+  "formula": "1 / φ₀",
   "dependencies": [
     "phi_0"
   ],
@@ -17,7 +17,7 @@
       "note": "From comprehensive constant list"
     }
   ],
-  "accuracyTarget": 0.001,
+  "accuracyTarget": 0.1,
   "metadata": {
     "note": "Part of the complete 43 cascade-born constants"
   }

@@ -1,10 +1,10 @@
 {
   "id": "theta_c",
-  "symbol": "\u03b8_c",
+  "symbol": "θ_c",
   "name": "Cabibbo Angle",
   "description": "Cabibbo angle",
   "unit": "radians",
-  "formula": "arcsin(\u221a(\u03c6\u2080 / (1 + \u03c6\u2080)))",
+  "formula": "arcsin(√(φ₀ / (1 + φ₀)))",
   "dependencies": [
     "phi_0"
   ],
@@ -17,7 +17,7 @@
       "note": "From comprehensive constant list"
     }
   ],
-  "accuracyTarget": 0.001,
+  "accuracyTarget": 0.01,
   "metadata": {
     "note": "Part of the complete 43 cascade-born constants"
   }

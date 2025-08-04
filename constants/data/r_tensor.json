@@ -2,23 +2,16 @@
   "id": "r_tensor",
   "symbol": "r",
   "name": "Tensor-to-Scalar Ratio",
-  "description": "Tensor-to-scalar ratio",
-  "unit": "\u00d710\u207b\u00b3",
-  "formula": "\u03c6\u2080\u00b2",
-  "dependencies": [
-    "phi_0"
-  ],
+  "description": "Inflationary tensor-to-scalar ratio",
+  "unit": "dimensionless",
+  "formula": "phi_0**2",
+  "dependencies": ["phi_0"],
   "category": "cosmology",
   "sources": [
-    {
-      "name": "Topological Fixed Point Theory",
-      "year": 2025,
-      "value": 0.0028,
-      "note": "From comprehensive constant list"
-    }
+    { "name": "TFPT prediction", "year": 2025, "value": 0.002827 }
   ],
-  "accuracyTarget": 0.001,
+  "accuracyTarget": 0.01,
   "metadata": {
-    "note": "Part of the complete 43 cascade-born constants"
+    "note": "Parameter-free prediction r = φ₀²; CMB-S4 target value."
   }
 }

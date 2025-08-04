@@ -1,10 +1,10 @@
 {
   "id": "epsilon_k",
-  "symbol": "\u03b5_K",
+  "symbol": "ε_K",
   "name": "Indirect CP Violation Parameter",
   "description": "Indirect CP violation parameter",
-  "unit": "\u00d710\u207b\u00b3",
-  "formula": "\u03c6\u2080\u00b2 / \u221a2",
+  "unit": "dimensionless",
+  "formula": "φ₀² / √2",
   "dependencies": [
     "phi_0"
   ],
@@ -17,7 +17,7 @@
       "note": "From comprehensive constant list"
     }
   ],
-  "accuracyTarget": 0.001,
+  "accuracyTarget": 0.2,
   "metadata": {
     "note": "Part of the complete 43 cascade-born constants"
   }

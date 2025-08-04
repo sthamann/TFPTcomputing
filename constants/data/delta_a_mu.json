@@ -1,11 +1,14 @@
 {
   "id": "delta_a_mu",
-  "symbol": "\u0394a_\u03bc",
+  "symbol": "Δa_μ",
   "name": "Muon g-2 anomaly",
   "description": "Muon g-2 anomaly",
-  "unit": "\u00d710\u207b\u2079",
-  "formula": "(N_E8_VECTORS G_APPROX\u00b2) / (8\u03c0\u00b2) (m_\u03bc\u00b2 / M_HEAVY\u00b2) \u00d7 DISPLAY_SCALE",
-  "dependencies": [],
+  "unit": "dimensionless",
+  "formula": "(248 * 0.25) / (8 * pi**2) * (m_mu / 100000)**2 * 1e9",
+  "dependencies": [
+    "m_mu",
+    "g_f"
+  ],
   "category": "anomaly",
   "sources": [
     {

@@ -1,0 +1,10 @@
+{
+  "id": "alpha",
+  "symbol": "\u03b1",
+  "calculated_value": 0.007297340575733252,
+  "reference_value": 0.0072973525643,
+  "relative_error": 1.642865222997569e-06,
+  "unit": "dimensionless",
+  "formula": "solveCubic(1, -A, 0, -A * c\u2083\u00b2 \u03ba)",
+  "accuracy_met": true
+}

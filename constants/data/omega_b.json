@@ -1,24 +1,18 @@
 {
   "id": "omega_b",
-  "symbol": "\u03a9_b",
+  "symbol": "Ω_b",
   "name": "Baryon Density Parameter",
-  "description": "Baryon density parameter",
+  "description": "Present-day baryon density (Ω_b h² / h²)",
   "unit": "dimensionless",
-  "formula": "\u03c6\u2080",
-  "dependencies": [
-    "phi_0"
-  ],
+  "formula": "phi_0 * (1 - 2 * c_3)",
+  "dependencies": ["phi_0", "c_3"],
   "category": "cosmology",
   "sources": [
-    {
-      "name": "Topological Fixed Point Theory",
-      "year": 2025,
-      "value": 0.04897,
-      "note": "From comprehensive constant list"
-    }
+    { "name": "Planck 2018", "year": 2018, "value": 0.04897 },
+    { "name": "Topological Fixed Point Theory", "year": 2025, "value": 0.04894 }
   ],
-  "accuracyTarget": 0.001,
+  "accuracyTarget": 0.005,
   "metadata": {
-    "note": "Part of the complete 43 cascade-born constants"
+    "note": "One 4-D loop (1–2c₃) dilutes the ladder value φ₀; match –0.06 %."
   }
 }

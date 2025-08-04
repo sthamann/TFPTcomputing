@@ -1,16 +1,23 @@
 {
   "id": "z_0",
-  "symbol": "Z\u2080",
+  "symbol": "Z₀",
   "name": "Vacuum impedance",
   "description": "Impedance of free space",
-  "unit": "\u03a9",
-  "formula": "Z\u2080 = \u0127/(q_Pl\u00b2 \u03b1)",
+  "unit": "Ω",
+  "formula": "Z₀ = ħ/(q_Pl² α)",
   "dependencies": [
     "q_pl",
     "alpha"
   ],
   "category": "electromagnetic",
   "sources": [
+    {
+      "name": "CODATA 2022",
+      "year": 2022,
+      "value": 376.730313412,
+      "uncertainty": 5.9e-08,
+      "note": "Imported from codata/2022.txt"
+    },
     {
       "name": "Topological Fixed Point Theory",
       "year": 2025,

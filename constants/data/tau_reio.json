@@ -1,10 +1,10 @@
 {
   "id": "tau_reio",
-  "symbol": "\u03c4_reio",
+  "symbol": "τ_reio",
   "name": "Optical depth to re-ionisation",
   "description": "Thomson optical depth to reionization",
   "unit": "dimensionless",
-  "formula": "\u03c4_reio = 2 c\u2083 \u03c6\u2080\u2075",
+  "formula": "τ_reio = 2 c₃ φ₀⁵",
   "dependencies": [
     "c_3",
     "phi_0"

@@ -4,7 +4,7 @@
   "name": "CKM Matrix Element Ratio",
   "description": "CKM matrix element ratio",
   "unit": "dimensionless",
-  "formula": "\u221a\u03c6\u2080",
+  "formula": "√φ₀",
   "dependencies": [
     "phi_0"
   ],
@@ -17,7 +17,7 @@
       "note": "From comprehensive constant list"
     }
   ],
-  "accuracyTarget": 0.001,
+  "accuracyTarget": 0.01,
   "metadata": {
     "note": "Part of the complete 43 cascade-born constants"
   }

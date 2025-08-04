@@ -4,7 +4,7 @@
   "name": "Fundamental VEV",
   "description": "The fundamental vacuum expectation value from the RG fixed point self-consistency condition",
   "unit": "dimensionless",
-  "formula": "φ₀ = 0.053171 (from cubic equation self-consistency)",
+  "formula": "0.053171",
   "dependencies": [],
   "category": "fundamental",
   "sources": [
@@ -15,8 +15,8 @@
       "note": "From self-consistency: φ₀ → κ → α → φ₀"
     }
   ],
-  "accuracyTarget": 1e-6,
+  "accuracyTarget": 1e-06,
   "metadata": {
     "note": "This is the key parameter from which all mass scales derive"
   }
-} 
+}

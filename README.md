@@ -46,15 +46,25 @@ A full-stack application for calculating physics constants using the Topological
    
    **On macOS/Linux:**
    ```bash
+   # Production mode (optimized build):
    ./start.sh
-   # Or with image rebuild:
+   
+   # Development mode with hot reloading:
+   ./start.sh --dev
+   
+   # Rebuild images:
    ./start.sh --build
+   
+   # See all options:
+   ./start.sh --help
    ```
    
    **On Windows (PowerShell):**
    ```powershell
+   # Production mode:
    .\start.ps1
-   # Or with image rebuild:
+   
+   # With image rebuild:
    .\start.ps1 -Build
    ```
    
@@ -64,9 +74,19 @@ A full-stack application for calculating physics constants using the Topological
    - ✅ Start all three services (frontend, backend, compute)
    - ✅ Display service URLs
    
-   **Alternative: Manual start without tests**
+   **Development Mode Features:**
+   - 🔥 Hot reloading for frontend (Vite HMR)
+   - 🔄 Auto-restart for backend changes (Nodemon)
+   - 📂 Source code mounted as volumes
+   - 🚀 Instant updates without rebuilding
+   
+   **Alternative: Manual start**
    ```bash
+   # Production mode:
    docker-compose up -d
+   
+   # Development mode:
+   docker-compose -f docker-compose.dev.yml up -d
    ```
 
 3. **Access the application**
@@ -250,7 +270,7 @@ cd compute && pytest
 
 1. Fork the repository
 2. Create a feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add amazing feature'`)
+3. Commit your fchanges (`git commit -m 'Add amazing feature'`)
 4. Push to the branch (`git push origin feature/amazing-feature`)
 5. Open a Pull Request
 

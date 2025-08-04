@@ -1,10 +1,10 @@
 {
   "id": "chi_d",
-  "symbol": "\u03c7_D",
-  "name": "Photon\u2013mirror-photon mixing",
+  "symbol": "χ_D",
+  "name": "Photon–mirror-photon mixing",
   "description": "Mixing angle between photon and mirror photon",
   "unit": "dimensionless",
-  "formula": "\u03c7_D = \u03c6\u2080\u00b3/(\u221a2 c\u2083)",
+  "formula": "χ_D = φ₀³/(√2 c₃)",
   "dependencies": [
     "phi_0",
     "c_3"

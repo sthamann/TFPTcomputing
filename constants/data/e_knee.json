@@ -4,7 +4,7 @@
   "name": "Cosmic-ray knee energy",
   "description": "Cosmic-ray spectrum feature from cascade",
   "unit": "PeV",
-  "formula": "E_knee = M_Pl \u03c6\u2080\u00b2\u2070",
+  "formula": "E_knee = M_Pl * φ₀²⁰",
   "dependencies": [
     "m_planck",
     "phi_0"

@@ -1,12 +1,13 @@
 {
   "id": "tau_mu",
-  "symbol": "\u03c4_\u03bc",
+  "symbol": "τ_μ",
   "name": "Muon Lifetime",
   "description": "Muon lifetime in microseconds",
-  "unit": "\u03bcs",
-  "formula": "\u0127 / ((G_F\u00b2 m_\u03bc\u2075) / (192 \u03c0\u00b3)) \u00d7 10\u2076",
+  "unit": "microseconds",
+  "formula": "(192 * pi**3) / ((G_F**2 * m_mu**5)) * 1e15",
   "dependencies": [
-    "g_f"
+    "g_f",
+    "m_mu"
   ],
   "category": "lepton",
   "sources": [

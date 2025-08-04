@@ -4,7 +4,7 @@
   "name": "Fuzzy-axion mass",
   "description": "Fuzzy dark matter axion mass",
   "unit": "eV",
-  "formula": "m_FA = M_Pl \u03c6\u2080\u00b3\u2079",
+  "formula": "M_Pl * phi_0**39",
   "dependencies": [
     "m_planck",
     "phi_0"

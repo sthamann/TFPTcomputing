@@ -11,8 +11,8 @@
     {
       "name": "Mathematical Constant",
       "year": 2025,
-      "value": 1.6180339887498948
+      "value": 1.618033988749895
     }
   ],
   "accuracyTarget": 1e-15
-} 
+}

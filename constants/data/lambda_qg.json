@@ -5,18 +5,22 @@
   "description": "Energy scale marking first deviation from classical GR",
   "unit": "GeV",
   "formula": "Λ_QG = 2π c₃ φ₀ M_Pl",
-  "dependencies": ["c_3", "phi_0", "m_planck"],
+  "dependencies": [
+    "c_3",
+    "phi_0",
+    "m_planck"
+  ],
   "category": "quantum_gravity",
   "sources": [
     {
       "name": "Topological Fixed Point Theory",
       "year": 2025,
-      "value": 1.6e17,
+      "value": 1.6e+17,
       "note": "Marks first deviation from classical GR"
     }
   ],
-  "accuracyTarget": 1e-1,
+  "accuracyTarget": 0.1,
   "metadata": {
     "note": "Critical scale for quantum gravity effects"
   }
-} 
+}

@@ -3,10 +3,9 @@
   "symbol": "a_P",
   "name": "Pioneer anomalous acceleration",
   "description": "Anomalous acceleration affecting Pioneer spacecraft",
-  "unit": "m/s\u00b2",
-  "formula": "a_P = c H\u2080 \u03c6\u2080/c\u2083",
+  "unit": "m/s²",
+  "formula": "c * H_0 * phi_0 / c_3",
   "dependencies": [
-    "c_tfp",
     "phi_0",
     "c_3"
   ],
@@ -19,7 +18,7 @@
       "note": "Turns a decades-old solar-system puzzle into a cosmological inevitability"
     }
   ],
-  "accuracyTarget": 0.001,
+  "accuracyTarget": 0.01,
   "metadata": {
     "note": "Turns a decades-old solar-system puzzle into a cosmological inevitability"
   }

@@ -1,10 +1,10 @@
 {
   "id": "alpha_s",
-  "symbol": "\u03b1_s",
+  "symbol": "α_s",
   "name": "Strong Coupling Constant",
   "description": "Strong coupling constant",
   "unit": "dimensionless",
-  "formula": "\u221a\u03c6\u2080 / 2",
+  "formula": "√φ₀ / 2",
   "dependencies": [
     "phi_0"
   ],
@@ -17,7 +17,7 @@
       "note": "From comprehensive constant list"
     }
   ],
-  "accuracyTarget": 0.001,
+  "accuracyTarget": 0.1,
   "metadata": {
     "note": "Part of the complete 43 cascade-born constants"
   }

@@ -4,7 +4,7 @@
   "name": "CKM Matrix Element V_cb",
   "description": "CKM matrix element V_cb",
   "unit": "dimensionless",
-  "formula": "(3/4) \u03c6\u2080",
+  "formula": "(3/4) φ₀",
   "dependencies": [
     "phi_0"
   ],

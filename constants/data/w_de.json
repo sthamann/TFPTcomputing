@@ -4,7 +4,7 @@
   "name": "Dark-energy EoS",
   "description": "Dark energy equation of state parameter",
   "unit": "dimensionless",
-  "formula": "w_DE = \u20131 + \u03c6\u2080\u00b2/6",
+  "formula": "w_DE = –1 + φ₀²/6",
   "dependencies": [
     "phi_0"
   ],

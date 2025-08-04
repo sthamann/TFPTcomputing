@@ -1,10 +1,10 @@
 {
   "id": "delta_m_n_p",
-  "symbol": "\u0394m_n-p",
+  "symbol": "Δm_n-p",
   "name": "Neutron-Proton Mass Difference",
   "description": "Neutron-proton mass difference",
   "unit": "MeV",
-  "formula": "m_e_MEV \u03c6\u2080 \u00d7 48",
+  "formula": "m_e_MEV * φ₀ * 48",
   "dependencies": [
     "phi_0",
     "m_e"
@@ -12,13 +12,20 @@
   "category": "nuclear",
   "sources": [
     {
+      "name": "CODATA 2022",
+      "year": 2022,
+      "value": 1.29333251,
+      "uncertainty": 3.8e-07,
+      "note": "Imported from codata/2022.txt"
+    },
+    {
       "name": "Topological Fixed Point Theory",
       "year": 2025,
       "value": 1.293,
       "note": "From comprehensive constant list"
     }
   ],
-  "accuracyTarget": 0.001,
+  "accuracyTarget": 0.01,
   "metadata": {
     "note": "Part of the complete 43 cascade-born constants"
   }
