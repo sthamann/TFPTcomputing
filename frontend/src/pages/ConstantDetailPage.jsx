@@ -367,6 +367,27 @@ const ConstantDetailPage = () => {
           </div>
         )}
 
+        {/* Metadata Note */}
+        {jsonSource?.metadata?.note && (
+          <div className="mt-6 pt-6 border-t">
+            <div className="bg-gradient-to-r from-primary/5 via-accent/5 to-primary/5 rounded-lg p-4 border border-primary/20">
+              <div className="flex items-start gap-3">
+                <div className="mt-0.5">
+                  <div className="h-8 w-8 rounded-full bg-primary/10 flex items-center justify-center">
+                    <FileText className="h-4 w-4 text-primary" />
+                  </div>
+                </div>
+                <div className="flex-1">
+                  <h4 className="text-sm font-medium text-foreground mb-1">Theory Note</h4>
+                  <p className="text-sm text-muted-foreground leading-relaxed">
+                    {jsonSource.metadata.note}
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        )}
+
         {/* Formula Display */}
         {constant.formula && (
           <div className="mt-6 pt-6 border-t">

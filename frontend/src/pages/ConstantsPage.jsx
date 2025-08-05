@@ -5,6 +5,7 @@ import { Loader2, AlertTriangle } from 'lucide-react'
 import toast from 'react-hot-toast'
 import { constantGroups, getConstantGroup, groupOrder } from '../lib/constantGroups'
 import KaTeXFormula from '../components/KaTeXFormula'
+import TheoryExplanation from '../components/TheoryExplanation'
 
 const ConstantsPage = () => {
   const [constants, setConstants] = useState([])
@@ -152,7 +153,7 @@ const ConstantsPage = () => {
           </Link>
         </td>
         <td className="px-4 py-3">
-          <div className="formula-display text-xs">
+          <div className="formula-display">
             {detail?.formula && <KaTeXFormula formula={detail.formula} />}
           </div>
         </td>
@@ -240,6 +241,11 @@ const ConstantsPage = () => {
             </div>
           </div>
         </div>
+      </div>
+
+      {/* Theory Explanation */}
+      <div className="px-8">
+        <TheoryExplanation />
       </div>
 
       {/* Stats Section */}

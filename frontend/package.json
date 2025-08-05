@@ -21,6 +21,7 @@
     "axios": "^1.6.2",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.0.0",
+    "framer-motion": "^12.23.12",
     "katex": "^0.16.9",
     "lucide-react": "^0.294.0",
     "prism-react-renderer": "^2.4.1",

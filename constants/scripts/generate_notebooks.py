@@ -143,6 +143,7 @@ def formula_to_sympy(formula):
         'm_μ': 'm_mu',
         'm_ν': 'm_nu',
         'sin²θ_W': 'sin2_theta_W',
+        '4πα': '4*pi*alpha',  # Special case for merged constants
         'sin²θ': 'sin2_theta',
         'φ_5': 'phi_5',
         'β_X': 'beta_X',
@@ -187,7 +188,10 @@ def formula_to_sympy(formula):
         '∞': 'oo',
         '±': '+-',
         '×': '*',  # Multiplication sign
-        '×': '*'   # Times symbol
+        '×': '*',   # Times symbol
+        '★': '_star',  # Star symbol
+        '⁻': '**-',  # Superscript minus
+        '–': '-'   # En dash to minus sign
     }
     
     result = formula
@@ -203,20 +207,28 @@ def formula_to_sympy(formula):
     # Handle sqrt with numbers: sqrt2 -> sqrt(2)
     result = re.sub(r'sqrt(\d+)', r'sqrt(\1)', result)
     
+    # Fix double exponentiation from superscript minus
+    result = result.replace('**-**', '**-')
+    
     # Add multiplication operators where needed
-    # Between number and letter: 2a -> 2*a (but not scientific notation like 1e3)
-    # Negative lookbehind for 'e' or 'E' to avoid breaking scientific notation
-    result = re.sub(r'(\d)(?!e\d|E\d)([a-zA-Z_])', r'\1*\2', result)
+    # Between number and letter with optional space: 2a or 2 a -> 2*a (but not scientific notation)
+    result = re.sub(r'(\d)(?!e-?\d|E-?\d)\s*([a-zA-Z_])', r'\1*\2', result)
     # Between closing paren and letter: )a -> )*a
-    result = re.sub(r'\)([a-zA-Z_])', r')*\1', result)
-    # Between letter and opening paren: a( -> a*(
+    result = re.sub(r'\)\s*([a-zA-Z_])', r')*\1', result)
+    # Between closing paren and opening paren: )( -> )*(
+    result = re.sub(r'\)\s*\(', r')*(', result)
+    # Between letter and opening paren: a( -> a*(  (but not for functions)
     result = re.sub(r'([a-zA-Z_][a-zA-Z0-9_]*)\(', r'\1*(', result)
     # But remove the * after known functions
-    known_functions = ['sqrt', 'sin', 'cos', 'tan', 'log', 'exp', 'asin', 'acos', 'atan', 'sinh', 'cosh', 'tanh', 'abs', 'sum']
+    known_functions = ['sqrt', 'sin', 'cos', 'tan', 'log', 'exp', 'asin', 'acos', 'atan', 'sinh', 'cosh', 'tanh', 'abs', 'sum', 'solveCubic']
     for func in known_functions:
         result = result.replace(f'{func}*(', f'{func}(')
     # Between consecutive identifiers: phi_0 c_3 -> phi_0*c_3
     result = re.sub(r'([a-zA-Z_][a-zA-Z0-9_]*)\s+([a-zA-Z_][a-zA-Z0-9_]*)', r'\1*\2', result)
+    
+    # Fix merged constants like pialpha -> pi*alpha
+    result = re.sub(r'\bpialpha\b', 'pi*alpha', result)
+    result = re.sub(r'\bsin\*\*2\*theta_W\b', 'sin2_theta_W', result)
     
     return result
 
@@ -276,6 +288,14 @@ warnings.filterwarnings('ignore')  # Suppress numpy warnings for cleaner output
 # Initialize unit registry
 ureg = pint.UnitRegistry()
 Q_ = ureg.Quantity
+
+# Define custom units if needed
+try:
+    # Nuclear magneton (in SI units: J/T)
+    ureg.define('nuclear_magneton = 5.050783699e-27 * joule / tesla')
+    ureg.define('μ_N = nuclear_magneton')  # Greek mu with subscript N
+except:
+    pass  # Unit might already be defined
 
 # Bootstrap commonly used constants that may not be in dependencies
 # These are fundamental constants that many calculations rely on
