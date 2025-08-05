@@ -7,11 +7,18 @@
 
 const { spawn } = require('child_process');
 const path = require('path');
+const fs = require('fs');
 
 console.log('Starting Topological Constants Application...');
 
 // Environment setup
 process.env.NODE_ENV = 'production';
+
+// Check if Python dependencies are installed
+const computeVenvPath = path.join(__dirname, '../compute/venv');
+const useVenv = fs.existsSync(computeVenvPath);
+
+console.log('Python environment:', useVenv ? `Using venv at ${computeVenvPath}` : 'Using system Python');
 
 // Service configurations
 const services = [
@@ -29,12 +36,13 @@ const services = [
   },
   {
     name: 'compute',
-    command: 'python',
-    args: ['-m', 'uvicorn', 'main:app', '--host', '0.0.0.0', '--port', process.env.COMPUTE_PORT || '8001'],
+    command: '/bin/bash',
+    args: ['start.sh'],
     cwd: path.join(__dirname, '../compute'),
     env: {
       ...process.env,
-      PORT: process.env.COMPUTE_PORT || '8001'
+      PORT: process.env.COMPUTE_PORT || '8001',
+      PYTHONPATH: path.join(__dirname, '../compute')
     }
   },
   {

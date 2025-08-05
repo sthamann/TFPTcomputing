@@ -9,11 +9,19 @@ The error occurred because Railway couldn't find a start command. We've now adde
 
 ## Deployment Options
 
-### Option 1: Deploy as One Service (Simplest)
+### Option 1: Deploy as Separate Services (Strongly Recommended)
+
+Deploy each service separately for better reliability and scalability. This avoids Python/Node.js dependency conflicts.
+
+See detailed instructions below in "For Multi-Service Deployment" section.
+
+### Option 2: Deploy as One Service (More Complex)
+
+If you must deploy as a single service:
 
 1. Push these changes to your GitHub repo
 2. In Railway, create a new project and connect your GitHub repo
-3. Railway will now detect the start command and deploy successfully
+3. Railway will use nixpacks.toml to install both Node and Python dependencies
 4. Set these environment variables in Railway:
    ```
    NODE_ENV=production
@@ -22,26 +30,7 @@ The error occurred because Railway couldn't find a start command. We've now adde
    COMPUTE_PORT=8001
    ```
 
-### Option 2: Deploy as Separate Services (Recommended for Production)
-
-Deploy each service separately for better scalability:
-
-1. **Backend Service**:
-   - Create new Railway service
-   - Set root directory to `/backend`
-   - Railway will auto-detect and deploy
-
-2. **Frontend Service**:
-   - Create new Railway service  
-   - Set root directory to `/frontend`
-   - Set env var: `API_URL=https://your-backend.railway.app`
-
-3. **Compute Service**:
-   - Create new Railway service
-   - Set root directory to `/compute`
-   - Railway will use Python buildpack
-
-See `deployment/railway-deployment-guide.md` for detailed instructions.
+**Note:** Single-service deployment can have issues with Python dependencies. If you encounter "No module named uvicorn" errors, deploy as separate services instead.
 
 ## Environment Variables
 

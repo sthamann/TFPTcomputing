@@ -9,6 +9,12 @@ echo "Building Topological Constants Application..."
 echo "Installing root dependencies..."
 pnpm install --no-frozen-lockfile
 
+# Install Python dependencies for compute service
+echo "Installing Python dependencies..."
+cd compute
+pip install -r requirements.txt
+cd ..
+
 # Build all services
 echo "Building all services..."
 pnpm run build
