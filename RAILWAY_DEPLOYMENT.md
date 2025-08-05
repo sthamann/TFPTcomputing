@@ -94,3 +94,10 @@ If you still get errors:
 - Check Railway logs for specific error messages
 - Ensure all environment variables are set
 - For Python service, you might need to add a `runtime.txt` with `python-3.11`
+
+### Lockfile Issues
+
+If you get a "frozen lockfile" error:
+- Make sure to run `pnpm install` locally after adding new dependencies
+- Commit the updated `pnpm-lock.yaml` file
+- The Railway configs now use `pnpm install --no-frozen-lockfile` to avoid this issue

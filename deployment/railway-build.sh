@@ -7,7 +7,7 @@ echo "Building Topological Constants Application..."
 
 # Install root dependencies
 echo "Installing root dependencies..."
-pnpm install
+pnpm install --no-frozen-lockfile
 
 # Build all services
 echo "Building all services..."
