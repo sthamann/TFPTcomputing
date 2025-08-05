@@ -8,25 +8,35 @@ export default defineConfig({
     port: 3000,
     proxy: {
       '/api': {
-        target: 'http://api:8000',  // Use Docker service name directly
+        target: process.env.NODE_ENV === 'development' && !process.env.DOCKER_ENV 
+          ? 'http://localhost:8000'  // Local development
+          : 'http://api:8000',       // Docker development
         changeOrigin: true,
         secure: false
       },
       '/ws': {
-        target: 'ws://api:8000',  // Use Docker service name directly
+        target: process.env.NODE_ENV === 'development' && !process.env.DOCKER_ENV
+          ? 'ws://localhost:8000'    // Local development
+          : 'ws://api:8000',         // Docker development
         ws: true,
         changeOrigin: true
       },
       '/constants/notebooks': {
-        target: 'http://api:8000',
+        target: process.env.NODE_ENV === 'development' && !process.env.DOCKER_ENV
+          ? 'http://localhost:8000'  // Local development
+          : 'http://api:8000',       // Docker development
         changeOrigin: true
       },
       '/constants/data': {
-        target: 'http://api:8000',
+        target: process.env.NODE_ENV === 'development' && !process.env.DOCKER_ENV
+          ? 'http://localhost:8000'  // Local development
+          : 'http://api:8000',       // Docker development
         changeOrigin: true
       },
       '/compute/results': {
-        target: 'http://api:8000',
+        target: process.env.NODE_ENV === 'development' && !process.env.DOCKER_ENV
+          ? 'http://localhost:8000'  // Local development
+          : 'http://api:8000',       // Docker development
         changeOrigin: true
       }
     }

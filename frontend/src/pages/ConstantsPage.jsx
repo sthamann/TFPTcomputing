@@ -27,6 +27,46 @@ const ConstantsPage = () => {
     }
   }, [])
 
+  // Debug statistics when details are loaded
+  useEffect(() => {
+    if (detailsLoaded) {
+      const stats = {
+        total: constants.length,
+        perfect: 0,
+        good: 0,
+        needsImprovement: 0,
+        noData: 0
+      }
+      
+      constants.forEach(c => {
+        const detail = constantDetails[c.id]
+        if (!detail || !detail.lastCalculation) {
+          stats.noData++
+          stats.needsImprovement++
+          return
+        }
+        
+        const theoryValue = detail.lastCalculation.calculated_value || detail.lastCalculation.result
+        const measuredValue = detail.sources?.[0]?.value
+        
+        if (!theoryValue || !measuredValue) {
+          stats.noData++
+          stats.needsImprovement++
+          return
+        }
+        
+        const deviation = Math.abs(calculateDeviation(theoryValue, measuredValue) || 0)
+        
+        if (deviation <= 0.5) stats.perfect++
+        else if (deviation <= 5) stats.good++
+        else stats.needsImprovement++
+      })
+      
+      console.log('Constant Statistics:', stats)
+      console.log('Sample constant details:', Object.entries(constantDetails).slice(0, 3))
+    }
+  }, [detailsLoaded, constants, constantDetails])
+
   const loadConstants = async () => {
     try {
       setLoading(true)
@@ -232,11 +272,15 @@ const ConstantsPage = () => {
           <div className="mt-8 p-6 glass rounded-xl inline-block">
             <div className="flex items-center gap-4">
               <div className="flex items-center gap-2">
-                <span className="text-6xl font-bold gradient-text">α⁻¹ = 137.036</span>
+                <span className="text-6xl font-bold gradient-text">
+                  {detailsLoaded && constantDetails.alpha?.lastCalculation?.calculated_value 
+                    ? `α⁻¹ = ${(1 / constantDetails.alpha.lastCalculation.calculated_value).toFixed(3)}`
+                    : 'α⁻¹ = 137.036'}
+                </span>
               </div>
               <div className="text-sm text-muted-foreground">
                 <div>Fine Structure</div>
-                <div className="text-xs">25+ Constants Calculated</div>
+                <div className="text-xs">{detailsLoaded ? `${Object.keys(constantDetails).length} Constants Calculated` : '70+ Constants'}</div>
               </div>
             </div>
           </div>
@@ -272,46 +316,51 @@ const ConstantsPage = () => {
             <div className="relative z-10">
               <div className="text-sm text-muted-foreground mb-1">Perfect (≤0.5%)</div>
               <div className="text-3xl font-bold text-accent">
-                {constants.filter(c => {
+                {detailsLoaded ? constants.filter(c => {
                   const detail = constantDetails[c.id]
-                  const deviation = calculateDeviation(
-                    detail?.lastCalculation?.calculated_value || detail?.lastCalculation?.result,
-                    detail?.sources?.[0]?.value
-                  )
+                  if (!detail || !detail.lastCalculation) return false
+                  const theoryValue = detail.lastCalculation.calculated_value || detail.lastCalculation.result
+                  const measuredValue = detail.sources?.[0]?.value
+                  if (!theoryValue || !measuredValue) return false
+                  const deviation = calculateDeviation(theoryValue, measuredValue)
                   return Math.abs(deviation || 0) <= 0.5
-                }).length}
+                }).length : <Loader2 className="h-6 w-6 animate-spin mx-auto" />}
               </div>
             </div>
           </div>
           
           <div className="stat-card">
             <div className="relative z-10">
-              <div className="text-sm text-muted-foreground mb-1">Good (0.5%-20%)</div>
+              <div className="text-sm text-muted-foreground mb-1">Good (0.5%-5%)</div>
               <div className="text-3xl font-bold text-yellow-500">
-                {constants.filter(c => {
+                {detailsLoaded ? constants.filter(c => {
                   const detail = constantDetails[c.id]
-                  const deviation = calculateDeviation(
-                    detail?.lastCalculation?.calculated_value || detail?.lastCalculation?.result,
-                    detail?.sources?.[0]?.value
-                  )
-                  return Math.abs(deviation || 0) > 0.5 && Math.abs(deviation || 0) <= 20
-                }).length}
+                  if (!detail || !detail.lastCalculation) return false
+                  const theoryValue = detail.lastCalculation.calculated_value || detail.lastCalculation.result
+                  const measuredValue = detail.sources?.[0]?.value
+                  if (!theoryValue || !measuredValue) return false
+                  const deviation = calculateDeviation(theoryValue, measuredValue)
+                  return Math.abs(deviation || 0) > 0.5 && Math.abs(deviation || 0) <= 5
+                }).length : <Loader2 className="h-6 w-6 animate-spin mx-auto" />}
               </div>
             </div>
           </div>
           
           <div className="stat-card">
             <div className="relative z-10">
-              <div className="text-sm text-muted-foreground mb-1">Needs Improvement</div>
+              <div className="text-sm text-muted-foreground mb-1">Needs Improvement (&gt;5%)</div>
               <div className="text-3xl font-bold text-destructive">
-                {constants.filter(c => {
+                {detailsLoaded ? constants.filter(c => {
                   const detail = constantDetails[c.id]
-                  const lastCalc = detail?.lastCalculation
-                  return !lastCalc || lastCalc.status === 'error' || Math.abs(calculateDeviation(
-                    lastCalc?.calculated_value || lastCalc?.result,
-                    detail?.sources?.[0]?.value
-                  ) || 0) > 20
-                }).length}
+                  if (!detail) return true // No detail loaded
+                  const lastCalc = detail.lastCalculation
+                  if (!lastCalc || lastCalc.status === 'error') return true
+                  const theoryValue = lastCalc.calculated_value || lastCalc.result
+                  const measuredValue = detail.sources?.[0]?.value
+                  if (!theoryValue || !measuredValue) return true
+                  const deviation = calculateDeviation(theoryValue, measuredValue)
+                  return Math.abs(deviation || 0) > 5
+                }).length : <Loader2 className="h-6 w-6 animate-spin mx-auto" />}
               </div>
             </div>
           </div>

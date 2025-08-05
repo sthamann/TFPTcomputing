@@ -10,11 +10,16 @@
   "scripts": {
     "dev": "pnpm run --parallel -r dev",
     "build": "pnpm run -r build",
+    "start": "node deployment/start-production.js",
+    "start:pm2": "pm2 start deployment/ecosystem.config.js",
     "test": "pnpm run -r test",
     "lint": "pnpm run -r lint",
     "docker:up": "docker-compose up -d",
     "docker:down": "docker-compose down",
     "docker:logs": "docker-compose logs -f"
+  },
+  "dependencies": {
+    "pm2": "^5.3.0"
   },
   "devDependencies": {
     "@types/node": "^20.10.0",

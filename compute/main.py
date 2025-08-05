@@ -73,7 +73,8 @@ async def startup_event():
     
     # Pre-calculate all constants for caching
     logger.info("Pre-calculating all constants...")
-    constants_dir = Path("constants/data")
+    # In local mode, constants are in parent directory
+    constants_dir = Path("../constants/data") if not Path("constants/data").exists() else Path("constants/data")
     if constants_dir.exists():
         constant_files = list(constants_dir.glob("*.json"))
         logger.info(f"Found {len(constant_files)} constants to pre-calculate")
@@ -117,7 +118,8 @@ async def root():
 @app.get("/dag")
 async def get_dependency_graph():
     """Get the dependency graph of all constants"""
-    constants_dir = Path("constants/data")
+    # In local mode, constants are in parent directory
+    constants_dir = Path("../constants/data") if not Path("constants/data").exists() else Path("constants/data")
     graph = nx.DiGraph()
     
     # Load all constants and build graph

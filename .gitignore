@@ -65,4 +65,15 @@ docker-compose.override.yml
 # Temporary files
 *.tmp
 *.temp
-.cache/ 
+.cache/
+
+# Local development
+.local-pids
+vite.config.local.js
+vite.config.js.backup
+*.log
+
+# PM2
+.pm2/
+pm2.log
+ecosystem.config.js.log 

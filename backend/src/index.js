@@ -34,7 +34,7 @@ app.use(express.json());
 app.use(morgan('combined'));
 
 // Rate limiting - only in production
-if (process.env.NODE_ENV !== 'development') {
+if (process.env.NODE_ENV !== 'development' && process.env.NODE_ENV !== 'local') {
   const limiter = rateLimit({
     windowMs: 15 * 60 * 1000, // 15 minutes
     max: 100 // limit each IP to 100 requests per windowMs
@@ -97,30 +97,49 @@ wss.on('connection', (ws) => {
 app.get('/api/constants', async (req, res) => {
   try {
     // In Docker, constants are mounted at /app/constants
-    const constantsDir = process.env.NODE_ENV === 'development' 
+    const constantsDir = process.env.NODE_ENV === 'local' 
+      ? join(__dirname, '../../constants/data')
+      : process.env.NODE_ENV === 'development'
       ? '/app/constants/data'
       : join(__dirname, '../../constants/data');
+    
+    console.log(`Loading constants from: ${constantsDir}`);
+    console.log(`NODE_ENV: ${process.env.NODE_ENV}`);
+    
+    // Check if directory exists
+    try {
+      await fs.access(constantsDir);
+    } catch (err) {
+      console.error(`Constants directory not found: ${constantsDir}`);
+      return res.status(500).json({ error: `Constants directory not found: ${constantsDir}` });
+    }
+    
     const files = await fs.readdir(constantsDir);
     const constants = [];
     
     for (const file of files) {
       if (file.endsWith('.json')) {
-        const content = await fs.readFile(join(constantsDir, file), 'utf-8');
-        const constant = JSON.parse(content);
-        constants.push({
-          id: constant.id,
-          symbol: constant.symbol,
-          name: constant.name,
-          category: constant.category,
-          unit: constant.unit
-        });
+        try {
+          const content = await fs.readFile(join(constantsDir, file), 'utf-8');
+          const constant = JSON.parse(content);
+          constants.push({
+            id: constant.id,
+            symbol: constant.symbol,
+            name: constant.name,
+            category: constant.category,
+            unit: constant.unit
+          });
+        } catch (fileError) {
+          console.error(`Error loading file ${file}:`, fileError);
+          // Continue with other files
+        }
       }
     }
     
     res.json(constants);
   } catch (error) {
     console.error('Error loading constants:', error);
-    res.status(500).json({ error: 'Failed to load constants' });
+    res.status(500).json({ error: 'Failed to load constants', details: error.message });
   }
 });
 
@@ -147,7 +166,9 @@ app.get('/api/constants/:id', async (req, res) => {
   try {
     const { id } = req.params;
     // In Docker, constants are mounted at /app/constants
-    const constantsBase = process.env.NODE_ENV === 'development' 
+    const constantsBase = process.env.NODE_ENV === 'local' 
+      ? join(__dirname, '../../constants/data')
+      : process.env.NODE_ENV === 'development'
       ? '/app/constants/data'
       : join(__dirname, '../../constants/data');
     const constantPath = join(constantsBase, `${id}.json`);
@@ -157,7 +178,9 @@ app.get('/api/constants/:id', async (req, res) => {
       const constant = JSON.parse(content);
       
       // First check for JSON result file
-      const resultsBase = process.env.NODE_ENV === 'development' 
+      const resultsBase = process.env.NODE_ENV === 'local' 
+        ? join(__dirname, '../../constants/results/json')
+        : process.env.NODE_ENV === 'development'
         ? '/app/constants/results/json'
         : join(__dirname, '../../constants/results/json');
       const resultPath = join(resultsBase, `${id}_result.json`);
@@ -313,13 +336,28 @@ app.get('/api/dag', async (req, res) => {
 });
 
 // Serve static files for notebooks and JSON data
-app.use('/constants/notebooks', express.static(join(__dirname, '../constants/notebooks')));
-app.use('/constants/data', express.static(join(__dirname, '../constants/data')));
-app.use('/compute/results', express.static(join(__dirname, '../compute/results')));
+const staticBasePath = process.env.NODE_ENV === 'local' 
+  ? join(__dirname, '../..') // In local mode, go up to project root
+  : join(__dirname, '..');   // In Docker, constants is at ../constants
+
+app.use('/constants/notebooks', express.static(join(staticBasePath, 'constants/notebooks')));
+app.use('/constants/data', express.static(join(staticBasePath, 'constants/data')));
+app.use('/compute/results', express.static(join(staticBasePath, 'constants/results')));
 
 // Health check
 app.get('/health', (req, res) => {
   res.json({ status: 'healthy', service: 'backend' });
+});
+
+// Global error handlers
+process.on('unhandledRejection', (reason, promise) => {
+  console.error('Unhandled Rejection at:', promise, 'reason:', reason);
+  // Don't exit the process, just log the error
+});
+
+process.on('uncaughtException', (error) => {
+  console.error('Uncaught Exception:', error);
+  // Don't exit the process, just log the error
 });
 
 // Start server
