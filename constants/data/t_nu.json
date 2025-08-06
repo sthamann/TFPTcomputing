@@ -1,10 +1,10 @@
 {
   "id": "t_nu",
-  "symbol": "T_ν",
+  "symbol": "T_\u03bd",
   "name": "CNB Temperature",
   "description": "CNB temperature",
   "unit": "K",
-  "formula": "1.416784e32 * phi_0**25",
+  "formula": "1.416784e32*phi_0^25",
   "dependencies": [
     "phi_0"
   ],
@@ -20,5 +20,6 @@
   "accuracyTarget": 0.01,
   "metadata": {
     "note": "Part of the complete 43 cascade-born constants"
-  }
+  },
+  "calculated_value": 1.4019422339674382e-16
 }

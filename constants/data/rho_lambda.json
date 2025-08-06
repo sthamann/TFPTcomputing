@@ -1,17 +1,25 @@
 {
   "id": "rho_lambda",
-  "symbol": "ρ_Λ",
+  "symbol": "\u03c1_\u039b",
   "name": "Vacuum Energy Density",
   "description": "Observed dark-energy density",
-  "unit": "GeV⁴",
-  "formula": "M_Pl**4 * phi_0**97",
-  "dependencies": ["M_Pl", "phi_0"],
+  "unit": "GeV^4",
+  "formula": "M_Pl^4*phi_0^97",
+  "dependencies": [
+    "M_Pl",
+    "phi_0"
+  ],
   "category": "cosmology",
   "sources": [
-    { "name": "Observed value", "year": 2024, "value": 5e-48 }
+    {
+      "name": "Observed value",
+      "year": 2024,
+      "value": 5e-48
+    }
   ],
   "accuracyTarget": 0.1,
   "metadata": {
-    "note": "97-step ladder reproduces Λ to within 3 %; no extra factor yet."
-  }
+    "note": "97-step ladder reproduces \u039b to within 3 %; no extra factor yet."
+  },
+  "calculated_value": 5.459824933153207e-48
 }

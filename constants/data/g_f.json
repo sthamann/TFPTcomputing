@@ -3,8 +3,8 @@
   "symbol": "G_F",
   "name": "Fermi Constant",
   "description": "Fermi constant",
-  "unit": "GeV\u207b\u00b2",
-  "formula": "1/(sqrt(2) * v_H^2)",
+  "unit": "GeV^-2",
+  "formula": "1/(sqrt(2)*v_H^2)",
   "dependencies": [
     "v_h"
   ],
@@ -22,5 +22,6 @@
   "metadata": {
     "note": "Part of the complete 43 cascade-born constants",
     "latex": "G_F = \\frac{1}{\\sqrt{2} v_H^2}"
-  }
+  },
+  "calculated_value": 1.1663753915279728e-05
 }

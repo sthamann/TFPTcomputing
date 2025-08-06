@@ -1,10 +1,10 @@
 {
   "id": "tau_mu",
-  "symbol": "τ_μ",
+  "symbol": "\u03c4_\u03bc",
   "name": "Muon Lifetime",
   "description": "Muon lifetime in microseconds",
   "unit": "microseconds",
-  "formula": "(192 * pi**3) / ((G_F**2 * m_mu**5)) * 1e15",
+  "formula": "(192*pi^3)/((G_F^2*m_mu^5))*1e15",
   "dependencies": [
     "g_f",
     "m_mu"
@@ -21,5 +21,6 @@
   "accuracyTarget": 0.001,
   "metadata": {
     "note": "Part of the complete 43 cascade-born constants"
-  }
+  },
+  "calculated_value": 3516907542.9789467
 }

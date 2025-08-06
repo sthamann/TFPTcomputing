@@ -4,7 +4,7 @@
   "name": "Strong-CP angle",
   "description": "Strong CP-violating parameter",
   "unit": "dimensionless",
-  "formula": "c_3 * phi_0^7",
+  "formula": "c_3*phi_0^7",
   "dependencies": [
     "c_3",
     "phi_0"
@@ -23,5 +23,6 @@
     "note": "Natural smallness without Peccei\u2013Quinn",
     "latex": "\\bar{\\theta}_{QCD} = c_3 \\varphi_0^7",
     "theoretical_value": 4.7806168538214965e-11
-  }
+  },
+  "calculated_value": 4.7806168538214965e-11
 }

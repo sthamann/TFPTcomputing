@@ -22,5 +22,6 @@
     "note": "Shows gravity's weakness is pure kinematics: \u03b1_G = (m_p/M_Pl)\u00b2 = \u03c6\u2080\u00b3\u2070",
     "latex": "\\alpha_G = \\varphi_0^{30}",
     "theoretical_value": 5.891757294858806e-39
-  }
+  },
+  "calculated_value": 5.891757294858806e-39
 }

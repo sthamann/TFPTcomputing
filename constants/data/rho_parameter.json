@@ -1,18 +1,31 @@
 {
   "id": "rho_parameter",
-  "symbol": "ρ",
-  "name": "Electroweak ρ Parameter",
+  "symbol": "\u03c1",
+  "name": "Electroweak \u03c1 Parameter",
   "description": "Tree-level custodial-symmetry test",
   "unit": "dimensionless",
-  "formula": "M_W**2 / (M_Z**2 * (1 - phi_0))",
-  "dependencies": ["M_W", "M_Z", "phi_0"],
+  "formula": "M_W^2/(M_Z^2*(1-phi_0))",
+  "dependencies": [
+    "M_W",
+    "M_Z",
+    "phi_0"
+  ],
   "category": "electroweak",
   "sources": [
-    { "name": "PDG 2024", "year": 2024, "value": 1.00038 },
-    { "name": "Topological Fixed Point Theory", "year": 2025, "value": 1.001 }
+    {
+      "name": "PDG 2024",
+      "year": 2024,
+      "value": 1.00038
+    },
+    {
+      "name": "Topological Fixed Point Theory",
+      "year": 2025,
+      "value": 1.001
+    }
   ],
   "accuracyTarget": 0.002,
   "metadata": {
-    "note": "Replacing √φ₀ by φ₀ in the custodial denominator gives ρ ≈ 1.001; within 0.1 % of global fit."
-  }
+    "note": "Replacing \u221a\u03c6\u2080 by \u03c6\u2080 in the custodial denominator gives \u03c1 \u2248 1.001; within 0.1 % of global fit."
+  },
+  "calculated_value": 0.9999999999999999
 }

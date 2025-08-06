@@ -30,6 +30,12 @@
     "note": "Tree value \u03c6\u2080\u00b9\u2075/\u221ac\u2083 multiplied by the radion back-reaction (1\u22122\u03c6\u2080); gives 4.199 GeV, +0.4 % vs. lattice.",
     "latex": "m_b = \\frac{M_{Pl} \\varphi_0^{15}}{\\sqrt{c_3}} (1 - 2\\varphi_0)",
     "correction_factor": "VEV-Backreaction",
-    "theoretical_value": 4.198496497193857
-  }
+    "theoretical_value": 4.198496497193857,
+    "notes": "With VEV backreaction correction",
+    "last_update": "Aug 6, 2025"
+  },
+  "calculated_value": 4.198496497193857,
+  "experimental_value": 4.18,
+  "relative_error": 0.00442499932867404,
+  "accuracy_met": true
 }

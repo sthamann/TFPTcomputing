@@ -4,7 +4,7 @@
   "name": "Baryon Density Parameter",
   "description": "Present-day baryon density (\u03a9_b h\u00b2 / h\u00b2)",
   "unit": "dimensionless",
-  "formula": "phi_0 * (1 - 2*c_3)",
+  "formula": "phi_0*(1-2*c_3)",
   "dependencies": [
     "phi_0",
     "c_3"
@@ -28,5 +28,6 @@
     "latex": "\\Omega_b = \\varphi_0 (1 - 2c_3)",
     "correction_factor": "4D-Loop",
     "theoretical_value": 0.04893978626043042
-  }
+  },
+  "calculated_value": 0.04893978626043042
 }

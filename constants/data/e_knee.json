@@ -4,7 +4,7 @@
   "name": "Cosmic-ray knee energy",
   "description": "Cosmic-ray spectrum feature from cascade",
   "unit": "PeV",
-  "formula": "E_knee = M_Pl * φ₀²⁰",
+  "formula": "M_Pl*phi_0^20",
   "dependencies": [
     "m_planck",
     "phi_0"
@@ -21,5 +21,6 @@
   "accuracyTarget": 0.001,
   "metadata": {
     "note": "Cosmic-ray spectrum feature becomes topological"
-  }
+  },
+  "calculated_value": 3.9826914268329096e-13
 }

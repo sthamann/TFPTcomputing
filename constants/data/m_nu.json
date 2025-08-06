@@ -4,7 +4,7 @@
   "name": "Light Neutrino Mass",
   "description": "Lightest neutrino eigenstate mass from Type-I seesaw with Yukawa coupling",
   "unit": "eV",
-  "formula": "Y**2 * v_H**2 / (phi_5 * M_Pl)",
+  "formula": "Y^2*v_H^2/(phi_5*M_Pl)",
   "dependencies": [
     "v_h",
     "phi_0",
@@ -25,5 +25,6 @@
   "metadata": {
     "note": "Default cascade level n=5, effective Yukawa Y=0.8",
     "theoretical_value": 0.00024385997432016616
-  }
+  },
+  "calculated_value": 0.00024385997432016616
 }

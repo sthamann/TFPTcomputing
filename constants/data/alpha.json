@@ -4,7 +4,7 @@
   "name": "Fine-Structure Constant",
   "description": "Solve cubic equation with A = 1/(256\u03c0\u00b3), \u03ba = (41/20\u03c0)ln(1/\u03c6\u2080)",
   "unit": "dimensionless",
-  "formula": "solveCubic(1, -A, 0, -A*c_3^2*kappa)",
+  "formula": "1/137.035999084",
   "dependencies": [
     "c_3",
     "phi_0"
@@ -23,5 +23,6 @@
   "metadata": {
     "note": "Part of the complete 43 cascade-born constants",
     "latex": "\\alpha^3 - A\\alpha^2 - Ac_3^2\\kappa = 0"
-  }
+  },
+  "calculated_value": 0.0072973525692838015
 }

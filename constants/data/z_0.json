@@ -1,10 +1,10 @@
 {
   "id": "z_0",
-  "symbol": "Z₀",
+  "symbol": "Z\u2080",
   "name": "Vacuum impedance",
   "description": "Impedance of free space",
-  "unit": "Ω",
-  "formula": "Z₀ = ħ/(q_Pl² α)",
+  "unit": "Ohm",
+  "formula": "hbar/(q_Pl^2*alpha)",
   "dependencies": [
     "q_pl",
     "alpha"
@@ -28,5 +28,6 @@
   "accuracyTarget": 0.001,
   "metadata": {
     "note": "Completes electrodynamics constant set"
-  }
+  },
+  "calculated_value": 376.73
 }

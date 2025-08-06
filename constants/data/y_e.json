@@ -4,7 +4,7 @@
   "name": "Electron Yukawa",
   "description": "Electron Yukawa coupling",
   "unit": "dimensionless",
-  "formula": "y_e = α φ₀⁵",
+  "formula": "alpha*phi_0^5",
   "dependencies": [
     "alpha",
     "phi_0"
@@ -21,5 +21,6 @@
   "accuracyTarget": 0.001,
   "metadata": {
     "note": "Shows light lepton masses fall out naturally"
-  }
+  },
+  "calculated_value": 3.101269235106034e-09
 }

@@ -4,7 +4,7 @@
   "name": "Indirect CP Violation Parameter",
   "description": "Indirect CP violation parameter",
   "unit": "dimensionless",
-  "formula": "phi_0^2/2 * (1 + 2*phi_0)",
+  "formula": "phi_0^2/2*(1+2*phi_0)",
   "dependencies": [
     "phi_0"
   ],
@@ -23,5 +23,6 @@
     "latex": "\\epsilon_K = \\frac{\\varphi_0^2}{2} (1 + 2\\varphi_0)",
     "correction_factor": "VEV-Backreaction",
     "theoretical_value": 0.0015639002918192112
-  }
+  },
+  "calculated_value": 0.0015639002918192112
 }

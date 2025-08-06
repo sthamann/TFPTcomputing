@@ -4,7 +4,7 @@
   "name": "CKM Matrix Element Ratio",
   "description": "CKM matrix element ratio",
   "unit": "dimensionless",
-  "formula": "phi_0",
+  "formula": "sqrt(phi_0)",
   "dependencies": [
     "phi_0"
   ],
@@ -22,5 +22,6 @@
     "note": "Part of the complete 43 cascade-born constants",
     "latex": "|V_{us}/V_{ud}| = \\varphi_0",
     "theoretical_value": 0.053171
-  }
+  },
+  "calculated_value": 0.053171
 }

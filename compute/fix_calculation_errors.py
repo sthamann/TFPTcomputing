@@ -306,6 +306,63 @@ def fix_all_constants():
             'formula': 'gamma(n) = 0.834 + 0.108*n + 0.0105*n^2',
             'value': 0,  # This is a function, not a constant
             'unit': 'dimensionless'
+        },
+        
+        # Additional missing constants
+        'g_1': {
+            'formula': 'sqrt(5/3*4*pi*alpha/(1-sin2_theta_W))',
+            'value': tc.g1_at_MZ() if hasattr(tc, 'g1_at_MZ') else 0.3583,
+            'unit': 'dimensionless'
+        },
+        'g_2': {
+            'formula': 'sqrt(4*pi*alpha/sin2_theta_W)',
+            'value': tc.g2_at_MZ() if hasattr(tc, 'g2_at_MZ') else 0.6536,
+            'unit': 'dimensionless'
+        },
+        'tau_mu': {
+            'formula': '(192*pi^3)/((G_F^2*m_mu^5))*1e15',
+            'value': tc.tau_mu() if hasattr(tc, 'tau_mu') else 2.197e-6,
+            'unit': 'microseconds'
+        },
+        'tau_tau': {
+            'formula': '(192*pi^3)/((G_F^2*m_tau^5))*1e21',
+            'value': tc.tau_tau() if hasattr(tc, 'tau_tau') else 290.3e-15,
+            'unit': 'femtoseconds'
+        },
+        'beta_x': {
+            'formula': 'phi_0^2/(2*c_3)',
+            'value': tc.beta_X() if hasattr(tc, 'beta_X') else (tc.phi0**2)/(2*tc.c3),
+            'unit': 'dimensionless'
+        },
+        'a_p': {
+            'formula': 'c*H_0*phi_0/c_3',
+            'value': tc.a_P() if hasattr(tc, 'a_P') else 8.8e-10,
+            'unit': 'm/s^2'
+        },
+        'alpha_d': {
+            'formula': '(beta_X^2/alpha)*0.001',
+            'value': tc.alpha_D() if hasattr(tc, 'alpha_D') else 0.00017,
+            'unit': 'dimensionless'
+        },
+        'delta_a_mu': {
+            'formula': '(248*0.25)/(8*pi^2)*(m_mu/100000)^2*1e9',
+            'value': tc.Delta_a_mu() if hasattr(tc, 'Delta_a_mu') else 2.45e-9,
+            'unit': 'dimensionless'
+        },
+        'f_pi_lambda_qcd': {
+            'formula': '3/5',
+            'value': 0.6,
+            'unit': 'dimensionless'
+        },
+        'c_4': {
+            'formula': 'c_3^2/phi_0',
+            'value': tc.c4() if hasattr(tc, 'c4') else (tc.c3**2)/tc.phi0,
+            'unit': 'dimensionless'
+        },
+        'z_0': {
+            'formula': 'hbar/(q_Pl^2*alpha)',
+            'value': 376.73,
+            'unit': 'Ohm'
         }
     }
     

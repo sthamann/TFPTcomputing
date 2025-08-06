@@ -4,7 +4,7 @@
   "name": "Muon Mass",
   "description": "Muon mass in MeV",
   "unit": "MeV",
-  "formula": "(v_H/sqrt(2)) * phi_0^2.5 * (1 - 2*c_3) * 1e3",
+  "formula": "(v_H/sqrt(2))*phi_0^2.5*(1-2*c_3)*1e3",
   "dependencies": [
     "v_H",
     "phi_0",
@@ -26,5 +26,6 @@
     "latex": "m_\\mu = \\frac{v_H}{\\sqrt{2}} \\varphi_0^{2.5} (1 - 2c_3)",
     "correction_factor": "4D-Loop",
     "theoretical_value": 104.46784591855702
-  }
+  },
+  "calculated_value": 104.46784591855702
 }

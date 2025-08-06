@@ -1,10 +1,10 @@
 {
   "id": "tau_star",
-  "symbol": "τ★",
+  "symbol": "\u03c4\u2605",
   "name": "Planck-kink time",
   "description": "Minimal coherent tick, drives early-BBN fixes",
   "unit": "s",
-  "formula": "τ★ = φ₀³ ħ/(4π c₃ M_Pl)",
+  "formula": "phi_0^3*hbar/(4*pi*c_3*M_Pl)",
   "dependencies": [
     "phi_0",
     "c_3",
@@ -22,5 +22,6 @@
   "accuracyTarget": 0.001,
   "metadata": {
     "note": "Minimal coherent tick in quantum gravity"
-  }
+  },
+  "calculated_value": 1.6208366243244602e-47
 }

@@ -4,7 +4,7 @@
   "name": "Baryon Asymmetry",
   "description": "Baryon asymmetry",
   "unit": "dimensionless",
-  "formula": "4*c_3^7",
+  "formula": "4 * c_3^7",
   "dependencies": [
     "c_3"
   ],
@@ -21,6 +21,12 @@
   "metadata": {
     "note": "Part of the complete 43 cascade-born constants",
     "latex": "\\eta_B = 4c_3^7",
-    "theoretical_value": 6.315110782195414e-10
-  }
+    "theoretical_value": 6.315110782195414e-10,
+    "notes": "Pure topological prediction from c\u2083",
+    "last_update": "Aug 6, 2025"
+  },
+  "calculated_value": 6.315110782195414e-10,
+  "experimental_value": 6.12e-10,
+  "relative_error": 0.03188084676395657,
+  "accuracy_met": false
 }

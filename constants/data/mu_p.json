@@ -3,7 +3,7 @@
   "symbol": "\u03bc_p",
   "name": "Proton magnetic moment",
   "description": "Magnetic moment in nuclear magnetons",
-  "unit": "\u03bc_N",
+  "unit": "mu_N",
   "formula": "67/24",
   "dependencies": [],
   "category": "derived",
@@ -19,5 +19,6 @@
   "metadata": {
     "note": "Awaiting proper TFPT calculation; presently mirrors the g-factor placeholder.",
     "latex": "\\mu_p = \\frac{67}{24} \\mu_N"
-  }
+  },
+  "calculated_value": 2.7916666666666665
 }

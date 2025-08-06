@@ -4,7 +4,7 @@
   "name": "Top Yukawa",
   "description": "Top quark Yukawa coupling",
   "unit": "dimensionless",
-  "formula": "y_t = √2 c₃ φ₀⁻³",
+  "formula": "sqrt(2)*c_3*phi_0^(-3)",
   "dependencies": [
     "c_3",
     "phi_0"
@@ -15,11 +15,12 @@
       "name": "Topological Fixed Point Theory",
       "year": 2025,
       "value": 0.935,
-      "note": "Coleman–Weinberg flatness pins it"
+      "note": "Coleman\u2013Weinberg flatness pins it"
     }
   ],
   "accuracyTarget": 0.001,
   "metadata": {
-    "note": "Coleman–Weinberg flatness pins it"
-  }
+    "note": "Coleman\u2013Weinberg flatness pins it"
+  },
+  "calculated_value": 374.32656874710517
 }

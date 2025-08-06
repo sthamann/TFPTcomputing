@@ -1,10 +1,10 @@
 {
   "id": "t_gamma_0",
-  "symbol": "T_γ0",
+  "symbol": "T_\u03b30",
   "name": "CMB Temperature",
   "description": "CMB temperature",
   "unit": "K",
-  "formula": "1.416784e32 * φ₀²⁵ * 1e-16",
+  "formula": "1.416784e32*phi_0^25*1e-16",
   "dependencies": [
     "phi_0"
   ],
@@ -20,5 +20,6 @@
   "accuracyTarget": 0.001,
   "metadata": {
     "note": "Part of the complete 43 cascade-born constants"
-  }
+  },
+  "calculated_value": 1.9641486394418192e-16
 }

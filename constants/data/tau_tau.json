@@ -1,10 +1,10 @@
 {
   "id": "tau_tau",
-  "symbol": "τ_τ",
+  "symbol": "\u03c4_\u03c4",
   "name": "Tau Lifetime",
   "description": "Tau lifetime in femtoseconds",
   "unit": "femtoseconds",
-  "formula": "(192 * pi**3) / ((G_F**2 * m_tau**5) * (LEPTONIC + HADRONIC)) * 1e21",
+  "formula": "(192*pi^3)/((G_F^2*m_tau^5))*1e21",
   "dependencies": [
     "g_f",
     "m_tau"
@@ -21,5 +21,6 @@
   "accuracyTarget": 0.001,
   "metadata": {
     "note": "Part of the complete 43 cascade-born constants"
-  }
+  },
+  "calculated_value": 8.620504101383761e+17
 }

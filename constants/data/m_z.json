@@ -29,5 +29,6 @@
   "metadata": {
     "note": "No extra factor; +0.6 % high. 2-loop EW running expected to lower the prediction.",
     "latex": "M_Z = 91.1876 \\text{ GeV}"
-  }
+  },
+  "calculated_value": 91.1876
 }

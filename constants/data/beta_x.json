@@ -1,10 +1,10 @@
 {
   "id": "beta_x",
-  "symbol": "β_X",
+  "symbol": "\u03b2_X",
   "name": "Dark-photon coupling",
-  "description": "Dark-photon coupling strength from next Möbius edge",
+  "description": "Dark-photon coupling strength from next M\u00f6bius edge",
   "unit": "dimensionless",
-  "formula": "β_X = φ₀²/(2c₃)",
+  "formula": "phi_0^2/(2*c_3)",
   "dependencies": [
     "phi_0",
     "c_3"
@@ -20,6 +20,7 @@
   ],
   "accuracyTarget": 0.001,
   "metadata": {
-    "note": "Derived from next Möbius edge topology"
-  }
+    "note": "Derived from next M\u00f6bius edge topology"
+  },
+  "calculated_value": 0.03552708054273393
 }

@@ -4,7 +4,7 @@
   "name": "Neutron-Proton Mass Difference",
   "description": "Neutron-proton mass difference",
   "unit": "MeV",
-  "formula": "m_e * phi_0 * 48",
+  "formula": "m_e*phi_0*48",
   "dependencies": [
     "m_e",
     "phi_0"
@@ -29,5 +29,6 @@
   "metadata": {
     "note": "Part of the complete 43 cascade-born constants",
     "latex": "\\Delta m_{n-p} = 48 m_e \\varphi_0"
-  }
+  },
+  "calculated_value": 1304.774369478336
 }

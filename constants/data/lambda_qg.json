@@ -23,5 +23,6 @@
   "metadata": {
     "note": "Critical scale for quantum gravity effects",
     "latex": "\\Lambda_{QG} = 2\\pi c_3 \\varphi_0 M_{Pl}"
-  }
+  },
+  "calculated_value": 1.6229118475e+17
 }

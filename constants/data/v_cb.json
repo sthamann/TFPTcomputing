@@ -4,7 +4,7 @@
   "name": "CKM Matrix Element V_cb",
   "description": "CKM matrix element V_cb",
   "unit": "dimensionless",
-  "formula": "(3/4)*phi_0",
+  "formula": "(3/4) * phi_0",
   "dependencies": [
     "phi_0"
   ],
@@ -21,6 +21,12 @@
   "metadata": {
     "note": "Part of the complete 43 cascade-born constants",
     "latex": "V_{cb} = \\frac{3}{4}\\varphi_0",
-    "theoretical_value": 0.039878250000000004
-  }
+    "theoretical_value": 0.039878250000000004,
+    "notes": "Geometric factor times \u03c6\u2080",
+    "last_update": "Aug 6, 2025"
+  },
+  "calculated_value": 0.039878250000000004,
+  "experimental_value": 0.0409,
+  "relative_error": 0.024981662591686916,
+  "accuracy_met": false
 }

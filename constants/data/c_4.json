@@ -1,10 +1,10 @@
 {
   "id": "c_4",
-  "symbol": "c₄",
+  "symbol": "c\u2084",
   "name": "Secondary fixed point",
   "description": "Secondary topological fixed point from double half-twist",
   "unit": "dimensionless",
-  "formula": "c₄ = c₃²/φ₀",
+  "formula": "c_3^2/phi_0",
   "dependencies": [
     "c_3",
     "phi_0"
@@ -21,5 +21,6 @@
   "accuracyTarget": 0.001,
   "metadata": {
     "note": "Derived from double half-twist topology"
-  }
+  },
+  "calculated_value": 0.029774566858090462
 }

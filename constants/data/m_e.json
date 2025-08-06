@@ -4,7 +4,7 @@
   "name": "Electron Mass",
   "description": "Electron mass in MeV",
   "unit": "MeV",
-  "formula": "(v_H/sqrt(2)) * alpha * phi_0^5 * (1 - phi_0) * 1e6 * 1e3",
+  "formula": "(v_H/sqrt(2))*alpha*phi_0^5*(1-phi_0)*1e6",
   "dependencies": [
     "v_H",
     "alpha",
@@ -26,5 +26,6 @@
     "latex": "m_e = \\frac{v_H}{\\sqrt{2}} \\alpha \\varphi_0^5 (1 - \\varphi_0)",
     "correction_factor": "4D-Loop",
     "theoretical_value": 511.2335552111489
-  }
+  },
+  "calculated_value": 511.2335552111489
 }

@@ -28,6 +28,12 @@
   "metadata": {
     "note": "Pure 15-step ladder matches CODATA to \u22120.12 % \u2014 no correction needed.",
     "latex": "m_p = M_{Pl} \\varphi_0^{15}",
-    "theoretical_value": 0.9371357761290925
-  }
+    "theoretical_value": 0.9371357761290925,
+    "notes": "Direct 15-step ladder prediction",
+    "last_update": "Aug 6, 2025"
+  },
+  "calculated_value": 937.1357761290925,
+  "experimental_value": 938.272,
+  "relative_error": 0.0012109749314778047,
+  "accuracy_met": true
 }

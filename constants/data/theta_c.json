@@ -22,5 +22,6 @@
     "note": "Part of the complete 43 cascade-born constants",
     "latex": "\\theta_c = \\arcsin\\left(\\frac{\\varphi_0}{1+\\varphi_0}\\right)",
     "theoretical_value": 0.05050805028492696
-  }
+  },
+  "calculated_value": 0.05050805028492696
 }

@@ -1,10 +1,10 @@
 {
   "id": "lambda_star",
-  "symbol": "λ★",
+  "symbol": "\u03bb\u2605",
   "name": "Cascade-horizon length",
   "description": "Minimal causal distance after unwrapping 6-D fibre",
   "unit": "m",
-  "formula": "λ★ = √(ħ G)/φ₀²",
+  "formula": "(hbar*G)/phi_0^2",
   "dependencies": [
     "phi_0"
   ],
@@ -20,5 +20,6 @@
   "accuracyTarget": 0.001,
   "metadata": {
     "note": "Minimal causal distance in quantum gravity"
-  }
+  },
+  "calculated_value": 5.715993152991487e-33
 }
