@@ -21,7 +21,6 @@
   "accuracyTarget": 0.001,
   "metadata": {
     "note": "Part of the complete 43 cascade-born constants",
-    "latex": "G_F = \\frac{1}{\\sqrt{2} v_H^2}"
-  },
-  "calculated_value": 1.1663753915279728e-05
+    "measured_value": 1.1663787e-05
+  }
 }

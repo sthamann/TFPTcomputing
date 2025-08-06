@@ -7,6 +7,7 @@ import { constantGroups, getConstantGroup, groupOrder, getCorrectionFactor } fro
 import KaTeXFormula from '../components/KaTeXFormula'
 import TheoryExplanation from '../components/TheoryExplanation'
 import CascadeVisualization from '../components/CascadeVisualization'
+import CorrectionFactorVisualization from '../components/CorrectionFactorVisualization'
 
 const ConstantsPage = () => {
   const [constants, setConstants] = useState([])
@@ -165,10 +166,11 @@ const ConstantsPage = () => {
     const detail = constantDetails[constant.id]
     const lastCalculation = detail?.lastCalculation
     const theoryValue = lastCalculation?.calculated_value || lastCalculation?.result
-    const measuredValue = detail?.sources?.[0]?.value
+    const measuredValue = detail?.metadata?.measured_value || detail?.sources?.[0]?.value
     const deviation = calculateDeviation(theoryValue, measuredValue)
     const hasWarning = Math.abs(deviation || 0) > 5
     const hasCalculationError = !lastCalculation || lastCalculation.status === 'error'
+    const correctionFactors = detail?.metadata?.correction_factors || []
     
     const deviationBadgeClass = () => {
       if (hasCalculationError) return ''
@@ -176,6 +178,13 @@ const ConstantsPage = () => {
       if (absDeviation <= 0.5) return 'badge-success'
       if (absDeviation <= 5) return 'badge-warning'
       return 'badge-error'
+    }
+    
+    const getCorrectionBadgeColor = (factorName) => {
+      if (factorName.includes('4D-Loop')) return 'bg-blue-100 text-blue-800 dark:bg-blue-900/30 dark:text-blue-300'
+      if (factorName.includes('KK-Geometry')) return 'bg-purple-100 text-purple-800 dark:bg-purple-900/30 dark:text-purple-300'
+      if (factorName.includes('VEV-Backreaction')) return 'bg-green-100 text-green-800 dark:bg-green-900/30 dark:text-green-300'
+      return 'bg-gray-100 text-gray-800 dark:bg-gray-900/30 dark:text-gray-300'
     }
     
     return (
@@ -190,12 +199,45 @@ const ConstantsPage = () => {
         </td>
         <td className="px-4 py-3">
           <Link to={`/constants/${constant.id}`} className="hover:text-primary transition-colors">
-            {constant.name}
+            <div className="flex flex-col gap-1">
+              <span>{constant.name}</span>
+              {correctionFactors.length > 0 && (
+                <div className="flex flex-wrap gap-1">
+                  {correctionFactors.map((factor, idx) => (
+                    <span 
+                      key={idx}
+                      className={`text-xs px-2 py-0.5 rounded-full ${getCorrectionBadgeColor(factor.name)}`}
+                      title={factor.description}
+                    >
+                      {factor.name}
+                    </span>
+                  ))}
+                </div>
+              )}
+            </div>
           </Link>
         </td>
         <td className="px-4 py-3">
           <div className="formula-display">
-            {detail?.formula && <KaTeXFormula formula={detail.formula} />}
+            {detail?.formula && (
+              <div className="flex items-center gap-2">
+                <KaTeXFormula formula={detail.formula} />
+                {correctionFactors.length > 0 && (
+                  <div className="flex items-center gap-1">
+                    <span className="text-gray-500">×</span>
+                    {correctionFactors.map((factor, idx) => (
+                      <span 
+                        key={idx}
+                        className={`text-xs px-1.5 py-0.5 rounded ${getCorrectionBadgeColor(factor.name)} font-mono`}
+                        title={factor.description}
+                      >
+                        {factor.formula}
+                      </span>
+                    ))}
+                  </div>
+                )}
+              </div>
+            )}
           </div>
         </td>
         <td className="px-4 py-3 text-right">
@@ -299,6 +341,17 @@ const ConstantsPage = () => {
           <span className="gradient-text">Theory Structure & Predictions</span>
         </h2>
         <CascadeVisualization />
+      </div>
+
+      {/* Correction Factor Visualization */}
+      <div className="px-8 mb-12">
+        <h2 className="text-2xl font-bold mb-6">
+          <span className="gradient-text">Correction Factor Analysis</span>
+        </h2>
+        <CorrectionFactorVisualization 
+          constants={constants} 
+          constantDetails={constantDetails} 
+        />
       </div>
 
       {/* Stats Section */}

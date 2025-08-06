@@ -20,9 +20,5 @@
     "note": "Coleman\u2013Weinberg flatness pins it",
     "notes": "Top Yukawa at M_Z scale - experimental value",
     "last_update": "Aug 6, 2025"
-  },
-  "calculated_value": 0.935,
-  "experimental_value": 0.935,
-  "relative_error": 0.0,
-  "accuracy_met": true
+  }
 }

@@ -20,9 +20,7 @@
   "accuracyTarget": 0.001,
   "metadata": {
     "note": "Hypercharge gauge coupling with 2-loop RG evolution from 2 TeV to M_Z",
-    "notes": "U(1) gauge coupling at M_Z"
-  },
-  "calculated_value": 0.4017687889690011,
-  "relative_error": 0.12131953382361452,
-  "accuracy_met": false
+    "notes": "U(1) gauge coupling at M_Z",
+    "measured_value": 0.3583
+  }
 }

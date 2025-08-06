@@ -23,9 +23,13 @@
   "accuracyTarget": 0.01,
   "metadata": {
     "note": "Tree-level ladder (\u03b1 \u03c6\u2080\u2075) corrected by single radion back-reaction factor (1\u2212\u03c6\u2080); removes former 5 % overshoot and lands at 0.51123 MeV (0.05 % high).",
-    "latex": "m_e = \\frac{v_H}{\\sqrt{2}} \\alpha \\varphi_0^5 (1 - \\varphi_0)",
-    "correction_factor": "4D-Loop",
-    "theoretical_value": 511.2335552111489
-  },
-  "calculated_value": 511.2335552111489
+    "correction_factors": [
+      {
+        "name": "4D-Loop",
+        "formula": "1 - 2*c_3",
+        "description": "One-loop renormalization in 4 dimensions"
+      }
+    ],
+    "measured_value": 0.51099895069
+  }
 }

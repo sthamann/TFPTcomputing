@@ -20,9 +20,12 @@
   "accuracyTarget": 0.2,
   "metadata": {
     "note": "Part of the complete 43 cascade-born constants",
-    "latex": "\\epsilon_K = \\frac{\\varphi_0^2}{2} (1 + 2\\varphi_0)",
-    "correction_factor": "VEV-Backreaction",
-    "theoretical_value": 0.0015639002918192112
-  },
-  "calculated_value": 0.0015639002918192112
+    "correction_factors": [
+      {
+        "name": "VEV-Backreaction-plus",
+        "formula": "1 + 2*phi_0",
+        "description": "VEV backreaction with k=+2"
+      }
+    ]
+  }
 }

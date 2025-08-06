@@ -20,6 +20,5 @@
   "accuracyTarget": 0.001,
   "metadata": {
     "note": "Predicts slight phantom-side drift testable by Euclid"
-  },
-  "calculated_value": -0.9995288074598333
+  }
 }

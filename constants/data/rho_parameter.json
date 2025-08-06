@@ -26,9 +26,7 @@
   "accuracyTarget": 0.002,
   "metadata": {
     "note": "Replacing \u221a\u03c6\u2080 by \u03c6\u2080 in the custodial denominator gives \u03c1 \u2248 1.001; within 0.1 % of global fit.",
-    "notes": "Electroweak rho parameter"
-  },
-  "calculated_value": 0.8117809185768035,
-  "relative_error": 0.18852744099561825,
-  "accuracy_met": false
+    "notes": "Electroweak rho parameter",
+    "measured_value": 1.00038
+  }
 }

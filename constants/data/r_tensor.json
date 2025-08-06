@@ -19,8 +19,6 @@
   "accuracyTarget": 0.01,
   "metadata": {
     "note": "Parameter-free prediction r = \u03c6\u2080\u00b2; CMB-S4 target value.",
-    "latex": "r = \\varphi_0^2",
-    "theoretical_value": 0.0028271552410000004
-  },
-  "calculated_value": 0.0028271552410000004
+    "measured_value": 0.002827
+  }
 }

@@ -22,7 +22,6 @@
   "accuracyTarget": 0.001,
   "metadata": {
     "note": "Part of the complete 43 cascade-born constants",
-    "latex": "\\alpha^3 - A\\alpha^2 - Ac_3^2\\kappa = 0"
-  },
-  "calculated_value": 0.0072973525692838015
+    "measured_value": 0.0072973525643
+  }
 }

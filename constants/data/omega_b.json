@@ -25,9 +25,13 @@
   "accuracyTarget": 0.005,
   "metadata": {
     "note": "One 4-D loop (1\u20132c\u2083) dilutes the ladder value \u03c6\u2080; match \u20130.06 %.",
-    "latex": "\\Omega_b = \\varphi_0 (1 - 2c_3)",
-    "correction_factor": "4D-Loop",
-    "theoretical_value": 0.04893978626043042
-  },
-  "calculated_value": 0.04893978626043042
+    "correction_factors": [
+      {
+        "name": "4D-Loop",
+        "formula": "1 - 2*c_3",
+        "description": "One-loop renormalization in 4 dimensions"
+      }
+    ],
+    "measured_value": 0.04897
+  }
 }

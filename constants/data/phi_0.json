@@ -17,8 +17,6 @@
   ],
   "accuracyTarget": 1e-06,
   "metadata": {
-    "note": "This is the key parameter from which all mass scales derive",
-    "latex": "\\varphi_0 = 0.053171"
-  },
-  "calculated_value": 0.053171
+    "note": "This is the key parameter from which all mass scales derive"
+  }
 }

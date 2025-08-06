@@ -20,7 +20,7 @@
   "accuracyTarget": 0.1,
   "metadata": {
     "note": "97-step ladder reproduces \u039b to within 3 %; no extra factor yet.",
-    "notes": "Vacuum energy density"
-  },
-  "calculated_value": 5.459824933153207e-48
+    "notes": "Vacuum energy density",
+    "measured_value": 5e-48
+  }
 }

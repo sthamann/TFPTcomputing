@@ -23,9 +23,13 @@
   "accuracyTarget": 1.0,
   "metadata": {
     "note": "Tree-level ladder (\u03c6\u2080\u00b2\u00b7\u2075) multiplied by the universal 4-D loop factor (1\u20132c\u2083 = 1\u20131/4\u03c0); removes the previous +7 % overshoot and lands at 104.47 MeV (\u22121.1 %).",
-    "latex": "m_\\mu = \\frac{v_H}{\\sqrt{2}} \\varphi_0^{2.5} (1 - 2c_3)",
-    "correction_factor": "4D-Loop",
-    "theoretical_value": 104.46784591855702
-  },
-  "calculated_value": 104.46784591855702
+    "correction_factors": [
+      {
+        "name": "4D-Loop",
+        "formula": "1 - 2*c_3",
+        "description": "One-loop renormalization in 4 dimensions"
+      }
+    ],
+    "measured_value": 105.6583755
+  }
 }

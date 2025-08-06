@@ -21,11 +21,6 @@
   "accuracyTarget": 0.001,
   "metadata": {
     "note": "Part of the complete 43 cascade-born constants",
-    "latex": "\\Lambda_{QCD} = M_Z e^{-2\\pi/(b_Y\\alpha_s)}",
-    "theoretical_value": 8.426235533176839e-21,
     "notes": "QCD confinement scale"
-  },
-  "calculated_value": 8.426235533176839e-21,
-  "relative_error": 1.0,
-  "accuracy_met": false
+  }
 }

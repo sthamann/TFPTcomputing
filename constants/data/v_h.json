@@ -21,8 +21,6 @@
   ],
   "accuracyTarget": 0.01,
   "metadata": {
-    "note": "Part of the complete 43 cascade-born constants",
-    "latex": "v_H = c_3 M_{Pl} \\varphi_0^{12}"
-  },
-  "calculated_value": 248.0493956937548
+    "note": "Part of the complete 43 cascade-born constants"
+  }
 }

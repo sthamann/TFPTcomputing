@@ -28,8 +28,6 @@
   "accuracyTarget": 0.01,
   "metadata": {
     "note": "Leading-order ladder m_\u03c4 \u221d \u03c6\u2080^1.5 receives a purely group-theoretical prefactor 5/6: the ratio of left- vs right-handed Weyl weights in the E\u2088 embedding of the third lepton generation. No loop factors are needed; prediction 1.7789 GeV is 0.1 % above CODATA.",
-    "latex": "m_\\tau = \\frac{v_H}{\\sqrt{2}} \\cdot \\frac{5}{6} \\varphi_0^{1.5}",
-    "theoretical_value": 1.7788499892949583
-  },
-  "calculated_value": 1.7788499892949583
+    "measured_value": 1.77686
+  }
 }

@@ -27,7 +27,7 @@
   ],
   "accuracyTarget": 0.001,
   "metadata": {
-    "note": "Completes electrodynamics constant set"
-  },
-  "calculated_value": 376.73
+    "note": "Completes electrodynamics constant set",
+    "measured_value": 376.730313412
+  }
 }

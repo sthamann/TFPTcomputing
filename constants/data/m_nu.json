@@ -24,8 +24,7 @@
   "accuracyTarget": 0.5,
   "metadata": {
     "note": "Default cascade level n=5, effective Yukawa Y=0.8",
-    "theoretical_value": 0.00024385997432016616,
-    "notes": "Light neutrino mass with cascade phi_5"
-  },
-  "calculated_value": 0.00024385997432016616
+    "notes": "Light neutrino mass with cascade phi_5",
+    "measured_value": 0.00134
+  }
 }

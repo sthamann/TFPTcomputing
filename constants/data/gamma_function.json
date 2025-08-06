@@ -18,7 +18,6 @@
   "accuracyTarget": 0.001,
   "metadata": {
     "note": "Coefficients from E8/E7 coset dimension: 248/297 = 0.8350, fiber reduction: 27/250 = 0.108",
-    "latex": "\\gamma(n) = 0.834 + 0.108n + 0.0105n^2"
-  },
-  "calculated_value": 0
+    "measured_value": 0
+  }
 }

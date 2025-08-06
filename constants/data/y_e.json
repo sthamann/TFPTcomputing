@@ -20,9 +20,5 @@
     "note": "Shows light lepton masses fall out naturally",
     "notes": "Electron Yukawa from mass relation: m_e * sqrt(2) / v_H",
     "last_update": "Aug 6, 2025"
-  },
-  "calculated_value": 2.9350301777786193e-06,
-  "experimental_value": 2.94e-06,
-  "relative_error": 0.0016904157215579905,
-  "accuracy_met": true
+  }
 }

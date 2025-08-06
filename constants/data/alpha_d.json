@@ -21,6 +21,5 @@
   "accuracyTarget": 0.02,
   "metadata": {
     "note": "Places milli-charged DM in safe CMB window"
-  },
-  "calculated_value": 0.00017296319999703398
+  }
 }

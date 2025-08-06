@@ -19,9 +19,6 @@
   ],
   "accuracyTarget": 0.01,
   "metadata": {
-    "note": "Part of the complete 43 cascade-born constants",
-    "latex": "|V_{us}/V_{ud}| = \\varphi_0",
-    "theoretical_value": 0.053171
-  },
-  "calculated_value": 0.053171
+    "note": "Part of the complete 43 cascade-born constants"
+  }
 }

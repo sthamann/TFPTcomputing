@@ -22,6 +22,5 @@
   "metadata": {
     "note": "Removes astrophysical tuning for first stars",
     "notes": "Optical depth to reionization"
-  },
-  "calculated_value": 3.3819273766731905e-08
+  }
 }

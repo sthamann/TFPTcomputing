@@ -24,7 +24,6 @@
   "accuracyTarget": 0.05,
   "metadata": {
     "note": "Currently a pure number (67/24).  Kept for reference; to be replaced once a real group-theoretic derivation is available.",
-    "latex": "\\mu_p/\\mu_N = 67/24"
-  },
-  "calculated_value": 2.7916666666666665
+    "measured_value": 2.79285
+  }
 }

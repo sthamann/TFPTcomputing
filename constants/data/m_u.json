@@ -28,14 +28,15 @@
   "accuracyTarget": 0.2,
   "metadata": {
     "note": "KK-geometry factor (1\u22124c\u2083) lowers the ladder value from 2.649 MeV to 2.228 MeV, landing +3 % above lattice.",
-    "latex": "m_u = M_{Pl} \\varphi_0^{17} (1 - 4c_3)",
-    "correction_factor": "KK-Geometry",
-    "theoretical_value": 2.2277587073552514,
     "notes": "Up quark mass with KK-geometry correction, result in MeV",
-    "last_update": "Aug 6, 2025"
-  },
-  "calculated_value": 2.2277587073552514,
-  "experimental_value": 2.16,
-  "relative_error": 0.031369771923727426,
-  "accuracy_met": false
+    "last_update": "Aug 6, 2025",
+    "correction_factors": [
+      {
+        "name": "KK-Geometry",
+        "formula": "1 - 4*c_3",
+        "description": "First Kaluza-Klein shell on S\u00b9"
+      }
+    ],
+    "measured_value": 2.16
+  }
 }

@@ -27,12 +27,8 @@
   "accuracyTarget": 0.001,
   "metadata": {
     "note": "Part of the complete 43 cascade-born constants",
-    "latex": "\\sin^2\\theta_W = \\varphi_0",
     "notes": "Weinberg angle at M_Z with RG corrections (factor 1.155)",
-    "last_update": "Aug 6, 2025"
-  },
-  "calculated_value": 0.23138228464484378,
-  "experimental_value": 0.23121,
-  "relative_error": 0.037356129320079735,
-  "accuracy_met": false
+    "last_update": "Aug 6, 2025",
+    "measured_value": 0.22305
+  }
 }

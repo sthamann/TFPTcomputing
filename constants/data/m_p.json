@@ -27,13 +27,8 @@
   "accuracyTarget": 0.1,
   "metadata": {
     "note": "Pure 15-step ladder matches CODATA to \u22120.12 % \u2014 no correction needed.",
-    "latex": "m_p = M_{Pl} \\varphi_0^{15}",
-    "theoretical_value": 0.9371357761290925,
     "notes": "Proton mass from cascade level 15",
-    "last_update": "Aug 6, 2025"
-  },
-  "calculated_value": 937.1357761290925,
-  "experimental_value": 938.272,
-  "relative_error": 0.0012110701295589591,
-  "accuracy_met": true
+    "last_update": "Aug 6, 2025",
+    "measured_value": 938.27208943
+  }
 }

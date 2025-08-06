@@ -18,7 +18,6 @@
   "accuracyTarget": 0.05,
   "metadata": {
     "note": "Awaiting proper TFPT calculation; presently mirrors the g-factor placeholder.",
-    "latex": "\\mu_p = \\frac{67}{24} \\mu_N"
-  },
-  "calculated_value": 2.7916666666666665
+    "measured_value": 2.79285
+  }
 }

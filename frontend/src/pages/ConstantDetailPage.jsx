@@ -388,12 +388,98 @@ const ConstantDetailPage = () => {
           </div>
         )}
 
+        {/* Correction Factor Analysis */}
+        {constant.metadata?.correction_factors && constant.metadata.correction_factors.length > 0 && (
+          <div className="mt-6 pt-6 border-t">
+            <h3 className="text-sm font-medium text-muted-foreground mb-4">Correction Factor Analysis</h3>
+            <div className="space-y-4">
+              {constant.metadata.correction_factors.map((factor, idx) => {
+                // Calculate tree-level value (without correction)
+                const correctionValue = factor.formula.includes('+') ? 
+                  1 + 2 * 0.053171 : // VEV backreaction positive
+                  factor.formula.includes('4c') ? 
+                    1 - 4 * 0.039788735772973836 : // KK geometry
+                    1 - 2 * (factor.formula.includes('phi') ? 0.053171 : 0.039788735772973836) // 4D loop or VEV negative
+                
+                const theoryValue = constant.lastCalculation?.calculated_value || constant.lastCalculation?.result
+                const treeValue = theoryValue ? theoryValue / correctionValue : null
+                
+                return (
+                  <div key={idx} className="bg-gradient-to-r from-purple-900/20 to-blue-900/20 rounded-lg p-4 border border-purple-500/30">
+                    <div className="flex items-center justify-between mb-3">
+                      <div className="flex items-center gap-3">
+                        <span className="px-3 py-1 rounded-full text-sm font-medium bg-purple-500/20 text-purple-300 border border-purple-500/30">
+                          {factor.name}
+                        </span>
+                        <span className="text-sm text-gray-400">
+                          <KaTeXFormula formula={factor.formula} /> = {correctionValue.toFixed(4)}
+                        </span>
+                      </div>
+                    </div>
+                    <p className="text-xs text-gray-400 mb-3">{factor.description}</p>
+                    
+                    <div className="grid grid-cols-2 gap-4">
+                      <div className="bg-gray-800/50 rounded p-3">
+                        <div className="text-xs text-gray-500 mb-1">Tree-level (without correction)</div>
+                        <div className="text-xl font-mono text-gray-300">
+                          {treeValue ? formatValue(treeValue, constant.unit) : '—'}
+                        </div>
+                      </div>
+                      <div className="bg-purple-900/30 rounded p-3 border border-purple-500/20">
+                        <div className="text-xs text-purple-400 mb-1">With correction factor</div>
+                        <div className="text-xl font-mono text-purple-300">
+                          {theoryValue ? formatValue(theoryValue, constant.unit) : '—'}
+                        </div>
+                      </div>
+                    </div>
+                    
+                    {constant.sources?.[0]?.value && (
+                      <div className="mt-3 pt-3 border-t border-gray-700/50">
+                        <div className="flex items-center justify-between">
+                          <span className="text-xs text-gray-500">Experimental value:</span>
+                          <span className="font-mono text-sm text-green-400">
+                            {formatValue(constant.sources[0].value, constant.unit)}
+                          </span>
+                        </div>
+                        <div className="flex items-center justify-between mt-1">
+                          <span className="text-xs text-gray-500">Improvement with correction:</span>
+                          <span className="text-sm text-amber-400">
+                            {(() => {
+                              const exp = constant.sources[0].value
+                              const errorWithout = treeValue ? Math.abs((treeValue - exp) / exp * 100) : 0
+                              const errorWith = theoryValue ? Math.abs((theoryValue - exp) / exp * 100) : 0
+                              const improvement = errorWithout - errorWith
+                              return improvement > 0 ? 
+                                `${improvement.toFixed(2)}% better` : 
+                                `${Math.abs(improvement).toFixed(2)}% worse`
+                            })()}
+                          </span>
+                        </div>
+                      </div>
+                    )}
+                  </div>
+                )
+              })}
+            </div>
+          </div>
+        )}
+
         {/* Formula Display */}
         {constant.formula && (
           <div className="mt-6 pt-6 border-t">
             <h3 className="text-sm font-medium text-muted-foreground mb-4">Mathematical Formula</h3>
             <div className="formula-display-large p-6 text-center">
               <KaTeXFormula formula={constant.formula} block />
+              {constant.metadata?.correction_factors && constant.metadata.correction_factors.length > 0 && (
+                <div className="mt-4 flex items-center justify-center gap-2">
+                  <span className="text-gray-500">×</span>
+                  {constant.metadata.correction_factors.map((factor, idx) => (
+                    <span key={idx} className="px-3 py-1 rounded-full text-sm bg-purple-500/20 text-purple-300 border border-purple-500/30">
+                      <KaTeXFormula formula={factor.formula} />
+                    </span>
+                  ))}
+                </div>
+              )}
             </div>
           </div>
         )}
