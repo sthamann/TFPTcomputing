@@ -1,0 +1,30 @@
+{
+  "id": "f_pi_lambda_qcd",
+  "name": "Pion Decay Constant to QCD Scale Ratio",
+  "symbol": "f_\u03c0/\u039b_QCD",
+  "value": 0.6,
+  "calculated_value": 0.6,
+  "result": 0.6,
+  "unit": "dimensionless",
+  "category": "strong",
+  "description": "Pion decay constant to QCD scale ratio",
+  "formula": "3/5",
+  "sources": [
+    {
+      "name": "Topological Fixed Point Theory",
+      "year": 2025,
+      "value": 1.51,
+      "note": "From comprehensive constant list"
+    }
+  ],
+  "measured_value": null,
+  "relative_error": 0,
+  "accuracy_met": true,
+  "status": "completed",
+  "timestamp": "2025-08-06T13:43:19.742393",
+  "metadata": {
+    "calculated_value": 0.6,
+    "measured_value": null,
+    "correction_factors": []
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "id": "g_2",
+  "name": "SU(2) Gauge Coupling",
+  "symbol": "g\u2082",
+  "value": 1.2219661921,
+  "calculated_value": 1.2219661921,
+  "result": 1.2219661921,
+  "unit": "dimensionless",
+  "category": "derived",
+  "description": "SU(2)_L gauge coupling at M_Z with 2-loop RG evolution",
+  "formula": "sqrt(4*pi*alpha / sin2_theta_w)",
+  "sources": [
+    {
+      "name": "Electroweak Theory",
+      "year": 2025,
+      "value": 0.6536
+    }
+  ],
+  "measured_value": 0.6536,
+  "relative_error": 0.8695933171664628,
+  "accuracy_met": false,
+  "status": "warning",
+  "timestamp": "2025-08-06T13:43:21.333369",
+  "metadata": {
+    "calculated_value": 1.2219661921,
+    "measured_value": 0.6536,
+    "correction_factors": []
+  }
+}

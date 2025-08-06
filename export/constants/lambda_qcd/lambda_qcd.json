@@ -1,0 +1,26 @@
+{
+  "id": "lambda_qcd",
+  "symbol": "\u039b_QCD",
+  "name": "QCD Confinement Scale",
+  "description": "QCD confinement scale",
+  "unit": "MeV",
+  "formula": "M_Z * exp(-2*pi / (41/10 * alpha_s))",
+  "dependencies": [
+    "m_z",
+    "alpha_s"
+  ],
+  "category": "derived",
+  "sources": [
+    {
+      "name": "Topological Fixed Point Theory",
+      "year": 2025,
+      "value": 87.0,
+      "note": "From comprehensive constant list"
+    }
+  ],
+  "accuracyTarget": 0.001,
+  "metadata": {
+    "note": "Part of the complete 43 cascade-born constants",
+    "notes": "QCD confinement scale"
+  }
+}

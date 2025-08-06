@@ -1,0 +1,29 @@
+{
+  "id": "c_3",
+  "name": "Topological Fixed Point",
+  "symbol": "c\u2083",
+  "value": 0.039788735773,
+  "calculated_value": 0.039788735773,
+  "result": 0.039788735773,
+  "unit": "dimensionless",
+  "category": "fundamental_theory",
+  "description": "The fundamental topological fixed point parameter from 11D \u2192 6D compactification",
+  "formula": "1/(8*pi)",
+  "sources": [
+    {
+      "name": "Topological Fixed Point Theory",
+      "year": 2025,
+      "value": 0.039788735772973836
+    }
+  ],
+  "measured_value": null,
+  "relative_error": 0,
+  "accuracy_met": true,
+  "status": "completed",
+  "timestamp": "2025-08-06T13:43:11.234881",
+  "metadata": {
+    "calculated_value": 0.039788735773,
+    "measured_value": null,
+    "correction_factors": []
+  }
+}

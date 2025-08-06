@@ -1,0 +1,22 @@
+{
+  "id": "f_pi_lambda_qcd",
+  "symbol": "f_\u03c0/\u039b_QCD",
+  "name": "Pion Decay Constant to QCD Scale Ratio",
+  "description": "Pion decay constant to QCD scale ratio",
+  "unit": "dimensionless",
+  "formula": "3/5",
+  "dependencies": [],
+  "category": "strong",
+  "sources": [
+    {
+      "name": "Topological Fixed Point Theory",
+      "year": 2025,
+      "value": 1.51,
+      "note": "From comprehensive constant list"
+    }
+  ],
+  "accuracyTarget": 0.001,
+  "metadata": {
+    "note": "Part of the complete 43 cascade-born constants"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "id": "alpha_s",
+  "name": "Strong Coupling Constant",
+  "symbol": "\u03b1_s",
+  "value": 0.0265855,
+  "calculated_value": 0.0265855,
+  "result": 0.0265855,
+  "unit": "dimensionless",
+  "category": "secondary",
+  "description": "Strong coupling constant",
+  "formula": "phi_0/2",
+  "sources": [
+    {
+      "name": "Topological Fixed Point Theory",
+      "year": 2025,
+      "value": 0.1181,
+      "note": "From comprehensive constant list"
+    }
+  ],
+  "measured_value": null,
+  "relative_error": 0,
+  "accuracy_met": true,
+  "status": "completed",
+  "timestamp": "2025-08-06T13:43:09.589213",
+  "metadata": {
+    "calculated_value": 0.0265855,
+    "measured_value": null,
+    "correction_factors": []
+  }
+}

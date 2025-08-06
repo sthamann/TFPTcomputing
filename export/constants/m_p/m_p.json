@@ -1,0 +1,34 @@
+{
+  "id": "m_p",
+  "symbol": "m_p",
+  "name": "Proton Mass",
+  "description": "Proton mass in MeV",
+  "unit": "MeV",
+  "formula": "M_Pl * phi_0^15",
+  "dependencies": [
+    "m_planck",
+    "phi_0"
+  ],
+  "category": "primary",
+  "sources": [
+    {
+      "name": "CODATA 2022",
+      "year": 2022,
+      "value": 938.27208943,
+      "uncertainty": 2.9e-07
+    },
+    {
+      "name": "Topological Fixed Point Theory",
+      "year": 2025,
+      "value": 937.14,
+      "note": "TFPT ladder prediction"
+    }
+  ],
+  "accuracyTarget": 0.1,
+  "metadata": {
+    "note": "Pure 15-step ladder matches CODATA to \u22120.12 % \u2014 no correction needed.",
+    "notes": "Proton mass from cascade level 15",
+    "last_update": "Aug 6, 2025",
+    "measured_value": 938.27208943
+  }
+}

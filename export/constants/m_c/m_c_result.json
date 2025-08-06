@@ -1,0 +1,36 @@
+{
+  "id": "m_c",
+  "name": "Charm Quark Mass",
+  "symbol": "m_c",
+  "value": 1.252325448,
+  "calculated_value": 1.252325448,
+  "result": 1.252325448,
+  "unit": "GeV",
+  "category": "secondary",
+  "description": "Charm quark mass",
+  "formula": "M_Pl * phi_0^16 / c_3",
+  "sources": [
+    {
+      "name": "Lattice/PDG 2024",
+      "year": 2024,
+      "value": 1.27,
+      "note": "MS-bar at \u03bc=3 GeV"
+    },
+    {
+      "name": "Topological Fixed Point Theory",
+      "year": 2025,
+      "value": 1.252,
+      "note": "Pure ladder value (no extra factor needed)"
+    }
+  ],
+  "measured_value": 1.27,
+  "relative_error": -0.013916970078740253,
+  "accuracy_met": true,
+  "status": "completed",
+  "timestamp": "2025-08-06T13:43:26.804790",
+  "metadata": {
+    "calculated_value": 1.252325448,
+    "measured_value": 1.27,
+    "correction_factors": []
+  }
+}

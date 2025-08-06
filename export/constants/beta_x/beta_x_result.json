@@ -1,0 +1,30 @@
+{
+  "id": "beta_x",
+  "name": "Dark-photon coupling",
+  "symbol": "\u03b2_X",
+  "value": 0.035527080543,
+  "calculated_value": 0.035527080543,
+  "result": 0.035527080543,
+  "unit": "dimensionless",
+  "category": "dark_sector",
+  "description": "Dark-photon coupling strength from next M\u00f6bius edge",
+  "formula": "phi_0^2/(2*c_3)",
+  "sources": [
+    {
+      "name": "Topological Fixed Point Theory",
+      "year": 2025,
+      "value": 0.0355,
+      "note": "Sets milli-charged dark-sector strength"
+    }
+  ],
+  "measured_value": null,
+  "relative_error": 0,
+  "accuracy_met": true,
+  "status": "completed",
+  "timestamp": "2025-08-06T13:43:10.470328",
+  "metadata": {
+    "calculated_value": 0.035527080543,
+    "measured_value": null,
+    "correction_factors": []
+  }
+}

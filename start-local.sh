@@ -30,8 +30,8 @@ check_port() {
 generate_notebooks() {
     echo -e "${YELLOW}Generating and executing constant notebooks...${NC}"
     
-    # Step 1: Generate notebooks
-    echo -e "${BLUE}📝 Generating notebooks from constant definitions...${NC}"
+    # Step 1: Generate self-contained notebooks
+    echo -e "${BLUE}📝 Generating self-contained notebooks from constant definitions...${NC}"
     cd constants
     
     if [[ "$OSTYPE" == "msys" || "$OSTYPE" == "win32" ]]; then
@@ -39,49 +39,46 @@ generate_notebooks() {
         python scripts/generate_notebooks.py
     else
         # Unix-like systems
-        source ../compute/venv/bin/activate
-        python scripts/generate_notebooks.py
-        deactivate
+        if [ -f "../compute/venv/bin/activate" ]; then
+            source ../compute/venv/bin/activate
+            python scripts/generate_notebooks.py
+            deactivate
+        else
+            python3 scripts/generate_notebooks.py
+        fi
     fi
     
-    cd ..
-    
     if [ $? -ne 0 ]; then
+        cd ..
         echo -e "${RED}❌ Notebook generation failed!${NC}"
         return 1
     fi
     echo -e "${GREEN}✅ Notebooks generated successfully!${NC}"
     
-    # Step 2: Execute notebooks (optional, for initial setup)
-    if [ ! -f "constants/results/json/alpha_result.json" ]; then
-        echo -e "${BLUE}🔬 Executing notebooks to calculate constant values...${NC}"
-        echo -e "${YELLOW}This may take a few minutes on first run...${NC}"
-        
-        cd compute
-        if [[ "$OSTYPE" == "msys" || "$OSTYPE" == "win32" ]]; then
-            # Windows
-            ./venv/Scripts/python ../constants/docker_execute_notebooks.py || true
-        else
-            # Unix-like systems
-            source venv/bin/activate
-            python ../constants/docker_execute_notebooks.py || true
-            deactivate
-        fi
-        cd ..
-        
-        # Extract results
-        echo -e "${BLUE}📊 Extracting results from notebooks...${NC}"
-        cd compute
-        if [[ "$OSTYPE" == "msys" || "$OSTYPE" == "win32" ]]; then
-            ./venv/Scripts/python ../constants/extract_results_from_notebooks.py || true
-        else
-            source venv/bin/activate
-            python ../constants/extract_results_from_notebooks.py || true
-            deactivate
-        fi
-        cd ..
+    # Step 2: Execute notebooks (always run to ensure fresh calculations)
+    echo -e "${BLUE}🔬 Executing notebooks to calculate constant values...${NC}"
+    echo -e "${YELLOW}This may take a few minutes...${NC}"
+    
+    if [[ "$OSTYPE" == "msys" || "$OSTYPE" == "win32" ]]; then
+        # Windows
+        python execute_standalone_notebooks.py || true
     else
-        echo -e "${GREEN}✅ Notebooks already executed, using cached results${NC}"
+        # Unix-like systems
+        if [ -f "../compute/venv/bin/activate" ]; then
+            source ../compute/venv/bin/activate
+            python execute_standalone_notebooks.py || true
+            deactivate
+        else
+            python3 execute_standalone_notebooks.py || true
+        fi
+    fi
+    
+    cd ..
+    
+    if [ -f "constants/results/json/alpha_result.json" ]; then
+        echo -e "${GREEN}✅ Notebooks executed and results saved${NC}"
+    else
+        echo -e "${YELLOW}⚠️  Some notebooks may have failed, but continuing...${NC}"
     fi
     
     echo ""

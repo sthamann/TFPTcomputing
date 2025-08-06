@@ -1,0 +1,30 @@
+{
+  "id": "alpha_g",
+  "name": "Gravitational Coupling",
+  "symbol": "\u03b1_G",
+  "value": 5.8917572949e-39,
+  "calculated_value": 5.8917572949e-39,
+  "result": 5.8917572949e-39,
+  "unit": "dimensionless",
+  "category": "primary",
+  "description": "Gravitational fine structure constant: \u03b1_G = G m_p\u00b2 / (\u0127c)",
+  "formula": "phi_0^30",
+  "sources": [
+    {
+      "name": "Topological Fixed Point Theory",
+      "year": 2025,
+      "value": 5.906e-39,
+      "note": "Equivalent to G m_p\u00b2 / (\u0127c) where m_p = M_Pl \u03c6\u2080\u00b9\u2075"
+    }
+  ],
+  "measured_value": null,
+  "relative_error": 0,
+  "accuracy_met": true,
+  "status": "completed",
+  "timestamp": "2025-08-06T13:43:08.786902",
+  "metadata": {
+    "calculated_value": 5.8917572949e-39,
+    "measured_value": null,
+    "correction_factors": []
+  }
+}

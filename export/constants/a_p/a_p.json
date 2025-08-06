@@ -1,0 +1,25 @@
+{
+  "id": "a_p",
+  "symbol": "a_P",
+  "name": "Pioneer anomalous acceleration",
+  "description": "Anomalous acceleration affecting Pioneer spacecraft",
+  "unit": "m/s^2",
+  "formula": "c*H_0*phi_0/c_3",
+  "dependencies": [
+    "phi_0",
+    "c_3"
+  ],
+  "category": "cosmology",
+  "sources": [
+    {
+      "name": "Topological Fixed Point Theory",
+      "year": 2025,
+      "value": 8.8e-10,
+      "note": "Turns a decades-old solar-system puzzle into a cosmological inevitability"
+    }
+  ],
+  "accuracyTarget": 0.01,
+  "metadata": {
+    "note": "Turns a decades-old solar-system puzzle into a cosmological inevitability"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "id": "c_4",
+  "name": "Secondary fixed point",
+  "symbol": "c\u2084",
+  "value": 0.029774566858,
+  "calculated_value": 0.029774566858,
+  "result": 0.029774566858,
+  "unit": "dimensionless",
+  "category": "fundamental",
+  "description": "Secondary topological fixed point from double half-twist",
+  "formula": "c_3^2/phi_0",
+  "sources": [
+    {
+      "name": "Topological Fixed Point Theory",
+      "year": 2025,
+      "value": 0.0298,
+      "note": "Feeds threshold splittings for unification"
+    }
+  ],
+  "measured_value": null,
+  "relative_error": 0,
+  "accuracy_met": true,
+  "status": "completed",
+  "timestamp": "2025-08-06T13:43:12.148525",
+  "metadata": {
+    "calculated_value": 0.029774566858,
+    "measured_value": null,
+    "correction_factors": []
+  }
+}

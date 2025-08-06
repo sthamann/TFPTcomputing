@@ -1,0 +1,25 @@
+{
+  "id": "delta_a_mu",
+  "symbol": "\u0394a_\u03bc",
+  "name": "Muon g-2 anomaly",
+  "description": "Muon g-2 anomaly",
+  "unit": "dimensionless",
+  "formula": "(248*0.25)/(8*pi^2)*(m_mu/100000)^2*1e9",
+  "dependencies": [
+    "m_mu",
+    "g_f"
+  ],
+  "category": "anomaly",
+  "sources": [
+    {
+      "name": "Topological Fixed Point Theory",
+      "year": 2025,
+      "value": 2.45e-09,
+      "note": "From comprehensive constant list"
+    }
+  ],
+  "accuracyTarget": 0.001,
+  "metadata": {
+    "note": "Part of the complete 43 cascade-born constants"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "id": "m_s_m_d_ratio",
+  "name": "Strange/Down Mass Ratio",
+  "symbol": "m_s/m_d",
+  "value": 18.807244551,
+  "calculated_value": 18.807244551,
+  "result": 18.807244551,
+  "unit": "dimensionless",
+  "category": "primary",
+  "description": "Strange to down quark mass ratio",
+  "formula": "1/phi_0",
+  "sources": [
+    {
+      "name": "Topological Fixed Point Theory",
+      "year": 2025,
+      "value": 20.2,
+      "note": "From comprehensive constant list"
+    }
+  ],
+  "measured_value": null,
+  "relative_error": 0,
+  "accuracy_met": true,
+  "status": "completed",
+  "timestamp": "2025-08-06T13:43:31.388612",
+  "metadata": {
+    "calculated_value": 18.807244551,
+    "measured_value": null,
+    "correction_factors": []
+  }
+}

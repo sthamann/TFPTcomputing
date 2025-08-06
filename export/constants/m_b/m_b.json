@@ -1,0 +1,42 @@
+{
+  "id": "m_b",
+  "symbol": "m_b",
+  "name": "Bottom Quark Mass",
+  "description": "Bottom quark mass",
+  "unit": "GeV",
+  "formula": "M_Pl * phi_0^15 / sqrt(c_3) * (1 - 2*phi_0)",
+  "dependencies": [
+    "m_planck",
+    "phi_0",
+    "c_3"
+  ],
+  "category": "secondary",
+  "sources": [
+    {
+      "name": "Lattice/PDG 2024",
+      "year": 2024,
+      "value": 4.18,
+      "note": "MS-bar at \u03bc=m_b"
+    },
+    {
+      "name": "Topological Fixed Point Theory",
+      "year": 2025,
+      "value": 4.199,
+      "note": "TFPT prediction incl. VEV back-reaction"
+    }
+  ],
+  "accuracyTarget": 0.02,
+  "metadata": {
+    "note": "Tree value \u03c6\u2080\u00b9\u2075/\u221ac\u2083 multiplied by the radion back-reaction (1\u22122\u03c6\u2080); gives 4.199 GeV, +0.4 % vs. lattice.",
+    "notes": "Bottom quark mass with VEV backreaction",
+    "last_update": "Aug 6, 2025",
+    "correction_factors": [
+      {
+        "name": "VEV-Backreaction-minus",
+        "formula": "1 - 2*phi_0",
+        "description": "VEV backreaction with k=-2"
+      }
+    ],
+    "measured_value": 4.18
+  }
+}

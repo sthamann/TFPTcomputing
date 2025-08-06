@@ -1,0 +1,25 @@
+{
+  "id": "alpha_d",
+  "symbol": "\u03b1_D",
+  "name": "Dark-electric fine structure",
+  "description": "Dark sector electromagnetic coupling",
+  "unit": "dimensionless",
+  "formula": "(beta_X^2/alpha)*0.001",
+  "dependencies": [
+    "beta_x",
+    "alpha"
+  ],
+  "category": "dark_sector",
+  "sources": [
+    {
+      "name": "Topological Fixed Point Theory",
+      "year": 2025,
+      "value": 0.00017,
+      "note": "Places milli-charged DM in safe CMB window"
+    }
+  ],
+  "accuracyTarget": 0.02,
+  "metadata": {
+    "note": "Places milli-charged DM in safe CMB window"
+  }
+}

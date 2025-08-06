@@ -1,0 +1,42 @@
+{
+  "id": "m_b",
+  "name": "Bottom Quark Mass",
+  "symbol": "m_b",
+  "value": 3.7520199827,
+  "calculated_value": 3.7520199827,
+  "result": 3.7520199827,
+  "unit": "GeV",
+  "category": "secondary",
+  "description": "Bottom quark mass",
+  "formula": "M_Pl * phi_0^15 / sqrt(c_3) * (1 - 2*phi_0)",
+  "sources": [
+    {
+      "name": "Lattice/PDG 2024",
+      "year": 2024,
+      "value": 4.18,
+      "note": "MS-bar at \u03bc=m_b"
+    },
+    {
+      "name": "Topological Fixed Point Theory",
+      "year": 2025,
+      "value": 4.199,
+      "note": "TFPT prediction incl. VEV back-reaction"
+    }
+  ],
+  "measured_value": 4.18,
+  "relative_error": -0.1023875639473684,
+  "accuracy_met": false,
+  "status": "warning",
+  "timestamp": "2025-08-06T13:43:26.072527",
+  "metadata": {
+    "calculated_value": 3.7520199827,
+    "measured_value": 4.18,
+    "correction_factors": [
+      {
+        "name": "VEV-Backreaction-minus",
+        "formula": "1 - 2*phi_0",
+        "description": "VEV backreaction with k=-2"
+      }
+    ]
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "id": "m_mu",
+  "name": "Muon Mass",
+  "symbol": "m_\u03bc",
+  "value": 96.868979872,
+  "calculated_value": 96.868979872,
+  "result": 96.868979872,
+  "unit": "MeV",
+  "category": "secondary",
+  "description": "Muon mass in MeV",
+  "formula": "(v_H/sqrt(2))*phi_0^2.5*(1-2*c_3)*1e3",
+  "sources": [
+    {
+      "name": "CODATA 2022",
+      "year": 2022,
+      "value": 105.6583755,
+      "uncertainty": 2.3e-06,
+      "note": "Imported from codata/2022.txt"
+    }
+  ],
+  "measured_value": 105.6583755,
+  "relative_error": -0.08318692755218451,
+  "accuracy_met": true,
+  "status": "completed",
+  "timestamp": "2025-08-06T13:43:28.306816",
+  "metadata": {
+    "calculated_value": 96.868979872,
+    "measured_value": 105.6583755,
+    "correction_factors": [
+      {
+        "name": "4D-Loop",
+        "formula": "1 - 2*c_3",
+        "description": "One-loop renormalization in 4 dimensions"
+      }
+    ]
+  }
+}

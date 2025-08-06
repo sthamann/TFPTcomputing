@@ -1,0 +1,27 @@
+{
+  "id": "m_planck",
+  "symbol": "M_Pl",
+  "name": "Planck Mass",
+  "description": "The Planck mass, fundamental gravitational scale",
+  "unit": "GeV",
+  "formula": "1.2209e19",
+  "dependencies": [
+    "m_planck"
+  ],
+  "category": "fundamental_theory",
+  "sources": [
+    {
+      "name": "CODATA 2022",
+      "year": 2022,
+      "value": 1.22089e+19,
+      "uncertainty": 140000000000000.0,
+      "note": "Imported from codata/2022.txt",
+      "url": "https://physics.nist.gov/cgi-bin/cuu/Value?plkm"
+    }
+  ],
+  "accuracyTarget": 0.0001,
+  "metadata": {
+    "codataId": "plkm",
+    "measured_value": 1.22089e+19
+  }
+}

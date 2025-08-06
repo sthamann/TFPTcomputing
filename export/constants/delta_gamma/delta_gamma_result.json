@@ -1,0 +1,30 @@
+{
+  "id": "delta_gamma",
+  "name": "Photon drift index",
+  "symbol": "\u03b4_\u03b3",
+  "value": 4.1443283707e-09,
+  "calculated_value": 4.1443283707e-09,
+  "result": 4.1443283707e-09,
+  "unit": "dimensionless",
+  "category": "cosmology",
+  "description": "Predicts fine structure constant variation",
+  "formula": "(phi_0^6 / c_3) * alpha",
+  "sources": [
+    {
+      "name": "Topological Fixed Point Theory",
+      "year": 2025,
+      "value": 9e-32,
+      "note": "Predicts 10\u207b\u2077 level \u03b1-variation in quasar spectra"
+    }
+  ],
+  "measured_value": null,
+  "relative_error": 0,
+  "accuracy_met": true,
+  "status": "completed",
+  "timestamp": "2025-08-06T13:43:13.788338",
+  "metadata": {
+    "calculated_value": 4.1443283707e-09,
+    "measured_value": null,
+    "correction_factors": []
+  }
+}

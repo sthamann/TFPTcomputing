@@ -1,0 +1,26 @@
+{
+  "id": "g_2",
+  "symbol": "g\u2082",
+  "name": "SU(2) Gauge Coupling",
+  "description": "SU(2)_L gauge coupling at M_Z with 2-loop RG evolution",
+  "unit": "dimensionless",
+  "formula": "sqrt(4*pi*alpha / sin2_theta_w)",
+  "dependencies": [
+    "alpha",
+    "sin2_theta_w"
+  ],
+  "category": "derived",
+  "sources": [
+    {
+      "name": "Electroweak Theory",
+      "year": 2025,
+      "value": 0.6536
+    }
+  ],
+  "accuracyTarget": 0.001,
+  "metadata": {
+    "note": "Weak isospin gauge coupling with 2-loop RG evolution from 2 TeV to M_Z",
+    "notes": "SU(2) gauge coupling at M_Z",
+    "measured_value": 0.6536
+  }
+}

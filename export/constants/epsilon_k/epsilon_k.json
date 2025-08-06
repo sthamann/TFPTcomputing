@@ -1,0 +1,31 @@
+{
+  "id": "epsilon_k",
+  "symbol": "\u03b5_K",
+  "name": "Indirect CP Violation Parameter",
+  "description": "Indirect CP violation parameter",
+  "unit": "dimensionless",
+  "formula": "phi_0^2/2*(1+2*phi_0)",
+  "dependencies": [
+    "phi_0"
+  ],
+  "category": "secondary",
+  "sources": [
+    {
+      "name": "Topological Fixed Point Theory",
+      "year": 2025,
+      "value": 0.002228,
+      "note": "From comprehensive constant list"
+    }
+  ],
+  "accuracyTarget": 0.2,
+  "metadata": {
+    "note": "Part of the complete 43 cascade-born constants",
+    "correction_factors": [
+      {
+        "name": "VEV-Backreaction-plus",
+        "formula": "1 + 2*phi_0",
+        "description": "VEV backreaction with k=+2"
+      }
+    ]
+  }
+}

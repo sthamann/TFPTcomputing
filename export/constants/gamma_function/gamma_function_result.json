@@ -1,0 +1,30 @@
+{
+  "id": "gamma_function",
+  "name": "E8 Cascade Attenuation Function",
+  "symbol": "\u03b3(n)",
+  "value": 0.9525,
+  "calculated_value": 0.9525,
+  "result": 0.9525,
+  "unit": "dimensionless",
+  "category": "cascade",
+  "description": "Polynomial fit for cascade attenuation from E8 nilpotent orbit dimensions: \u03b3(n) = 0.834 + 0.108n + 0.0105n\u00b2",
+  "formula": "gamma(n) = 0.834 + 0.108*n + 0.0105*n^2",
+  "sources": [
+    {
+      "name": "E8 Orbit Theory",
+      "year": 2025,
+      "value": 0,
+      "note": "Function, not a single value"
+    }
+  ],
+  "measured_value": 0,
+  "relative_error": 0,
+  "accuracy_met": true,
+  "status": "completed",
+  "timestamp": "2025-08-06T13:43:22.926598",
+  "metadata": {
+    "calculated_value": 0.9525,
+    "measured_value": 0,
+    "correction_factors": []
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "id": "f_b",
+  "symbol": "f_b",
+  "name": "Cosmic baryon fraction",
+  "description": "Baryon fraction of cosmic matter",
+  "unit": "dimensionless",
+  "formula": "eta_b / (eta_b + 5*c_3^7)",
+  "dependencies": [
+    "eta_b",
+    "c_3"
+  ],
+  "category": "cosmology",
+  "sources": [
+    {
+      "name": "Topological Fixed Point Theory",
+      "year": 2025,
+      "value": 0.158,
+      "note": "Explains missing-baryon budget via mirror sector"
+    }
+  ],
+  "accuracyTarget": 0.001,
+  "metadata": {
+    "note": "Explains missing-baryon budget via mirror sector",
+    "notes": "Cosmic baryon fraction"
+  }
+}

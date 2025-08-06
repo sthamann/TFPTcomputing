@@ -1,0 +1,35 @@
+{
+  "id": "m_e",
+  "symbol": "m_e",
+  "name": "Electron Mass",
+  "description": "Electron mass in MeV",
+  "unit": "MeV",
+  "formula": "(v_H/sqrt(2))*alpha*phi_0^5*(1-phi_0)*1e6",
+  "dependencies": [
+    "v_H",
+    "alpha",
+    "phi_0"
+  ],
+  "category": "secondary",
+  "sources": [
+    {
+      "name": "CODATA 2022",
+      "year": 2022,
+      "value": 0.51099895069,
+      "uncertainty": 1.6e-10,
+      "note": "Imported from codata/2022.txt"
+    }
+  ],
+  "accuracyTarget": 0.01,
+  "metadata": {
+    "note": "Tree-level ladder (\u03b1 \u03c6\u2080\u2075) corrected by single radion back-reaction factor (1\u2212\u03c6\u2080); removes former 5 % overshoot and lands at 0.51123 MeV (0.05 % high).",
+    "correction_factors": [
+      {
+        "name": "4D-Loop",
+        "formula": "1 - 2*c_3",
+        "description": "One-loop renormalization in 4 dimensions"
+      }
+    ],
+    "measured_value": 0.51099895069
+  }
+}

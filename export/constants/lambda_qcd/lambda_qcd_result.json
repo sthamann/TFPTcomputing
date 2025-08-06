@@ -1,0 +1,30 @@
+{
+  "id": "lambda_qcd",
+  "name": "QCD Confinement Scale",
+  "symbol": "\u039b_QCD",
+  "value": 8.4262355332e-24,
+  "calculated_value": 8.4262355332e-24,
+  "result": 8.4262355332e-24,
+  "unit": "MeV",
+  "category": "derived",
+  "description": "QCD confinement scale",
+  "formula": "M_Z * exp(-2*pi / (41/10 * alpha_s))",
+  "sources": [
+    {
+      "name": "Topological Fixed Point Theory",
+      "year": 2025,
+      "value": 87.0,
+      "note": "From comprehensive constant list"
+    }
+  ],
+  "measured_value": null,
+  "relative_error": 0,
+  "accuracy_met": true,
+  "status": "completed",
+  "timestamp": "2025-08-06T13:43:23.826022",
+  "metadata": {
+    "calculated_value": 8.4262355332e-24,
+    "measured_value": null,
+    "correction_factors": []
+  }
+}

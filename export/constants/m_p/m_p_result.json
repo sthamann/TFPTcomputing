@@ -1,0 +1,36 @@
+{
+  "id": "m_p",
+  "name": "Proton Mass",
+  "symbol": "m_p",
+  "value": 0.93713577613,
+  "calculated_value": 0.93713577613,
+  "result": 0.93713577613,
+  "unit": "MeV",
+  "category": "primary",
+  "description": "Proton mass in MeV",
+  "formula": "M_Pl * phi_0^15",
+  "sources": [
+    {
+      "name": "CODATA 2022",
+      "year": 2022,
+      "value": 938.27208943,
+      "uncertainty": 2.9e-07
+    },
+    {
+      "name": "Topological Fixed Point Theory",
+      "year": 2025,
+      "value": 937.14,
+      "note": "TFPT ladder prediction"
+    }
+  ],
+  "measured_value": 938.27208943,
+  "relative_error": -0.9990012110701285,
+  "accuracy_met": false,
+  "status": "warning",
+  "timestamp": "2025-08-06T13:43:29.932629",
+  "metadata": {
+    "calculated_value": 0.93713577613,
+    "measured_value": 938.27208943,
+    "correction_factors": []
+  }
+}
