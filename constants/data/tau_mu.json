@@ -1,25 +1,23 @@
 {
   "id": "tau_mu",
-  "symbol": "\u03c4_\u03bc",
+  "symbol": "τ_μ",
   "name": "Muon Lifetime",
   "description": "Muon lifetime in microseconds",
-  "unit": "microseconds",
-  "formula": "(192*pi^3)/((G_F^2*m_mu^5))*1e15",
+  "unit": "seconds",
+  "formula": "(192*pi^3)/(G_F^2*m_mu^5)*(1-8*(m_e/m_mu)^2)",
   "dependencies": [
     "g_f",
-    "m_mu"
+    "m_mu",
+    "m_e"
   ],
   "category": "lepton",
   "sources": [
     {
       "name": "Topological Fixed Point Theory",
       "year": 2025,
-      "value": 2.197,
+      "value": 2.197e-06,
       "note": "From comprehensive constant list"
     }
   ],
-  "accuracyTarget": 0.001,
-  "metadata": {
-    "note": "Part of the complete 43 cascade-born constants"
-  }
+  "accuracyTarget": 0.001
 }

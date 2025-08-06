@@ -1,6 +1,6 @@
 {
   "id": "eta_b",
-  "symbol": "\u03b7_B",
+  "symbol": "η_B",
   "name": "Baryon Asymmetry",
   "description": "Baryon asymmetry",
   "unit": "dimensionless",
@@ -19,7 +19,6 @@
   ],
   "accuracyTarget": 0.001,
   "metadata": {
-    "note": "Part of the complete 43 cascade-born constants",
     "notes": "Baryon asymmetry from topological structure",
     "last_update": "Aug 6, 2025"
   }

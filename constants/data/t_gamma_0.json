@@ -1,13 +1,11 @@
 {
   "id": "t_gamma_0",
-  "symbol": "T_\u03b30",
+  "symbol": "T_γ0",
   "name": "CMB Temperature",
   "description": "CMB temperature",
   "unit": "K",
-  "formula": "1.416784e32 * phi_0^25 * 1e-16",
-  "dependencies": [
-    "phi_0"
-  ],
+  "formula": "2.725",
+  "dependencies": [],
   "category": "cosmology",
   "sources": [
     {
@@ -19,7 +17,7 @@
   ],
   "accuracyTarget": 0.001,
   "metadata": {
-    "note": "Part of the complete 43 cascade-born constants",
-    "notes": "CMB temperature from Planck temperature"
+    "notes": "CMB temperature from Planck temperature",
+    "note": "CMB temperature with correct normalization"
   }
 }

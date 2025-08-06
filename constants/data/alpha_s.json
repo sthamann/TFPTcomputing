@@ -1,10 +1,10 @@
 {
   "id": "alpha_s",
-  "symbol": "\u03b1_s",
+  "symbol": "α_s",
   "name": "Strong Coupling Constant",
   "description": "Strong coupling constant",
   "unit": "dimensionless",
-  "formula": "phi_0/2",
+  "formula": "sqrt(phi_0)/2",
   "dependencies": [
     "phi_0"
   ],
@@ -13,12 +13,9 @@
     {
       "name": "Topological Fixed Point Theory",
       "year": 2025,
-      "value": 0.1181,
+      "value": 0.1153,
       "note": "From comprehensive constant list"
     }
   ],
-  "accuracyTarget": 0.1,
-  "metadata": {
-    "note": "Part of the complete 43 cascade-born constants"
-  }
+  "accuracyTarget": 0.1
 }

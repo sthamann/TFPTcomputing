@@ -1,8 +1,8 @@
 {
   "id": "alpha",
-  "symbol": "\u03b1",
+  "symbol": "α",
   "name": "Fine-Structure Constant",
-  "description": "Solve cubic equation with A = 1/(256\u03c0\u00b3), \u03ba = (41/20\u03c0)ln(1/\u03c6\u2080)",
+  "description": "Solve cubic equation with A = 1/(256π³), κ = (41/20π)ln(1/φ₀)",
   "unit": "dimensionless",
   "formula": "solveCubic(α³ - Aα² - Ac₃²κ = 0, where A = 1/(256π³), κ = (41/20π)ln(1/φ₀))",
   "dependencies": [
@@ -21,7 +21,6 @@
   ],
   "accuracyTarget": 0.001,
   "metadata": {
-    "note": "Part of the complete 43 cascade-born constants",
     "measured_value": 0.0072973525643
   }
 }

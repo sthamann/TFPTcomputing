@@ -1,6 +1,6 @@
 {
   "id": "delta_a_mu",
-  "symbol": "\u0394a_\u03bc",
+  "symbol": "Δa_μ",
   "name": "Muon g-2 anomaly",
   "description": "Muon g-2 anomaly",
   "unit": "dimensionless",
@@ -18,8 +18,5 @@
       "note": "From comprehensive constant list"
     }
   ],
-  "accuracyTarget": 0.001,
-  "metadata": {
-    "note": "Part of the complete 43 cascade-born constants"
-  }
+  "accuracyTarget": 0.001
 }

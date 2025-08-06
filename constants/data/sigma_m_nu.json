@@ -1,6 +1,6 @@
 {
   "id": "sigma_m_nu",
-  "symbol": "\u03a3m_\u03bd",
+  "symbol": "Σm_ν",
   "name": "Sum of Neutrino Masses",
   "description": "Sum of neutrino masses",
   "unit": "eV",
@@ -19,7 +19,6 @@
   ],
   "accuracyTarget": 0.001,
   "metadata": {
-    "note": "Part of the complete 43 cascade-born constants",
     "notes": "Sum of neutrino masses"
   }
 }

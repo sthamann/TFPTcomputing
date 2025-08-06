@@ -1,7 +1,7 @@
 {
   "id": "rho_parameter",
-  "symbol": "\u03c1",
-  "name": "Electroweak \u03c1 Parameter",
+  "symbol": "ρ",
+  "name": "Electroweak ρ Parameter",
   "description": "Tree-level custodial-symmetry test",
   "unit": "dimensionless",
   "formula": "M_W^2 / (M_Z^2 * (1 - sin2_theta_w))",
@@ -25,7 +25,7 @@
   ],
   "accuracyTarget": 0.002,
   "metadata": {
-    "note": "Replacing \u221a\u03c6\u2080 by \u03c6\u2080 in the custodial denominator gives \u03c1 \u2248 1.001; within 0.1 % of global fit.",
+    "note": "Tree-level SM value is 1.0, deviations indicate new physics at TeV scale",
     "notes": "Electroweak rho parameter",
     "measured_value": 1.00038
   }

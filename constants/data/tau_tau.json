@@ -1,6 +1,6 @@
 {
   "id": "tau_tau",
-  "symbol": "\u03c4_\u03c4",
+  "symbol": "τ_τ",
   "name": "Tau Lifetime",
   "description": "Tau lifetime in femtoseconds",
   "unit": "femtoseconds",
@@ -18,8 +18,5 @@
       "note": "From comprehensive constant list"
     }
   ],
-  "accuracyTarget": 0.001,
-  "metadata": {
-    "note": "Part of the complete 43 cascade-born constants"
-  }
+  "accuracyTarget": 0.001
 }

@@ -1,10 +1,10 @@
 {
   "id": "theta_c",
-  "symbol": "\u03b8_c",
+  "symbol": "θ_c",
   "name": "Cabibbo Angle",
   "description": "Cabibbo angle",
   "unit": "radians",
-  "formula": "arcsin(phi_0/(1+phi_0))",
+  "formula": "arcsin(sqrt(phi_0)*(1-phi_0/2))",
   "dependencies": [
     "phi_0"
   ],
@@ -13,12 +13,9 @@
     {
       "name": "Topological Fixed Point Theory",
       "year": 2025,
-      "value": 0.2274,
+      "value": 0.2244,
       "note": "From comprehensive constant list"
     }
   ],
-  "accuracyTarget": 0.01,
-  "metadata": {
-    "note": "Part of the complete 43 cascade-born constants"
-  }
+  "accuracyTarget": 0.01
 }

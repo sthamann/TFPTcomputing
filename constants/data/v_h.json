@@ -19,8 +19,5 @@
       "note": "From comprehensive constant list"
     }
   ],
-  "accuracyTarget": 0.01,
-  "metadata": {
-    "note": "Part of the complete 43 cascade-born constants"
-  }
+  "accuracyTarget": 0.01
 }

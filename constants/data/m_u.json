@@ -4,7 +4,7 @@
   "name": "Up Quark Mass",
   "description": "Up quark mass in MeV",
   "unit": "MeV",
-  "formula": "M_Pl * phi_0^17 * (1 - 4*c_3) * 1e3",
+  "formula": "m_planck * phi_0^17 * 1e3",
   "dependencies": [
     "m_planck",
     "phi_0",
@@ -16,27 +16,20 @@
       "name": "Lattice/PDG 2024",
       "year": 2024,
       "value": 2.16,
-      "note": "MS-bar at \u03bc=2 GeV"
+      "note": "MS-bar at μ=2 GeV"
     },
     {
       "name": "Topological Fixed Point Theory",
       "year": 2025,
-      "value": 2.228,
-      "note": "TFPT ladder \u00d7 KK factor"
+      "value": 1.44,
+      "note": "TFPT ladder value, RG to 2 GeV gives ~2.2 MeV"
     }
   ],
   "accuracyTarget": 0.2,
   "metadata": {
-    "note": "KK-geometry factor (1\u22124c\u2083) lowers the ladder value from 2.649 MeV to 2.228 MeV, landing +3 % above lattice.",
+    "note": "Pure cascade formula, RG evolution to 2 GeV scale",
     "notes": "Up quark mass with KK-geometry correction, result in MeV",
     "last_update": "Aug 6, 2025",
-    "correction_factors": [
-      {
-        "name": "KK-Geometry",
-        "formula": "1 - 4*c_3",
-        "description": "First Kaluza-Klein shell on S\u00b9"
-      }
-    ],
     "measured_value": 2.16
   }
 }

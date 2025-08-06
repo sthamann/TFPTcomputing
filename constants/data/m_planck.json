@@ -4,7 +4,7 @@
   "name": "Planck Mass",
   "description": "The Planck mass, fundamental gravitational scale",
   "unit": "GeV",
-  "formula": "1.2209e19",
+  "formula": "M_Pl = sqrt(ħc/G) = 1.22091e19 * GeV",
   "dependencies": [
     "m_planck"
   ],

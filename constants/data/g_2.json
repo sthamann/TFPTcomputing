@@ -1,20 +1,20 @@
 {
   "id": "g_2",
-  "symbol": "g\u2082",
+  "symbol": "g₂",
   "name": "SU(2) Gauge Coupling",
   "description": "SU(2)_L gauge coupling at M_Z with 2-loop RG evolution",
   "unit": "dimensionless",
-  "formula": "sqrt(4*pi*alpha / sin2_theta_w)",
+  "formula": "sqrt(4*pi*alpha/sqrt(phi_0))",
   "dependencies": [
     "alpha",
-    "sin2_theta_w"
+    "phi_0"
   ],
   "category": "derived",
   "sources": [
     {
       "name": "Electroweak Theory",
       "year": 2025,
-      "value": 0.6536
+      "value": 0.631
     }
   ],
   "accuracyTarget": 0.001,

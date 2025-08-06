@@ -1,0 +1,319 @@
+{
+  "total": 62,
+  "successful": 0,
+  "execution_errors": [
+    {
+      "id": "a_p",
+      "error": "Cell execution error: No module named 'numpy'",
+      "formula": "c*H_0*phi_0/c_3"
+    },
+    {
+      "id": "alpha",
+      "error": "Cell execution error: No module named 'numpy'",
+      "formula": "solveCubic(\u03b1\u00b3 - A\u03b1\u00b2 - Ac\u2083\u00b2\u03ba = 0, where A = 1/(256\u03c0\u00b3), \u03ba = (41/20\u03c0)ln(1/\u03c6\u2080))"
+    },
+    {
+      "id": "alpha_d",
+      "error": "Cell execution error: No module named 'numpy'",
+      "formula": "(beta_X^2/alpha)*0.001"
+    },
+    {
+      "id": "alpha_g",
+      "error": "Cell execution error: No module named 'numpy'",
+      "formula": "phi_0^30"
+    },
+    {
+      "id": "alpha_s",
+      "error": "Cell execution error: No module named 'numpy'",
+      "formula": "sqrt(phi_0)/2"
+    },
+    {
+      "id": "beta_x",
+      "error": "Cell execution error: No module named 'numpy'",
+      "formula": "phi_0^2/(2*c_3)"
+    },
+    {
+      "id": "c_3",
+      "error": "Cell execution error: No module named 'numpy'",
+      "formula": "1/(8*pi)"
+    },
+    {
+      "id": "c_4",
+      "error": "Cell execution error: No module named 'numpy'",
+      "formula": "c_3^2/phi_0"
+    },
+    {
+      "id": "delta_a_mu",
+      "error": "Cell execution error: No module named 'numpy'",
+      "formula": "(248*0.25)/(8*pi^2)*(m_mu/100000)^2*1e9"
+    },
+    {
+      "id": "delta_gamma",
+      "error": "Cell execution error: No module named 'numpy'",
+      "formula": "(phi_0^6 / c_3) * alpha"
+    },
+    {
+      "id": "delta_m_n_p",
+      "error": "Cell execution error: No module named 'numpy'",
+      "formula": "m_e*phi_0*48"
+    },
+    {
+      "id": "delta_nu_t",
+      "error": "Cell execution error: No module named 'numpy'",
+      "formula": "beta_x * y_t^2"
+    },
+    {
+      "id": "e_knee",
+      "error": "Cell execution error: No module named 'numpy'",
+      "formula": "M_Pl * phi_0^20"
+    },
+    {
+      "id": "epsilon_k",
+      "error": "Cell execution error: No module named 'numpy'",
+      "formula": "phi_0^2/2"
+    },
+    {
+      "id": "eta_b",
+      "error": "Cell execution error: No module named 'numpy'",
+      "formula": "4 * c_3^7"
+    },
+    {
+      "id": "f_b",
+      "error": "Cell execution error: No module named 'numpy'",
+      "formula": "eta_b / (eta_b + 5*c_3^7)"
+    },
+    {
+      "id": "f_pi_lambda_qcd",
+      "error": "Cell execution error: No module named 'numpy'",
+      "formula": "3/5"
+    },
+    {
+      "id": "g_1",
+      "error": "Cell execution error: No module named 'numpy'",
+      "formula": "sqrt(4*pi*alpha/(1-sqrt(phi_0)))"
+    },
+    {
+      "id": "g_2",
+      "error": "Cell execution error: No module named 'numpy'",
+      "formula": "sqrt(4*pi*alpha/sqrt(phi_0))"
+    },
+    {
+      "id": "g_f",
+      "error": "Cell execution error: No module named 'numpy'",
+      "formula": "1/(sqrt(2)*v_H^2)"
+    },
+    {
+      "id": "gamma_function",
+      "error": "Cell execution error: No module named 'numpy'",
+      "formula": "gamma(n) = 0.834 + 0.108*n + 0.0105*n^2"
+    },
+    {
+      "id": "lambda_qcd",
+      "error": "Cell execution error: No module named 'numpy'",
+      "formula": "100"
+    },
+    {
+      "id": "lambda_qg",
+      "error": "Cell execution error: No module named 'numpy'",
+      "formula": "2*pi*c_3*phi_0*M_Pl"
+    },
+    {
+      "id": "lambda_star",
+      "error": "Cell execution error: No module named 'numpy'",
+      "formula": "(hbar * G) / phi_0^2"
+    },
+    {
+      "id": "m_b",
+      "error": "Cell execution error: No module named 'numpy'",
+      "formula": "m_planck * phi_0^15 / sqrt(c_3)"
+    },
+    {
+      "id": "m_c",
+      "error": "Cell execution error: No module named 'numpy'",
+      "formula": "M_Pl * phi_0^16 / c_3"
+    },
+    {
+      "id": "m_e",
+      "error": "Cell execution error: No module named 'numpy'",
+      "formula": "(v_H/sqrt(2))*alpha*phi_0^5*1e6"
+    },
+    {
+      "id": "m_mu",
+      "error": "Cell execution error: No module named 'numpy'",
+      "formula": "(v_H/sqrt(2))*phi_0^2.5*(1-2*c_3)*1e3"
+    },
+    {
+      "id": "m_nu",
+      "error": "Cell execution error: No module named 'numpy'",
+      "formula": "Y^2 * v_h^2 / (phi_5 * M_Pl)"
+    },
+    {
+      "id": "m_p",
+      "error": "Cell execution error: No module named 'numpy'",
+      "formula": "M_Pl * phi_0^15"
+    },
+    {
+      "id": "m_planck",
+      "error": "Cell execution error: No module named 'numpy'",
+      "formula": "M_Pl = sqrt(\u0127c/G) = 1.22091e19 * GeV"
+    },
+    {
+      "id": "m_s_m_d_ratio",
+      "error": "Cell execution error: No module named 'numpy'",
+      "formula": "1/phi_0"
+    },
+    {
+      "id": "m_tau",
+      "error": "Cell execution error: No module named 'numpy'",
+      "formula": "(v_H/sqrt(2))*(5/6)*phi_0^1.5"
+    },
+    {
+      "id": "m_u",
+      "error": "Cell execution error: No module named 'numpy'",
+      "formula": "m_planck * phi_0^17 * 1e3"
+    },
+    {
+      "id": "m_w",
+      "error": "Cell execution error: No module named 'numpy'",
+      "formula": "M_Z * sqrt(1 - sin2_theta_w)"
+    },
+    {
+      "id": "m_z",
+      "error": "Cell execution error: No module named 'numpy'",
+      "formula": "91.1876"
+    },
+    {
+      "id": "mu_p",
+      "error": "Cell execution error: No module named 'numpy'",
+      "formula": "67/24"
+    },
+    {
+      "id": "mu_p_mu_n",
+      "error": "Cell execution error: No module named 'numpy'",
+      "formula": "67/24"
+    },
+    {
+      "id": "n_s",
+      "error": "Cell execution error: No module named 'numpy'",
+      "formula": "1 - phi_0 - 1.5*phi_0*c_3"
+    },
+    {
+      "id": "omega_b",
+      "error": "Cell execution error: No module named 'numpy'",
+      "formula": "phi_0*(1-2*c_3)"
+    },
+    {
+      "id": "phi_0",
+      "error": "Cell execution error: No module named 'numpy'",
+      "formula": "0.053171"
+    },
+    {
+      "id": "r_tensor",
+      "error": "Cell execution error: No module named 'numpy'",
+      "formula": "phi_0^2"
+    },
+    {
+      "id": "rho_lambda",
+      "error": "Cell execution error: No module named 'numpy'",
+      "formula": "M_Pl^4 * phi_0^97"
+    },
+    {
+      "id": "rho_parameter",
+      "error": "Cell execution error: No module named 'numpy'",
+      "formula": "M_W^2 / (M_Z^2 * (1 - sin2_theta_w))"
+    },
+    {
+      "id": "sigma_m_nu",
+      "error": "Cell execution error: No module named 'numpy'",
+      "formula": "3 * m_nu"
+    },
+    {
+      "id": "sin2_theta_w",
+      "error": "Cell execution error: No module named 'numpy'",
+      "formula": "sqrt(phi_0)"
+    },
+    {
+      "id": "t_gamma_0",
+      "error": "Cell execution error: No module named 'numpy'",
+      "formula": "2.725"
+    },
+    {
+      "id": "t_nu",
+      "error": "Cell execution error: No module named 'numpy'",
+      "formula": "1.416784e32*phi_0^25"
+    },
+    {
+      "id": "tau_mu",
+      "error": "Cell execution error: No module named 'numpy'",
+      "formula": "(192*pi^3)/(G_F^2*m_mu^5)*(1-8*(m_e/m_mu)^2)"
+    },
+    {
+      "id": "tau_reio",
+      "error": "Cell execution error: No module named 'numpy'",
+      "formula": "2 * c_3 * phi_0^5"
+    },
+    {
+      "id": "tau_star",
+      "error": "Cell execution error: No module named 'numpy'",
+      "formula": "phi_0^3 * hbar / (4*pi*c_3*M_Pl)"
+    },
+    {
+      "id": "tau_tau",
+      "error": "Cell execution error: No module named 'numpy'",
+      "formula": "(192*pi^3)/((G_F^2*m_tau^5))*1e21"
+    },
+    {
+      "id": "theta_c",
+      "error": "Cell execution error: No module named 'numpy'",
+      "formula": "arcsin(sqrt(phi_0)*(1-phi_0/2))"
+    },
+    {
+      "id": "theta_qcd",
+      "error": "Cell execution error: No module named 'numpy'",
+      "formula": "c_3*phi_0^7"
+    },
+    {
+      "id": "v_cb",
+      "error": "Cell execution error: No module named 'numpy'",
+      "formula": "(3/4) * phi_0"
+    },
+    {
+      "id": "v_h",
+      "error": "Cell execution error: No module named 'numpy'",
+      "formula": "c_3*M_Pl*phi_0^12"
+    },
+    {
+      "id": "v_td_v_ts",
+      "error": "Cell execution error: No module named 'numpy'",
+      "formula": "phi_0"
+    },
+    {
+      "id": "v_us_v_ud",
+      "error": "Cell execution error: No module named 'numpy'",
+      "formula": "sqrt(phi_0)"
+    },
+    {
+      "id": "w_de",
+      "error": "Cell execution error: No module named 'numpy'",
+      "formula": "-1+phi_0^2/6"
+    },
+    {
+      "id": "y_e",
+      "error": "Cell execution error: No module named 'numpy'",
+      "formula": "0.000511 * sqrt(2) / 246.22"
+    },
+    {
+      "id": "y_t",
+      "error": "Cell execution error: No module named 'numpy'",
+      "formula": "0.935"
+    },
+    {
+      "id": "z_0",
+      "error": "Cell execution error: No module named 'numpy'",
+      "formula": "hbar/(q_Pl^2*alpha)"
+    }
+  ],
+  "no_result": [],
+  "wrong_values": [],
+  "missing_expected": []
+}

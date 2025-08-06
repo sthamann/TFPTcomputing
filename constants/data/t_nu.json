@@ -1,6 +1,6 @@
 {
   "id": "t_nu",
-  "symbol": "T_\u03bd",
+  "symbol": "T_ν",
   "name": "CNB Temperature",
   "description": "CNB temperature",
   "unit": "K",
@@ -17,8 +17,5 @@
       "note": "From comprehensive constant list"
     }
   ],
-  "accuracyTarget": 0.01,
-  "metadata": {
-    "note": "Part of the complete 43 cascade-born constants"
-  }
+  "accuracyTarget": 0.01
 }

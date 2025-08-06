@@ -428,10 +428,13 @@ def sin2_theta_W_at_MZ():
         formula = formula.replace('pi', 'np.pi')
         formula = formula.replace('arcsin(', 'np.arcsin(')
         
-        # Replace remaining constants
-        formula = formula.replace('phi_0', 'phi_0')
-        formula = formula.replace('c_3', 'c_3')
-        formula = formula.replace('M_Pl', 'M_Pl')
+        # Replace remaining constants with calculated values if they exist
+        if 'phi_0' in formula and 'phi_0' not in sorted_deps:
+            formula = formula.replace('phi_0', 'phi_0')
+        if 'c_3' in formula and 'c_3' not in sorted_deps:
+            formula = formula.replace('c_3', 'c_3')
+        if 'M_Pl' in formula and 'm_planck' not in sorted_deps:
+            formula = formula.replace('M_Pl', 'M_Pl')
         
         # Calculate tree-level value
         main_code.append(f"# Tree-level calculation")

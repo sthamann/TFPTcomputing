@@ -1,6 +1,6 @@
 {
   "id": "delta_m_n_p",
-  "symbol": "\u0394m_n-p",
+  "symbol": "Δm_n-p",
   "name": "Neutron-Proton Mass Difference",
   "description": "Neutron-proton mass difference",
   "unit": "MeV",
@@ -27,7 +27,6 @@
   ],
   "accuracyTarget": 0.01,
   "metadata": {
-    "note": "Part of the complete 43 cascade-born constants",
     "measured_value": 1.29333251
   }
 }
