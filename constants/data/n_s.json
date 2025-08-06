@@ -4,12 +4,12 @@
   "name": "Scalar spectral index",
   "description": "Primordial scalar tilt",
   "unit": "dimensionless",
-  "formula": "1-phi_0-1.5*phi_0*c_3",
+  "formula": "1 - phi_0 - 1.5*phi_0*c_3",
   "dependencies": [
     "phi_0",
     "c_3"
   ],
-  "category": "secondary",
+  "category": "cosmology",
   "sources": [
     {
       "name": "Planck 2018 (+2024 ext.)",
@@ -28,7 +28,12 @@
   "metadata": {
     "note": "\u03b5 = \u03c6\u2080 c\u2083 /4,  \u03b7 = \u2212\u03c6\u2080/2  \u21d2  n_s = 1 \u2212 \u03c6\u2080 \u2212 1.5 \u03c6\u2080 c\u2083; deviation \u2248 1\u00d710\u207b\u2074.",
     "latex": "n_s = 1 - \\varphi_0 - 1.5\\varphi_0 c_3",
-    "theoretical_value": 0.9436555896953228
+    "theoretical_value": 0.9436555896953228,
+    "notes": "CMB scalar spectral index with c_3 correction",
+    "last_update": "Aug 6, 2025"
   },
-  "calculated_value": 0.9436555896953228
+  "calculated_value": 0.9436555896953228,
+  "experimental_value": 0.9649,
+  "relative_error": 0.024040138902344778,
+  "accuracy_met": false
 }

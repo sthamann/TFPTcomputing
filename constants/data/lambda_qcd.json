@@ -4,10 +4,10 @@
   "name": "QCD Confinement Scale",
   "description": "QCD confinement scale",
   "unit": "MeV",
-  "formula": "M_Z*exp(-2*pi/(b_Y*alpha_s))",
+  "formula": "M_Z * exp(-2*pi / (41/10 * alpha_s))",
   "dependencies": [
-    "alpha_s",
-    "m_z"
+    "m_z",
+    "alpha_s"
   ],
   "category": "derived",
   "sources": [
@@ -22,7 +22,10 @@
   "metadata": {
     "note": "Part of the complete 43 cascade-born constants",
     "latex": "\\Lambda_{QCD} = M_Z e^{-2\\pi/(b_Y\\alpha_s)}",
-    "theoretical_value": 8.426235533176839e-21
+    "theoretical_value": 8.426235533176839e-21,
+    "notes": "QCD confinement scale"
   },
-  "calculated_value": 8.426235533176839e-21
+  "calculated_value": 8.426235533176839e-21,
+  "relative_error": 1.0,
+  "accuracy_met": false
 }

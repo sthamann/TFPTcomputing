@@ -22,7 +22,7 @@
     "note": "Part of the complete 43 cascade-born constants",
     "latex": "V_{cb} = \\frac{3}{4}\\varphi_0",
     "theoretical_value": 0.039878250000000004,
-    "notes": "Geometric factor times \u03c6\u2080",
+    "notes": "CKM matrix element from flavor structure",
     "last_update": "Aug 6, 2025"
   },
   "calculated_value": 0.039878250000000004,

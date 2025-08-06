@@ -6,8 +6,8 @@
   "unit": "GeV",
   "formula": "M_Pl * phi_0^16 / c_3",
   "dependencies": [
+    "m_planck",
     "phi_0",
-    "M_Pl",
     "c_3"
   ],
   "category": "secondary",
@@ -30,7 +30,7 @@
     "note": "Uncorrected ladder term already within \u22121.4 % of lattice; no NLO factor required.",
     "latex": "m_c = \\frac{M_{Pl} \\varphi_0^{16}}{c_3}",
     "theoretical_value": 1.2523254480079642,
-    "notes": "Includes c\u2083 suppression",
+    "notes": "Charm quark mass from cascade level 16",
     "last_update": "Aug 6, 2025"
   },
   "calculated_value": 1.2523254480079642,

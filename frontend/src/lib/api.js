@@ -83,4 +83,7 @@ export const createWebSocket = () => {
   return new WebSocket(wsUrl)
 }
 
+// Re-export theory API
+export { theoryApi } from './theoryApi'
+
 export default api 

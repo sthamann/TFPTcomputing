@@ -13,6 +13,12 @@ import re
 # Add parent directory to path
 sys.path.append(str(Path(__file__).parent.parent.parent))
 
+# Import notebook helpers for embedding
+try:
+    from compute.notebook_helpers import NOTEBOOK_HELPER_CODE
+except ImportError:
+    NOTEBOOK_HELPER_CODE = None
+
 print("All imports successful!")
 
 def load_constant(json_path):
@@ -343,6 +349,25 @@ if metadata is None:
 """
     
     nb.cells.append(new_code_cell(imports))
+    
+    # Check if this constant needs helper functions
+    needs_helpers = False
+    if 'metadata' in constant:
+        needs_helpers = constant['metadata'].get('needs_helpers', False)
+    
+    # Check formula for specific function calls that need helpers
+    formula_str = str(constant.get('formula', ''))
+    if any(func in formula_str for func in [
+        'sin2_theta_w_corrected', 'phi_n', 'gamma_cascade', 
+        'correction_4d_loop', 'correction_kk_geometry', 'correction_vev_backreaction',
+        'alpha_s_at_scale', 'run_coupling_to_scale', 'cascade_energy_scale'
+    ]):
+        needs_helpers = True
+    
+    # Add helper functions if needed
+    if needs_helpers and NOTEBOOK_HELPER_CODE:
+        nb.cells.append(new_markdown_cell("## Helper Functions for Topological Fixed Point Theory"))
+        nb.cells.append(new_code_cell(NOTEBOOK_HELPER_CODE))
     
     # Step 1: Define symbols
     symbol_defs = ["# Step 1: Define symbols"]

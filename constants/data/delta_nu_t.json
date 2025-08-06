@@ -4,7 +4,7 @@
   "name": "Neutrino-top split",
   "description": "Neutrino-top mass squared difference",
   "unit": "eV^2",
-  "formula": "beta_X*y_t^2",
+  "formula": "beta_x * y_t^2",
   "dependencies": [
     "beta_x",
     "y_t"
@@ -20,7 +20,8 @@
   ],
   "accuracyTarget": 0.001,
   "metadata": {
-    "note": "Fixes normal mass hierarchy"
+    "note": "Fixes normal mass hierarchy",
+    "notes": "Neutrino-top split"
   },
   "calculated_value": 4978.068028424714
 }

@@ -4,7 +4,7 @@
   "name": "Sum of Neutrino Masses",
   "description": "Sum of neutrino masses",
   "unit": "eV",
-  "formula": "3*m_nu",
+  "formula": "3 * m_nu",
   "dependencies": [
     "m_nu"
   ],
@@ -19,7 +19,8 @@
   ],
   "accuracyTarget": 0.001,
   "metadata": {
-    "note": "Part of the complete 43 cascade-born constants"
+    "note": "Part of the complete 43 cascade-born constants",
+    "notes": "Sum of neutrino masses"
   },
   "calculated_value": 0.0007315799229604985
 }

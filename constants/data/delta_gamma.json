@@ -4,7 +4,7 @@
   "name": "Photon drift index",
   "description": "Predicts fine structure constant variation",
   "unit": "dimensionless",
-  "formula": "(phi_0^6/c_3)*alpha",
+  "formula": "(phi_0^6 / c_3) * alpha",
   "dependencies": [
     "phi_0",
     "c_3",
@@ -21,7 +21,8 @@
   ],
   "accuracyTarget": 0.001,
   "metadata": {
-    "note": "Predicts 10\u207b\u2077 level \u03b1-variation in quasar spectra"
+    "note": "Predicts 10\u207b\u2077 level \u03b1-variation in quasar spectra",
+    "notes": "Photon drift index"
   },
   "calculated_value": 4.1443283707402504e-09
 }

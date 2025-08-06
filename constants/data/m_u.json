@@ -4,11 +4,11 @@
   "name": "Up Quark Mass",
   "description": "Up quark mass in MeV",
   "unit": "MeV",
-  "formula": "M_Pl*phi_0^17*(1-4*c_3)*1e3",
+  "formula": "M_Pl * phi_0^17 * (1 - 4*c_3) * 1e3",
   "dependencies": [
+    "m_planck",
     "phi_0",
-    "c_3",
-    "M_Pl"
+    "c_3"
   ],
   "category": "secondary",
   "sources": [
@@ -30,7 +30,12 @@
     "note": "KK-geometry factor (1\u22124c\u2083) lowers the ladder value from 2.649 MeV to 2.228 MeV, landing +3 % above lattice.",
     "latex": "m_u = M_{Pl} \\varphi_0^{17} (1 - 4c_3)",
     "correction_factor": "KK-Geometry",
-    "theoretical_value": 2.2277587073552514
+    "theoretical_value": 2.2277587073552514,
+    "notes": "Up quark mass with KK-geometry correction, result in MeV",
+    "last_update": "Aug 6, 2025"
   },
-  "calculated_value": 2.2277587073552514
+  "calculated_value": 2.2277587073552514,
+  "experimental_value": 2.16,
+  "relative_error": 0.031369771923727426,
+  "accuracy_met": false
 }

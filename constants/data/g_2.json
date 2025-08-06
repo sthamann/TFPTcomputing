@@ -4,7 +4,7 @@
   "name": "SU(2) Gauge Coupling",
   "description": "SU(2)_L gauge coupling at M_Z with 2-loop RG evolution",
   "unit": "dimensionless",
-  "formula": "sqrt(4*pi*alpha/sin2_theta_W)",
+  "formula": "sqrt(4*pi*alpha / sin2_theta_w)",
   "dependencies": [
     "alpha",
     "sin2_theta_w"
@@ -19,7 +19,10 @@
   ],
   "accuracyTarget": 0.001,
   "metadata": {
-    "note": "Weak isospin gauge coupling with 2-loop RG evolution from 2 TeV to M_Z"
+    "note": "Weak isospin gauge coupling with 2-loop RG evolution from 2 TeV to M_Z",
+    "notes": "SU(2) gauge coupling at M_Z"
   },
-  "calculated_value": 1.313258385760021
+  "calculated_value": 1.313258385760021,
+  "relative_error": 1.009269256058784,
+  "accuracy_met": false
 }

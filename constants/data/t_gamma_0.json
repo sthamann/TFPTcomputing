@@ -4,7 +4,7 @@
   "name": "CMB Temperature",
   "description": "CMB temperature",
   "unit": "K",
-  "formula": "1.416784e32*phi_0^25*1e-16",
+  "formula": "1.416784e32 * phi_0^25 * 1e-16",
   "dependencies": [
     "phi_0"
   ],
@@ -19,7 +19,8 @@
   ],
   "accuracyTarget": 0.001,
   "metadata": {
-    "note": "Part of the complete 43 cascade-born constants"
+    "note": "Part of the complete 43 cascade-born constants",
+    "notes": "CMB temperature from Planck temperature"
   },
   "calculated_value": 1.9641486394418192e-16
 }

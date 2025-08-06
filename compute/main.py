@@ -438,7 +438,28 @@ async def calculate_theory_values():
     
     try:
         tc = TopologicalConstants()
-        results = tc.calculate()
+        # Calculate all major constants
+        results = {
+            # Fundamental inputs
+            'c3': tc.c3,
+            'phi0': tc.phi0,
+            'M_Pl': tc.M_Pl,
+            'alpha': tc.alpha_exp,
+            
+            # Calculated values
+            'eta_B': tc.eta_B() if hasattr(tc, 'eta_B') else None,
+            'm_p_MeV': tc.m_p_MeV() if hasattr(tc, 'm_p_MeV') else None,
+            'sin2_theta_W': tc.sin2_theta_W_MZ() if hasattr(tc, 'sin2_theta_W_MZ') else None,
+            'V_cb': tc.V_cb() if hasattr(tc, 'V_cb') else None,
+            'm_b_GeV': tc.m_b_GeV() if hasattr(tc, 'm_b_GeV') else None,
+            'm_c_GeV': tc.m_c_GeV() if hasattr(tc, 'm_c_GeV') else None,
+            'm_u_MeV': tc.m_u_MeV() if hasattr(tc, 'm_u_MeV') else None,
+            'M_W_GeV': tc.M_W_GeV() if hasattr(tc, 'M_W_GeV') else None,
+            'M_Z_GeV': tc.M_Z,
+            'n_s': tc.n_s() if hasattr(tc, 'n_s') else None,
+            'y_e': tc.y_e() if hasattr(tc, 'y_e') else None,
+            'y_t': tc.y_t() if hasattr(tc, 'y_t') else None,
+        }
         
         # Add metadata
         results['metadata'] = {

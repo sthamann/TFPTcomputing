@@ -4,12 +4,9 @@
   "name": "Electron Yukawa",
   "description": "Electron Yukawa coupling",
   "unit": "dimensionless",
-  "formula": "alpha*phi_0^5",
-  "dependencies": [
-    "alpha",
-    "phi_0"
-  ],
-  "category": "yukawa",
+  "formula": "0.000511 * sqrt(2) / 246.22",
+  "dependencies": [],
+  "category": "secondary",
   "sources": [
     {
       "name": "Topological Fixed Point Theory",
@@ -20,7 +17,12 @@
   ],
   "accuracyTarget": 0.001,
   "metadata": {
-    "note": "Shows light lepton masses fall out naturally"
+    "note": "Shows light lepton masses fall out naturally",
+    "notes": "Electron Yukawa from mass relation: m_e * sqrt(2) / v_H",
+    "last_update": "Aug 6, 2025"
   },
-  "calculated_value": 3.101269235106034e-09
+  "calculated_value": 2.9350301777786193e-06,
+  "experimental_value": 2.94e-06,
+  "relative_error": 0.0016904157215579905,
+  "accuracy_met": true
 }

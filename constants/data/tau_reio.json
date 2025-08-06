@@ -4,7 +4,7 @@
   "name": "Optical depth to re-ionisation",
   "description": "Thomson optical depth to reionization",
   "unit": "dimensionless",
-  "formula": "2*c_3*phi_0^5",
+  "formula": "2 * c_3 * phi_0^5",
   "dependencies": [
     "c_3",
     "phi_0"
@@ -20,7 +20,8 @@
   ],
   "accuracyTarget": 0.001,
   "metadata": {
-    "note": "Removes astrophysical tuning for first stars"
+    "note": "Removes astrophysical tuning for first stars",
+    "notes": "Optical depth to reionization"
   },
   "calculated_value": 3.3819273766731905e-08
 }

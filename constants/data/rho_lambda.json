@@ -4,9 +4,9 @@
   "name": "Vacuum Energy Density",
   "description": "Observed dark-energy density",
   "unit": "GeV^4",
-  "formula": "M_Pl^4*phi_0^97",
+  "formula": "M_Pl^4 * phi_0^97",
   "dependencies": [
-    "M_Pl",
+    "m_planck",
     "phi_0"
   ],
   "category": "cosmology",
@@ -19,7 +19,8 @@
   ],
   "accuracyTarget": 0.1,
   "metadata": {
-    "note": "97-step ladder reproduces \u039b to within 3 %; no extra factor yet."
+    "note": "97-step ladder reproduces \u039b to within 3 %; no extra factor yet.",
+    "notes": "Vacuum energy density"
   },
   "calculated_value": 5.459824933153207e-48
 }

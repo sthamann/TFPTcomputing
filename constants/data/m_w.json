@@ -4,11 +4,10 @@
   "name": "W Boson Mass",
   "description": "W-boson mass at pole",
   "unit": "GeV",
-  "formula": "M_Z*sqrt(1-sin2_theta_W)",
+  "formula": "M_Z * sqrt(1 - sin2_theta_w)",
   "dependencies": [
-    "v_H",
-    "alpha",
-    "phi_0"
+    "m_z",
+    "sin2_theta_w"
   ],
   "category": "secondary",
   "sources": [
@@ -29,7 +28,12 @@
   "metadata": {
     "note": "g\u2082(M_Z) = \u221a(4\u03c0 \u03b1 / sin\u00b2\u03b8_W) with sin\u00b2\u03b8_W \u2261 \u03c6\u2080; gives +0.1 % to PDG.",
     "latex": "M_W = M_Z \\sqrt{1 - \\sin^2\\theta_W}",
-    "theoretical_value": 88.73022057554792
+    "theoretical_value": 88.73022057554792,
+    "notes": "W boson mass from electroweak relation",
+    "last_update": "Aug 6, 2025"
   },
-  "calculated_value": 88.73022057554792
+  "calculated_value": 79.94493992606643,
+  "experimental_value": 80.377,
+  "relative_error": 0.005400167630022516,
+  "accuracy_met": true
 }

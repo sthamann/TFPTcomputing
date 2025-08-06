@@ -335,6 +335,122 @@ app.get('/api/dag', async (req, res) => {
   }
 });
 
+/**
+ * @swagger
+ * /api/theory/calculate:
+ *   get:
+ *     summary: Calculate all theory constants
+ *     tags: [Theory]
+ *     responses:
+ *       200:
+ *         description: All calculated theory constants
+ */
+app.get('/api/theory/calculate', async (req, res) => {
+  try {
+    const response = await axios.get(`${PYTHON_SERVICE_URL}/api/theory/calculate`);
+    res.json(response.data);
+  } catch (error) {
+    console.error('Theory calculate error:', error);
+    res.status(500).json({ error: 'Failed to calculate theory constants' });
+  }
+});
+
+/**
+ * @swagger
+ * /api/theory/rg-running/{scale}:
+ *   get:
+ *     summary: Get RG running couplings at specific scale
+ *     tags: [Theory]
+ *     parameters:
+ *       - in: path
+ *         name: scale
+ *         required: true
+ *         schema:
+ *           type: number
+ *         description: Energy scale in GeV
+ *     responses:
+ *       200:
+ *         description: Gauge couplings at the specified scale
+ */
+app.get('/api/theory/rg-running/:scale', async (req, res) => {
+  try {
+    const { scale } = req.params;
+    const response = await axios.get(`${PYTHON_SERVICE_URL}/api/theory/rg-running/${scale}`);
+    res.json(response.data);
+  } catch (error) {
+    console.error('RG running error:', error);
+    res.status(500).json({ error: 'Failed to calculate RG running' });
+  }
+});
+
+/**
+ * @swagger
+ * /api/theory/cascade/{n}:
+ *   get:
+ *     summary: Get cascade level n
+ *     tags: [Theory]
+ *     parameters:
+ *       - in: path
+ *         name: n
+ *         required: true
+ *         schema:
+ *           type: integer
+ *         description: Cascade level
+ *     responses:
+ *       200:
+ *         description: Cascade level details
+ */
+app.get('/api/theory/cascade/:n', async (req, res) => {
+  try {
+    const { n } = req.params;
+    const response = await axios.get(`${PYTHON_SERVICE_URL}/api/theory/cascade/${n}`);
+    res.json(response.data);
+  } catch (error) {
+    console.error('Cascade error:', error);
+    res.status(500).json({ error: 'Failed to get cascade level' });
+  }
+});
+
+/**
+ * @swagger
+ * /api/theory/special-scales:
+ *   get:
+ *     summary: Get special energy scales
+ *     tags: [Theory]
+ *     responses:
+ *       200:
+ *         description: Special scales like GUT scale, Planck scale, etc.
+ */
+app.get('/api/theory/special-scales', async (req, res) => {
+  try {
+    const response = await axios.get(`${PYTHON_SERVICE_URL}/api/theory/special-scales`);
+    res.json(response.data);
+  } catch (error) {
+    console.error('Special scales error:', error);
+    res.status(500).json({ error: 'Failed to get special scales' });
+  }
+});
+
+/**
+ * @swagger
+ * /api/theory/correction-factors:
+ *   get:
+ *     summary: Get universal correction factors
+ *     tags: [Theory]
+ *     responses:
+ *       200:
+ *         description: Correction factors for various calculations
+ */
+app.get('/api/theory/correction-factors', async (req, res) => {
+  try {
+    const response = await axios.get(`${PYTHON_SERVICE_URL}/api/theory/correction-factors`);
+    res.json(response.data);
+  } catch (error) {
+    console.error('Correction factors error:', error);
+    res.status(500).json({ error: 'Failed to get correction factors' });
+  }
+});
+
 // Serve static files for notebooks and JSON data
 const staticBasePath = process.env.NODE_ENV === 'local' 
   ? join(__dirname, '../..') // In local mode, go up to project root

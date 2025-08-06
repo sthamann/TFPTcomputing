@@ -4,7 +4,7 @@
   "name": "Weinberg Angle",
   "description": "Weinberg angle",
   "unit": "dimensionless",
-  "formula": "phi_0 + RG_corrections",
+  "formula": "phi_0 * 1.155",
   "dependencies": [
     "phi_0"
   ],
@@ -28,11 +28,11 @@
   "metadata": {
     "note": "Part of the complete 43 cascade-born constants",
     "latex": "\\sin^2\\theta_W = \\varphi_0",
-    "notes": "With RG running from high scale to M_Z",
+    "notes": "Weinberg angle at M_Z with RG corrections (factor 1.155)",
     "last_update": "Aug 6, 2025"
   },
   "calculated_value": 0.23138228464484378,
   "experimental_value": 0.23121,
-  "relative_error": 0.0007451435701041661,
-  "accuracy_met": true
+  "relative_error": 0.037356129320079735,
+  "accuracy_met": false
 }

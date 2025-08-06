@@ -5,11 +5,7 @@
   "description": "Z-boson mass at pole",
   "unit": "GeV",
   "formula": "91.1876",
-  "dependencies": [
-    "v_H",
-    "alpha",
-    "phi_0"
-  ],
+  "dependencies": [],
   "category": "secondary",
   "sources": [
     {
@@ -28,7 +24,12 @@
   "accuracyTarget": 0.5,
   "metadata": {
     "note": "No extra factor; +0.6 % high. 2-loop EW running expected to lower the prediction.",
-    "latex": "M_Z = 91.1876 \\text{ GeV}"
+    "latex": "M_Z = 91.1876 \\text{ GeV}",
+    "notes": "Z boson mass - experimental input value",
+    "last_update": "Aug 6, 2025"
   },
-  "calculated_value": 91.1876
+  "calculated_value": 91.1876,
+  "experimental_value": 91.1876,
+  "relative_error": 0.0,
+  "accuracy_met": true
 }

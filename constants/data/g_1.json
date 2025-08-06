@@ -4,7 +4,7 @@
   "name": "U(1) Gauge Coupling",
   "description": "U(1)_Y gauge coupling at M_Z with 2-loop RG evolution",
   "unit": "dimensionless",
-  "formula": "sqrt(5/3*4*pi*alpha/(1-sin2_theta_W))",
+  "formula": "sqrt(5/3 * 4*pi*alpha / (1 - sin2_theta_w))",
   "dependencies": [
     "alpha",
     "sin2_theta_w"
@@ -19,7 +19,10 @@
   ],
   "accuracyTarget": 0.001,
   "metadata": {
-    "note": "Hypercharge gauge coupling with 2-loop RG evolution from 2 TeV to M_Z"
+    "note": "Hypercharge gauge coupling with 2-loop RG evolution from 2 TeV to M_Z",
+    "notes": "U(1) gauge coupling at M_Z"
   },
-  "calculated_value": 0.4017687889690011
+  "calculated_value": 0.4017687889690011,
+  "relative_error": 0.12131953382361452,
+  "accuracy_met": false
 }

@@ -6,8 +6,8 @@
   "unit": "GeV",
   "formula": "M_Pl * phi_0^15 / sqrt(c_3) * (1 - 2*phi_0)",
   "dependencies": [
+    "m_planck",
     "phi_0",
-    "M_Pl",
     "c_3"
   ],
   "category": "secondary",
@@ -31,7 +31,7 @@
     "latex": "m_b = \\frac{M_{Pl} \\varphi_0^{15}}{\\sqrt{c_3}} (1 - 2\\varphi_0)",
     "correction_factor": "VEV-Backreaction",
     "theoretical_value": 4.198496497193857,
-    "notes": "With VEV backreaction correction",
+    "notes": "Bottom quark mass with VEV backreaction",
     "last_update": "Aug 6, 2025"
   },
   "calculated_value": 4.198496497193857,
