@@ -1,12 +1,12 @@
 {
   "id": "c_3",
-  "symbol": "c₃",
+  "symbol": "c\u2083",
   "name": "Topological Fixed Point",
-  "description": "The fundamental topological fixed point parameter from 11D → 6D compactification",
+  "description": "The fundamental topological fixed point parameter from 11D \u2192 6D compactification",
   "unit": "dimensionless",
-  "formula": "c₃ = 1 / (8 * π)",
+  "formula": "1/(8*pi)",
   "dependencies": [],
-  "category": "fundamental",
+  "category": "fundamental_theory",
   "sources": [
     {
       "name": "Topological Fixed Point Theory",
@@ -16,6 +16,7 @@
   ],
   "accuracyTarget": 1e-15,
   "metadata": {
-    "note": "This is the single topological fixed point of the theory"
+    "note": "This is the single topological fixed point of the theory",
+    "latex": "c_3 = \\frac{1}{8\\pi}"
   }
 }

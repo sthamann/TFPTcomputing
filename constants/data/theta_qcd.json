@@ -1,25 +1,27 @@
 {
   "id": "theta_qcd",
-  "symbol": "θ̅_QCD",
+  "symbol": "\u03b8\u0305_QCD",
   "name": "Strong-CP angle",
   "description": "Strong CP-violating parameter",
   "unit": "dimensionless",
-  "formula": "θ̅_QCD = c₃ φ₀⁷",
+  "formula": "c_3 * phi_0^7",
   "dependencies": [
     "c_3",
     "phi_0"
   ],
-  "category": "qcd",
+  "category": "primary",
   "sources": [
     {
       "name": "Topological Fixed Point Theory",
       "year": 2025,
       "value": 4.8e-11,
-      "note": "Natural smallness without Peccei–Quinn"
+      "note": "Natural smallness without Peccei\u2013Quinn"
     }
   ],
   "accuracyTarget": 0.01,
   "metadata": {
-    "note": "Natural smallness without Peccei–Quinn"
+    "note": "Natural smallness without Peccei\u2013Quinn",
+    "latex": "\\bar{\\theta}_{QCD} = c_3 \\varphi_0^7",
+    "theoretical_value": 4.7806168538214965e-11
   }
 }

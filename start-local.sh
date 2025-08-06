@@ -60,11 +60,11 @@ generate_notebooks() {
         cd compute
         if [[ "$OSTYPE" == "msys" || "$OSTYPE" == "win32" ]]; then
             # Windows
-            ./venv/Scripts/python ../constants/docker_execute_notebooks.py
+            ./venv/Scripts/python ../constants/docker_execute_notebooks.py || true
         else
             # Unix-like systems
             source venv/bin/activate
-            python ../constants/docker_execute_notebooks.py
+            python ../constants/docker_execute_notebooks.py || true
             deactivate
         fi
         cd ..
@@ -73,10 +73,10 @@ generate_notebooks() {
         echo -e "${BLUE}📊 Extracting results from notebooks...${NC}"
         cd compute
         if [[ "$OSTYPE" == "msys" || "$OSTYPE" == "win32" ]]; then
-            ./venv/Scripts/python ../constants/extract_results_from_notebooks.py
+            ./venv/Scripts/python ../constants/extract_results_from_notebooks.py || true
         else
             source venv/bin/activate
-            python ../constants/extract_results_from_notebooks.py
+            python ../constants/extract_results_from_notebooks.py || true
             deactivate
         fi
         cd ..

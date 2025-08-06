@@ -1,0 +1,8 @@
+{
+  "latex": "- A \\alpha^{2} - A c_{3}^{2} \\kappa + \\alpha^{3} = 0",
+  "relative_error": 1.64e-06,
+  "calculated_value": 0.007297340575733252,
+  "reference_value": 0.0072973525643,
+  "accuracy_met": true,
+  "id": "alpha"
+}

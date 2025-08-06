@@ -12,12 +12,23 @@ from datetime import datetime
 import logging
 import sys
 
+# Import topological theory modules
+try:
+    from topological_constants import TopologicalConstants
+    from rg_running import RGRunning
+    HAS_THEORY = True
+except ImportError:
+    HAS_THEORY = False
+
 # Configure logging
 logging.basicConfig(
     level=logging.INFO,
     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s'
 )
 logger = logging.getLogger(__name__)
+
+if not HAS_THEORY:
+    logger.warning("Topological theory modules not available")
 
 app = FastAPI(title="Topological Constants Compute Service")
 
@@ -414,6 +425,142 @@ async def broadcast_update(message: dict):
         except:
             # Remove dead connections
             active_connections.remove(connection)
+
+# ===========================
+# TOPOLOGICAL THEORY ENDPOINTS
+# ===========================
+
+@app.get("/api/theory/calculate")
+async def calculate_theory_values():
+    """Calculate all constants using Topological Fixed Point Theory"""
+    if not HAS_THEORY:
+        raise HTTPException(status_code=503, detail="Theory modules not available")
+    
+    try:
+        tc = TopologicalConstants()
+        results = tc.calculate()
+        
+        # Add metadata
+        results['metadata'] = {
+            'theory': 'Topological Fixed Point Theory',
+            'version': '1.0',
+            'fundamental_inputs': {
+                'c3': tc.c3,
+                'phi0': tc.phi0,
+                'M_Pl': tc.M_Pl
+            }
+        }
+        
+        return results
+    except Exception as e:
+        logger.error(f"Theory calculation failed: {e}")
+        raise HTTPException(status_code=500, detail=str(e))
+
+@app.get("/api/theory/rg-running/{scale}")
+async def get_rg_running(scale: float):
+    """Get gauge couplings at a specific energy scale"""
+    if not HAS_THEORY:
+        raise HTTPException(status_code=503, detail="RG running not available")
+    
+    try:
+        rg = RGRunning()
+        couplings = rg.get_couplings_at_scale(scale)
+        return couplings
+    except Exception as e:
+        logger.error(f"RG running calculation failed: {e}")
+        raise HTTPException(status_code=500, detail=str(e))
+
+@app.get("/api/theory/cascade/{n}")
+async def get_cascade_vev(n: int):
+    """Get cascade VEV φₙ for level n"""
+    if not HAS_THEORY:
+        raise HTTPException(status_code=503, detail="Theory modules not available")
+    
+    try:
+        tc = TopologicalConstants()
+        phi_n = tc.phi_n(n)
+        gamma_n = tc.gamma(n)
+        
+        return {
+            'n': n,
+            'phi_n': phi_n,
+            'gamma_n': gamma_n,
+            'energy_scale_GeV': phi_n * tc.M_Pl
+        }
+    except Exception as e:
+        logger.error(f"Cascade calculation failed: {e}")
+        raise HTTPException(status_code=500, detail=str(e))
+
+@app.get("/api/theory/special-scales")
+async def get_special_scales():
+    """Find special scales in the RG flow"""
+    if not HAS_THEORY:
+        raise HTTPException(status_code=503, detail="Theory modules not available")
+    
+    try:
+        rg = RGRunning()
+        tc = TopologicalConstants()
+        
+        special_scales = rg.find_special_scales()
+        
+        # Add theory-specific scales
+        special_scales['phi0_matching'] = tc.find_phi0_matching_scale()
+        special_scales['c3_matching'] = tc.find_c3_matching_scale()
+        
+        return special_scales
+    except Exception as e:
+        logger.error(f"Special scales calculation failed: {e}")
+        raise HTTPException(status_code=500, detail=str(e))
+
+@app.get("/api/theory/correction-factors")
+async def get_correction_factors():
+    """Get universal correction factors"""
+    if not HAS_THEORY:
+        raise HTTPException(status_code=503, detail="Theory modules not available")
+    
+    try:
+        tc = TopologicalConstants()
+        
+        # Calculate correction factors for a test value
+        test_value = 1.0
+        
+        factors = {
+            '4D_Loop': {
+                'formula': '1 - 2c₃',
+                'value': tc.loop_4D(test_value),
+                'c3': tc.c3,
+                'description': 'One-loop renormalization in 4D'
+            },
+            'KK_Geometry': {
+                'formula': '1 - 4c₃',
+                'value': tc.KK_geometry(test_value),
+                'c3': tc.c3,
+                'description': 'First Kaluza-Klein shell on S¹'
+            },
+            'VEV_Backreaction_k1': {
+                'formula': '1 + φ₀',
+                'value': tc.VEV_backreaction(test_value, k=1),
+                'phi0': tc.phi0,
+                'description': 'VEV backreaction with k=1'
+            },
+            'VEV_Backreaction_k2': {
+                'formula': '1 + 2φ₀',
+                'value': tc.VEV_backreaction(test_value, k=2),
+                'phi0': tc.phi0,
+                'description': 'VEV backreaction with k=2'
+            },
+            'VEV_Backreaction_k_minus2': {
+                'formula': '1 - 2φ₀',
+                'value': tc.VEV_backreaction(test_value, k=-2),
+                'phi0': tc.phi0,
+                'description': 'VEV backreaction with k=-2'
+            }
+        }
+        
+        return factors
+    except Exception as e:
+        logger.error(f"Correction factors calculation failed: {e}")
+        raise HTTPException(status_code=500, detail=str(e))
 
 if __name__ == "__main__":
     import uvicorn

@@ -4,11 +4,11 @@
   "name": "Strange/Down Mass Ratio",
   "description": "Strange to down quark mass ratio",
   "unit": "dimensionless",
-  "formula": "1 / φ₀",
+  "formula": "1/phi_0",
   "dependencies": [
     "phi_0"
   ],
-  "category": "quark",
+  "category": "primary",
   "sources": [
     {
       "name": "Topological Fixed Point Theory",
@@ -19,6 +19,7 @@
   ],
   "accuracyTarget": 0.1,
   "metadata": {
-    "note": "Part of the complete 43 cascade-born constants"
+    "note": "Part of the complete 43 cascade-born constants",
+    "latex": "m_s/m_d = 1/\\varphi_0"
   }
 }

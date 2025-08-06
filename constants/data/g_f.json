@@ -3,12 +3,12 @@
   "symbol": "G_F",
   "name": "Fermi Constant",
   "description": "Fermi constant",
-  "unit": "GeV⁻²",
-  "formula": "1 / (√2 v_H²)",
+  "unit": "GeV\u207b\u00b2",
+  "formula": "1/(sqrt(2) * v_H^2)",
   "dependencies": [
     "v_h"
   ],
-  "category": "weak",
+  "category": "secondary",
   "sources": [
     {
       "name": "CODATA 2022",
@@ -20,6 +20,7 @@
   ],
   "accuracyTarget": 0.001,
   "metadata": {
-    "note": "Part of the complete 43 cascade-born constants"
+    "note": "Part of the complete 43 cascade-born constants",
+    "latex": "G_F = \\frac{1}{\\sqrt{2} v_H^2}"
   }
 }

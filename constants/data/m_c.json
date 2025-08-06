@@ -4,19 +4,31 @@
   "name": "Charm Quark Mass",
   "description": "Charm quark mass",
   "unit": "GeV",
-  "formula": "M_Pl * phi_0**16 / c_3",
+  "formula": "M_Pl * phi_0^16 / c_3",
   "dependencies": [
     "phi_0",
     "M_Pl",
     "c_3"
   ],
-  "category": "quark",
+  "category": "secondary",
   "sources": [
-    { "name": "Lattice/PDG 2024", "year": 2024, "value": 1.27, "note": "MS-bar at μ=3 GeV" },
-    { "name": "Topological Fixed Point Theory", "year": 2025, "value": 1.252, "note": "Pure ladder value (no extra factor needed)" }
+    {
+      "name": "Lattice/PDG 2024",
+      "year": 2024,
+      "value": 1.27,
+      "note": "MS-bar at \u03bc=3 GeV"
+    },
+    {
+      "name": "Topological Fixed Point Theory",
+      "year": 2025,
+      "value": 1.252,
+      "note": "Pure ladder value (no extra factor needed)"
+    }
   ],
   "accuracyTarget": 0.03,
   "metadata": {
-    "note": "Uncorrected ladder term already within −1.4 % of lattice; no NLO factor required."
+    "note": "Uncorrected ladder term already within \u22121.4 % of lattice; no NLO factor required.",
+    "latex": "m_c = \\frac{M_{Pl} \\varphi_0^{16}}{c_3}",
+    "theoretical_value": 1.2523254480079642
   }
 }

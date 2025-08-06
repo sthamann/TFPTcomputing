@@ -1,40 +1,186 @@
-// Mapping of constant IDs to their respective groups
-export const constantGroups = {
-  'Fundamental Constants': ['alpha', 'alpha_g', 'm_p_m_e_ratio', 'c_3', 'phi_0', 'phi', 'm_planck', 'gamma_function'],
-  'Lepton Properties': ['m_e', 'm_mu', 'm_tau', 'tau_mu', 'tau_tau', 'y_e'],
-  'Quark Masses': ['m_p', 'm_c', 'm_b', 'm_u', 'theta_c', 'm_s_m_d_ratio', 'v_us_v_ud', 'v_cb', 'v_td_v_ts', 'epsilon_k', 'y_t'],
-  'Gauge Boson Masses': ['m_w', 'm_z'],
-  'Higgs Sector': ['v_h'],
-  'Weak Interactions': ['g_f', 'g_1', 'g_2'],
-  'Electroweak Parameters': ['sin2_theta_w', 'rho_parameter', 'delta_a_mu'],
-  'Strong Interactions': ['alpha_s', 'lambda_qcd', 'mu_p', 'f_pi_lambda_qcd', 'delta_m_n_p', 'mu_p_mu_n', 'theta_qcd', 'a_p'],
-  'Neutrino Physics': ['sigma_m_nu', 'm_nu', 'delta_nu_t'],
-  'Cosmological Parameters': ['omega_b', 't_gamma_0', 't_nu', 'eta_b', 'r_tensor', 'n_s', 'tau_reio', 'w_de', 'rho_lambda'],
-  'Other Physics': ['alpha_d', 'f_b', 'gamma_i', 'z_0', 'c_tfp', 'chi_d', 'lambda_star', 'q_pl', 'e_knee', 'm_fa', 'delta_gamma', 'lambda_d', 'tau_star', 'lambda_qg', 'c_4', 'beta_x']
-};
+// New constant grouping based on Topological Fixed Point Theory structure
 
-// Get group for a constant ID
-export const getConstantGroup = (constantId) => {
-  for (const [group, ids] of Object.entries(constantGroups)) {
-    if (ids.includes(constantId)) {
-      return group;
+export const constantGroups = {
+  // Fundamental Theory Constants (only true inputs)
+  fundamental_theory: {
+    name: 'Fundamental Theory Constants',
+    description: 'The only three true input parameters of the theory',
+    color: 'from-purple-600 to-purple-400',
+    icon: '🎯',
+    constants: ['c_3', 'phi_0', 'm_planck']
+  },
+  
+  // Cascade Structure
+  cascade: {
+    name: 'E₈ Cascade Structure',
+    description: 'Hierarchical VEVs from gamma attenuation function',
+    color: 'from-indigo-600 to-indigo-400',
+    icon: '🌀',
+    constants: ['gamma_function', 'phi_3', 'phi_4', 'phi_5']
+  },
+  
+  // Primary Predictions (direct from c₃ and φ₀)
+  primary: {
+    name: 'Primary Predictions',
+    description: 'Direct predictions from fundamental parameters without corrections',
+    color: 'from-blue-600 to-blue-400',
+    icon: '⚡',
+    constants: [
+      'alpha_g', 'sin2_theta_w', 'm_p', 'theta_c', 'v_cb', 
+      'v_us_v_ud', 'v_td_v_ts', 'm_s_m_d_ratio', 'r_tensor', 
+      'eta_b', 'theta_qcd'
+    ]
+  },
+  
+  // Secondary Predictions (with correction factors)
+  secondary: {
+    name: 'Secondary Predictions',
+    description: 'Predictions with loop corrections and backreaction',
+    color: 'from-green-600 to-green-400',
+    icon: '🔄',
+    constants: [
+      'omega_b', 'm_mu', 'm_u', 'm_b', 'epsilon_k', 'm_e', 
+      'm_tau', 'm_c', 'm_w', 'm_z', 'alpha_s', 'g_f', 
+      'v_h', 'n_s', 'm_t', 'y_t', 'y_e'
+    ]
+  },
+  
+  // Derived Constants
+  derived: {
+    name: 'Derived Constants',
+    description: 'Constants calculated from other constants',
+    color: 'from-yellow-600 to-yellow-400',
+    icon: '📐',
+    constants: [
+      'alpha', 'lambda_qcd', 'delta_m_n_p', 'mu_p', 'mu_p_mu_n',
+      'rho_parameter', 'g_1', 'g_2', 'delta_a_mu'
+    ]
+  },
+  
+  // New Physics Predictions
+  new_physics: {
+    name: 'New Physics Predictions',
+    description: 'Testable predictions for future experiments',
+    color: 'from-red-600 to-red-400',
+    icon: '🔮',
+    constants: [
+      'f_a', 'm_axion', 'tau_proton', 'lambda_qg', 'lambda_star',
+      'e_knee', 'q_pl', 't_gamma_0', 't_nu'
+    ]
+  },
+  
+  // Cosmological Parameters
+  cosmology: {
+    name: 'Cosmological Parameters',
+    description: 'Parameters relevant for cosmology and early universe',
+    color: 'from-pink-600 to-pink-400',
+    icon: '🌌',
+    constants: [
+      'omega_b', 'r_tensor', 'n_s', 'eta_b', 'w_de', 
+      'rho_lambda', 'tau_reio', 'tau_star', 'f_b', 'sigma_m_nu'
+    ]
+  },
+  
+  // Neutrino Physics
+  neutrino: {
+    name: 'Neutrino Physics',
+    description: 'Neutrino masses and mixing',
+    color: 'from-gray-600 to-gray-400',
+    icon: '👻',
+    constants: ['m_nu', 'sigma_m_nu', 'delta_nu_t']
+  },
+  
+  // CP Violation
+  cp_violation: {
+    name: 'CP Violation',
+    description: 'Parameters related to CP violation',
+    color: 'from-orange-600 to-orange-400',
+    icon: '🔀',
+    constants: ['epsilon_k', 'theta_qcd', 'delta_gamma']
+  }
+}
+
+// Correction factors
+export const correctionFactors = {
+  '4D-Loop': {
+    formula: '1 - 2c₃',
+    value: 0.920423,
+    description: 'One-loop renormalization in 4D',
+    applies_to: ['omega_b', 'm_mu', 'm_e']
+  },
+  'KK-Geometry': {
+    formula: '1 - 4c₃',
+    value: 0.840845,
+    description: 'First Kaluza-Klein shell on S¹',
+    applies_to: ['m_u']
+  },
+  'VEV-Backreaction': {
+    formula: '1 ± kφ₀',
+    description: 'VEV backreaction or radion self-coupling',
+    applies_to: ['m_b', 'epsilon_k']
+  }
+}
+
+// Group order for display
+export const groupOrder = [
+  'fundamental_theory',
+  'cascade',
+  'primary',
+  'secondary',
+  'derived',
+  'new_physics',
+  'cosmology',
+  'neutrino',
+  'cp_violation'
+]
+
+// Helper function to get group for a constant
+export function getConstantGroup(constantId) {
+  for (const [groupKey, group] of Object.entries(constantGroups)) {
+    if (group.constants.includes(constantId)) {
+      return groupKey
     }
   }
-  return 'Other';
-};
+  return 'unknown'
+}
 
-// All group names in order
-export const groupOrder = [
-  'Fundamental Constants',
-  'Lepton Properties',
-  'Quark Masses',
-  'Gauge Boson Masses',
-  'Higgs Sector',
-  'Weak Interactions',
-  'Electroweak Parameters',
-  'Strong Interactions',
-  'Neutrino Physics',
-  'Cosmological Parameters',
-  'Other Physics',
-  'Other'
-];
+// Helper function to get correction factor for a constant
+export function getCorrectionFactor(constantId) {
+  for (const [factorName, factor] of Object.entries(correctionFactors)) {
+    if (factor.applies_to.includes(constantId)) {
+      return { name: factorName, ...factor }
+    }
+  }
+  return null
+}
+
+// Special scales in RG flow
+export const specialScales = {
+  M_Z: {
+    value: 91.1876,
+    unit: 'GeV',
+    description: 'Z boson mass scale'
+  },
+  M_GUT: {
+    value: 1.22e14,
+    unit: 'GeV',
+    description: 'Grand unification scale'
+  },
+  M_Pl: {
+    value: 1.2209e19,
+    unit: 'GeV',
+    description: 'Planck scale'
+  },
+  alpha_s_equals_phi0: {
+    value: null, // To be calculated
+    unit: 'GeV',
+    description: 'Scale where α_s = φ₀'
+  },
+  alpha_s_equals_c3: {
+    value: null, // To be calculated
+    unit: 'GeV',
+    description: 'Scale where α_s = c₃'
+  }
+}
+
+export default constantGroups

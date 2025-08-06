@@ -1,16 +1,16 @@
 {
   "id": "lambda_qg",
-  "symbol": "Λ_QG",
+  "symbol": "\u039b_QG",
   "name": "Quantum-gravity tread-point",
   "description": "Energy scale marking first deviation from classical GR",
   "unit": "GeV",
-  "formula": "Λ_QG = 2π c₃ φ₀ M_Pl",
+  "formula": "2*pi*c_3*phi_0*M_Pl",
   "dependencies": [
     "c_3",
     "phi_0",
     "m_planck"
   ],
-  "category": "quantum_gravity",
+  "category": "new_physics",
   "sources": [
     {
       "name": "Topological Fixed Point Theory",
@@ -21,6 +21,7 @@
   ],
   "accuracyTarget": 0.1,
   "metadata": {
-    "note": "Critical scale for quantum gravity effects"
+    "note": "Critical scale for quantum gravity effects",
+    "latex": "\\Lambda_{QG} = 2\\pi c_3 \\varphi_0 M_{Pl}"
   }
 }

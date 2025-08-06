@@ -1,0 +1,14 @@
+{
+  "total_constants": 70,
+  "calculated_constants": 1,
+  "success_rate": "1.4%",
+  "constants": {
+    "alpha": {
+      "calculated_value": 0.007297340575733252,
+      "reference_value": 0.0072973525643,
+      "relative_error": 1.64e-06,
+      "accuracy_met": true,
+      "unit": "dimensionless"
+    }
+  }
+}

@@ -4,19 +4,32 @@
   "name": "Bottom Quark Mass",
   "description": "Bottom quark mass",
   "unit": "GeV",
-  "formula": "M_Pl * phi_0**15 / sqrt(c_3) * (1 - 2 * phi_0)",
+  "formula": "M_Pl * phi_0^15 / sqrt(c_3) * (1 - 2*phi_0)",
   "dependencies": [
     "phi_0",
     "M_Pl",
     "c_3"
   ],
-  "category": "quark",
+  "category": "secondary",
   "sources": [
-    { "name": "Lattice/PDG 2024", "year": 2024, "value": 4.18, "note": "MS-bar at μ=m_b" },
-    { "name": "Topological Fixed Point Theory", "year": 2025, "value": 4.199, "note": "TFPT prediction incl. VEV back-reaction" }
+    {
+      "name": "Lattice/PDG 2024",
+      "year": 2024,
+      "value": 4.18,
+      "note": "MS-bar at \u03bc=m_b"
+    },
+    {
+      "name": "Topological Fixed Point Theory",
+      "year": 2025,
+      "value": 4.199,
+      "note": "TFPT prediction incl. VEV back-reaction"
+    }
   ],
   "accuracyTarget": 0.02,
   "metadata": {
-    "note": "Tree value φ₀¹⁵/√c₃ multiplied by the radion back-reaction (1−2φ₀); gives 4.199 GeV, +0.4 % vs. lattice."
+    "note": "Tree value \u03c6\u2080\u00b9\u2075/\u221ac\u2083 multiplied by the radion back-reaction (1\u22122\u03c6\u2080); gives 4.199 GeV, +0.4 % vs. lattice.",
+    "latex": "m_b = \\frac{M_{Pl} \\varphi_0^{15}}{\\sqrt{c_3}} (1 - 2\\varphi_0)",
+    "correction_factor": "VEV-Backreaction",
+    "theoretical_value": 4.198496497193857
   }
 }

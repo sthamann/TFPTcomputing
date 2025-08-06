@@ -1,17 +1,23 @@
 {
   "id": "mu_p",
-  "symbol": "μ_p",
+  "symbol": "\u03bc_p",
   "name": "Proton magnetic moment",
   "description": "Magnetic moment in nuclear magnetons",
-  "unit": "μ_N",
-  "formula": "μ_p = (67 / 24)",
+  "unit": "\u03bc_N",
+  "formula": "67/24",
   "dependencies": [],
-  "category": "nuclear",
+  "category": "derived",
   "sources": [
-    { "name": "PDG 2024", "year": 2024, "value": 2.79285, "note": "Experimental" }
+    {
+      "name": "PDG 2024",
+      "year": 2024,
+      "value": 2.79285,
+      "note": "Experimental"
+    }
   ],
   "accuracyTarget": 0.05,
   "metadata": {
-    "note": "Awaiting proper TFPT calculation; presently mirrors the g-factor placeholder."
+    "note": "Awaiting proper TFPT calculation; presently mirrors the g-factor placeholder.",
+    "latex": "\\mu_p = \\frac{67}{24} \\mu_N"
   }
 }

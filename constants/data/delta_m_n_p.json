@@ -1,15 +1,15 @@
 {
   "id": "delta_m_n_p",
-  "symbol": "Δm_n-p",
+  "symbol": "\u0394m_n-p",
   "name": "Neutron-Proton Mass Difference",
   "description": "Neutron-proton mass difference",
   "unit": "MeV",
-  "formula": "m_e_MEV * φ₀ * 48",
+  "formula": "m_e * phi_0 * 48",
   "dependencies": [
-    "phi_0",
-    "m_e"
+    "m_e",
+    "phi_0"
   ],
-  "category": "nuclear",
+  "category": "derived",
   "sources": [
     {
       "name": "CODATA 2022",
@@ -27,6 +27,7 @@
   ],
   "accuracyTarget": 0.01,
   "metadata": {
-    "note": "Part of the complete 43 cascade-born constants"
+    "note": "Part of the complete 43 cascade-born constants",
+    "latex": "\\Delta m_{n-p} = 48 m_e \\varphi_0"
   }
 }

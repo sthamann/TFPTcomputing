@@ -3,9 +3,10 @@ import { Link } from 'react-router-dom'
 import { constantsApi } from '../lib/api'
 import { Loader2, AlertTriangle } from 'lucide-react'
 import toast from 'react-hot-toast'
-import { constantGroups, getConstantGroup, groupOrder } from '../lib/constantGroups'
+import { constantGroups, getConstantGroup, groupOrder, getCorrectionFactor } from '../lib/constantGroups'
 import KaTeXFormula from '../components/KaTeXFormula'
 import TheoryExplanation from '../components/TheoryExplanation'
+import CascadeVisualization from '../components/CascadeVisualization'
 
 const ConstantsPage = () => {
   const [constants, setConstants] = useState([])
@@ -290,6 +291,14 @@ const ConstantsPage = () => {
       {/* Theory Explanation */}
       <div className="px-8">
         <TheoryExplanation />
+      </div>
+      
+      {/* Cascade Visualization */}
+      <div className="px-8 mb-12">
+        <h2 className="text-2xl font-bold mb-6">
+          <span className="gradient-text">Theory Structure & Predictions</span>
+        </h2>
+        <CascadeVisualization />
       </div>
 
       {/* Stats Section */}

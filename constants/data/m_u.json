@@ -4,19 +4,32 @@
   "name": "Up Quark Mass",
   "description": "Up quark mass in MeV",
   "unit": "MeV",
-  "formula": "M_Pl * phi_0**17 * (1 - 4 * c_3) * 1e3",
+  "formula": "M_Pl * phi_0^17 * (1 - 4*c_3) * 1e3",
   "dependencies": [
     "phi_0",
     "c_3",
     "M_Pl"
   ],
-  "category": "quark",
+  "category": "secondary",
   "sources": [
-    { "name": "Lattice/PDG 2024", "year": 2024, "value": 2.16, "note": "MS-bar at μ=2 GeV" },
-    { "name": "Topological Fixed Point Theory", "year": 2025, "value": 2.228, "note": "TFPT ladder × KK factor" }
+    {
+      "name": "Lattice/PDG 2024",
+      "year": 2024,
+      "value": 2.16,
+      "note": "MS-bar at \u03bc=2 GeV"
+    },
+    {
+      "name": "Topological Fixed Point Theory",
+      "year": 2025,
+      "value": 2.228,
+      "note": "TFPT ladder \u00d7 KK factor"
+    }
   ],
   "accuracyTarget": 0.2,
   "metadata": {
-    "note": "KK-geometry factor (1−4c₃) lowers the ladder value from 2.649 MeV to 2.228 MeV, landing +3 % above lattice."
+    "note": "KK-geometry factor (1\u22124c\u2083) lowers the ladder value from 2.649 MeV to 2.228 MeV, landing +3 % above lattice.",
+    "latex": "m_u = M_{Pl} \\varphi_0^{17} (1 - 4c_3)",
+    "correction_factor": "KK-Geometry",
+    "theoretical_value": 2.2277587073552514
   }
 }

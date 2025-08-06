@@ -4,11 +4,11 @@
   "name": "CKM Matrix Element V_cb",
   "description": "CKM matrix element V_cb",
   "unit": "dimensionless",
-  "formula": "(3/4) φ₀",
+  "formula": "(3/4)*phi_0",
   "dependencies": [
     "phi_0"
   ],
-  "category": "mixing",
+  "category": "primary",
   "sources": [
     {
       "name": "Topological Fixed Point Theory",
@@ -19,6 +19,8 @@
   ],
   "accuracyTarget": 0.001,
   "metadata": {
-    "note": "Part of the complete 43 cascade-born constants"
+    "note": "Part of the complete 43 cascade-born constants",
+    "latex": "V_{cb} = \\frac{3}{4}\\varphi_0",
+    "theoretical_value": 0.039878250000000004
   }
 }

@@ -1,14 +1,14 @@
 {
   "id": "sin2_theta_w",
-  "symbol": "sin²θ_W",
+  "symbol": "sin\u00b2\u03b8_W",
   "name": "Weinberg Angle",
   "description": "Weinberg angle",
   "unit": "dimensionless",
-  "formula": "√φ₀",
+  "formula": "phi_0",
   "dependencies": [
     "phi_0"
   ],
-  "category": "electroweak",
+  "category": "primary",
   "sources": [
     {
       "name": "CODATA 2022",
@@ -26,6 +26,7 @@
   ],
   "accuracyTarget": 0.001,
   "metadata": {
-    "note": "Part of the complete 43 cascade-born constants"
+    "note": "Part of the complete 43 cascade-born constants",
+    "latex": "\\sin^2\\theta_W = \\varphi_0"
   }
 }

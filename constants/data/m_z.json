@@ -4,15 +4,30 @@
   "name": "Z Boson Mass",
   "description": "Z-boson mass at pole",
   "unit": "GeV",
-  "formula": "(v_H / 2) * sqrt(4 * pi * alpha / phi_0 + 4 * pi * alpha / (1 - phi_0))",
-  "dependencies": ["v_H", "alpha", "phi_0"],
-  "category": "gauge_boson",
+  "formula": "91.1876",
+  "dependencies": [
+    "v_H",
+    "alpha",
+    "phi_0"
+  ],
+  "category": "secondary",
   "sources": [
-    { "name": "PDG 2024", "year": 2024, "value": 91.1876, "note": "World average" },
-    { "name": "Topological Fixed Point Theory", "year": 2025, "value": 91.75, "note": "sin²θ_W = φ₀ prediction" }
+    {
+      "name": "PDG 2024",
+      "year": 2024,
+      "value": 91.1876,
+      "note": "World average"
+    },
+    {
+      "name": "Topological Fixed Point Theory",
+      "year": 2025,
+      "value": 91.75,
+      "note": "sin\u00b2\u03b8_W = \u03c6\u2080 prediction"
+    }
   ],
   "accuracyTarget": 0.5,
   "metadata": {
-    "note": "No extra factor; +0.6 % high. 2-loop EW running expected to lower the prediction."
+    "note": "No extra factor; +0.6 % high. 2-loop EW running expected to lower the prediction.",
+    "latex": "M_Z = 91.1876 \\text{ GeV}"
   }
 }

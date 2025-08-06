@@ -4,14 +4,22 @@
   "name": "Tensor-to-Scalar Ratio",
   "description": "Inflationary tensor-to-scalar ratio",
   "unit": "dimensionless",
-  "formula": "phi_0**2",
-  "dependencies": ["phi_0"],
-  "category": "cosmology",
+  "formula": "phi_0^2",
+  "dependencies": [
+    "phi_0"
+  ],
+  "category": "primary",
   "sources": [
-    { "name": "TFPT prediction", "year": 2025, "value": 0.002827 }
+    {
+      "name": "TFPT prediction",
+      "year": 2025,
+      "value": 0.002827
+    }
   ],
   "accuracyTarget": 0.01,
   "metadata": {
-    "note": "Parameter-free prediction r = φ₀²; CMB-S4 target value."
+    "note": "Parameter-free prediction r = \u03c6\u2080\u00b2; CMB-S4 target value.",
+    "latex": "r = \\varphi_0^2",
+    "theoretical_value": 0.0028271552410000004
   }
 }

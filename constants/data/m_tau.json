@@ -1,15 +1,15 @@
 {
   "id": "m_tau",
-  "symbol": "m_τ",
+  "symbol": "m_\u03c4",
   "name": "Tau Mass",
   "description": "Tau mass in GeV",
   "unit": "GeV",
-  "formula": "(v_H / sqrt(2)) * (5 / 6) * phi_0**1.5",
+  "formula": "(v_H/sqrt(2)) * (5/6) * phi_0^1.5",
   "dependencies": [
     "v_H",
     "phi_0"
   ],
-  "category": "lepton",
+  "category": "secondary",
   "sources": [
     {
       "name": "CODATA 2022",
@@ -22,11 +22,13 @@
       "name": "Topological Fixed Point Theory",
       "year": 2025,
       "value": 1.77885,
-      "note": "TFPT prediction with group factor 5⁄6"
+      "note": "TFPT prediction with group factor 5\u20446"
     }
   ],
   "accuracyTarget": 0.01,
   "metadata": {
-    "note": "Leading-order ladder m_τ ∝ φ₀^1.5 receives a purely group-theoretical prefactor 5/6: the ratio of left- vs right-handed Weyl weights in the E₈ embedding of the third lepton generation. No loop factors are needed; prediction 1.7789 GeV is 0.1 % above CODATA."
+    "note": "Leading-order ladder m_\u03c4 \u221d \u03c6\u2080^1.5 receives a purely group-theoretical prefactor 5/6: the ratio of left- vs right-handed Weyl weights in the E\u2088 embedding of the third lepton generation. No loop factors are needed; prediction 1.7789 GeV is 0.1 % above CODATA.",
+    "latex": "m_\\tau = \\frac{v_H}{\\sqrt{2}} \\cdot \\frac{5}{6} \\varphi_0^{1.5}",
+    "theoretical_value": 1.7788499892949583
   }
 }

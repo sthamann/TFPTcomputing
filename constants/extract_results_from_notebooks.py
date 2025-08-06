@@ -81,7 +81,9 @@ def extract_results_from_notebook(notebook_path):
 def extract_all_results():
     """Extract results from all executed notebooks"""
     # Support different working directories
+    script_dir = Path(__file__).parent
     possible_dirs = [
+        script_dir / 'results',  # constants/results relative to script
         Path('/app/constants/results'),
         Path('constants/results'),
         Path('results'),
@@ -97,6 +99,8 @@ def extract_all_results():
     if results_dir is None:
         print("❌ No results directory found!")
         return 0, 0
+    
+    print(f"Using results directory: {results_dir}")
     
     json_dir = results_dir / 'json'
     json_dir.mkdir(exist_ok=True, parents=True)
@@ -142,7 +146,9 @@ def extract_all_results():
 def create_summary_json():
     """Create a summary JSON file with all results"""
     # Support different working directories
+    script_dir = Path(__file__).parent
     possible_dirs = [
+        script_dir / 'results' / 'json',  # constants/results/json relative to script
         Path('/app/constants/results/json'),
         Path('constants/results/json'),
         Path('results/json')

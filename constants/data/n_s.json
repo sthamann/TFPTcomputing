@@ -4,15 +4,30 @@
   "name": "Scalar spectral index",
   "description": "Primordial scalar tilt",
   "unit": "dimensionless",
-  "formula": "1 - phi_0 - 1.5 * phi_0 * c_3",
-  "dependencies": ["phi_0", "c_3"],
-  "category": "cosmology",
+  "formula": "1 - phi_0 - 1.5*phi_0*c_3",
+  "dependencies": [
+    "phi_0",
+    "c_3"
+  ],
+  "category": "secondary",
   "sources": [
-    { "name": "Planck 2018 (+2024 ext.)", "year": 2024, "value": 0.9669, "note": "TTTEEE+lowE+BAO" },
-    { "name": "Topological Fixed Point Theory", "year": 2025, "value": 0.9670, "note": "Cascade-only prediction" }
+    {
+      "name": "Planck 2018 (+2024 ext.)",
+      "year": 2024,
+      "value": 0.9669,
+      "note": "TTTEEE+lowE+BAO"
+    },
+    {
+      "name": "Topological Fixed Point Theory",
+      "year": 2025,
+      "value": 0.967,
+      "note": "Cascade-only prediction"
+    }
   ],
   "accuracyTarget": 0.002,
   "metadata": {
-    "note": "ε = φ₀ c₃ /4,  η = −φ₀/2  ⇒  n_s = 1 − φ₀ − 1.5 φ₀ c₃; deviation ≈ 1×10⁻⁴."
+    "note": "\u03b5 = \u03c6\u2080 c\u2083 /4,  \u03b7 = \u2212\u03c6\u2080/2  \u21d2  n_s = 1 \u2212 \u03c6\u2080 \u2212 1.5 \u03c6\u2080 c\u2083; deviation \u2248 1\u00d710\u207b\u2074.",
+    "latex": "n_s = 1 - \\varphi_0 - 1.5\\varphi_0 c_3",
+    "theoretical_value": 0.9436555896953228
   }
 }
