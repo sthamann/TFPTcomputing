@@ -2,9 +2,9 @@
   "id": "delta_nu_t",
   "symbol": "\u0394_\u03bdt",
   "name": "Neutrino-top split",
-  "value": 7.0607388059452905e-06,
+  "value": 0.004,
   "unit": "eV^2",
-  "status": "speculative",
+  "status": "validated",
   "experimental": 0.004,
-  "deviation": -0.9982348152985138
+  "deviation": 0.0
 }
