@@ -1,6 +1,6 @@
 {
   "id": "tau_reio",
-  "symbol": "\u03c4_reio",
+  "symbol": "τ_reio",
   "name": "Optical depth to re-ionisation",
   "description": "Thomson optical depth to reionization",
   "unit": "dimensionless",
@@ -22,5 +22,6 @@
   "metadata": {
     "note": "Removes astrophysical tuning for first stars",
     "notes": "Optical depth to reionization"
-  }
+  },
+  "status": "speculative"
 }

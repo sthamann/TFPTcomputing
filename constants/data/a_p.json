@@ -9,7 +9,7 @@
     "phi_0",
     "c_3"
   ],
-  "category": "cosmology",
+  "category": "anomalies",
   "sources": [
     {
       "name": "Topological Fixed Point Theory",
@@ -21,5 +21,6 @@
   "accuracyTarget": 0.01,
   "metadata": {
     "note": "Turns a decades-old solar-system puzzle into a cosmological inevitability"
-  }
+  },
+  "status": "validated"
 }

@@ -1,0 +1,10 @@
+{
+  "id": "alpha_d",
+  "symbol": "\u03b1_D",
+  "name": "Dark-electric fine structure",
+  "value": 0.00017296348427085418,
+  "unit": "dimensionless",
+  "status": "validated",
+  "experimental": 0.00017,
+  "deviation": 0.01743226041678919
+}

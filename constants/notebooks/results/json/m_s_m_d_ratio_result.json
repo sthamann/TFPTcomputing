@@ -1,0 +1,10 @@
+{
+  "id": "m_s_m_d_ratio",
+  "symbol": "m_s/m_d",
+  "name": "Strange/Down Mass Ratio",
+  "value": 18.807244550600892,
+  "unit": "dimensionless",
+  "status": "validated",
+  "experimental": 20.2,
+  "deviation": -0.06894828957421324
+}

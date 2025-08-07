@@ -4,11 +4,10 @@
   "name": "Planck Mass",
   "description": "The Planck mass, fundamental gravitational scale",
   "unit": "GeV",
-  "formula": "M_Pl = sqrt(ħc/G) = 1.22091e19 * GeV",
-  "dependencies": [
-    "m_planck"
-  ],
-  "category": "fundamental_theory",
+  "formula": "sqrt(hbar*c/G)/GeV_to_kg",
+  "dependencies": [],
+  "category": "scale_hierarchy",
+  "status": "speculative",
   "sources": [
     {
       "name": "CODATA 2022",

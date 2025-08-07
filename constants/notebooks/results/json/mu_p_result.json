@@ -1,0 +1,10 @@
+{
+  "id": "mu_p",
+  "symbol": "\u03bc_p",
+  "name": "Proton magnetic moment",
+  "value": 2.7916666666666665,
+  "unit": "mu_N",
+  "status": "validated",
+  "experimental": 2.79285,
+  "deviation": -0.00042370099838284764
+}

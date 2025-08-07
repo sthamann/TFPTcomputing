@@ -1,15 +1,15 @@
 {
   "id": "beta_x",
-  "symbol": "\u03b2_X",
+  "symbol": "β_X",
   "name": "Dark-photon coupling",
-  "description": "Dark-photon coupling strength from next M\u00f6bius edge",
+  "description": "Dark-photon coupling strength from next Möbius edge",
   "unit": "dimensionless",
   "formula": "phi_0^2/(2*c_3)",
   "dependencies": [
     "phi_0",
     "c_3"
   ],
-  "category": "dark_sector",
+  "category": "gauge",
   "sources": [
     {
       "name": "Topological Fixed Point Theory",
@@ -20,6 +20,7 @@
   ],
   "accuracyTarget": 0.001,
   "metadata": {
-    "note": "Derived from next M\u00f6bius edge topology"
-  }
+    "note": "Derived from next Möbius edge topology"
+  },
+  "status": "validated"
 }

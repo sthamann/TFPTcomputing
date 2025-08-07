@@ -10,7 +10,7 @@
     "alpha",
     "phi_0"
   ],
-  "category": "secondary",
+  "category": "flavour",
   "sources": [
     {
       "name": "CODATA 2022",
@@ -24,5 +24,6 @@
   "metadata": {
     "note": "Tree-level with α factor, 1-loop correction accounts for 5.7% deviation",
     "measured_value": 0.51099895069
-  }
+  },
+  "status": "validated"
 }

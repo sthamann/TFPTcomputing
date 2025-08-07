@@ -7,6 +7,7 @@ import ConstantDetailPage from './pages/ConstantDetailPage'
 import PlaygroundPage from './pages/PlaygroundPage'
 import DAGPage from './pages/DAGPage'
 import TestVisNetwork from './pages/TestVisNetwork'
+import UniverseBirthPage from './pages/UniverseBirthPage'
 
 function App() {
   const [darkMode, setDarkMode] = useState(() => {
@@ -36,6 +37,7 @@ function App() {
           <Route path="/constants/:id" element={<ConstantDetailPage />} />
           <Route path="/playground" element={<PlaygroundPage />} />
           <Route path="/dag" element={<DAGPage />} />
+          <Route path="/universe" element={<UniverseBirthPage />} />
           <Route path="/test-vis" element={<TestVisNetwork />} />
         </Routes>
       </Layout>

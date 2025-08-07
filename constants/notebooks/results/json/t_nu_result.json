@@ -1,0 +1,10 @@
+{
+  "id": "t_nu",
+  "symbol": "T_\u03bd",
+  "name": "CNB Temperature",
+  "value": 1.9641486394418193,
+  "unit": "K",
+  "status": "validated",
+  "experimental": 1.95,
+  "deviation": 0.007255712534266319
+}

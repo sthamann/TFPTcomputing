@@ -1,15 +1,15 @@
 {
   "id": "omega_b",
-  "symbol": "\u03a9_b",
+  "symbol": "Ω_b",
   "name": "Baryon Density Parameter",
-  "description": "Present-day baryon density (\u03a9_b h\u00b2 / h\u00b2)",
+  "description": "Present-day baryon density (Ω_b h² / h²)",
   "unit": "dimensionless",
   "formula": "phi_0*(1-2*c_3)",
   "dependencies": [
     "phi_0",
     "c_3"
   ],
-  "category": "secondary",
+  "category": "cosmology",
   "sources": [
     {
       "name": "Planck 2018",
@@ -24,7 +24,7 @@
   ],
   "accuracyTarget": 0.005,
   "metadata": {
-    "note": "One 4-D loop (1\u20132c\u2083) dilutes the ladder value \u03c6\u2080; match \u20130.06 %.",
+    "note": "One 4-D loop (1–2c₃) dilutes the ladder value φ₀; match –0.06 %.",
     "correction_factors": [
       {
         "name": "4D-Loop",
@@ -33,5 +33,6 @@
       }
     ],
     "measured_value": 0.04897
-  }
+  },
+  "status": "validated"
 }

@@ -1,0 +1,10 @@
+{
+  "id": "sin2_theta_w",
+  "symbol": "sin\u00b2\u03b8_W",
+  "name": "Weinberg Angle",
+  "value": 0.22301322532678347,
+  "unit": "dimensionless",
+  "status": "validated",
+  "experimental": 0.22305,
+  "deviation": -0.00016487188171498542
+}

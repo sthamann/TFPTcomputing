@@ -1,6 +1,6 @@
 {
   "id": "rho_lambda",
-  "symbol": "\u03c1_\u039b",
+  "symbol": "ρ_Λ",
   "name": "Vacuum Energy Density",
   "description": "Observed dark-energy density",
   "unit": "GeV^4",
@@ -19,8 +19,9 @@
   ],
   "accuracyTarget": 0.1,
   "metadata": {
-    "note": "97-step ladder reproduces \u039b to within 3 %; no extra factor yet.",
+    "note": "97-step ladder reproduces Λ to within 3 %; no extra factor yet.",
     "notes": "Vacuum energy density",
     "measured_value": 5e-48
-  }
+  },
+  "status": "validated"
 }

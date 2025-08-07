@@ -1,0 +1,10 @@
+{
+  "id": "f_pi_lambda_qcd",
+  "symbol": "f_\u03c0/\u039b_QCD",
+  "name": "Pion Decay Constant to QCD Scale Ratio",
+  "value": 0.6,
+  "unit": "dimensionless",
+  "status": "speculative",
+  "experimental": 1.51,
+  "deviation": -0.6026490066225165
+}

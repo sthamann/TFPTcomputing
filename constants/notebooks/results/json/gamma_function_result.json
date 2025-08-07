@@ -1,0 +1,10 @@
+{
+  "id": "gamma_function",
+  "symbol": "\u03b3(n)",
+  "name": "E8 Cascade Attenuation Function",
+  "value": 0.9524999999999999,
+  "unit": "dimensionless",
+  "status": "speculative",
+  "experimental": 0,
+  "deviation": 0
+}

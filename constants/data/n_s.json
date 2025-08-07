@@ -26,9 +26,10 @@
   ],
   "accuracyTarget": 0.002,
   "metadata": {
-    "note": "\u03b5 = \u03c6\u2080 c\u2083 /4,  \u03b7 = \u2212\u03c6\u2080/2  \u21d2  n_s = 1 \u2212 \u03c6\u2080 \u2212 1.5 \u03c6\u2080 c\u2083; deviation \u2248 1\u00d710\u207b\u2074.",
+    "note": "ε = φ₀ c₃ /4,  η = −φ₀/2  ⇒  n_s = 1 − φ₀ − 1.5 φ₀ c₃; deviation ≈ 1×10⁻⁴.",
     "notes": "CMB scalar spectral index with c_3 correction",
     "last_update": "Aug 6, 2025",
     "measured_value": 0.9669
-  }
+  },
+  "status": "validated"
 }

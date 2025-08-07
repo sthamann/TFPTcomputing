@@ -1,0 +1,10 @@
+{
+  "id": "sigma_m_nu",
+  "symbol": "\u03a3m_\u03bd",
+  "name": "Sum of Neutrino Masses",
+  "value": 0.07023167260420787,
+  "unit": "eV",
+  "status": "speculative",
+  "experimental": 0.06,
+  "deviation": 0.17052787673679792
+}

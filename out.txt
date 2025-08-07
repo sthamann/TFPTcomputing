@@ -1,0 +1,535 @@
+[0;34m=================================================[0m
+[0;34m       Starting Q6 Services Locally              [0m
+[0;34m=================================================[0m
+
+[1;33mGenerating and executing constant notebooks...[0m
+[0;34m📝 Generating self-contained notebooks from constant definitions...[0m
+Generating notebooks for 62 constants...
+  Generating notebook for a_p...
+    ✓ Saved to /Users/stefanhamann/Documents/Q7/TFPTcomputing/constants/notebooks/a_p.ipynb
+  Generating notebook for alpha...
+    ✓ Saved to /Users/stefanhamann/Documents/Q7/TFPTcomputing/constants/notebooks/alpha.ipynb
+  Generating notebook for alpha_d...
+    ✓ Saved to /Users/stefanhamann/Documents/Q7/TFPTcomputing/constants/notebooks/alpha_d.ipynb
+  Generating notebook for alpha_g...
+    ✓ Saved to /Users/stefanhamann/Documents/Q7/TFPTcomputing/constants/notebooks/alpha_g.ipynb
+  Generating notebook for alpha_s...
+    ✓ Saved to /Users/stefanhamann/Documents/Q7/TFPTcomputing/constants/notebooks/alpha_s.ipynb
+  Generating notebook for beta_x...
+    ✓ Saved to /Users/stefanhamann/Documents/Q7/TFPTcomputing/constants/notebooks/beta_x.ipynb
+  Generating notebook for c_3...
+    ✓ Saved to /Users/stefanhamann/Documents/Q7/TFPTcomputing/constants/notebooks/c_3.ipynb
+  Generating notebook for c_4...
+    ✓ Saved to /Users/stefanhamann/Documents/Q7/TFPTcomputing/constants/notebooks/c_4.ipynb
+  Generating notebook for delta_a_mu...
+    ✓ Saved to /Users/stefanhamann/Documents/Q7/TFPTcomputing/constants/notebooks/delta_a_mu.ipynb
+  Generating notebook for delta_gamma...
+    ✓ Saved to /Users/stefanhamann/Documents/Q7/TFPTcomputing/constants/notebooks/delta_gamma.ipynb
+  Generating notebook for delta_m_n_p...
+    ✓ Saved to /Users/stefanhamann/Documents/Q7/TFPTcomputing/constants/notebooks/delta_m_n_p.ipynb
+  Generating notebook for delta_nu_t...
+    ✓ Saved to /Users/stefanhamann/Documents/Q7/TFPTcomputing/constants/notebooks/delta_nu_t.ipynb
+  Generating notebook for e_knee...
+    ✓ Saved to /Users/stefanhamann/Documents/Q7/TFPTcomputing/constants/notebooks/e_knee.ipynb
+  Generating notebook for epsilon_k...
+    ✓ Saved to /Users/stefanhamann/Documents/Q7/TFPTcomputing/constants/notebooks/epsilon_k.ipynb
+  Generating notebook for eta_b...
+    ✓ Saved to /Users/stefanhamann/Documents/Q7/TFPTcomputing/constants/notebooks/eta_b.ipynb
+  Generating notebook for f_b...
+    ✓ Saved to /Users/stefanhamann/Documents/Q7/TFPTcomputing/constants/notebooks/f_b.ipynb
+  Generating notebook for f_pi_lambda_qcd...
+    ✓ Saved to /Users/stefanhamann/Documents/Q7/TFPTcomputing/constants/notebooks/f_pi_lambda_qcd.ipynb
+  Generating notebook for g_1...
+    ✓ Saved to /Users/stefanhamann/Documents/Q7/TFPTcomputing/constants/notebooks/g_1.ipynb
+  Generating notebook for g_2...
+    ✓ Saved to /Users/stefanhamann/Documents/Q7/TFPTcomputing/constants/notebooks/g_2.ipynb
+  Generating notebook for g_f...
+    ✓ Saved to /Users/stefanhamann/Documents/Q7/TFPTcomputing/constants/notebooks/g_f.ipynb
+  Generating notebook for gamma_function...
+    ✓ Saved to /Users/stefanhamann/Documents/Q7/TFPTcomputing/constants/notebooks/gamma_function.ipynb
+  Generating notebook for lambda_qcd...
+    ✓ Saved to /Users/stefanhamann/Documents/Q7/TFPTcomputing/constants/notebooks/lambda_qcd.ipynb
+  Generating notebook for lambda_qg...
+    ✓ Saved to /Users/stefanhamann/Documents/Q7/TFPTcomputing/constants/notebooks/lambda_qg.ipynb
+  Generating notebook for lambda_star...
+    ✓ Saved to /Users/stefanhamann/Documents/Q7/TFPTcomputing/constants/notebooks/lambda_star.ipynb
+  Generating notebook for m_b...
+    ✓ Saved to /Users/stefanhamann/Documents/Q7/TFPTcomputing/constants/notebooks/m_b.ipynb
+  Generating notebook for m_c...
+    ✓ Saved to /Users/stefanhamann/Documents/Q7/TFPTcomputing/constants/notebooks/m_c.ipynb
+  Generating notebook for m_e...
+    ✓ Saved to /Users/stefanhamann/Documents/Q7/TFPTcomputing/constants/notebooks/m_e.ipynb
+  Generating notebook for m_mu...
+    ✓ Saved to /Users/stefanhamann/Documents/Q7/TFPTcomputing/constants/notebooks/m_mu.ipynb
+  Generating notebook for m_nu...
+    ✓ Saved to /Users/stefanhamann/Documents/Q7/TFPTcomputing/constants/notebooks/m_nu.ipynb
+  Generating notebook for m_p...
+    ✓ Saved to /Users/stefanhamann/Documents/Q7/TFPTcomputing/constants/notebooks/m_p.ipynb
+  Generating notebook for m_planck...
+    ✓ Saved to /Users/stefanhamann/Documents/Q7/TFPTcomputing/constants/notebooks/m_planck.ipynb
+  Generating notebook for m_s_m_d_ratio...
+    ✓ Saved to /Users/stefanhamann/Documents/Q7/TFPTcomputing/constants/notebooks/m_s_m_d_ratio.ipynb
+  Generating notebook for m_tau...
+    ✓ Saved to /Users/stefanhamann/Documents/Q7/TFPTcomputing/constants/notebooks/m_tau.ipynb
+  Generating notebook for m_u...
+    ✓ Saved to /Users/stefanhamann/Documents/Q7/TFPTcomputing/constants/notebooks/m_u.ipynb
+  Generating notebook for m_w...
+    ✓ Saved to /Users/stefanhamann/Documents/Q7/TFPTcomputing/constants/notebooks/m_w.ipynb
+  Generating notebook for m_z...
+    ✓ Saved to /Users/stefanhamann/Documents/Q7/TFPTcomputing/constants/notebooks/m_z.ipynb
+  Generating notebook for mu_p...
+    ✓ Saved to /Users/stefanhamann/Documents/Q7/TFPTcomputing/constants/notebooks/mu_p.ipynb
+  Generating notebook for mu_p_mu_n...
+    ✓ Saved to /Users/stefanhamann/Documents/Q7/TFPTcomputing/constants/notebooks/mu_p_mu_n.ipynb
+  Generating notebook for n_s...
+    ✓ Saved to /Users/stefanhamann/Documents/Q7/TFPTcomputing/constants/notebooks/n_s.ipynb
+  Generating notebook for omega_b...
+    ✓ Saved to /Users/stefanhamann/Documents/Q7/TFPTcomputing/constants/notebooks/omega_b.ipynb
+  Generating notebook for phi_0...
+    ✓ Saved to /Users/stefanhamann/Documents/Q7/TFPTcomputing/constants/notebooks/phi_0.ipynb
+  Generating notebook for r_tensor...
+    ✓ Saved to /Users/stefanhamann/Documents/Q7/TFPTcomputing/constants/notebooks/r_tensor.ipynb
+  Generating notebook for rho_lambda...
+    ✓ Saved to /Users/stefanhamann/Documents/Q7/TFPTcomputing/constants/notebooks/rho_lambda.ipynb
+  Generating notebook for rho_parameter...
+    ✓ Saved to /Users/stefanhamann/Documents/Q7/TFPTcomputing/constants/notebooks/rho_parameter.ipynb
+  Generating notebook for sigma_m_nu...
+    ✓ Saved to /Users/stefanhamann/Documents/Q7/TFPTcomputing/constants/notebooks/sigma_m_nu.ipynb
+  Generating notebook for sin2_theta_w...
+    ✓ Saved to /Users/stefanhamann/Documents/Q7/TFPTcomputing/constants/notebooks/sin2_theta_w.ipynb
+  Generating notebook for t_gamma_0...
+    ✓ Saved to /Users/stefanhamann/Documents/Q7/TFPTcomputing/constants/notebooks/t_gamma_0.ipynb
+  Generating notebook for t_nu...
+    ✓ Saved to /Users/stefanhamann/Documents/Q7/TFPTcomputing/constants/notebooks/t_nu.ipynb
+  Generating notebook for tau_mu...
+    ✓ Saved to /Users/stefanhamann/Documents/Q7/TFPTcomputing/constants/notebooks/tau_mu.ipynb
+  Generating notebook for tau_reio...
+    ✓ Saved to /Users/stefanhamann/Documents/Q7/TFPTcomputing/constants/notebooks/tau_reio.ipynb
+  Generating notebook for tau_star...
+    ✓ Saved to /Users/stefanhamann/Documents/Q7/TFPTcomputing/constants/notebooks/tau_star.ipynb
+  Generating notebook for tau_tau...
+    ✓ Saved to /Users/stefanhamann/Documents/Q7/TFPTcomputing/constants/notebooks/tau_tau.ipynb
+  Generating notebook for theta_c...
+    ✓ Saved to /Users/stefanhamann/Documents/Q7/TFPTcomputing/constants/notebooks/theta_c.ipynb
+  Generating notebook for theta_qcd...
+    ✓ Saved to /Users/stefanhamann/Documents/Q7/TFPTcomputing/constants/notebooks/theta_qcd.ipynb
+  Generating notebook for v_cb...
+    ✓ Saved to /Users/stefanhamann/Documents/Q7/TFPTcomputing/constants/notebooks/v_cb.ipynb
+  Generating notebook for v_h...
+    ✓ Saved to /Users/stefanhamann/Documents/Q7/TFPTcomputing/constants/notebooks/v_h.ipynb
+  Generating notebook for v_td_v_ts...
+    ✓ Saved to /Users/stefanhamann/Documents/Q7/TFPTcomputing/constants/notebooks/v_td_v_ts.ipynb
+  Generating notebook for v_us_v_ud...
+    ✓ Saved to /Users/stefanhamann/Documents/Q7/TFPTcomputing/constants/notebooks/v_us_v_ud.ipynb
+  Generating notebook for w_de...
+    ✓ Saved to /Users/stefanhamann/Documents/Q7/TFPTcomputing/constants/notebooks/w_de.ipynb
+  Generating notebook for y_e...
+    ✓ Saved to /Users/stefanhamann/Documents/Q7/TFPTcomputing/constants/notebooks/y_e.ipynb
+  Generating notebook for y_t...
+    ✓ Saved to /Users/stefanhamann/Documents/Q7/TFPTcomputing/constants/notebooks/y_t.ipynb
+  Generating notebook for z_0...
+    ✓ Saved to /Users/stefanhamann/Documents/Q7/TFPTcomputing/constants/notebooks/z_0.ipynb
+
+Notebook generation complete!
+[0;32m✅ Notebooks generated successfully![0m
+[0;34m🔬 Executing notebooks to calculate constant values...[0m
+[1;33mThis may take a few minutes...[0m
+🔬 Executing notebooks to calculate constant values...
+Found 62 notebooks to execute
+Executing a_p... Execution warning: An error occurred while executing the following cell:
+------------------
+# Formula: c*H_0*phi_0/c_3
+
+result = c*H_0*calculated_values['phi_0']/calculated_values['c_3']
+
+print(f'a_P = {result:.10e} m/s^2')
+------------------
+
+
+[31m---------------------------------------------------------------------------[39m
+[31mNameError[39m                                 Traceback (most recent call last)
+[36mCell[39m[36m [39m[32mIn[3][39m[32m, line 3[39m
+[32m      1[39m [38;5;66;03m# Formula: c*H_0*phi_0/c_3[39;00m
+[32m----> [39m[32m3[39m result = c*[43mH_0[49m*calculated_values[[33m'[39m[33mphi_0[39m[33m'[39m]/calculated_values[[33m'[39m[33mc_3[39m[33m'[39m]
+[32m      5[39m [38;5;28mprint[39m([33mf[39m[33m'[39m[33ma_P = [39m[38;5;132;01m{[39;00mresult[38;5;132;01m:[39;00m[33m.10e[39m[38;5;132;01m}[39;00m[33m m/s^2[39m[33m'[39m)
+
+[31mNameError[39m: name 'H_0' is not defined
+
+✗
+Executing alpha... Execution warning: An error occurred while executing the following cell:
+------------------
+# Formula: solveCubic(α³ - Aα² - Ac₃²κ = 0, where A = 1/(256π³), κ = (41/20π)ln(1/φ₀))
+
+result = solveCubic(α³ - Aα² - Ac₃²κ = 0, where A = 1/(256π³), κ = (41/20π)np.log(1/φ₀))
+
+print(f'α = {result:.10e} dimensionless')
+------------------
+
+
+  [36mCell[39m[36m [39m[32mIn[3][39m[32m, line 3[39m
+[31m    [39m[31mresult = solveCubic(α³ - Aα² - Ac₃²κ = 0, where A = 1/(256π³), κ = (41/20π)np.log(1/φ₀))[39m
+                         ^
+[31mSyntaxError[39m[31m:[39m invalid character '³' (U+00B3)
+
+
+✗
+Executing alpha_d... Execution warning: An error occurred while executing the following cell:
+------------------
+# Formula: (beta_X^2/alpha)*0.001
+
+result = (beta_X**2/calculated_values['alpha'])*0.001
+
+print(f'α_D = {result:.10e} dimensionless')
+------------------
+
+
+[31m---------------------------------------------------------------------------[39m
+[31mNameError[39m                                 Traceback (most recent call last)
+[36mCell[39m[36m [39m[32mIn[3][39m[32m, line 3[39m
+[32m      1[39m [38;5;66;03m# Formula: (beta_X^2/alpha)*0.001[39;00m
+[32m----> [39m[32m3[39m result = ([43mbeta_X[49m**[32m2[39m/calculated_values[[33m'[39m[33malpha[39m[33m'[39m])*[32m0.001[39m
+[32m      5[39m [38;5;28mprint[39m([33mf[39m[33m'[39m[33mα_D = [39m[38;5;132;01m{[39;00mresult[38;5;132;01m:[39;00m[33m.10e[39m[38;5;132;01m}[39;00m[33m dimensionless[39m[33m'[39m)
+
+[31mNameError[39m: name 'beta_X' is not defined
+
+✗
+Executing alpha_g... ✓
+Executing alpha_s... ✓
+Executing beta_x... ✓
+Executing c_3... ✓
+Executing c_4... ✓
+Executing delta_a_mu... ✓
+Executing delta_gamma... ✓
+Executing delta_m_n_p... Execution warning: An error occurred while executing the following cell:
+------------------
+# Calculate all required constants
+calculated_values = {}
+
+# Fundamental VEV (φ₀)
+calculated_values['phi_0'] = 0.053171
+print(f"φ₀ = {calculated_values['phi_0']:.6e}")
+
+# Fine-Structure Constant (α)
+# Fine structure constant from cubic equation
+A = 1.0 / (256 * np.pi**3)
+kappa = (41.0 / (20 * np.pi)) * np.log(1.0 / phi_0)
+coefficients = [1, -A, 0, -A * c_3**2 * kappa]
+roots = np.roots(coefficients)
+physical_root = None
+for root in roots:
+    if np.isreal(root) and root.real > 0 and root.real < 0.01:
+        physical_root = root.real
+        break
+calculated_values['alpha'] = physical_root if physical_root else 1.0/137.035999084
+print(f"α = {calculated_values['alpha']:.6e}")
+
+# Planck Mass (M_Pl)
+calculated_values['m_planck'] = 1.2209e19  # GeV
+print(f"M_Pl = {calculated_values['m_planck']:.6e}")
+
+# Topological Fixed Point (c₃)
+calculated_values['c_3'] = 1.0 / (8 * np.pi)
+print(f"c₃ = {calculated_values['c_3']:.6e}")
+
+# Higgs Vacuum Expectation Value (v_H)
+calculated_values['v_h'] = 246.22  # GeV
+calculated_values['v_H'] = 246.22  # GeV
+print(f"v_H = {calculated_values['v_H']:.6e}")
+
+# Electron Mass (m_e)
+calculated_values['m_e'] = (v_H/np.sqrt(2))*alpha*phi_0**5*1e6
+print(f"m_e = {calculated_values['m_e']:.6e}")
+
+------------------
+
+----- stdout -----
+φ₀ = 5.317100e-02
+α = 7.297341e-03
+M_Pl = 1.220900e+19
+c₃ = 3.978874e-02
+v_H = 2.462200e+02
+------------------
+
+[31m---------------------------------------------------------------------------[39m
+[31mNameError[39m                                 Traceback (most recent call last)
+[36mCell[39m[36m [39m[32mIn[2][39m[32m, line 36[39m
+[32m     33[39m [38;5;28mprint[39m([33mf[39m[33m"[39m[33mv_H = [39m[38;5;132;01m{[39;00mcalculated_values[[33m'[39m[33mv_H[39m[33m'[39m][38;5;132;01m:[39;00m[33m.6e[39m[38;5;132;01m}[39;00m[33m"[39m)
+[32m     35[39m [38;5;66;03m# Electron Mass (m_e)[39;00m
+[32m---> [39m[32m36[39m calculated_values[[33m'[39m[33mm_e[39m[33m'[39m] = (v_H/np.sqrt([32m2[39m))*[43malpha[49m*phi_0**[32m5[39m*[32m1e6[39m
+[32m     37[39m [38;5;28mprint[39m([33mf[39m[33m"[39m[33mm_e = [39m[38;5;132;01m{[39;00mcalculated_values[[33m'[39m[33mm_e[39m[33m'[39m][38;5;132;01m:[39;00m[33m.6e[39m[38;5;132;01m}[39;00m[33m"[39m)
+
+[31mNameError[39m: name 'alpha' is not defined
+
+✗
+Executing delta_nu_t... ✓
+Executing e_knee... ✓
+Executing epsilon_k... ✓
+Executing eta_b... ✓
+Executing f_b... ✓
+Executing f_pi_lambda_qcd... ✓
+Executing g_1... ✓
+Executing g_2... ✓
+Executing g_f... ✓
+Executing gamma_function... Execution warning: An error occurred while executing the following cell:
+------------------
+# Formula: gamma(n) = 0.834 + 0.108*n + 0.0105*n^2
+
+result = gamma(n) = 0.834 + 0.108*n + 0.0105*n**2
+
+print(f'γ(n) = {result:.10e} dimensionless')
+------------------
+
+
+  [36mCell[39m[36m [39m[32mIn[2][39m[32m, line 3[39m
+[31m    [39m[31mresult = gamma(n) = 0.834 + 0.108*n + 0.0105*n**2[39m
+             ^
+[31mSyntaxError[39m[31m:[39m cannot assign to function call
+
+
+✗
+Executing lambda_qcd... ✓
+Executing lambda_qg... ✓
+Executing lambda_star... ✓
+Executing m_b... ✓
+Executing m_c... ✓
+Executing m_e... ✓
+Executing m_mu... ✓
+Executing m_nu... Execution warning: An error occurred while executing the following cell:
+------------------
+# Calculate all required constants
+calculated_values = {}
+
+# Fundamental VEV (φ₀)
+calculated_values['phi_0'] = 0.053171
+print(f"φ₀ = {calculated_values['phi_0']:.6e}")
+
+# Planck Mass (M_Pl)
+calculated_values['m_planck'] = 1.2209e19  # GeV
+print(f"M_Pl = {calculated_values['m_planck']:.6e}")
+
+# Topological Fixed Point (c₃)
+calculated_values['c_3'] = 1.0 / (8 * np.pi)
+print(f"c₃ = {calculated_values['c_3']:.6e}")
+
+# Higgs Vacuum Expectation Value (v_H)
+calculated_values['v_h'] = 246.22  # GeV
+calculated_values['v_H'] = 246.22  # GeV
+print(f"v_H = {calculated_values['v_h']:.6e}")
+
+# E8 Cascade Attenuation Function (γ(n))
+# Gamma function is a function, not a constant
+calculated_values['gamma_function'] = lambda n: 0.834 + 0.108*n + 0.0105*n**2
+print(f"γ(n) = {calculated_values['gamma_function']:.6e}")
+
+------------------
+
+----- stdout -----
+φ₀ = 5.317100e-02
+M_Pl = 1.220900e+19
+c₃ = 3.978874e-02
+v_H = 2.462200e+02
+------------------
+
+[31m---------------------------------------------------------------------------[39m
+[31mTypeError[39m                                 Traceback (most recent call last)
+[36mCell[39m[36m [39m[32mIn[2][39m[32m, line 24[39m
+[32m     21[39m [38;5;66;03m# E8 Cascade Attenuation Function (γ(n))[39;00m
+[32m     22[39m [38;5;66;03m# Gamma function is a function, not a constant[39;00m
+[32m     23[39m calculated_values[[33m'[39m[33mgamma_function[39m[33m'[39m] = [38;5;28;01mlambda[39;00m n: [32m0.834[39m + [32m0.108[39m*n + [32m0.0105[39m*n**[32m2[39m
+[32m---> [39m[32m24[39m [38;5;28mprint[39m([33mf[39m[33m"[39m[33mγ(n) = [39m[38;5;132;01m{[39;00mcalculated_values[[33m'[39m[33mgamma_function[39m[33m'[39m][38;5;132;01m:[39;00m[33m.6e[39m[38;5;132;01m}[39;00m[33m"[39m)
+
+[31mTypeError[39m: unsupported format string passed to function.__format__
+
+✗
+Executing m_p... ✓
+Executing m_planck... ✓
+Executing m_s_m_d_ratio... ✓
+Executing m_tau... ✓
+Executing m_u... ✓
+Executing m_w... ✓
+Executing m_z... ✓
+Executing mu_p... ✓
+Executing mu_p_mu_n... ✓
+Executing n_s... ✓
+Executing omega_b... ✓
+Executing phi_0... ✓
+Executing r_tensor... ✓
+Executing rho_lambda... ✓
+Executing rho_parameter... Execution warning: An error occurred while executing the following cell:
+------------------
+# Calculate all required constants
+calculated_values = {}
+
+# Z Boson Mass (M_Z)
+calculated_values['m_z'] = 91.1876
+print(f"M_Z = {calculated_values['m_z']:.6e}")
+
+# Weinberg Angle (sin²θ_W)
+# Weinberg angle from W and Z masses
+calculated_values['sin2_theta_w'] = sin2_theta_W_MSbar()
+print(f"sin²θ_W = {calculated_values['sin2_theta_w']:.6e}")
+
+# W Boson Mass (M_W)
+calculated_values['m_w'] = M_Z * np.sqrt(1 - sin2_theta_w)
+print(f"M_W = {calculated_values['m_w']:.6e}")
+
+------------------
+
+----- stdout -----
+M_Z = 9.118760e+01
+sin²θ_W = 2.230132e-01
+------------------
+
+[31m---------------------------------------------------------------------------[39m
+[31mNameError[39m                                 Traceback (most recent call last)
+[36mCell[39m[36m [39m[32mIn[2][39m[32m, line 14[39m
+[32m     11[39m [38;5;28mprint[39m([33mf[39m[33m"[39m[33msin²θ_W = [39m[38;5;132;01m{[39;00mcalculated_values[[33m'[39m[33msin2_theta_w[39m[33m'[39m][38;5;132;01m:[39;00m[33m.6e[39m[38;5;132;01m}[39;00m[33m"[39m)
+[32m     13[39m [38;5;66;03m# W Boson Mass (M_W)[39;00m
+[32m---> [39m[32m14[39m calculated_values[[33m'[39m[33mm_w[39m[33m'[39m] = M_Z * np.sqrt([32m1[39m - [43msin2_theta_w[49m)
+[32m     15[39m [38;5;28mprint[39m([33mf[39m[33m"[39m[33mM_W = [39m[38;5;132;01m{[39;00mcalculated_values[[33m'[39m[33mm_w[39m[33m'[39m][38;5;132;01m:[39;00m[33m.6e[39m[38;5;132;01m}[39;00m[33m"[39m)
+
+[31mNameError[39m: name 'sin2_theta_w' is not defined
+
+✗
+Executing sigma_m_nu... Execution warning: An error occurred while executing the following cell:
+------------------
+# Calculate all required constants
+calculated_values = {}
+
+# Fundamental VEV (φ₀)
+calculated_values['phi_0'] = 0.053171
+print(f"φ₀ = {calculated_values['phi_0']:.6e}")
+
+# Planck Mass (M_Pl)
+calculated_values['m_planck'] = 1.2209e19  # GeV
+print(f"M_Pl = {calculated_values['m_planck']:.6e}")
+
+# Topological Fixed Point (c₃)
+calculated_values['c_3'] = 1.0 / (8 * np.pi)
+print(f"c₃ = {calculated_values['c_3']:.6e}")
+
+# Higgs Vacuum Expectation Value (v_H)
+calculated_values['v_h'] = 246.22  # GeV
+calculated_values['v_H'] = 246.22  # GeV
+print(f"v_H = {calculated_values['v_h']:.6e}")
+
+# E8 Cascade Attenuation Function (γ(n))
+# Gamma function is a function, not a constant
+calculated_values['gamma_function'] = lambda n: 0.834 + 0.108*n + 0.0105*n**2
+print(f"γ(n) = {calculated_values['gamma_function']:.6e}")
+
+# Light Neutrino Mass (m_ν)
+calculated_values['m_nu'] = Y**2 * v_h**2 / (phi_5 * M_Pl)
+print(f"m_ν = {calculated_values['m_nu']:.6e}")
+
+------------------
+
+----- stdout -----
+φ₀ = 5.317100e-02
+M_Pl = 1.220900e+19
+c₃ = 3.978874e-02
+v_H = 2.462200e+02
+------------------
+
+[31m---------------------------------------------------------------------------[39m
+[31mTypeError[39m                                 Traceback (most recent call last)
+[36mCell[39m[36m [39m[32mIn[2][39m[32m, line 24[39m
+[32m     21[39m [38;5;66;03m# E8 Cascade Attenuation Function (γ(n))[39;00m
+[32m     22[39m [38;5;66;03m# Gamma function is a function, not a constant[39;00m
+[32m     23[39m calculated_values[[33m'[39m[33mgamma_function[39m[33m'[39m] = [38;5;28;01mlambda[39;00m n: [32m0.834[39m + [32m0.108[39m*n + [32m0.0105[39m*n**[32m2[39m
+[32m---> [39m[32m24[39m [38;5;28mprint[39m([33mf[39m[33m"[39m[33mγ(n) = [39m[38;5;132;01m{[39;00mcalculated_values[[33m'[39m[33mgamma_function[39m[33m'[39m][38;5;132;01m:[39;00m[33m.6e[39m[38;5;132;01m}[39;00m[33m"[39m)
+[32m     26[39m [38;5;66;03m# Light Neutrino Mass (m_ν)[39;00m
+[32m     27[39m calculated_values[[33m'[39m[33mm_nu[39m[33m'[39m] = Y**[32m2[39m * v_h**[32m2[39m / (phi_5 * M_Pl)
+
+[31mTypeError[39m: unsupported format string passed to function.__format__
+
+✗
+Executing sin2_theta_w... ✓
+Executing t_gamma_0... ✓
+Executing t_nu... ✓
+Executing tau_mu... ✓
+Executing tau_reio... ✓
+Executing tau_star... ✓
+Executing tau_tau... ✓
+Executing theta_c... Execution warning: An error occurred while executing the following cell:
+------------------
+# Formula: arcsin(sqrt(phi_0)*(1-phi_0/2))
+
+result = arcnp.sin(np.sqrt(calculated_values['phi_0'])*(1-calculated_values['phi_0']/2))
+
+print(f'θ_c = {result:.10e} radians')
+------------------
+
+
+[31m---------------------------------------------------------------------------[39m
+[31mNameError[39m                                 Traceback (most recent call last)
+[36mCell[39m[36m [39m[32mIn[3][39m[32m, line 3[39m
+[32m      1[39m [38;5;66;03m# Formula: arcsin(sqrt(phi_0)*(1-phi_0/2))[39;00m
+[32m----> [39m[32m3[39m result = [43marcnp[49m.sin(np.sqrt(calculated_values[[33m'[39m[33mphi_0[39m[33m'[39m])*([32m1[39m-calculated_values[[33m'[39m[33mphi_0[39m[33m'[39m]/[32m2[39m))
+[32m      5[39m [38;5;28mprint[39m([33mf[39m[33m'[39m[33mθ_c = [39m[38;5;132;01m{[39;00mresult[38;5;132;01m:[39;00m[33m.10e[39m[38;5;132;01m}[39;00m[33m radians[39m[33m'[39m)
+
+[31mNameError[39m: name 'arcnp' is not defined
+
+✗
+Executing theta_qcd... ✓
+Executing v_cb... ✓
+Executing v_h... ✓
+Executing v_td_v_ts... ✓
+Executing v_us_v_ud... ✓
+Executing w_de... ✓
+Executing y_e... ✓
+Executing y_t... ✓
+Executing z_0... Execution warning: An error occurred while executing the following cell:
+------------------
+# Formula: hbar/(q_Pl^2*alpha)
+
+result = hbar/(q_Pl**2*calculated_values['alpha'])
+
+print(f'Z₀ = {result:.10e} Ohm')
+------------------
+
+
+[31m---------------------------------------------------------------------------[39m
+[31mNameError[39m                                 Traceback (most recent call last)
+[36mCell[39m[36m [39m[32mIn[3][39m[32m, line 3[39m
+[32m      1[39m [38;5;66;03m# Formula: hbar/(q_Pl^2*alpha)[39;00m
+[32m----> [39m[32m3[39m result = hbar/([43mq_Pl[49m**[32m2[39m*calculated_values[[33m'[39m[33malpha[39m[33m'[39m])
+[32m      5[39m [38;5;28mprint[39m([33mf[39m[33m'[39m[33mZ₀ = [39m[38;5;132;01m{[39;00mresult[38;5;132;01m:[39;00m[33m.10e[39m[38;5;132;01m}[39;00m[33m Ohm[39m[33m'[39m)
+
+[31mNameError[39m: name 'q_Pl' is not defined
+
+✗
+============================================================
+Summary: Successfully executed 52 of 62 notebooks
+📊 Results saved to: /Users/stefanhamann/Documents/Q7/TFPTcomputing/constants/results/json
+[0;32m✅ Notebooks executed and results saved[0m
+
+[1;33mStarting Python Compute Service...[0m
+[1;33mKilling process on port 8001...[0m
+Waiting for compute service to start.... [0;32m✅[0m
+[1;33mStarting Node.js Backend...[0m
+[1;33mKilling process on port 8000...[0m
+Waiting for backend to start.... [0;32m✅[0m
+[1;33mStarting React Frontend...[0m
+[1;33mKilling process on port 3000...[0m
+Waiting for frontend to start.... [0;32m✅[0m
+
+[0;32m=================================================[0m
+[0;32m✅ All services started successfully![0m
+[0;32m=================================================[0m
+
+[0;34mService URLs:[0m
+  Frontend:  [0;32mhttp://localhost:3000[0m
+  Backend:   [0;32mhttp://localhost:8000[0m
+  Compute:   [0;32mhttp://localhost:8001[0m
+
+[0;34mService Logs:[0m
+  Frontend:  [1;33mtail -f logs/frontend.log[0m
+  Backend:   [1;33mtail -f logs/backend.log[0m
+  Compute:   [1;33mtail -f logs/compute.log[0m
+
+[0;34mTo stop all services:[0m
+  [1;33m./stop-local.sh[0m
+
+[1;33mServices are running in the background.[0m
+[1;33mThis terminal can be closed without affecting the services.[0m

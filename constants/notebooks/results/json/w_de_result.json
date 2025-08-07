@@ -1,0 +1,10 @@
+{
+  "id": "w_de",
+  "symbol": "w_DE",
+  "name": "Dark-energy EoS",
+  "value": -0.9995288074598333,
+  "unit": "dimensionless",
+  "status": "validated",
+  "experimental": -0.9953,
+  "deviation": 0.0042487767103720885
+}

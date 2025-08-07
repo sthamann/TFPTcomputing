@@ -1,6 +1,6 @@
 {
   "id": "z_0",
-  "symbol": "Z\u2080",
+  "symbol": "Z₀",
   "name": "Vacuum impedance",
   "description": "Impedance of free space",
   "unit": "Ohm",
@@ -9,7 +9,7 @@
     "q_pl",
     "alpha"
   ],
-  "category": "electromagnetic",
+  "category": "derived",
   "sources": [
     {
       "name": "CODATA 2022",
@@ -29,5 +29,6 @@
   "metadata": {
     "note": "Completes electrodynamics constant set",
     "measured_value": 376.730313412
-  }
+  },
+  "status": "speculative"
 }

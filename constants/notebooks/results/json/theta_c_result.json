@@ -1,0 +1,10 @@
+{
+  "id": "theta_c",
+  "symbol": "\u03b8_c",
+  "name": "Cabibbo Angle",
+  "value": 0.22638688097236428,
+  "unit": "radians",
+  "status": "validated",
+  "experimental": 0.2244,
+  "deviation": 0.008854193281480823
+}

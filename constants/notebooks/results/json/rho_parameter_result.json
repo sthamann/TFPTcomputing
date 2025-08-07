@@ -1,0 +1,10 @@
+{
+  "id": "rho_parameter",
+  "symbol": "\u03c1",
+  "name": "Electroweak \u03c1 Parameter",
+  "value": 0.9999999999999996,
+  "unit": "dimensionless",
+  "status": "validated",
+  "experimental": 1.00038,
+  "deviation": -0.0003798556548516474
+}

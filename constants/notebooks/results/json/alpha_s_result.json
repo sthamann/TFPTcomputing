@@ -1,0 +1,10 @@
+{
+  "id": "alpha_s",
+  "symbol": "\u03b1_s",
+  "name": "Strong Coupling Constant",
+  "value": 0.12526667127950092,
+  "unit": "dimensionless",
+  "status": "validated",
+  "experimental": 0.1179,
+  "deviation": 0.06248236878287458
+}

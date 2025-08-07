@@ -8,7 +8,7 @@
   "dependencies": [
     "phi_0"
   ],
-  "category": "primary",
+  "category": "cosmology",
   "sources": [
     {
       "name": "TFPT prediction",
@@ -18,7 +18,8 @@
   ],
   "accuracyTarget": 0.01,
   "metadata": {
-    "note": "Parameter-free prediction r = \u03c6\u2080\u00b2; CMB-S4 target value.",
+    "note": "Parameter-free prediction r = φ₀²; CMB-S4 target value.",
     "measured_value": 0.002827
-  }
+  },
+  "status": "validated"
 }

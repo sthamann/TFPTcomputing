@@ -1,0 +1,10 @@
+{
+  "id": "omega_b",
+  "symbol": "\u03a9_b",
+  "name": "Baryon Density Parameter",
+  "value": 0.04893978626043042,
+  "unit": "dimensionless",
+  "status": "validated",
+  "experimental": 0.04897,
+  "deviation": -0.0006169846757112589
+}

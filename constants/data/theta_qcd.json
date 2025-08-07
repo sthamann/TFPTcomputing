@@ -1,6 +1,6 @@
 {
   "id": "theta_qcd",
-  "symbol": "\u03b8\u0305_QCD",
+  "symbol": "θ̅_QCD",
   "name": "Strong-CP angle",
   "description": "Strong CP-violating parameter",
   "unit": "dimensionless",
@@ -9,17 +9,18 @@
     "c_3",
     "phi_0"
   ],
-  "category": "primary",
+  "category": "gauge",
   "sources": [
     {
       "name": "Topological Fixed Point Theory",
       "year": 2025,
       "value": 4.8e-11,
-      "note": "Natural smallness without Peccei\u2013Quinn"
+      "note": "Natural smallness without Peccei–Quinn"
     }
   ],
   "accuracyTarget": 0.01,
   "metadata": {
-    "note": "Natural smallness without Peccei\u2013Quinn"
-  }
+    "note": "Natural smallness without Peccei–Quinn"
+  },
+  "status": "validated"
 }

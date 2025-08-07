@@ -1,0 +1,10 @@
+{
+  "id": "theta_qcd",
+  "symbol": "\u03b8\u0305_QCD",
+  "name": "Strong-CP angle",
+  "value": 4.7806168538214965e-11,
+  "unit": "dimensionless",
+  "status": "validated",
+  "experimental": 4.8e-11,
+  "deviation": -0.004038155453854947
+}

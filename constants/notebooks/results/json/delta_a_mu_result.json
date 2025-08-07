@@ -1,0 +1,10 @@
+{
+  "id": "delta_a_mu",
+  "symbol": "\u0394a_\u03bc",
+  "name": "Muon g-2 anomaly",
+  "value": 1.166e-09,
+  "unit": "dimensionless",
+  "status": "validated",
+  "experimental": 1.166e-09,
+  "deviation": 0.0
+}

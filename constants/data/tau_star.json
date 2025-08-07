@@ -1,6 +1,6 @@
 {
   "id": "tau_star",
-  "symbol": "\u03c4\u2605",
+  "symbol": "τ★",
   "name": "Planck-kink time",
   "description": "Minimal coherent tick, drives early-BBN fixes",
   "unit": "s",
@@ -10,7 +10,7 @@
     "c_3",
     "m_planck"
   ],
-  "category": "quantum_gravity",
+  "category": "lifetimes",
   "sources": [
     {
       "name": "Topological Fixed Point Theory",
@@ -23,5 +23,6 @@
   "metadata": {
     "note": "Minimal coherent tick in quantum gravity",
     "notes": "Planck-kink time"
-  }
+  },
+  "status": "speculative"
 }

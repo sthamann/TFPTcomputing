@@ -1,0 +1,10 @@
+{
+  "id": "g_2",
+  "symbol": "g\u2082",
+  "name": "SU(2) Gauge Coupling",
+  "value": 0.6412419565147535,
+  "unit": "dimensionless",
+  "status": "validated",
+  "experimental": 0.652,
+  "deviation": -0.016500066695163434
+}

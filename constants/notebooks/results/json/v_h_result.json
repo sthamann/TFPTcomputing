@@ -1,0 +1,10 @@
+{
+  "id": "v_h",
+  "symbol": "v_H",
+  "name": "Higgs Vacuum Expectation Value",
+  "value": 248.0493956937548,
+  "unit": "GeV",
+  "status": "validated",
+  "experimental": 246.2,
+  "deviation": 0.0075117615505882005
+}

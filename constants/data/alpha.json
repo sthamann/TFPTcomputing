@@ -9,7 +9,8 @@
     "c_3",
     "phi_0"
   ],
-  "category": "derived",
+  "category": "fundamental_topology",
+  "status": "core",
   "sources": [
     {
       "name": "CODATA 2022",

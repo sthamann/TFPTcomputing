@@ -1,0 +1,10 @@
+{
+  "id": "m_b",
+  "symbol": "m_b",
+  "name": "Bottom Quark Mass",
+  "value": 4.198496497193857,
+  "unit": "GeV",
+  "status": "validated",
+  "experimental": 4.18,
+  "deviation": 0.00442499932867404
+}

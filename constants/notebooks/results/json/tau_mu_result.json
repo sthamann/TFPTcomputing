@@ -1,0 +1,10 @@
+{
+  "id": "tau_mu",
+  "symbol": "\u03c4_\u03bc",
+  "name": "Muon Lifetime",
+  "value": 2.1873476218126867e-06,
+  "unit": "seconds",
+  "status": "validated",
+  "experimental": 2.197e-06,
+  "deviation": -0.004393435679250441
+}

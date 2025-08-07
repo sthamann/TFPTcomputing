@@ -1,0 +1,10 @@
+{
+  "id": "phi_0",
+  "symbol": "\u03c6\u2080",
+  "name": "Fundamental VEV",
+  "value": 0.053171,
+  "unit": "dimensionless",
+  "status": "validated",
+  "experimental": 0.053171,
+  "deviation": 0.0
+}

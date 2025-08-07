@@ -4,13 +4,14 @@
   "name": "Up Quark Mass",
   "description": "Up quark mass in MeV",
   "unit": "MeV",
-  "formula": "m_planck * phi_0^17 * 1e3",
+  "formula": "m_planck * phi_0^17 * (1 - 4*c_3) * 1e-12",
   "dependencies": [
     "m_planck",
     "phi_0",
     "c_3"
   ],
-  "category": "secondary",
+  "category": "flavour",
+  "status": "speculative",
   "sources": [
     {
       "name": "Lattice/PDG 2024",
@@ -21,7 +22,7 @@
     {
       "name": "Topological Fixed Point Theory",
       "year": 2025,
-      "value": 1.44,
+      "value": 2.23,
       "note": "TFPT ladder value, RG to 2 GeV gives ~2.2 MeV"
     }
   ],

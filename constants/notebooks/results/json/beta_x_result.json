@@ -1,0 +1,10 @@
+{
+  "id": "beta_x",
+  "symbol": "\u03b2_X",
+  "name": "Dark-photon coupling",
+  "value": 0.03552708054273393,
+  "unit": "dimensionless",
+  "status": "validated",
+  "experimental": 0.0355,
+  "deviation": 0.0007628321896882524
+}

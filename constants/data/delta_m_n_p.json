@@ -28,5 +28,6 @@
   "accuracyTarget": 0.01,
   "metadata": {
     "measured_value": 1.29333251
-  }
+  },
+  "status": "validated"
 }

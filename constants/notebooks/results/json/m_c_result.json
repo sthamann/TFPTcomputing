@@ -1,0 +1,10 @@
+{
+  "id": "m_c",
+  "symbol": "m_c",
+  "name": "Charm Quark Mass",
+  "value": 1.2523254480079642,
+  "unit": "GeV",
+  "status": "validated",
+  "experimental": 1.27,
+  "deviation": -0.013916970072469153
+}

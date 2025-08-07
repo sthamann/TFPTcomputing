@@ -10,7 +10,7 @@
     "m_planck",
     "c_3"
   ],
-  "category": "secondary",
+  "category": "electroweak",
   "sources": [
     {
       "name": "Topological Fixed Point Theory",
@@ -19,5 +19,6 @@
       "note": "From comprehensive constant list"
     }
   ],
-  "accuracyTarget": 0.01
+  "accuracyTarget": 0.01,
+  "status": "validated"
 }

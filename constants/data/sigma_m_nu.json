@@ -8,7 +8,7 @@
   "dependencies": [
     "m_nu"
   ],
-  "category": "neutrino",
+  "category": "derived",
   "sources": [
     {
       "name": "Topological Fixed Point Theory",
@@ -20,5 +20,6 @@
   "accuracyTarget": 0.001,
   "metadata": {
     "notes": "Sum of neutrino masses"
-  }
+  },
+  "status": "speculative"
 }

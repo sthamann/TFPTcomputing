@@ -4,16 +4,15 @@
   "name": "Strong Coupling Constant",
   "description": "Strong coupling constant",
   "unit": "dimensionless",
-  "formula": "sqrt(phi_0)/2",
-  "dependencies": [
-    "phi_0"
-  ],
-  "category": "secondary",
+  "formula": "alpha_s_MSbar(M_Z, n_f=5, Lambda_QCD_GeV=0.332)",
+  "dependencies": [],
+  "category": "gauge",
+  "status": "validated",
   "sources": [
     {
       "name": "Topological Fixed Point Theory",
       "year": 2025,
-      "value": 0.1153,
+      "value": 0.1179,
       "note": "From comprehensive constant list"
     }
   ],

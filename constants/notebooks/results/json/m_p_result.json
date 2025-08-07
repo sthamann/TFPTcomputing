@@ -1,0 +1,10 @@
+{
+  "id": "m_p",
+  "symbol": "m_p",
+  "name": "Proton Mass",
+  "value": 937.1357761290925,
+  "unit": "MeV",
+  "status": "validated",
+  "experimental": 938.27208943,
+  "deviation": -0.0012110701295589591
+}

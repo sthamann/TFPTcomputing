@@ -1,0 +1,10 @@
+{
+  "id": "z_0",
+  "symbol": "Z\u2080",
+  "name": "Vacuum impedance",
+  "value": 4108.235899710466,
+  "unit": "Ohm",
+  "status": "speculative",
+  "experimental": 376.730313412,
+  "deviation": 9.90497831858201
+}

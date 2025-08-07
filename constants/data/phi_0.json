@@ -1,18 +1,19 @@
 {
   "id": "phi_0",
-  "symbol": "\u03c6\u2080",
+  "symbol": "φ₀",
   "name": "Fundamental VEV",
   "description": "The fundamental vacuum expectation value from the RG fixed point self-consistency condition",
   "unit": "dimensionless",
   "formula": "0.053171",
   "dependencies": [],
-  "category": "fundamental_theory",
+  "category": "fundamental_topology",
+  "status": "core",
   "sources": [
     {
       "name": "Topological Fixed Point Theory",
       "year": 2025,
       "value": 0.053171,
-      "note": "From self-consistency: \u03c6\u2080 \u2192 \u03ba \u2192 \u03b1 \u2192 \u03c6\u2080"
+      "note": "From self-consistency: φ₀ → κ → α → φ₀"
     }
   ],
   "accuracyTarget": 1e-06,

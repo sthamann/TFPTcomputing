@@ -19,5 +19,6 @@
   "metadata": {
     "notes": "CMB temperature from Planck temperature",
     "note": "CMB temperature with correct normalization"
-  }
+  },
+  "status": "validated"
 }

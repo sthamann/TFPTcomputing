@@ -1,0 +1,10 @@
+{
+  "id": "v_td_v_ts",
+  "symbol": "V_td/V_ts",
+  "name": "CKM Matrix Element Ratio",
+  "value": 0.053171,
+  "unit": "dimensionless",
+  "status": "validated",
+  "experimental": 0.054,
+  "deviation": -0.015351851851851785
+}

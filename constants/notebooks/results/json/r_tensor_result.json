@@ -1,0 +1,10 @@
+{
+  "id": "r_tensor",
+  "symbol": "r",
+  "name": "Tensor-to-Scalar Ratio",
+  "value": 0.0028271552410000004,
+  "unit": "dimensionless",
+  "status": "validated",
+  "experimental": 0.002827,
+  "deviation": 5.491368942351783e-05
+}

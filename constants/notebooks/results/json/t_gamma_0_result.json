@@ -1,0 +1,10 @@
+{
+  "id": "t_gamma_0",
+  "symbol": "T_\u03b30",
+  "name": "CMB Temperature",
+  "value": 2.725,
+  "unit": "K",
+  "status": "validated",
+  "experimental": 2.725,
+  "deviation": 0.0
+}

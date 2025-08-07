@@ -6,19 +6,20 @@
   "unit": "dimensionless",
   "formula": "0.935",
   "dependencies": [],
-  "category": "secondary",
+  "category": "flavour",
   "sources": [
     {
       "name": "Topological Fixed Point Theory",
       "year": 2025,
       "value": 0.935,
-      "note": "Coleman\u2013Weinberg flatness pins it"
+      "note": "Coleman–Weinberg flatness pins it"
     }
   ],
   "accuracyTarget": 0.001,
   "metadata": {
-    "note": "Coleman\u2013Weinberg flatness pins it",
+    "note": "Coleman–Weinberg flatness pins it",
     "notes": "Top Yukawa at M_Z scale - experimental value",
     "last_update": "Aug 6, 2025"
-  }
+  },
+  "status": "validated"
 }

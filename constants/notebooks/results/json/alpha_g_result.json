@@ -1,0 +1,10 @@
+{
+  "id": "alpha_g",
+  "symbol": "\u03b1_G",
+  "name": "Gravitational Coupling",
+  "value": 5.891757294858806e-39,
+  "unit": "dimensionless",
+  "status": "validated",
+  "experimental": 5.906e-39,
+  "deviation": -0.0024115653811707318
+}

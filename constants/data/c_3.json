@@ -1,12 +1,13 @@
 {
   "id": "c_3",
-  "symbol": "c\u2083",
+  "symbol": "c₃",
   "name": "Topological Fixed Point",
-  "description": "The fundamental topological fixed point parameter from 11D \u2192 6D compactification",
+  "description": "The fundamental topological fixed point parameter from 11D → 6D compactification",
   "unit": "dimensionless",
   "formula": "1/(8*pi)",
   "dependencies": [],
-  "category": "fundamental_theory",
+  "category": "fundamental_topology",
+  "status": "core",
   "sources": [
     {
       "name": "Topological Fixed Point Theory",

@@ -1,6 +1,6 @@
 {
   "id": "lambda_qg",
-  "symbol": "\u039b_QG",
+  "symbol": "Λ_QG",
   "name": "Quantum-gravity tread-point",
   "description": "Energy scale marking first deviation from classical GR",
   "unit": "GeV",
@@ -10,7 +10,7 @@
     "phi_0",
     "m_planck"
   ],
-  "category": "new_physics",
+  "category": "scale_hierarchy",
   "sources": [
     {
       "name": "Topological Fixed Point Theory",
@@ -22,5 +22,6 @@
   "accuracyTarget": 0.1,
   "metadata": {
     "note": "Critical scale for quantum gravity effects"
-  }
+  },
+  "status": "validated"
 }

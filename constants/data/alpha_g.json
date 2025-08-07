@@ -1,8 +1,8 @@
 {
   "id": "alpha_g",
-  "symbol": "\u03b1_G",
+  "symbol": "α_G",
   "name": "Gravitational Coupling",
-  "description": "Gravitational fine structure constant: \u03b1_G = G m_p\u00b2 / (\u0127c)",
+  "description": "Gravitational fine structure constant: α_G = G m_p² / (ħc)",
   "unit": "dimensionless",
   "formula": "phi_0^30",
   "dependencies": [
@@ -14,11 +14,12 @@
       "name": "Topological Fixed Point Theory",
       "year": 2025,
       "value": 5.906e-39,
-      "note": "Equivalent to G m_p\u00b2 / (\u0127c) where m_p = M_Pl \u03c6\u2080\u00b9\u2075"
+      "note": "Equivalent to G m_p² / (ħc) where m_p = M_Pl φ₀¹⁵"
     }
   ],
   "accuracyTarget": 0.01,
   "metadata": {
-    "note": "Shows gravity's weakness is pure kinematics: \u03b1_G = (m_p/M_Pl)\u00b2 = \u03c6\u2080\u00b3\u2070"
-  }
+    "note": "Shows gravity's weakness is pure kinematics: α_G = (m_p/M_Pl)² = φ₀³⁰"
+  },
+  "status": "validated"
 }

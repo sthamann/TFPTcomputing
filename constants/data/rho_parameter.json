@@ -28,5 +28,6 @@
     "note": "Tree-level SM value is 1.0, deviations indicate new physics at TeV scale",
     "notes": "Electroweak rho parameter",
     "measured_value": 1.00038
-  }
+  },
+  "status": "validated"
 }

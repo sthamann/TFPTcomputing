@@ -1,6 +1,6 @@
 {
   "id": "delta_nu_t",
-  "symbol": "\u0394_\u03bdt",
+  "symbol": "Δ_νt",
   "name": "Neutrino-top split",
   "description": "Neutrino-top mass squared difference",
   "unit": "eV^2",
@@ -9,7 +9,7 @@
     "beta_x",
     "y_t"
   ],
-  "category": "neutrino",
+  "category": "anomalies",
   "sources": [
     {
       "name": "Topological Fixed Point Theory",
@@ -22,5 +22,6 @@
   "metadata": {
     "note": "Fixes normal mass hierarchy",
     "notes": "Neutrino-top split"
-  }
+  },
+  "status": "speculative"
 }

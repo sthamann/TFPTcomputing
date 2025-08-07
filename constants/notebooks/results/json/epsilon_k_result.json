@@ -1,0 +1,10 @@
+{
+  "id": "epsilon_k",
+  "symbol": "\u03b5_K",
+  "name": "Indirect CP Violation Parameter",
+  "value": 0.0014135776205000002,
+  "unit": "dimensionless",
+  "status": "validated",
+  "experimental": 0.001414,
+  "deviation": -0.00029871251768013235
+}

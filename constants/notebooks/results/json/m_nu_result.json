@@ -1,0 +1,10 @@
+{
+  "id": "m_nu",
+  "symbol": "m_\u03bd",
+  "name": "Light Neutrino Mass",
+  "value": 0.015607038356490638,
+  "unit": "eV",
+  "status": "speculative",
+  "experimental": 0.00134,
+  "deviation": 10.647043549619879
+}

@@ -1,0 +1,10 @@
+{
+  "id": "c_4",
+  "symbol": "c\u2084",
+  "name": "Secondary fixed point",
+  "value": 0.029774566858090462,
+  "unit": "dimensionless",
+  "status": "validated",
+  "experimental": 0.0298,
+  "deviation": -0.0008534611379039595
+}

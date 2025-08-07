@@ -1,0 +1,10 @@
+{
+  "id": "m_e",
+  "symbol": "m_e",
+  "name": "Electron Mass",
+  "value": 0.539941969430772,
+  "unit": "MeV",
+  "status": "validated",
+  "experimental": 0.51099895069,
+  "deviation": 0.05664007470404848
+}

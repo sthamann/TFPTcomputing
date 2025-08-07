@@ -1,6 +1,6 @@
 {
   "id": "c_4",
-  "symbol": "c\u2084",
+  "symbol": "c₄",
   "name": "Secondary fixed point",
   "description": "Secondary topological fixed point from double half-twist",
   "unit": "dimensionless",
@@ -9,7 +9,7 @@
     "c_3",
     "phi_0"
   ],
-  "category": "fundamental",
+  "category": "derived",
   "sources": [
     {
       "name": "Topological Fixed Point Theory",
@@ -21,5 +21,6 @@
   "accuracyTarget": 0.001,
   "metadata": {
     "note": "Derived from double half-twist topology"
-  }
+  },
+  "status": "validated"
 }

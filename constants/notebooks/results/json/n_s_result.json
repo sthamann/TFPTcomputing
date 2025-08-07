@@ -1,0 +1,10 @@
+{
+  "id": "n_s",
+  "symbol": "n_s",
+  "name": "Scalar spectral index",
+  "value": 0.9436555896953228,
+  "unit": "dimensionless",
+  "status": "validated",
+  "experimental": 0.9669,
+  "deviation": -0.024040138902344778
+}

@@ -1,0 +1,10 @@
+{
+  "id": "tau_tau",
+  "symbol": "\u03c4_\u03c4",
+  "name": "Tau Lifetime",
+  "value": 4.618547077529531e-12,
+  "unit": "femtoseconds",
+  "status": "speculative",
+  "experimental": 2.906e-13,
+  "deviation": 14.893142042427842
+}

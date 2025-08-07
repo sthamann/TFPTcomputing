@@ -2,6 +2,42 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Cosmic animations */
+@keyframes cosmic-glow {
+  0%, 100% { opacity: 0.5; filter: blur(20px); }
+  50% { opacity: 1; filter: blur(10px); }
+}
+
+@keyframes particle-float {
+  0%, 100% { transform: translateY(0) translateX(0); }
+  25% { transform: translateY(-20px) translateX(10px); }
+  50% { transform: translateY(10px) translateX(-5px); }
+  75% { transform: translateY(-10px) translateX(-10px); }
+}
+
+.cosmic-glow {
+  animation: cosmic-glow 4s ease-in-out infinite;
+}
+
+.particle-float {
+  animation: particle-float 10s ease-in-out infinite;
+}
+
+/* Smooth scroll behavior */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Hide scrollbar for cinematic experience */
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
 @layer base {
   :root {
     /* Modern Dark Theme Colors */

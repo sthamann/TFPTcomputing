@@ -1,0 +1,10 @@
+{
+  "id": "mu_p_mu_n",
+  "symbol": "\u03bc_p/\u03bc_N",
+  "name": "Proton g-factor",
+  "value": 2.7916666666666665,
+  "unit": "dimensionless",
+  "status": "validated",
+  "experimental": 2.79285,
+  "deviation": -0.00042370099838284764
+}

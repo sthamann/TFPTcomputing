@@ -1,0 +1,188 @@
+{
+  "a_p": {
+    "status": "success"
+  },
+  "alpha": {
+    "status": "success"
+  },
+  "alpha_d": {
+    "status": "success"
+  },
+  "alpha_g": {
+    "status": "success"
+  },
+  "alpha_s": {
+    "status": "success"
+  },
+  "beta_x": {
+    "status": "success"
+  },
+  "c_3": {
+    "status": "success"
+  },
+  "c_4": {
+    "status": "success"
+  },
+  "delta_a_mu": {
+    "status": "success"
+  },
+  "delta_gamma": {
+    "status": "success"
+  },
+  "delta_m_n_p": {
+    "status": "success"
+  },
+  "delta_nu_t": {
+    "status": "success"
+  },
+  "e_knee": {
+    "status": "success"
+  },
+  "epsilon_k": {
+    "status": "success"
+  },
+  "eta_b": {
+    "status": "success"
+  },
+  "f_b": {
+    "status": "success"
+  },
+  "f_pi_lambda_qcd": {
+    "status": "success"
+  },
+  "g_1": {
+    "status": "success"
+  },
+  "g_2": {
+    "status": "success"
+  },
+  "g_f": {
+    "status": "success"
+  },
+  "gamma_function": {
+    "status": "success"
+  },
+  "lambda_qcd": {
+    "status": "success"
+  },
+  "lambda_qg": {
+    "status": "success"
+  },
+  "lambda_star": {
+    "status": "success"
+  },
+  "m_b": {
+    "status": "success"
+  },
+  "m_c": {
+    "status": "success"
+  },
+  "m_e": {
+    "status": "success"
+  },
+  "m_mu": {
+    "status": "success"
+  },
+  "m_nu": {
+    "status": "success"
+  },
+  "m_p": {
+    "status": "success"
+  },
+  "m_planck": {
+    "status": "success"
+  },
+  "m_s_m_d_ratio": {
+    "status": "success"
+  },
+  "m_tau": {
+    "status": "success"
+  },
+  "m_u": {
+    "status": "success"
+  },
+  "m_w": {
+    "status": "success"
+  },
+  "m_z": {
+    "status": "success"
+  },
+  "mu_p": {
+    "status": "success"
+  },
+  "mu_p_mu_n": {
+    "status": "success"
+  },
+  "n_s": {
+    "status": "success"
+  },
+  "omega_b": {
+    "status": "success"
+  },
+  "phi_0": {
+    "status": "success"
+  },
+  "r_tensor": {
+    "status": "success"
+  },
+  "rho_lambda": {
+    "status": "success"
+  },
+  "rho_parameter": {
+    "status": "success"
+  },
+  "sigma_m_nu": {
+    "status": "success"
+  },
+  "sin2_theta_w": {
+    "status": "success"
+  },
+  "t_gamma_0": {
+    "status": "success"
+  },
+  "t_nu": {
+    "status": "success"
+  },
+  "tau_mu": {
+    "status": "success"
+  },
+  "tau_reio": {
+    "status": "success"
+  },
+  "tau_star": {
+    "status": "success"
+  },
+  "tau_tau": {
+    "status": "success"
+  },
+  "theta_c": {
+    "status": "success"
+  },
+  "theta_qcd": {
+    "status": "success"
+  },
+  "v_cb": {
+    "status": "success"
+  },
+  "v_h": {
+    "status": "success"
+  },
+  "v_td_v_ts": {
+    "status": "success"
+  },
+  "v_us_v_ud": {
+    "status": "success"
+  },
+  "w_de": {
+    "status": "success"
+  },
+  "y_e": {
+    "status": "success"
+  },
+  "y_t": {
+    "status": "success"
+  },
+  "z_0": {
+    "status": "success"
+  }
+}

@@ -4,17 +4,18 @@
   "name": "Muon g-2 anomaly",
   "description": "Muon g-2 anomaly",
   "unit": "dimensionless",
-  "formula": "(248*0.25)/(8*pi^2)*(m_mu/100000)^2*1e9",
+  "formula": "(248*0.25)/(8*pi^2)*(m_mu_MeV/100)^2",
   "dependencies": [
     "m_mu",
     "g_f"
   ],
-  "category": "anomaly",
+  "category": "anomalies",
+  "status": "speculative",
   "sources": [
     {
       "name": "Topological Fixed Point Theory",
       "year": 2025,
-      "value": 2.45e-09,
+      "value": 1.166e-09,
       "note": "From comprehensive constant list"
     }
   ],

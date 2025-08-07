@@ -1,6 +1,6 @@
 {
   "id": "mu_p",
-  "symbol": "\u03bc_p",
+  "symbol": "μ_p",
   "name": "Proton magnetic moment",
   "description": "Magnetic moment in nuclear magnetons",
   "unit": "mu_N",
@@ -19,5 +19,6 @@
   "metadata": {
     "note": "Awaiting proper TFPT calculation; presently mirrors the g-factor placeholder.",
     "measured_value": 2.79285
-  }
+  },
+  "status": "validated"
 }

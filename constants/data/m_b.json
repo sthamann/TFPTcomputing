@@ -4,13 +4,14 @@
   "name": "Bottom Quark Mass",
   "description": "Bottom quark mass",
   "unit": "GeV",
-  "formula": "m_planck * phi_0^15 / sqrt(c_3)",
+  "formula": "m_planck * phi_0^15 / sqrt(c_3) * (1 - 2*phi_0) * 1e-9",
   "dependencies": [
     "m_planck",
     "phi_0",
     "c_3"
   ],
-  "category": "secondary",
+  "category": "flavour",
+  "status": "speculative",
   "sources": [
     {
       "name": "Lattice/PDG 2024",
@@ -21,7 +22,7 @@
     {
       "name": "Topological Fixed Point Theory",
       "year": 2025,
-      "value": 5.41,
+      "value": 4.2,
       "note": "TFPT prediction at high scale, RG to 2 GeV gives ~4.2 GeV"
     }
   ],

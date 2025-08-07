@@ -8,7 +8,7 @@
   "dependencies": [
     "phi_0"
   ],
-  "category": "primary",
+  "category": "flavour",
   "sources": [
     {
       "name": "Topological Fixed Point Theory",
@@ -21,5 +21,6 @@
   "metadata": {
     "notes": "CKM matrix element from flavor structure",
     "last_update": "Aug 6, 2025"
-  }
+  },
+  "status": "validated"
 }

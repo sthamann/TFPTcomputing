@@ -1,0 +1,10 @@
+{
+  "id": "eta_b",
+  "symbol": "\u03b7_B",
+  "name": "Baryon Asymmetry",
+  "value": 6.315110782195414e-10,
+  "unit": "dimensionless",
+  "status": "validated",
+  "experimental": 6.12e-10,
+  "deviation": 0.03188084676395657
+}

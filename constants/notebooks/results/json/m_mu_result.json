@@ -1,0 +1,10 @@
+{
+  "id": "m_mu",
+  "symbol": "m_\u03bc",
+  "name": "Muon Mass",
+  "value": 104.46784591855702,
+  "unit": "MeV",
+  "status": "validated",
+  "experimental": 105.6583755,
+  "deviation": -0.011267725590225335
+}

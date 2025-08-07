@@ -9,7 +9,7 @@
     "m_planck",
     "phi_0"
   ],
-  "category": "cosmology",
+  "category": "scale_hierarchy",
   "sources": [
     {
       "name": "Topological Fixed Point Theory",
@@ -22,5 +22,6 @@
   "metadata": {
     "note": "Cosmic-ray spectrum feature becomes topological",
     "notes": "Cosmic ray knee energy"
-  }
+  },
+  "status": "speculative"
 }

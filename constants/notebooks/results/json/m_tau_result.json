@@ -1,0 +1,10 @@
+{
+  "id": "m_tau",
+  "symbol": "m_\u03c4",
+  "name": "Tau Mass",
+  "value": 1.7788499892949583,
+  "unit": "GeV",
+  "status": "validated",
+  "experimental": 1.77686,
+  "deviation": 0.0011199471511307555
+}

@@ -1,6 +1,6 @@
 {
   "id": "m_mu",
-  "symbol": "m_\u03bc",
+  "symbol": "m_μ",
   "name": "Muon Mass",
   "description": "Muon mass in MeV",
   "unit": "MeV",
@@ -10,7 +10,7 @@
     "phi_0",
     "c_3"
   ],
-  "category": "secondary",
+  "category": "flavour",
   "sources": [
     {
       "name": "CODATA 2022",
@@ -22,7 +22,7 @@
   ],
   "accuracyTarget": 1.0,
   "metadata": {
-    "note": "Tree-level ladder (\u03c6\u2080\u00b2\u00b7\u2075) multiplied by the universal 4-D loop factor (1\u20132c\u2083 = 1\u20131/4\u03c0); removes the previous +7 % overshoot and lands at 104.47 MeV (\u22121.1 %).",
+    "note": "Tree-level ladder (φ₀²·⁵) multiplied by the universal 4-D loop factor (1–2c₃ = 1–1/4π); removes the previous +7 % overshoot and lands at 104.47 MeV (−1.1 %).",
     "correction_factors": [
       {
         "name": "4D-Loop",
@@ -31,5 +31,6 @@
       }
     ],
     "measured_value": 105.6583755
-  }
+  },
+  "status": "validated"
 }

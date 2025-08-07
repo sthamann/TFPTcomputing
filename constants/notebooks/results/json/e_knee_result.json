@@ -1,0 +1,10 @@
+{
+  "id": "e_knee",
+  "symbol": "E_knee",
+  "name": "Cosmic-ray knee energy",
+  "value": 2.205100442841618,
+  "unit": "PeV",
+  "status": "speculative",
+  "experimental": 2.9,
+  "deviation": -0.23962053695116622
+}

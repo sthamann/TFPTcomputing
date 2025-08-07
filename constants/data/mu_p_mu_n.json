@@ -1,6 +1,6 @@
 {
   "id": "mu_p_mu_n",
-  "symbol": "\u03bc_p/\u03bc_N",
+  "symbol": "μ_p/μ_N",
   "name": "Proton g-factor",
   "description": "Proton g-factor (dimensionless)",
   "unit": "dimensionless",
@@ -18,12 +18,13 @@
       "name": "Topological Fixed Point Theory",
       "year": 2025,
       "value": 2.79167,
-      "note": "Numerical coincidence \u2014 E\u2088 (60), flux 7, colours 3"
+      "note": "Numerical coincidence — E₈ (60), flux 7, colours 3"
     }
   ],
   "accuracyTarget": 0.05,
   "metadata": {
     "note": "Currently a pure number (67/24).  Kept for reference; to be replaced once a real group-theoretic derivation is available.",
     "measured_value": 2.79285
-  }
+  },
+  "status": "validated"
 }

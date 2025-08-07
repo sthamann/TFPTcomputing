@@ -1,0 +1,10 @@
+{
+  "id": "m_planck",
+  "symbol": "M_Pl",
+  "name": "Planck Mass",
+  "value": 1.220890129324761e+19,
+  "unit": "GeV",
+  "status": "validated",
+  "experimental": 1.22089e+19,
+  "deviation": 1.0592662818763361e-07
+}

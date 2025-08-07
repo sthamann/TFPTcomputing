@@ -1,0 +1,10 @@
+{
+  "id": "alpha",
+  "symbol": "\u03b1",
+  "name": "Fine-Structure Constant",
+  "value": 0.0072973405757332495,
+  "unit": "dimensionless",
+  "status": "validated",
+  "experimental": 0.0072973525643,
+  "deviation": -1.6428652233541482e-06
+}

@@ -1,0 +1,10 @@
+{
+  "id": "m_u",
+  "symbol": "m_u",
+  "name": "Up Quark Mass",
+  "value": 2.227758707355251,
+  "unit": "MeV",
+  "status": "validated",
+  "experimental": 2.16,
+  "deviation": 0.031369771923727224
+}

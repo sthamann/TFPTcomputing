@@ -8,7 +8,7 @@
   "dependencies": [
     "v_h"
   ],
-  "category": "secondary",
+  "category": "electroweak",
   "sources": [
     {
       "name": "CODATA 2022",
@@ -21,5 +21,6 @@
   "accuracyTarget": 0.001,
   "metadata": {
     "measured_value": 1.1663787e-05
-  }
+  },
+  "status": "validated"
 }

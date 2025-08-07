@@ -1,7 +1,7 @@
 import { Link, useLocation } from 'react-router-dom'
 import { 
   Moon, Sun, Calculator, Network, FlaskConical, 
-  ExternalLink, Atom
+  ExternalLink, Atom, Globe
 } from 'lucide-react'
 import { cn } from '../lib/utils'
 
@@ -12,6 +12,7 @@ const Layout = ({ children, darkMode, setDarkMode }) => {
     { path: '/', label: 'Constants', icon: Calculator },
     { path: '/playground', label: 'Playground', icon: FlaskConical },
     { path: '/dag', label: 'Graph', icon: Network },
+    { path: '/universe', label: 'Birth of Universe', icon: Globe },
   ]
 
   return (

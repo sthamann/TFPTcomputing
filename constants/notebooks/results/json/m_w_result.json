@@ -1,0 +1,10 @@
+{
+  "id": "m_w",
+  "symbol": "M_W",
+  "name": "W Boson Mass",
+  "value": 80.37899999999999,
+  "unit": "GeV",
+  "status": "validated",
+  "experimental": 80.379,
+  "deviation": -1.7679810292740645e-16
+}

@@ -9,7 +9,7 @@
     "m_planck",
     "phi_0"
   ],
-  "category": "primary",
+  "category": "derived",
   "sources": [
     {
       "name": "CODATA 2022",
@@ -26,9 +26,10 @@
   ],
   "accuracyTarget": 0.1,
   "metadata": {
-    "note": "Pure 15-step ladder matches CODATA to \u22120.12 % \u2014 no correction needed.",
+    "note": "Pure 15-step ladder matches CODATA to −0.12 % — no correction needed.",
     "notes": "Proton mass from cascade level 15",
     "last_update": "Aug 6, 2025",
     "measured_value": 938.27208943
-  }
+  },
+  "status": "speculative"
 }

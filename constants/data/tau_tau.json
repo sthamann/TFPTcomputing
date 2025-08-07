@@ -4,17 +4,15 @@
   "name": "Tau Lifetime",
   "description": "Tau lifetime in femtoseconds",
   "unit": "femtoseconds",
-  "formula": "(192*pi^3)/((G_F^2*m_tau^5))*1e21",
-  "dependencies": [
-    "g_f",
-    "m_tau"
-  ],
-  "category": "lepton",
+  "formula": "(192*pi^3*hbar_GeV_s)/(G_F^2*m_tau_GeV^5*BR_leptonic)",
+  "dependencies": [],
+  "category": "lifetimes",
+  "status": "speculative",
   "sources": [
     {
       "name": "Topological Fixed Point Theory",
       "year": 2025,
-      "value": 290.3,
+      "value": 2.906e-13,
       "note": "From comprehensive constant list"
     }
   ],

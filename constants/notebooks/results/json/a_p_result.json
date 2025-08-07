@@ -1,0 +1,10 @@
+{
+  "id": "a_p",
+  "symbol": "a_P",
+  "name": "Pioneer anomalous acceleration",
+  "value": 8.793664971216278e-10,
+  "unit": "m/s^2",
+  "status": "validated",
+  "experimental": 8.8e-10,
+  "deviation": -0.0007198896345137804
+}

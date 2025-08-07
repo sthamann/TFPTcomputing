@@ -1,0 +1,10 @@
+{
+  "id": "tau_reio",
+  "symbol": "\u03c4_reio",
+  "name": "Optical depth to re-ionisation",
+  "value": 0.055998155241000006,
+  "unit": "dimensionless",
+  "status": "validated",
+  "experimental": 0.054,
+  "deviation": 0.03700287483333345
+}

@@ -10,13 +10,13 @@
     "phi_0",
     "c_3"
   ],
-  "category": "secondary",
+  "category": "flavour",
   "sources": [
     {
       "name": "Lattice/PDG 2024",
       "year": 2024,
       "value": 1.27,
-      "note": "MS-bar at \u03bc=3 GeV"
+      "note": "MS-bar at μ=3 GeV"
     },
     {
       "name": "Topological Fixed Point Theory",
@@ -27,9 +27,10 @@
   ],
   "accuracyTarget": 0.03,
   "metadata": {
-    "note": "Uncorrected ladder term already within \u22121.4 % of lattice; no NLO factor required.",
+    "note": "Uncorrected ladder term already within −1.4 % of lattice; no NLO factor required.",
     "notes": "Charm quark mass from cascade level 16",
     "last_update": "Aug 6, 2025",
     "measured_value": 1.27
-  }
+  },
+  "status": "validated"
 }

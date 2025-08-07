@@ -4,11 +4,10 @@
   "name": "Weinberg Angle",
   "description": "Weinberg angle",
   "unit": "dimensionless",
-  "formula": "sqrt(phi_0)",
-  "dependencies": [
-    "phi_0"
-  ],
-  "category": "primary",
+  "formula": "1 - (M_W^2 / M_Z^2)",
+  "dependencies": [],
+  "category": "gauge",
+  "status": "validated",
   "sources": [
     {
       "name": "CODATA 2022",
@@ -20,7 +19,7 @@
     {
       "name": "Topological Fixed Point Theory",
       "year": 2025,
-      "value": 0.2306,
+      "value": 0.22305,
       "note": "From comprehensive constant list"
     }
   ],

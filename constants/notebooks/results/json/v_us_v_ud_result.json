@@ -1,0 +1,10 @@
+{
+  "id": "v_us_v_ud",
+  "symbol": "V_us/V_ud",
+  "name": "CKM Matrix Element Ratio",
+  "value": 0.2305883778510964,
+  "unit": "dimensionless",
+  "status": "validated",
+  "experimental": 0.2313,
+  "deviation": -0.0030766197531500506
+}

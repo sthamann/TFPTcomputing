@@ -6,7 +6,7 @@
   "unit": "GeV",
   "formula": "91.1876",
   "dependencies": [],
-  "category": "secondary",
+  "category": "electroweak",
   "sources": [
     {
       "name": "PDG 2024",
@@ -18,7 +18,7 @@
       "name": "Topological Fixed Point Theory",
       "year": 2025,
       "value": 91.75,
-      "note": "sin\u00b2\u03b8_W = \u03c6\u2080 prediction"
+      "note": "sin²θ_W = φ₀ prediction"
     }
   ],
   "accuracyTarget": 0.5,
@@ -27,5 +27,6 @@
     "notes": "Z boson mass - experimental input value",
     "last_update": "Aug 6, 2025",
     "measured_value": 91.1876
-  }
+  },
+  "status": "validated"
 }

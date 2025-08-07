@@ -1,0 +1,10 @@
+{
+  "id": "lambda_qg",
+  "symbol": "\u039b_QG",
+  "name": "Quantum-gravity tread-point",
+  "value": 1.6229118475e+17,
+  "unit": "GeV",
+  "status": "validated",
+  "experimental": 1.6e+17,
+  "deviation": 0.0143199046875
+}

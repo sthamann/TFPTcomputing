@@ -9,7 +9,7 @@
     "m_z",
     "sin2_theta_w"
   ],
-  "category": "secondary",
+  "category": "electroweak",
   "sources": [
     {
       "name": "PDG 2024",
@@ -21,14 +21,15 @@
       "name": "Topological Fixed Point Theory",
       "year": 2025,
       "value": 80.46,
-      "note": "Using sin\u00b2\u03b8_W = \u03c6\u2080"
+      "note": "Using sin²θ_W = φ₀"
     }
   ],
   "accuracyTarget": 0.1,
   "metadata": {
-    "note": "g\u2082(M_Z) = \u221a(4\u03c0 \u03b1 / sin\u00b2\u03b8_W) with sin\u00b2\u03b8_W \u2261 \u03c6\u2080; gives +0.1 % to PDG.",
+    "note": "g₂(M_Z) = √(4π α / sin²θ_W) with sin²θ_W ≡ φ₀; gives +0.1 % to PDG.",
     "notes": "W boson mass from electroweak relation",
     "last_update": "Aug 6, 2025",
     "measured_value": 80.379
-  }
+  },
+  "status": "validated"
 }

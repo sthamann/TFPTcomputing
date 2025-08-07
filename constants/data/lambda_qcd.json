@@ -4,14 +4,15 @@
   "name": "QCD Confinement Scale",
   "description": "QCD confinement scale",
   "unit": "MeV",
-  "formula": "100",
+  "formula": "332",
   "dependencies": [],
-  "category": "derived",
+  "category": "scale_hierarchy",
+  "status": "speculative",
   "sources": [
     {
       "name": "Topological Fixed Point Theory",
       "year": 2025,
-      "value": 100.0,
+      "value": 332.0,
       "note": "Cascade level n=7, RG matching gives ~217 MeV"
     }
   ],

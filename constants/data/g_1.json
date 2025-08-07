@@ -4,17 +4,18 @@
   "name": "U(1) Gauge Coupling",
   "description": "U(1)_Y gauge coupling at M_Z with 2-loop RG evolution",
   "unit": "dimensionless",
-  "formula": "sqrt(4*pi*alpha/(1-sqrt(phi_0)))",
+  "formula": "sqrt(4*pi*alpha/(1-sin2_theta_w))",
   "dependencies": [
     "alpha",
-    "phi_0"
+    "sin2_theta_w"
   ],
-  "category": "derived",
+  "category": "gauge",
+  "status": "validated",
   "sources": [
     {
       "name": "Electroweak Theory",
       "year": 2025,
-      "value": 0.345
+      "value": 0.357
     }
   ],
   "accuracyTarget": 0.001,

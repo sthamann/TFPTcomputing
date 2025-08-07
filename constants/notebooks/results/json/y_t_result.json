@@ -1,0 +1,10 @@
+{
+  "id": "y_t",
+  "symbol": "y_t",
+  "name": "Top Yukawa",
+  "value": 0.935,
+  "unit": "dimensionless",
+  "status": "validated",
+  "experimental": 0.935,
+  "deviation": 0.0
+}

@@ -1,0 +1,174 @@
+{
+  "total": 62,
+  "status_counts": {
+    "core": 3,
+    "validated": 38,
+    "speculative": 21
+  },
+  "status_lists": {
+    "core": [
+      "alpha",
+      "c_3",
+      "phi_0"
+    ],
+    "validated": [
+      "a_p",
+      "alpha_g",
+      "alpha_s",
+      "beta_x",
+      "c_4",
+      "delta_m_n_p",
+      "epsilon_k",
+      "eta_b",
+      "g_1",
+      "g_2",
+      "g_f",
+      "lambda_qg",
+      "m_c",
+      "m_e",
+      "m_mu",
+      "m_s_m_d_ratio",
+      "m_tau",
+      "m_w",
+      "m_z",
+      "mu_p",
+      "mu_p_mu_n",
+      "n_s",
+      "omega_b",
+      "r_tensor",
+      "rho_lambda",
+      "rho_parameter",
+      "sin2_theta_w",
+      "t_gamma_0",
+      "t_nu",
+      "theta_c",
+      "theta_qcd",
+      "v_cb",
+      "v_h",
+      "v_td_v_ts",
+      "v_us_v_ud",
+      "w_de",
+      "y_e",
+      "y_t"
+    ],
+    "speculative": [
+      "alpha_d",
+      "delta_a_mu",
+      "delta_gamma",
+      "delta_nu_t",
+      "e_knee",
+      "f_b",
+      "f_pi_lambda_qcd",
+      "gamma_function",
+      "lambda_qcd",
+      "lambda_star",
+      "m_b",
+      "m_nu",
+      "m_p",
+      "m_planck",
+      "m_u",
+      "sigma_m_nu",
+      "tau_mu",
+      "tau_reio",
+      "tau_star",
+      "tau_tau",
+      "z_0"
+    ]
+  },
+  "category_counts": {
+    "anomalies": 4,
+    "fundamental_topology": 3,
+    "cosmology": 11,
+    "primary": 1,
+    "gauge": 6,
+    "derived": 12,
+    "scale_hierarchy": 5,
+    "electroweak": 5,
+    "flavour": 12,
+    "lifetimes": 3
+  },
+  "category_lists": {
+    "anomalies": [
+      "a_p",
+      "delta_a_mu",
+      "delta_gamma",
+      "delta_nu_t"
+    ],
+    "fundamental_topology": [
+      "alpha",
+      "c_3",
+      "phi_0"
+    ],
+    "cosmology": [
+      "alpha_d",
+      "eta_b",
+      "f_b",
+      "n_s",
+      "omega_b",
+      "r_tensor",
+      "rho_lambda",
+      "t_gamma_0",
+      "t_nu",
+      "tau_reio",
+      "w_de"
+    ],
+    "primary": [
+      "alpha_g"
+    ],
+    "gauge": [
+      "alpha_s",
+      "beta_x",
+      "g_1",
+      "g_2",
+      "sin2_theta_w",
+      "theta_qcd"
+    ],
+    "derived": [
+      "c_4",
+      "delta_m_n_p",
+      "epsilon_k",
+      "f_pi_lambda_qcd",
+      "gamma_function",
+      "m_nu",
+      "m_p",
+      "m_s_m_d_ratio",
+      "mu_p",
+      "mu_p_mu_n",
+      "sigma_m_nu",
+      "z_0"
+    ],
+    "scale_hierarchy": [
+      "e_knee",
+      "lambda_qcd",
+      "lambda_qg",
+      "lambda_star",
+      "m_planck"
+    ],
+    "electroweak": [
+      "g_f",
+      "m_w",
+      "m_z",
+      "rho_parameter",
+      "v_h"
+    ],
+    "flavour": [
+      "m_b",
+      "m_c",
+      "m_e",
+      "m_mu",
+      "m_tau",
+      "m_u",
+      "theta_c",
+      "v_cb",
+      "v_td_v_ts",
+      "v_us_v_ud",
+      "y_e",
+      "y_t"
+    ],
+    "lifetimes": [
+      "tau_mu",
+      "tau_star",
+      "tau_tau"
+    ]
+  }
+}

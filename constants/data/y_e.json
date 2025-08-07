@@ -6,7 +6,7 @@
   "unit": "dimensionless",
   "formula": "0.000511 * sqrt(2) / 246.22",
   "dependencies": [],
-  "category": "secondary",
+  "category": "flavour",
   "sources": [
     {
       "name": "Topological Fixed Point Theory",
@@ -20,5 +20,6 @@
     "note": "Shows light lepton masses fall out naturally",
     "notes": "Electron Yukawa from mass relation: m_e * sqrt(2) / v_H",
     "last_update": "Aug 6, 2025"
-  }
+  },
+  "status": "validated"
 }

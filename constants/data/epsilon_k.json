@@ -8,7 +8,7 @@
   "dependencies": [
     "phi_0"
   ],
-  "category": "secondary",
+  "category": "derived",
   "sources": [
     {
       "name": "Topological Fixed Point Theory",
@@ -20,5 +20,6 @@
   "accuracyTarget": 0.2,
   "metadata": {
     "note": "CP violation from pure cascade, phase-space factor √2 to be included"
-  }
+  },
+  "status": "validated"
 }

@@ -1,0 +1,10 @@
+{
+  "id": "v_cb",
+  "symbol": "V_cb",
+  "name": "CKM Matrix Element V_cb",
+  "value": 0.039878250000000004,
+  "unit": "dimensionless",
+  "status": "validated",
+  "experimental": 0.0409,
+  "deviation": -0.024981662591686916
+}

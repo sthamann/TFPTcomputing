@@ -8,7 +8,7 @@
   "dependencies": [
     "phi_0"
   ],
-  "category": "primary",
+  "category": "flavour",
   "sources": [
     {
       "name": "Topological Fixed Point Theory",
@@ -17,5 +17,6 @@
       "note": "From comprehensive constant list"
     }
   ],
-  "accuracyTarget": 0.02
+  "accuracyTarget": 0.02,
+  "status": "validated"
 }

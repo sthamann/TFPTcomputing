@@ -1,0 +1,10 @@
+{
+  "id": "lambda_qcd",
+  "symbol": "\u039b_QCD",
+  "name": "QCD Confinement Scale",
+  "value": 332,
+  "unit": "MeV",
+  "status": "validated",
+  "experimental": 332.0,
+  "deviation": 0.0
+}

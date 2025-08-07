@@ -1,0 +1,10 @@
+{
+  "id": "g_f",
+  "symbol": "G_F",
+  "name": "Fermi Constant",
+  "value": 1.1663753915279728e-05,
+  "unit": "GeV^-2",
+  "status": "validated",
+  "experimental": 1.1663787e-05,
+  "deviation": -2.8365333035690216e-06
+}

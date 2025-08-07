@@ -1,0 +1,10 @@
+{
+  "id": "g_1",
+  "symbol": "g\u2081",
+  "name": "U(1) Gauge Coupling",
+  "value": 0.34354246428838664,
+  "unit": "dimensionless",
+  "status": "validated",
+  "experimental": 0.357,
+  "deviation": -0.03769617846390293
+}

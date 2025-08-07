@@ -4,13 +4,10 @@
   "name": "Muon Lifetime",
   "description": "Muon lifetime in microseconds",
   "unit": "seconds",
-  "formula": "(192*pi^3)/(G_F^2*m_mu^5)*(1-8*(m_e/m_mu)^2)",
-  "dependencies": [
-    "g_f",
-    "m_mu",
-    "m_e"
-  ],
-  "category": "lepton",
+  "formula": "(192*pi^3*hbar_GeV_s)/(G_F^2*m_mu_GeV^5)",
+  "dependencies": [],
+  "category": "lifetimes",
+  "status": "speculative",
   "sources": [
     {
       "name": "Topological Fixed Point Theory",
