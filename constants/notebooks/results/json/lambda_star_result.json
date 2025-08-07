@@ -2,9 +2,9 @@
   "id": "lambda_star",
   "symbol": "\u03bb\u2605",
   "name": "Cascade-horizon length",
-  "value": 3.432622446120917e+27,
+  "value": 2.489615206172224e-42,
   "unit": "m",
   "status": "speculative",
   "experimental": 3e-20,
-  "deviation": 1.1442074820403056e+47
+  "deviation": -1.0
 }

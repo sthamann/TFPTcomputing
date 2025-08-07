@@ -2,9 +2,9 @@
   "id": "tau_star",
   "symbol": "\u03c4\u2605",
   "name": "Planck-kink time",
-  "value": 8.568220751982183e+18,
+  "value": 1.6208400310072082e-47,
   "unit": "s",
-  "status": "speculative",
+  "status": "validated",
   "experimental": 1.6e-47,
-  "deviation": 5.355137969988865e+65
+  "deviation": 0.01302501937950515
 }

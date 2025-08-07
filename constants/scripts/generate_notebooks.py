@@ -518,19 +518,17 @@ def gamma_cascade(n):
         
     elif const_id == 'f_b':
         main_code.append("# Cosmic baryon fraction")
-        main_code.append("# f_b = φ₀ / (4π)")
-        main_code.append("phi_0 = calculated_values.get('phi_0', 0.053171)")
-        main_code.append("result = phi_0 / (4 * np.pi)")
+        main_code.append("# f_b = η_b / (η_b + 5*c₃⁷)")
+        main_code.append("eta_b = calculated_values.get('eta_b', 6.12e-10)")
+        main_code.append("c_3 = calculated_values.get('c_3', 1.0/(8*np.pi))")
+        main_code.append("result = eta_b / (eta_b + 5 * c_3**7)")
         
     elif const_id == 'rho_lambda':
         main_code.append("# Vacuum Energy Density")
-        main_code.append("# ρ_Λ = 3H₀²M_Pl² * φ₀⁴ / (8πG)")
+        main_code.append("# ρ_Λ = M_Pl⁴ * φ₀⁹⁷")
         main_code.append("M_Pl = calculated_values.get('m_planck', 1.2209e19)")
         main_code.append("phi_0 = calculated_values.get('phi_0', 0.053171)")
-        main_code.append("# Convert to GeV⁴")
-        main_code.append("rho_crit = 3 * H_0**2 / (8 * np.pi * G) # Critical density in kg/m³")
-        main_code.append("rho_crit_GeV4 = rho_crit * (c**2 / GeV_to_J)**3 * (c * hbar / GeV_to_J) # Convert to GeV⁴")
-        main_code.append("result = rho_crit_GeV4 * phi_0**4")
+        main_code.append("result = M_Pl**4 * phi_0**97")
         
     elif const_id == 'tau_reio':
         main_code.append("# Optical depth to re-ionisation")
@@ -540,9 +538,13 @@ def gamma_cascade(n):
         
     elif const_id == 'tau_star':
         main_code.append("# Planck-kink time")
-        main_code.append("# τ* = 1 / (H_0 * φ₀)")
+        main_code.append("# τ* = φ₀³ * ħ / (4π*c₃*M_Pl)")
         main_code.append("phi_0 = calculated_values.get('phi_0', 0.053171)")
-        main_code.append("result = 1 / (H_0 * phi_0)")
+        main_code.append("c_3 = calculated_values.get('c_3', 1.0/(8*np.pi))")
+        main_code.append("M_Pl = calculated_values.get('m_planck', 1.2209e19)")
+        main_code.append("# Convert M_Pl from GeV to kg")
+        main_code.append("M_Pl_kg = M_Pl * GeV_to_kg")
+        main_code.append("result = phi_0**3 * hbar / (4 * np.pi * c_3 * M_Pl_kg * c**2)")
         
     elif const_id == 'delta_nu_t':
         main_code.append("# Neutrino-top split")

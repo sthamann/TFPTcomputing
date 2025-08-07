@@ -2,9 +2,9 @@
   "id": "rho_lambda",
   "symbol": "\u03c1_\u039b",
   "name": "Vacuum Energy Density",
-  "value": 2.3989629460766855e+33,
+  "value": 5.459824933153207e-48,
   "unit": "GeV^4",
-  "status": "speculative",
+  "status": "validated",
   "experimental": 5e-48,
-  "deviation": 4.797925892153371e+80
+  "deviation": 0.0919649866306414
 }
