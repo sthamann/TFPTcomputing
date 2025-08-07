@@ -2,9 +2,9 @@
   "id": "delta_m_n_p",
   "symbol": "\u0394m_n-p",
   "name": "Neutron-Proton Mass Difference",
-  "value": 1.3780442139169717,
+  "value": 1.2377904207104673,
   "unit": "MeV",
   "status": "validated",
   "experimental": 1.29333251,
-  "deviation": 0.06549878183837798
+  "deviation": -0.04294494173778454
 }

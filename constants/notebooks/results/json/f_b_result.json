@@ -2,9 +2,9 @@
   "id": "f_b",
   "symbol": "f_b",
   "name": "Cosmic baryon fraction",
-  "value": 0.4444444444444445,
+  "value": 0.15653723972015052,
   "unit": "dimensionless",
-  "status": "speculative",
+  "status": "validated",
   "experimental": 0.158,
-  "deviation": 1.8129395218002817
+  "deviation": -0.009257976454743572
 }

@@ -2,9 +2,9 @@
   "id": "y_e",
   "symbol": "y_e",
   "name": "Electron Yukawa",
-  "value": 2.9350301777786193e-06,
+  "value": 2.9350241468946917e-06,
   "unit": "dimensionless",
   "status": "validated",
   "experimental": 2.94e-06,
-  "deviation": -0.0016904157215579905
+  "deviation": -0.0016924670426218162
 }

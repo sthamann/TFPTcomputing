@@ -2,9 +2,9 @@
   "id": "delta_gamma",
   "symbol": "\u03b4_\u03b3",
   "name": "Photon drift index",
-  "value": 4.144321559336889e-09,
+  "value": 5.98114904980768e-06,
   "unit": "dimensionless",
   "status": "speculative",
   "experimental": 9e-32,
-  "deviation": 4.604801732596544e+22
+  "deviation": 6.645721166452978e+25
 }
